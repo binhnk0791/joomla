@@ -1,0 +1,77 @@
+.ja-healineswrap em {
+  float: none;
+  margin-right: 20px;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: 'bebas_neueregular', sans-serif;
+  font-weight: normal;
+  color: #000000;
+}
+.ja-healineswrap em .last-word {
+  color: #4aa545;
+}
+@media (min-width: 480px) {
+  .ja-healineswrap em {
+    float: left;
+  }
+}
+.ja-headlines {
+  overflow: hidden;
+  width: auto;
+  position: relative !important;
+  height: 57px;
+  line-height: 57px;
+}
+.ja-headlines .ja-headlines-item {
+  text-align: center;
+  visibility: hidden;
+  height: 57px;
+  font-weight: 700;
+}
+.ja-headlines .jahl-vertical,
+.jahl-verticald,
+.ja-headlines .jahl-horizontal,
+.jahl-horizontal_right {
+  width: auto;
+  display: block;
+  position: absolute !important;
+}
+.ja-headlines .jahl-opacity {
+  width: auto;
+  display: block;
+  position: absolute !important;
+  float: left;
+}
+.ja-headlines .separator {
+  padding: 0 5px;
+}
+a.ja-headelines-pre,
+a.ja-headelines-next {
+  height: 15px;
+  width: 15px;
+  display: block;
+  float: left;
+  text-decoration: none !important;
+  border: none !important;
+}
+.ja-headelines-buttons span {
+  position: absolute;
+  top: -1000px;
+}
+.ja-headelines-pre {
+  background: url("../../../images/but-pre.png") no-repeat top left;
+  padding-left: 5px;
+}
+.ja-headelines-next {
+  background: url("../../../images/but-next.png") no-repeat top left;
+  margin-left: 5px;
+}
+.ja-headlines-right {
+  float: left;
+  text-align: right;
+}
+.ja-headelines-buttons {
+  float: right;
+  margin-top: 18px;
+}

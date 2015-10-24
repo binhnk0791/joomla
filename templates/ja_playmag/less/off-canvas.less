@@ -1,0 +1,261 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+
+
+// VARIABLES & MIXINS
+// ------------------
+@import "vars.less"; // Include Variables and Mixins
+
+
+// EXTEND STYLE IN BASE
+// --------------------
+@import "../../../plugins/system/t3/base-bs3/less/off-canvas.less";
+
+
+//
+// OFF-CANVAS
+// -------------------------------------
+
+// Toggle Button
+// -------------------
+.off-canvas-toggle {
+  border-radius: 0;
+  border: 0;
+  height: @navbar-height;
+  line-height: @navbar-height;
+  padding: 0;
+  width: @navbar-height;
+
+  &:hover, &:focus, &:active {
+    background: @black;
+    outline: none;
+  }
+}
+
+
+//
+// OFF-CANVAS CONTENT STYLES
+// -------------------------------------
+.t3-off-canvas {
+
+  // Generic
+  // -----------------------------------
+  background: @t3-off-canvas-background;
+  color: @t3-off-canvas-text-color;
+
+
+  // Header
+  // -----------------------------------
+  .t3-off-canvas-header {
+    padding: 0;
+
+    // Title
+    h2 {
+      display: none;
+    }
+  }
+
+  // Close Button
+  .close {
+    background: @white;
+    height: 37px;
+    line-height: 35px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 38px;
+    z-index: 1000;
+    .opacity(0.7);
+
+    &:hover, &:focus, &:active {
+      .opacity(1);
+    }
+  }
+
+
+  // Body
+  // -----------------------------------
+  .t3-off-canvas-body {
+    padding: 0;
+
+    // Links
+    // ------------
+    a {
+      color: @t3-off-canvas-link-color;
+      text-decoration: none;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: @t3-off-canvas-link-hover-color;
+        text-decoration: none;
+        outline: none;
+      }
+    }
+
+    .dropdown-menu .active a {
+      background: transparent;
+    }
+
+
+    // Navigations
+    // ------------
+    .nav {
+      //Main nav
+      > li {
+        //Remove margin top
+        + li {
+          margin-top: 0;
+        }
+
+        a {
+          border-bottom: 0;
+          font-size: @font-size-small;
+          font-family: @titles-font-family;
+          font-weight: 700;
+          text-transform: uppercase;
+
+          .caret {
+            border-bottom-color: @gray-light;
+            border-top-color: @gray-light;
+            margin-left: (@t3-global-margin / 2);
+          }
+
+          &:hover, &:focus, &:active {
+
+          }
+        }
+
+        //Hover
+        &.open {
+          > a {
+            color: @t3-off-canvas-link-hover-color;
+
+            .caret {
+              border-bottom-color: @t3-off-canvas-link-hover-color;
+              border-top-color: @t3-off-canvas-link-hover-color;
+            }
+          }
+        }
+
+        //Active
+        &.active {
+          a .caret {
+            border-bottom-color: @white;
+            border-top-color: @white;
+          }
+
+          &.open {
+            > a {
+              color: @white;
+            }
+          }
+        }
+
+        //Active alias
+        &.alias-parent-active {
+          > a {
+            background: @t3-off-canvas-link-hover-color;
+            color: @white;
+          }
+        }
+      }
+    }
+
+    // Dropdown Menu
+    .dropdown-menu {
+      background: @t3-off-canvas-background;
+      margin-top: 0;
+
+      > li {
+        > a {
+          font-family: @font-family-base;
+          padding-left: (@t3-global-padding + 5);
+        }
+
+        //Active
+        &.active {
+          > a {
+            color: @t3-off-canvas-link-hover-color;
+          }
+        }
+      }
+
+      //SUBMENU 1
+      .dropdown-submenu {
+        > a {
+          position: relative;
+
+          &:after {
+            border-color:  @gray-light rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0);
+            border-width: 5px;
+            margin-top: -2.5px;
+            position: absolute;
+            top: 50%;
+            right: 20px;
+          }
+        }
+
+        //hover & active
+        &.open, &.active {
+          > a {
+            color: @t3-off-canvas-link-hover-color;
+
+            &:after {
+              border-color:  @t3-off-canvas-link-hover-color rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0);
+            }
+          }
+        }
+
+        //dropdown submenu
+        .dropdown-menu {
+          li {
+            > a {
+              font-family: @font-family-base;
+              padding-left: (@t3-global-padding * 2);
+              text-transform: none;
+            }
+
+            //active
+            &.active {
+              > a {
+              color: @t3-off-canvas-link-hover-color
+              }
+            }
+          }
+
+          //SUBMENU 2
+          .dropdown-submenu {
+            .dropdown-menu {
+              a {
+                padding-left: (@t3-global-padding * 2.5);
+                font-weight: normal;
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+    // Modules
+    // ------------
+    .t3-module {
+      margin-bottom: @line-height-computed;
+    }
+
+    .module-title  {
+      margin-bottom: @line-height-computed / 2;
+    }
+
+  // End Off-Canvas Body
+  }
+
+// End Off-Canvas Content Styles
+}
+//Z-index ie8
+.old-ie .off-canvas-open .t3-off-canvas {
+  z-index: 1000\9 !important; //Style for IE 8
+}

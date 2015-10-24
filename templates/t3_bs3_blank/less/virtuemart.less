@@ -1,0 +1,22 @@
+.vmgroup {
+	ul.vmproduct {
+		padding: 0;
+		margin: 0;
+		.clearfix();
+
+		li {
+			display: block;
+
+			&.width25 {
+				width: 25%;
+				float: left;
+				padding: @grid-gutter-width/2;
+			}
+		}
+	}
+
+	.home & {
+		margin-bottom: @grid-gutter-width;
+		border-bottom: 1px solid @t3-border-color;
+	}
+}

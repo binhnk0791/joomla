@@ -1,0 +1,226 @@
+/**
+ * ------------------------------------------------------------------------
+ * JA PlayMag Template
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+ */
+ 
+/**
+ * @copyright	Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.
+ * @license		GNU General Public License version 2 or later; see LICENSE.txt
+ */
+
+/* Import Font 
+---------------------- */
+@import url("../fonts/bebasneue-thin-book/stylesheet.css");
+
+
+ /* MAIN OFFLINE STYLE
+ ------------------------*/
+* {
+	box-sizing: border-box;
+}
+
+body {
+  	background: url("../images/bg_offline.jpg") no-repeat center top #000;
+  	background-size: cover;
+  	color: #bfbfbf;
+  	font-family: sans-serif;
+  	font-size: 14px;
+  	line-height: 1;
+  	margin: 0;
+  	padding: 0;
+  	text-align: left;
+}
+
+#frame {
+  	background: rgba(0, 0, 0, 0.8);
+  	border: 1px solid #222;
+  	box-shadow: 0 0 5px #000;
+	margin: 150px auto;
+	padding: 40px 30px 20px;
+	position: relative;
+	width: 585px;
+}
+
+#frame #offline-img {
+	margin: 0 -30px;
+}
+
+#frame #offline-img img {
+	width: 100%;
+}
+
+.offline-des {
+	margin: 20px 0 30px 0;
+	line-height: 1.5;
+	text-align: center;
+}
+
+/* Header-offline
+---------------------------- */
+.header-offline {
+	background: url("../images/logo.png") no-repeat 30px center #fa732a;
+	height: 50px;
+	margin: -40px -30px 0px;
+}
+
+/* Title Offline
+----------------------------- */
+#offline-title {
+	color: #fff;
+	text-align: center;
+	margin-top: 20px;
+}
+
+#offline-title h1 {
+	color: #fff;
+	display: inline-block;
+	font-family: 'bebas_neuebook';
+	font-weight: normal;
+	font-size: 72px;
+	margin: 0;
+	text-transform: uppercase;	
+}
+
+/* Form Offline
+----------------------------- */
+.form-offline {
+	margin: 0 -10px;
+}
+
+.form-group {
+	float: left;
+	margin-bottom: 20px;
+	padding: 0 10px;
+	width: 50%;
+}
+
+.control-label {
+	color: #666;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.control-input {
+  	background: transparent;
+	border: 1px solid #222;
+	box-shadow: none;
+	color: #999;
+	font-size: 14px;
+	font-family: arial, sans-serif;
+	height: 38px;
+	padding: 10px;
+	transition: all 0.4s;
+	width: 100%;
+}
+
+.control-input:focus {
+  	background: #000;
+	border-color: #FA732A;
+}
+
+/* Remember Login
+------------------------- */
+#form-login-remember {
+	float: left;
+	padding-top: 4px;
+}
+
+#remember {
+	position: relative;
+	top: 1px;
+}
+
+/* Button
+------------------------- */
+#submit-buton {
+	text-align: right;
+}
+
+#submit-buton .button {
+	background: #FA732A;
+	border: 0;
+	color: #fff;
+	font-family: Roboto;
+	font-weight: 700;
+	padding: 8px 20px;
+	text-transform: uppercase;
+}
+
+#submit-buton .button:hover {
+	background: #f55a06;
+	cursor: pointer;
+}
+
+/* Message system
+----------------------------- */
+#system-message-container {
+	text-align: center;
+	margin-top: 40px;
+}
+
+#system-message {
+	border: 1px solid #f52c06;
+	background: rgba(0,0,0,0.8);
+	margin: auto;
+	padding: 20px;
+	width: 585px;
+}
+
+#system-message p {
+	margin: 0;
+}
+
+#system-message .close {
+	display: none;
+}
+
+#system-message dt,
+#system-message .alert-heading {
+	color: #fff;
+	border-bottom: 1px solid #f52c06;
+	display: inline-block;
+	font-size: 20px;
+	font-family: bebas_neuebook;
+	font-weight: 700;
+	margin-bottom: 10px;
+	margin-top: 0;
+}
+
+.message {
+	margin-left: 0;
+}
+
+.message ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+/*Responsive
+------------------------------*/
+/* Control screen width 600px */
+@media screen and (max-width: 600px ) {
+	#frame {
+		margin-left: 20px;
+		margin-right: 20px;
+		width: auto;
+	}
+
+	#system-message {
+		padding: 10px;
+		width: auto;
+	}
+}
+
+/*Control screen mobile */
+@media screen and (max-width: 480px ) {
+	.form-group {
+		width: 100%;
+	}
+}
