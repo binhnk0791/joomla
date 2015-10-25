@@ -12,10 +12,10 @@ class JConfig {
 	public $debug = '0';
 	public $debug_lang = '0';
 	public $dbtype = 'mysqli';
-	public $host = 'storedb0791.db.6957690.hostedresource.com';
-	public $user = 'storedb0791';
-	public $password = 'B!nh1987';
-	public $db = 'storedb0791';
+	public $host = '127.0.0.1';
+	public $user = 'root';
+	public $password = 'root';
+	public $db = 'joomla';
 	public $dbprefix = 'pz5yp_';
 	public $live_site = '';
 	public $secret = 'som4jxIRS5oTrE7N';

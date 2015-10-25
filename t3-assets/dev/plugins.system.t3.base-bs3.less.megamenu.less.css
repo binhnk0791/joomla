@@ -29,7 +29,7 @@
   margin: 0;
   padding: 0;
   background: transparent;
-  color: #1a1a1a;
+  color: inherit;
   font-size: 18px;
   line-height: normal;
 }
@@ -104,7 +104,7 @@
   margin: 0;
   padding: 0;
   background: transparent;
-  color: #1a1a1a;
+  color: inherit;
   font-size: 18px;
   line-height: normal;
   margin-bottom: 5px;
