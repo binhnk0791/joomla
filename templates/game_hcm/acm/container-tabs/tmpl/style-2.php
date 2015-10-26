@@ -19,7 +19,6 @@
 	  <div class="style-2">
 	
 	    <div class="container-tabs-nav">
-	      <div class="container">
 	
 	        <!-- BEGIN: TAB NAV -->
 	        <ul class="nav nav-tabs" role="tablist">
@@ -41,7 +40,6 @@
 	        
 	        </ul>
 	        <!-- END: TAB NAV -->
-	      </div>
 	    </div>
 	      
 	      <!-- BEGIN: TAB PANES -->

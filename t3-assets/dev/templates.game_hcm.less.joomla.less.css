@@ -627,7 +627,7 @@ div.finder {
 #article-index ul > .active > a,
 .article-index ul > .active > a {
   border: 0;
-  background: #428bca;
+  background: #01aaf4;
   color: #ffffff;
 }
 #article-index ul > .active > a:hover,
@@ -637,7 +637,7 @@ div.finder {
 #article-index ul > .active > a:focus,
 .article-index ul > .active > a:focus {
   border: 0;
-  background: #428bca;
+  background: #01aaf4;
   color: #ffffff;
 }
 .pagenav {

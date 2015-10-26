@@ -1,0 +1,28 @@
+.vmproduct {
+  margin: 0;
+  padding: 0;
+}
+.vmproduct:before,
+.vmproduct:after {
+  content: " ";
+  display: table;
+}
+.vmproduct:after {
+  clear: both;
+}
+.vmproduct li {
+  display: block;
+  padding: 0 10px;
+}
+.vmgroup div.spacer {
+  border: 1px solid #eeeeee;
+  padding: 20px;
+  text-align: center;
+  margin: 10px 0;
+}
+.vmgroup div.spacer .prod-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #555555;
+  display: block;
+}

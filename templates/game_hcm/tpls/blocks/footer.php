@@ -10,7 +10,15 @@ defined('_JEXEC') or die;
 
 <!-- FOOTER -->
 <footer id="t3-footer" class="wrap t3-footer">
-
+		<?php if ($this->countModules('footer-features')) : ?>
+			<!-- HOME SL 1 -->
+			<div class=" footer-features <?php $this->_c('footer-features') ?>">
+				<div class="container">
+					<jdoc:include type="modules" name="<?php $this->_p('footer-features') ?>" style="raw" />
+				</div>
+			</div>
+			<!-- //HOME SL 1 -->
+		<?php endif ?>
 	<?php if ($this->checkSpotlight('footnav', 'footer-1, footer-2, footer-3, footer-4, footer-5, footer-6')) : ?>
 		<!-- FOOT NAVIGATION -->
 		<div class="container">
@@ -25,11 +33,9 @@ defined('_JEXEC') or die;
 				<div class="<?php echo $this->getParam('t3-rmvlogo', 1) ? 'col-md-8' : 'col-md-12' ?> copyright <?php $this->_c('footer') ?>">
 					<jdoc:include type="modules" name="<?php $this->_p('footer') ?>" />
           <small>
-            <a href="http://twitter.github.io/bootstrap/" target="_blank">Bootstrap</a> is a front-end framework of Twitter, Inc. Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>.
+           © 2015 Thế Giới Trò Chơi. All rights reserved.
           </small>
-          <small>
-            <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a> font licensed under <a href="http://scripts.sil.org/OFL">SIL OFL 1.1</a>.
-          </small>
+         
 				</div>
 				<?php if ($this->getParam('t3-rmvlogo', 1)): ?>
 					<div class="col-md-4 poweredby text-hide">

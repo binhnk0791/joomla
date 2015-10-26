@@ -30,34 +30,16 @@ defined('_JEXEC') or die;
 		<!-- //HOME SL 2 -->
 	<?php endif ?>
 
-	<?php if ($this->countModules('home-3')) : ?>
-		<!-- HOME SL 3 -->
-		<div class="wrap t3-sl t3-sl-3 <?php $this->_c('home-3') ?>">
-			<div class="container">
-				<jdoc:include type="modules" name="<?php $this->_p('home-3') ?>" style="raw" />
+	<?php if ($this->countModules('home-side-1') || $this->countModules('home-side-2')) : ?>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3 <?php $this->_c('home-side-1') ?>">
+				<jdoc:include type="modules" name="<?php $this->_p('home-side-1') ?>" style="raw" />
+			</div>
+			<div class="col-sm-9 <?php $this->_c('home-side-2') ?>">
+				<jdoc:include type="modules" name="<?php $this->_p('home-side-2') ?>" style="raw" />
 			</div>
 		</div>
-		<!-- //HOME SL 3 -->
+	</div>
 	<?php endif ?>
-
-	<?php if ($this->countModules('home-4')) : ?>
-		<!-- HOME SL 4 -->
-		<div class="wrap t3-sl t3-sl-4 <?php $this->_c('home-4') ?>">
-			<div class="container">
-				<jdoc:include type="modules" name="<?php $this->_p('home-4') ?>" style="raw" />
-			</div>
-		</div>
-		<!-- //HOME SL 4 -->
-	<?php endif ?>
-
-	<?php if ($this->countModules('home-5')) : ?>
-		<!-- HOME SL 5 -->
-		<div class="wrap t3-sl t3-sl-5 <?php $this->_c('home-5') ?>">
-			<div class="container">
-				<jdoc:include type="modules" name="<?php $this->_p('home-5') ?>" style="raw" />
-			</div>
-		</div>
-		<!-- //HOME SL 5 -->
-	<?php endif ?>
-
 </div>

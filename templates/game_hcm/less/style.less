@@ -19,9 +19,52 @@
 // HEADER
 // ---------------------------------------------------------
 
+.toolbar {
+	background: @black;
+	color: @white;
+	font-size: @t3-font-size-small;
+	position: fixed;
+	top: 0;
+	height: 40px;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	background: rgba(0, 0, 0, 0.8);
+
+	.search {
+		#mod-search-searchword {
+			border-radius: 20px;
+	    background: transparent;
+	    border-color: rgba(255,255,255,.2);
+	    padding: 5px 15px;
+	    height: 26px;
+	    margin: 7px 0 0 0;
+		}
+	}
+
+	.toolbar-2 {
+		padding: 10px 0;
+		text-align: center;
+		@media screen and (min-width: @screen-md ){
+			text-align: right;
+		}
+		.vmCartModule ,
+		.custom {
+			display: inline-block;
+			vertical-align: middle;
+			margin:  0 5px;
+		}
+	}
+}
+
 .t3-header {
-  padding-top: @t3-global-padding;
-  padding-bottom: @t3-global-padding;
+	background: @black;
+	background: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	top: 40px;
+	left: 0;
+	right: 0;
+	z-index: 1000;
 }
 
 
@@ -76,6 +119,10 @@
     margin-top: 5px;
   }
 
+}
+
+.t3-slideshow {
+	margin-bottom: @grid-gutter-width;
 }
 
 // Head Search
@@ -201,8 +248,8 @@
 // ---------------------------------------------------------
 .t3-footer {
   border-top: 1px solid @t3-border-color;
-  background: @t3-footer-background;
-  color: @t3-footer-text-color;
+  background: #0B3269 url('../images/footer-bg.jpg') no-repeat top center;
+  color: @white;
   .clearfix();
 
   // small

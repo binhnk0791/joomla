@@ -43,7 +43,7 @@ $this->addStyleSheet(JURI::base(true) . '/templates/system/css/system.css');
 // T3 BASE HEAD
 $this->addHead();
 ?>
-
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
 <?php
 // CUSTOM CSS
 if (is_file(T3_TEMPLATE_PATH . '/css/custom.css')) {
