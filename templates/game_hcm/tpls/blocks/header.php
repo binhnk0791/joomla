@@ -13,20 +13,18 @@ defined('_JEXEC') or die;
 <div class="toolbar">
 	<div class="container">
 		<div class="row">
-			<?php if ($this->countModules('head-search')) : ?>
+			<?php if ($this->countModules('toolbar-1')) : ?>
 				<div class="col-sm-4">
-					<div class="head-search <?php $this->_c('head-search') ?>">
-						<jdoc:include type="modules" name="<?php $this->_p('head-search') ?>" style="raw" />
+					<div class=" <?php $this->_c('toolbar-1') ?>">
+						<jdoc:include type="modules" name="<?php $this->_p('toolbar-1') ?>" style="raw" />
 					</div>
 				</div>
 			<?php endif ?>
-			<?php if ($this->countModules('languageswitcherload')) : ?>
+			<?php if ($this->countModules('toolbar-2')) : ?>
 				<div class="col-sm-8">
-					<!-- LANGUAGE SWITCHER -->
-					<div class="languageswitcherload">
-						<jdoc:include type="modules" name="<?php $this->_p('languageswitcherload') ?>" style="raw" />
+					<div class="toolbar-2">
+						<jdoc:include type="modules" name="<?php $this->_p('toolbar-2') ?>" style="raw" />
 					</div>
-					<!-- //LANGUAGE SWITCHER -->
 				</div>
 			<?php endif ?>
 		</div>
