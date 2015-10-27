@@ -34,7 +34,7 @@ class dashboardViewDashboard extends acymailingView{
 		$userStats->nbConfirmed += (empty($userResult[2]->total) ? 0 : $userResult[2]->total);
 		$userStats->total = $userStats->nbConfirmed + $userStats->nbUnconfirmedAndDisabled;
 
-		$userStats->confirmedPercent = (empty($userStats->total) ? 0 : round((($userStats->nbConfirmed * 100) / $userStats->total), 0, PHP_ROUND_HALF_UP));
+		$userStats->confirmedPercent = (empty($userStats->total) ? 0 : round((($userStats->nbConfirmed * 100) / $userStats->total), 0));
 
 		$listsQuery = "SELECT COUNT(DISTINCT(l.listid)) FROM #__acymailing_list as l LEFT JOIN #__acymailing_listsub as ls ON l.listid=ls.listid WHERE l.type='list' AND ls.status=1 AND ls.subid IS NOT NULL";
 		$db->setQuery($listsQuery);
@@ -48,7 +48,7 @@ class dashboardViewDashboard extends acymailingView{
 		$listStats->noSub = $nbLists - $atLeastOneSub;
 		$listStats->total = $nbLists;
 
-		$listStats->subscribedPercent = (empty($nbLists) ? 0 : round((($atLeastOneSub * 100) / $nbLists), 0, PHP_ROUND_HALF_UP));
+		$listStats->subscribedPercent = (empty($nbLists) ? 0 : round((($atLeastOneSub * 100) / $nbLists), 0));
 
 		$nlQuery = 'SELECT count(mailid) AS total, published FROM #__acymailing_mail WHERE type = "news" GROUP BY published';
 		$db->setQuery($nlQuery);
@@ -59,7 +59,7 @@ class dashboardViewDashboard extends acymailingView{
 		$nlStats->nbpublished = (empty($nlResult[1]->total) ? 0 : $nlResult[1]->total);
 		$nlStats->total = $nlStats->nbpublished + $nlStats->nbUnpublished;
 
-		$nlStats->publishedPercent = (empty($nlStats->total) ? 0 : round((($nlStats->nbpublished * 100) / $nlStats->total), 0, PHP_ROUND_HALF_UP));
+		$nlStats->publishedPercent = (empty($nlStats->total) ? 0 : round((($nlStats->nbpublished * 100) / $nlStats->total), 0));
 
 
 		$this->assignRef('nlStats', $nlStats);

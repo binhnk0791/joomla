@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <title>Banner Style 2</title>
+	<sampledata><![CDATA[
+        {":type":"uber:features-intro","features-intro":{"jatools-layout-features-intro":"style-1","features-intro[block-intro]":["A pretty exciting step forward to build layouts in a variety of combinations. "],"features-intro[block-extra-class]":[" mod-gray section-border"],"features-intro[block-bg]":[""],"features-intro[features-style]":["style-light"],"features-intro[columns]":["4"],"features-intro[align]":["0"],"features-intro[img-features]":[""],"features-intro[animation-delay]":[""],"features-intro[carousel-text]":[""],"features-intro[data]":{"features-intro[data][font-icon]":["fa fa-picture-o","fa fa-paper-plane-o","fa fa-check-circle-o ","fa fa-arrow-circle-o-up"],"features-intro[data][img-icon]":["","","",""],"features-intro[data][title]":["Various Design Options","Powerful Yet Simple","Flexible Customisation","Regular Updates"],"features-intro[data][description]":["We deliver a wide variety of block layouts which add endless personalisation.","Being trusted by 20.000+ amazing members so far. Best design for all at your choice.","A big number of customisable templates, packed with both handy features and design.","Our templates are updated each time a bug is discovered or there is new features."],"rows":4,"cols":5,"type":"list"},"features-intro[data-s6]":{"features-intro[data-s6][title]":[""],"features-intro[data-s6][title-link]":[""],"features-intro[data-s6][img-icon]":[""],"features-intro[data-s6][description]":[""],"rows":1,"cols":5,"type":"list"},"features-intro[data-s10]":{"features-intro[data-s10][title]":[""],"features-intro[data-s10][description]":[""],"features-intro[data-s10][button]":[""],"features-intro[data-s10][title-link]":[""],"rows":1,"cols":5,"type":"list"}}}
+    ]]></sampledata>
+	<fields name="features-intro">
+		<fieldset name="basic" label="Banner Setting" description="">
+			<field name="block-intro" type="textarea" default="" rows="5" cols="40"  label="Intro" description="" />
+			<field name="block-extra-class" type="textarea" default="" rows="5" cols="40" label="Extra Class" description="" />
+			<field name="block-bg" type="media" default="" label="Module Background" description="" />
+			<field name="features-style" type="list" default="style-light"
+			  global="1"
+			  label="Style"
+			  description="">
+				<option value="style-light">Light</option>
+				<option value="style-dark">Dark</option>
+			</field>
+			<field name="full-width" type="radio" default="1" label="Full Width?" description="">
+				<option value="0" class="off">No</option>
+				<option value="1" class="on">Yes</option>
+			</field>
+			
+			<field name="columns" type="list" label="Columns" description="Item per rows" >
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="6">6</option>
+			</field>
+		</fieldset>
+			
+		<fieldset name="section-features" label="Item Detail" description="">
+			<field name="data" type="jalist" >
+				<item name="img-icon" type="media" default="" label="Image" description="Image Path"  />
+				<item name="title" type="text" default="" label="Image title" description="Image alt title" />
+				<item name="url" type="text" default="" label="Link" description="Link Url"/>
+			</field>
+			
+		</fieldset>
+		
+  </fields>
+</form>

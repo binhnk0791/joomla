@@ -1,3 +1,32 @@
+.addtocart-bar .addtocart-button .addtocart-button {
+  background: #01aaf4;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 6.66666667px;
+  border-radius: 2px;
+  font-weight: 700;
+  border-color: #0198db;
+}
+.addtocart-bar .addtocart-button .addtocart-button:hover,
+.addtocart-bar .addtocart-button .addtocart-button:focus {
+  border-color: #01aaf4;
+  background: #2abdfe;
+  color: #ffffff;
+}
+.addtocart-bar .quantity-box .quantity-input {
+  background: #ffffff;
+  border-color: #eeeeee;
+  width: 30px;
+  height: 30px;
+  border-radius: 2px;
+  box-shadow: none;
+}
+.addtocart-bar .quantity-controls .quantity-controls {
+  color: #ffffff;
+  border-radius: 2px;
+  font-size: 12px;
+}
 .vmproduct {
   margin: 0;
   padding: 0;
@@ -25,4 +54,20 @@
   font-weight: bold;
   color: #555555;
   display: block;
+}
+.vmmanufacturer {
+  margin: 0;
+  padding: 0;
+}
+.vmmanufacturer li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 30%;
+  padding: 5px;
+}
+.browse-view h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
 }

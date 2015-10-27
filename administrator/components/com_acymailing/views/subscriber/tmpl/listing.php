@@ -41,13 +41,13 @@ defined('_JEXEC') or die('Restricted access');
 				<?php
 				foreach($this->displayFields as $map => $oneField){
 					if($map == 'html') continue; ?>
-					<th class="title">
+					<th class="title" style="text-align: left;">
 						<?php echo JHTML::_('grid.sort', $this->customFields->trans($oneField->fieldname), 'a.'.$map, $this->pageInfo->filter->order->dir, $this->pageInfo->filter->order->value); ?>
 					</th>
 				<?php } ?>
 				<?php $app = JFactory::getApplication();
 				if($app->isAdmin()){ ?>
-					<th class="title">
+					<th class="title" style="text-align: left;">
 						<?php echo JText::_('SUBSCRIPTION'); ?>
 					</th>
 				<?php } ?>
@@ -69,8 +69,11 @@ defined('_JEXEC') or die('Restricted access');
 					<th class="title titletoggle">
 						<?php echo JHTML::_('grid.sort', JText::_('ENABLED'), 'a.enabled', $this->pageInfo->filter->order->dir, $this->pageInfo->filter->order->value); ?>
 					</th>
-					<th class="title titleid" style="width: 100px">
-						<?php echo JHTML::_('grid.sort', JText::_('ACY_ID'), 'a.subid', $this->pageInfo->filter->order->dir, $this->pageInfo->filter->order->value).' - '.JHTML::_('grid.sort', JText::_('USER_ID'), 'a.userid', $this->pageInfo->filter->order->dir, $this->pageInfo->filter->order->value); ?>
+					<th class="title titleid">
+						<?php echo '<span  style="padding-left: 5px; padding-right: 5px; border-right: 1px solid #c9d5e5;">'.JHTML::_('grid.sort', JText::_('USER_ID'), 'a.userid', $this->pageInfo->filter->order->dir, $this->pageInfo->filter->order->value).'</span>'; ?>
+					</th>
+					<th class="title titleid" style="padding-left: 5px; padding-right: 5px;">
+						<?php echo JHTML::_('grid.sort', JText::_('ACY_ID'), 'a.subid', $this->pageInfo->filter->order->dir, $this->pageInfo->filter->order->value); ?>
 					</th>
 				<?php } ?>
 			</tr>
@@ -164,7 +167,7 @@ defined('_JEXEC') or die('Restricted access');
 							<span id="<?php echo $enabledid ?>" class="loading"><?php echo $this->toggleClass->toggle($enabledid, $row->enabled, 'subscriber') ?></span>
 						</td>
 						<td align="center">
-							<?php echo acymailing_dispSearch($row->subid, $this->pageInfo->search);
+							<?php
 							if(!empty($row->userid)){
 								if(file_exists(ACYMAILING_ROOT.'components'.DS.'com_comprofiler'.DS.'comprofiler.php')){
 									$editLink = 'index.php?option=com_comprofiler&task=edit&cid[]=';
@@ -175,8 +178,11 @@ defined('_JEXEC') or die('Restricted access');
 								}
 								$text = JText::_('ACY_USERNAME').' : <b>'.acymailing_dispSearch($row->username, $this->pageInfo->search);
 								$text .= '</b><br />'.JText::_('USER_ID').' : <b>'.acymailing_dispSearch($row->userid, $this->pageInfo->search).'</b>';
-								echo ' - '.acymailing_tooltip($text, acymailing_dispSearch($row->username, $this->pageInfo->search), '', acymailing_dispSearch($row->userid, $this->pageInfo->search), $editLink.$row->userid);
+								echo acymailing_tooltip($text, acymailing_dispSearch($row->username, $this->pageInfo->search), '', acymailing_dispSearch($row->userid, $this->pageInfo->search), $editLink.$row->userid);
 							} ?>
+						</td>
+						<td align="center">
+							<?php echo acymailing_dispSearch($row->subid, $this->pageInfo->search); ?>
 						</td>
 					<?php } ?>
 				</tr>

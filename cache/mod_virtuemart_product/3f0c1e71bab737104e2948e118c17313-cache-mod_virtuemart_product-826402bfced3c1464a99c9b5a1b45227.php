@@ -1,11 +1,13 @@
-<?php die("Access Denied"); ?>#x#s:13676:"
+<?php die("Access Denied"); ?>#x#s:13743:"
 
 <div class="vmgroup abbba">
 
 			<div class="row productdetails">
 						<div class="col-sm-4">
 				<div class="spacer">
-					<a href="/joomla/index.php/component/virtuemart/default-products/product-w-child-variant-parent-not-ordable-detail?Itemid=0" title="Product w/child variant parent not ordable"><img src="/joomla/components/com_virtuemart/assets/images/vmgeneral/filetype_jpg.png" alt="" class="featuredProductImage" border="0" /></a><div class="clear"></div>					<a href="/joomla/index.php/component/virtuemart/default-products/product-w-child-variant-parent-not-ordable-detail?Itemid=0">Product w/child variant parent not ordable</a>        <div class="clear"></div><div class="PricesalesPrice vm-display vm-price-value" ><span class="PricesalesPrice" >11,40 €</span></div><div class="PricesalesPriceWithDiscount vm-display vm-price-value" ><span class="PricesalesPriceWithDiscount" >11,40 €</span></div>
+					
+					<a href="" class="prod-title">Product w/child variant parent not ordable</a>        
+					<a href="/joomla/index.php/component/virtuemart/accessories/product-w-child-variant-parent-not-ordable-detail?Itemid=0" title="Product w/child variant parent not ordable"><img src="/joomla/components/com_virtuemart/assets/images/vmgeneral/filetype_jpg.png" alt="" class="featuredProductImage" border="0" /></a><div class="clear"></div>					<div class="clear"></div><div class="PricesalesPrice vm-display vm-price-value" ><span class="PricesalesPrice" >11,40 €</span></div><div class="PricesalesPriceWithDiscount vm-display vm-price-value" ><span class="PricesalesPriceWithDiscount" >11,40 €</span></div>
 	<div class="addtocart-area">
 		<form method="post" class="product js-recalculate" action="/joomla/index.php/component/virtuemart/">
 			<div class="vm-customfields-wrap">
@@ -28,7 +30,9 @@
 			</div>
 						<div class="col-sm-4">
 				<div class="spacer">
-					<a href="/joomla/index.php/component/virtuemart/default-products/product-w-child-variant-w-cart-variant-detail?Itemid=0" title="Product w/child variant w/cart variant"><img src="/joomla/images/stories/virtuemart/product/resized/cart_logo_90x90.jpg" alt="cart_logo" class="featuredProductImage" border="0" /></a><div class="clear"></div>					<a href="/joomla/index.php/component/virtuemart/default-products/product-w-child-variant-w-cart-variant-detail?Itemid=0">Product w/child variant w/cart variant</a>        <div class="clear"></div><div class="PricesalesPrice vm-display vm-price-value" ><span class="PricesalesPrice" >11,40 €</span></div><div class="PricesalesPriceWithDiscount vm-display vm-price-value" ><span class="PricesalesPriceWithDiscount" >11,40 €</span></div>
+					
+					<a href="/joomla/index.php/component/virtuemart/accessories/product-w-child-variant-parent-not-ordable-detail?Itemid=0" class="prod-title">Product w/child variant w/cart variant</a>        
+					<a href="/joomla/index.php/component/virtuemart/accessories/product-w-child-variant-w-cart-variant-detail?Itemid=0" title="Product w/child variant w/cart variant"><img src="/joomla/images/stories/virtuemart/product/resized/cart_logo_90x90.jpg" alt="cart_logo" class="featuredProductImage" border="0" /></a><div class="clear"></div>					<div class="clear"></div><div class="PricesalesPrice vm-display vm-price-value" ><span class="PricesalesPrice" >11,40 €</span></div><div class="PricesalesPriceWithDiscount vm-display vm-price-value" ><span class="PricesalesPriceWithDiscount" >11,40 €</span></div>
 	<div class="addtocart-area">
 		<form method="post" class="product js-recalculate" action="/joomla/index.php/component/virtuemart/">
 			<div class="vm-customfields-wrap">
@@ -74,7 +78,9 @@
 			</div>
 						<div class="col-sm-4">
 				<div class="spacer">
-					<a href="/joomla/index.php/component/virtuemart/default-pattern/basic-pattern-detail?Itemid=0" title="Basic PATTERN"><img src="/joomla/images/stories/virtuemart/product/resized/cart_logo_90x90.jpg" alt="cart_logo" class="featuredProductImage" border="0" /></a><div class="clear"></div>					<a href="/joomla/index.php/component/virtuemart/default-pattern/basic-pattern-detail?Itemid=0">Basic PATTERN</a>        <div class="clear"></div><div class="PricesalesPrice vm-display vm-price-value" ><span class="PricesalesPrice" >11,40 €</span></div><div class="PricesalesPriceWithDiscount vm-display vm-price-value" ><span class="PricesalesPriceWithDiscount" >11,40 €</span></div>
+					
+					<a href="/joomla/index.php/component/virtuemart/accessories/product-w-child-variant-w-cart-variant-detail?Itemid=0" class="prod-title">Basic PATTERN</a>        
+					<a href="/joomla/index.php/component/virtuemart/default-pattern/basic-pattern-detail?Itemid=0" title="Basic PATTERN"><img src="/joomla/images/stories/virtuemart/product/resized/cart_logo_90x90.jpg" alt="cart_logo" class="featuredProductImage" border="0" /></a><div class="clear"></div>					<div class="clear"></div><div class="PricesalesPrice vm-display vm-price-value" ><span class="PricesalesPrice" >11,40 €</span></div><div class="PricesalesPriceWithDiscount vm-display vm-price-value" ><span class="PricesalesPriceWithDiscount" >11,40 €</span></div>
 	<div class="addtocart-area">
 		<form method="post" class="product js-recalculate" action="/joomla/index.php/component/virtuemart/">
 			<div class="vm-customfields-wrap">
@@ -107,7 +113,9 @@
 			</div>
 				</div><div style='clear:both;'>			<div class="col-sm-4">
 				<div class="spacer">
-					<a href="/joomla/index.php/component/virtuemart/default-pattern/basic-pattern197-detail?Itemid=0" title="Basic child"><img src="/joomla/images/stories/virtuemart/product/resized/cart_logo_90x90.jpg" alt="cart_logo" class="featuredProductImage" border="0" /></a><div class="clear"></div>					<a href="/joomla/index.php/component/virtuemart/default-pattern/basic-pattern197-detail?Itemid=0">Basic child</a>        <div class="clear"></div><div class="PricesalesPrice vm-display vm-price-value" ><span class="PricesalesPrice" >11,40 €</span></div><div class="PricesalesPriceWithDiscount vm-display vm-price-value" ><span class="PricesalesPriceWithDiscount" >11,40 €</span></div>
+					
+					<a href="/joomla/index.php/component/virtuemart/default-pattern/basic-pattern-detail?Itemid=0" class="prod-title">Basic child</a>        
+					<a href="/joomla/index.php/component/virtuemart/default-pattern/basic-pattern197-detail?Itemid=0" title="Basic child"><img src="/joomla/images/stories/virtuemart/product/resized/cart_logo_90x90.jpg" alt="cart_logo" class="featuredProductImage" border="0" /></a><div class="clear"></div>					<div class="clear"></div><div class="PricesalesPrice vm-display vm-price-value" ><span class="PricesalesPrice" >11,40 €</span></div><div class="PricesalesPriceWithDiscount vm-display vm-price-value" ><span class="PricesalesPriceWithDiscount" >11,40 €</span></div>
 	<div class="addtocart-area">
 		<form method="post" class="product js-recalculate" action="/joomla/index.php/component/virtuemart/">
 			<div class="vm-customfields-wrap">
@@ -140,7 +148,9 @@
 			</div>
 						<div class="col-sm-4">
 				<div class="spacer">
-					<a href="/joomla/index.php/component/virtuemart/default-pattern/basic-price-overwrite-detail?Itemid=0" title="Basic price overwrite"><img src="/joomla/images/stories/virtuemart/product/resized/cart_logo_90x90.jpg" alt="cart_logo" class="featuredProductImage" border="0" /></a><div class="clear"></div>					<a href="/joomla/index.php/component/virtuemart/default-pattern/basic-price-overwrite-detail?Itemid=0">Basic price overwrite</a>        <div class="clear"></div><div class="PricesalesPrice vm-display vm-price-value" ><span class="PricesalesPrice" >22,80 €</span></div><div class="PricesalesPriceWithDiscount vm-display vm-price-value" ><span class="PricesalesPriceWithDiscount" >22,80 €</span></div>
+					
+					<a href="/joomla/index.php/component/virtuemart/default-pattern/basic-pattern197-detail?Itemid=0" class="prod-title">Basic price overwrite</a>        
+					<a href="/joomla/index.php/component/virtuemart/default-pattern/basic-price-overwrite-detail?Itemid=0" title="Basic price overwrite"><img src="/joomla/images/stories/virtuemart/product/resized/cart_logo_90x90.jpg" alt="cart_logo" class="featuredProductImage" border="0" /></a><div class="clear"></div>					<div class="clear"></div><div class="PricesalesPrice vm-display vm-price-value" ><span class="PricesalesPrice" >22,80 €</span></div><div class="PricesalesPriceWithDiscount vm-display vm-price-value" ><span class="PricesalesPriceWithDiscount" >22,80 €</span></div>
 	<div class="addtocart-area">
 		<form method="post" class="product js-recalculate" action="/joomla/index.php/component/virtuemart/">
 			<div class="vm-customfields-wrap">
@@ -173,7 +183,9 @@
 			</div>
 						<div class="col-sm-4">
 				<div class="spacer">
-					<a href="/joomla/index.php/component/virtuemart/pagination-testarea/3-product-1st-pattern-detail?Itemid=0" title="3- Product 1st PATTERN"><img src="/joomla/images/stories/virtuemart/product/resized/cart_logo_90x90.jpg" alt="cart_logo" class="featuredProductImage" border="0" /></a><div class="clear"></div>					<a href="/joomla/index.php/component/virtuemart/pagination-testarea/3-product-1st-pattern-detail?Itemid=0">3- Product 1st PATTERN</a>        <div class="clear"></div><div class="PricesalesPrice vm-display vm-price-value" ><span class="PricesalesPrice" >50,16 €</span></div><div class="PricesalesPriceWithDiscount vm-display vm-price-value" ><span class="PricesalesPriceWithDiscount" >50,16 €</span></div>
+					
+					<a href="/joomla/index.php/component/virtuemart/default-pattern/basic-price-overwrite-detail?Itemid=0" class="prod-title">3- Product 1st PATTERN</a>        
+					<a href="/joomla/index.php/component/virtuemart/sony-playstation/3-product-1st-pattern-detail?Itemid=0" title="3- Product 1st PATTERN"><img src="/joomla/images/stories/virtuemart/product/resized/cart_logo_90x90.jpg" alt="cart_logo" class="featuredProductImage" border="0" /></a><div class="clear"></div>					<div class="clear"></div><div class="PricesalesPrice vm-display vm-price-value" ><span class="PricesalesPrice" >50,16 €</span></div><div class="PricesalesPriceWithDiscount vm-display vm-price-value" ><span class="PricesalesPriceWithDiscount" >50,16 €</span></div>
 	<div class="addtocart-area">
 		<form method="post" class="product js-recalculate" action="/joomla/index.php/component/virtuemart/">
 			<div class="vm-customfields-wrap">

@@ -334,7 +334,7 @@ article aside .btn-group > .dropdown-toggle .caret {
   border: 1px solid #eeeeee;
   margin-bottom: 20px;
   padding: 10px 20px;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 .reset .form-validate fieldset dl,
 .remind .form-validate fieldset dl {
@@ -600,7 +600,7 @@ div.finder {
 #article-index,
 .article-index {
   border: 1px solid #eeeeee;
-  border-radius: 4px;
+  border-radius: 2px;
   float: right;
   padding: 10px;
   margin: 0 0 20px 20px;
@@ -622,7 +622,7 @@ div.finder {
 .article-index ul > li > a {
   border: 0;
   padding: 5px;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 #article-index ul > .active > a,
 .article-index ul > .active > a {
@@ -658,7 +658,7 @@ div.finder {
   padding: 10px 20px;
   line-height: normal;
   border: 1px solid #dddddd;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 .pagenav li > a:hover,
 .pagenav li > a:active,

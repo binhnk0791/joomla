@@ -38,11 +38,14 @@
 // Module Title
 // ------------
 .module-title {
-  background: @t3-module-title-bg;
-  color: @t3-module-title-color;
-  font-size: @font-size-large;
+  background: darken(@brand-primary, 10%);
+  color: @white;
+  font-size: @font-size-base;
+  text-transform: uppercase;
   margin: 0 0 (@line-height-computed / 2) 0;
   padding: @t3-module-title-padding;
+  display: inline-block;
+  font-weight: 700;
 
   // Larger margin on Tablet / Desktop
   @media screen and (min-width: @screen-sm) {
@@ -311,3 +314,12 @@ ul.latestusers {
   margin-left: 0;
 }
 
+// Custom Modules
+
+.acymailing_module {
+	.acymailing_module_form {
+		.acymailing_introtext {
+			margin-bottom: @t3-global-padding/2 !important;
+		}
+	}
+}

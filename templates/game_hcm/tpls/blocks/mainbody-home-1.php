@@ -20,16 +20,6 @@ defined('_JEXEC') or die;
 		<!-- //HOME SL 1 -->
 	<?php endif ?>
 
-	<?php if ($this->countModules('home-2')) : ?>
-		<!-- HOME SL 2 -->
-		<div class="wrap t3-sl t3-sl-2 <?php $this->_c('home-2') ?>">
-			<div class="container">
-				<jdoc:include type="modules" name="<?php $this->_p('home-2') ?>" style="raw" />
-			</div>
-		</div>
-		<!-- //HOME SL 2 -->
-	<?php endif ?>
-
 	<?php if ($this->countModules('home-side-1') || $this->countModules('home-side-2')) : ?>
 	<div class="container">
 		<div class="row">
@@ -41,5 +31,15 @@ defined('_JEXEC') or die;
 			</div>
 		</div>
 	</div>
+	<?php endif ?>
+
+		<?php if ($this->countModules('home-2')) : ?>
+		<!-- HOME SL 2 -->
+		<div class="wrap t3-sl t3-sl-2 <?php $this->_c('home-2') ?>">
+			<div class="container">
+				<jdoc:include type="modules" name="<?php $this->_p('home-2') ?>" style="raw" />
+			</div>
+		</div>
+		<!-- //HOME SL 2 -->
 	<?php endif ?>
 </div>

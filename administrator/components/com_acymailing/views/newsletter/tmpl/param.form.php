@@ -35,6 +35,7 @@ if(acymailing_isAllowed($this->config->get('acl_newsletters_lists', 'all')) || a
 		}else echo $this->tabs->endPanel();
 
 		if(acymailing_isAllowed($this->config->get('acl_newsletters_attachments', 'all'))){
+			JHTML::_('behavior.modal', 'a.modal');
 			echo $this->tabs->startPanel(JText::_('ATTACHMENTS'), 'mail_attachments');
 			if(!empty($this->mail->attach)){
 				echo '<div class="onelineblockoptions">

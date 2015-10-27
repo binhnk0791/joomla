@@ -1,3 +1,49 @@
+// Global
+.addtocart-bar{
+	.addtocart-button {
+		.addtocart-button {
+			background: @brand-primary;
+			color: @white;
+			font-size: @font-size-base;
+			text-transform: uppercase;
+			padding: @t3-global-padding/3;
+			border-radius: @border-radius-base;
+			font-weight: 700;
+			border-color: darken(@brand-primary, 5%);
+
+			&:hover,
+			&:focus {
+				border-color: @brand-primary;
+				background: lighten(@brand-primary, 10%);
+				color: @white;
+			}
+		}
+	}
+
+	// Quantity box
+	.quantity-box {
+		.quantity-input {
+			background: @white;
+			border-color: @t3-border-color;
+			width: 30px;
+			height: 30px;
+			border-radius: @border-radius-base;
+			box-shadow: none;
+		}
+	}
+
+	// Quantity control
+	.quantity-controls {
+		.quantity-controls {
+			color: @white;
+			border-radius: @border-radius-base;
+			font-size: 12px;
+		}
+	}
+}
+
+// Specific
+
 .vmproduct {
 	.clearfix();
 	margin: 0;
@@ -6,8 +52,6 @@
 		display: block;
 		padding: 0 @t3-global-padding/2;
 	}
-
-
 }
 
 .vmgroup {
@@ -23,5 +67,31 @@
 			color: @gray;
 			display: block;
 		}
+	}
+}
+
+// Manufacturer
+.vmmanufacturer {
+	margin: 0;
+	padding: 0;
+	li {
+		margin: 0;
+		padding: 0;
+		display: inline-block;
+		width: 30%;
+		padding: 5px;
+
+		a {
+			
+		}
+	}
+}
+
+
+.browse-view {
+	h1 {
+		font-size: @font-size-h3;
+		text-transform: uppercase;
+		font-weight: 700;
 	}
 }

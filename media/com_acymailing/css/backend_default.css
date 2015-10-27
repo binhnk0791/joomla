@@ -2266,8 +2266,9 @@ ul.buttonOptions{
 	margin: 0px 10px;
 }
 
-.m .titleid img{
-	display: none
+.m th.title img{
+	margin-left: 5px;
+	max-width: 10px;
 }
 
 .m .statsubjectsenddate img{

@@ -33,6 +33,8 @@ defined('_JEXEC') or die;
 
   <?php $this->loadBlock('mainnav') ?>
 
+  <?php $this->loadBlock('masthead') ?>
+
   <?php $this->loadBlock('spotlight-1') ?>
 
   <?php $this->loadBlock('mainbody-content-right') ?>
