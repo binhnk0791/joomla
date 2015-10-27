@@ -2,8 +2,8 @@
 -- version 4.5.1
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: Oct 26, 2015 at 03:23 PM
+-- Host: 127.0.0.1
+-- Generation Time: Oct 27, 2015 at 09:45 AM
 -- Server version: 5.6.27
 -- PHP Version: 5.5.27
 
@@ -105,15 +105,18 @@ INSERT INTO `pz5yp_acymailing_config` (`namekey`, `value`) VALUES
 ('bootstrap_frontend', '0'),
 ('menu_position', 'under'),
 ('unsub_reasons', 'a:2:{i:0;s:21:"UNSUB_SURVEY_FREQUENT";i:1;s:21:"UNSUB_SURVEY_RELEVANT";}'),
-('installcomplete', '0'),
+('installcomplete', '1'),
 ('Starter', '0'),
 ('Essential', '1'),
 ('Business', '2'),
 ('Enterprise', '3'),
-('website', 'http://localhost/tasks/sushiko/'),
+('website', 'http://localhost:600/joomla/'),
 ('max_execution_time', '0'),
 ('module_redirect', 'localhost|192.168.11.8|10cdfcc2.ngrok.com|2e9f3df9.ngrok.com|192.168.21.119|binhnk.info|sushikolv.com'),
-('security_key', 'BAQs9HUvFqKuca3WBNjhmW6dDOqTkd');
+('security_key', 'BAQs9HUvFqKuca3WBNjhmW6dDOqTkd'),
+('latestversion', '5.0.0'),
+('expirationdate', '0'),
+('lastlicensecheck', '1445911834');
 
 -- --------------------------------------------------------
 
@@ -337,7 +340,7 @@ INSERT INTO `pz5yp_acymailing_mail` (`mailid`, `subject`, `body`, `altbody`, `pu
 (5, 'New contact from your website : {user:email}', '<p>Hello {subtag:name},</p><p>A user submitted the form : </p><blockquote><p>Name : {user:name}</p><p>Email : {user:email}</p><p>IP : {user:ip} </p><p>Subscription : {user:subscription}</p></blockquote>', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, 'notification', 0, NULL, 'notification_contact', NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, NULL, ''),
 (6, 'A user subscribed or modified his subscription : {user:email}', '<p>Hello {subtag:name},</p><p>A user submitted the form : </p><blockquote><p>Name : {user:name}</p><p>Email : {user:email}</p><p>IP : {user:ip} </p><p>Subscription : {user:subscription}</p></blockquote>', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, 'notification', 0, NULL, 'notification_contact_menu', NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, NULL, ''),
 (7, 'A user confirmed his subscription : {user:email}', '<p>Hello {subtag:name},</p><p>A user confirmed his subscription : </p><blockquote><p>Name : {user:name}</p><p>Email : {user:email}</p><p>IP : {user:ip} </p><p>Subscription : {user:subscription}</p></blockquote>', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, 'notification', 0, NULL, 'notification_confirm', NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, NULL, ''),
-(8, '{subtag:name|ucfirst}, {trans:PLEASE_CONFIRM_SUB}', '<div style="text-align: center; width: 100%; background-color: #ffffff;">\r\n			<table style="text-align:justify; margin:auto; background-color:#ebebeb; border:1px solid #e7e7e7" border="0" cellspacing="0" cellpadding="0" width="600" align="center" bgcolor="#ebebeb">\r\n			<tbody>\r\n			<tr style="line-height: 0px;">\r\n			<td style="line-height: 0px;" height="38px"><img src="media/com_acymailing/templates/newsletter-4/images/top.png" border="0" alt=" - - - " /></td>\r\n			</tr>\r\n			<tr>\r\n			<td style="text-align:center" width="600">\r\n			<table style="margin:auto;" border="0" cellspacing="0" cellpadding="0" width="520">\r\n			<tbody>\r\n			<tr>\r\n			<td style="background-color: #ffffff; border: 1px solid #dbdbdb; padding: 20px; width: 500px; margin: 15px auto; text-align: left;">\r\n			<h1>Hello {subtag:name|ucfirst},</h1>\r\n			<p>{trans:CONFIRM_MSG}<br /><br />{trans:CONFIRM_MSG_ACTIVATE}</p>\r\n			<br />\r\n			<p style="text-align:center;"><strong>{confirm}{trans:CONFIRM_SUBSCRIPTION}{/confirm}</strong></p>\r\n			</td>\r\n			</tr>\r\n			</tbody>\r\n			</table>\r\n			</td>\r\n			</tr>\r\n			<tr style="line-height: 0px;">\r\n			<td style="line-height: 0px;" height="40px"><img src="media/com_acymailing/templates/newsletter-4/images/bottom.png" border="0" alt=" - - - " /></td>\r\n			</tr>\r\n			</tbody>\r\n			</table>\r\n			</div>', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, 'notification', 0, NULL, 'confirmation', NULL, 1, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, NULL, ''),
+(8, '{subtag:name|ucfirst}, {trans:PLEASE_CONFIRM_SUB}', '<div style="text-align: center; width: 100%; background-color: #ffffff;">\r\n			<table style="text-align:justify; margin:auto; background-color:#ebebeb; border:1px solid #e7e7e7" border="0" cellspacing="0" cellpadding="0" width="600" align="center" bgcolor="#ebebeb">\r\n			<tbody>\r\n			<tr style="line-height: 0px;">\r\n			<td style="line-height: 0px;" height="38px"><img src="media/com_acymailing/templates/newsletter-4/images/top.png" border="0" alt=" - - - " /></td>\r\n			</tr>\r\n			<tr>\r\n			<td style="text-align:center" width="600">\r\n			<table style="margin:auto;" border="0" cellspacing="0" cellpadding="0" width="520">\r\n			<tbody>\r\n			<tr>\r\n			<td style="background-color: #ffffff; border: 1px solid #dbdbdb; padding: 20px; width: 500px; margin: 15px auto; text-align: left;">\r\n			<h1>Hello {subtag:name|ucfirst},</h1>\r\n			<p>{trans:CONFIRM_MSG}<br /><br />{trans:CONFIRM_MSG_ACTIVATE}</p>\r\n			<br />\r\n			<p style="text-align:center;"><strong>{confirm}{trans:CONFIRM_SUBSCRIPTION}{/confirm}</strong></p>\r\n			</td>\r\n			</tr>\r\n			</tbody>\r\n			</table>\r\n			</td>\r\n			</tr>\r\n			<tr style="line-height: 0px;">\r\n			<td style="line-height: 0px;" height="40px"><img src="media/com_acymailing/templates/newsletter-4/images/bottom.png" border="0" alt=" - - - " /></td>\r\n			</tr>\r\n			</tbody>\r\n			</table>\r\n			</div>', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, 'notification', 0, NULL, 'confirmation', NULL, 1, 1, NULL, NULL, 'a:3:{s:6:"action";s:7:"confirm";s:13:"actionbtntext";s:28:"{trans:CONFIRM_SUBSCRIPTION}";s:9:"actionurl";s:19:"{confirm}{/confirm}";}', NULL, NULL, NULL, NULL, '', NULL, NULL, ''),
 (9, 'AcyMailing Cron Report {mainreport}', '<p>{report}</p><p>{detailreport}</p>', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, 'notification', 0, NULL, 'report', NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, NULL, ''),
 (10, 'Modify your subscription', '<p>Hello {subtag:name}, </p><p>You requested some changes on your subscription,</p><p>Please {modify}click here{/modify} to be identified as the owner of this account and then modify your subscription.</p>', '', 1, NULL, NULL, NULL, NULL, NULL, NULL, 'notification', 0, NULL, 'modif', NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, NULL, '');
 
@@ -543,7 +546,7 @@ CREATE TABLE `pz5yp_assets` (
 --
 
 INSERT INTO `pz5yp_assets` (`id`, `parent_id`, `lft`, `rgt`, `level`, `name`, `title`, `rules`) VALUES
-(1, 0, 1, 159, 0, 'root.1', 'Root Asset', '{"core.login.site":{"6":1,"2":1},"core.login.admin":{"6":1},"core.login.offline":{"6":1},"core.admin":{"8":1},"core.manage":{"7":1},"core.create":{"6":1,"3":1},"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"core.edit.own":{"6":1,"3":1}}'),
+(1, 0, 1, 177, 0, 'root.1', 'Root Asset', '{"core.login.site":{"6":1,"2":1},"core.login.admin":{"6":1},"core.login.offline":{"6":1},"core.admin":{"8":1},"core.manage":{"7":1},"core.create":{"6":1,"3":1},"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"core.edit.own":{"6":1,"3":1}}'),
 (2, 1, 1, 2, 1, 'com_admin', 'com_admin', '{}'),
 (3, 1, 3, 6, 1, 'com_banners', 'com_banners', '{"core.admin":{"7":1},"core.manage":{"6":1},"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
 (4, 1, 7, 8, 1, 'com_cache', 'com_cache', '{"core.admin":{"7":1},"core.manage":{"7":1}}'),
@@ -560,33 +563,33 @@ INSERT INTO `pz5yp_assets` (`id`, `parent_id`, `lft`, `rgt`, `level`, `name`, `t
 (15, 1, 37, 38, 1, 'com_media', 'com_media', '{"core.admin":{"7":1},"core.manage":{"6":1},"core.create":{"3":1},"core.delete":{"5":1}}'),
 (16, 1, 39, 40, 1, 'com_menus', 'com_menus', '{"core.admin":{"7":1},"core.manage":[],"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
 (17, 1, 41, 42, 1, 'com_messages', 'com_messages', '{"core.admin":{"7":1},"core.manage":{"7":1}}'),
-(18, 1, 43, 114, 1, 'com_modules', 'com_modules', '{"core.admin":{"7":1},"core.manage":[],"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
-(19, 1, 115, 118, 1, 'com_newsfeeds', 'com_newsfeeds', '{"core.admin":{"7":1},"core.manage":{"6":1},"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'),
-(20, 1, 119, 120, 1, 'com_plugins', 'com_plugins', '{"core.admin":{"7":1},"core.manage":[],"core.edit":[],"core.edit.state":[]}'),
-(21, 1, 121, 122, 1, 'com_redirect', 'com_redirect', '{"core.admin":{"7":1},"core.manage":[]}'),
-(22, 1, 123, 124, 1, 'com_search', 'com_search', '{"core.admin":{"7":1},"core.manage":{"6":1}}'),
-(23, 1, 125, 126, 1, 'com_templates', 'com_templates', '{"core.admin":{"7":1},"core.manage":[],"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
-(24, 1, 127, 130, 1, 'com_users', 'com_users', '{"core.admin":{"7":1},"core.manage":[],"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
-(25, 1, 131, 134, 1, 'com_weblinks', 'com_weblinks', '{"core.admin":{"7":1},"core.manage":{"6":1},"core.create":{"3":1},"core.delete":[],"core.edit":{"4":1},"core.edit.state":{"5":1},"core.edit.own":[]}'),
-(26, 1, 135, 136, 1, 'com_wrapper', 'com_wrapper', '{}'),
+(18, 1, 43, 132, 1, 'com_modules', 'com_modules', '{"core.admin":{"7":1},"core.manage":[],"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
+(19, 1, 133, 136, 1, 'com_newsfeeds', 'com_newsfeeds', '{"core.admin":{"7":1},"core.manage":{"6":1},"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'),
+(20, 1, 137, 138, 1, 'com_plugins', 'com_plugins', '{"core.admin":{"7":1},"core.manage":[],"core.edit":[],"core.edit.state":[]}'),
+(21, 1, 139, 140, 1, 'com_redirect', 'com_redirect', '{"core.admin":{"7":1},"core.manage":[]}'),
+(22, 1, 141, 142, 1, 'com_search', 'com_search', '{"core.admin":{"7":1},"core.manage":{"6":1}}'),
+(23, 1, 143, 144, 1, 'com_templates', 'com_templates', '{"core.admin":{"7":1},"core.manage":[],"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
+(24, 1, 145, 148, 1, 'com_users', 'com_users', '{"core.admin":{"7":1},"core.manage":[],"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
+(25, 1, 149, 152, 1, 'com_weblinks', 'com_weblinks', '{"core.admin":{"7":1},"core.manage":{"6":1},"core.create":{"3":1},"core.delete":[],"core.edit":{"4":1},"core.edit.state":{"5":1},"core.edit.own":[]}'),
+(26, 1, 153, 154, 1, 'com_wrapper', 'com_wrapper', '{}'),
 (27, 8, 18, 19, 2, 'com_content.category.2', 'Uncategorised', '{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'),
 (28, 3, 4, 5, 2, 'com_banners.category.3', 'Uncategorised', '{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
 (29, 7, 14, 15, 2, 'com_contact.category.4', 'Uncategorised', '{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'),
-(30, 19, 116, 117, 2, 'com_newsfeeds.category.5', 'Uncategorised', '{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'),
-(31, 25, 132, 133, 2, 'com_weblinks.category.6', 'Uncategorised', '{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'),
-(32, 24, 128, 129, 1, 'com_users.category.7', 'Uncategorised', '{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
-(33, 1, 137, 138, 1, 'com_finder', 'com_finder', '{"core.admin":{"7":1},"core.manage":{"6":1}}'),
-(34, 1, 139, 140, 1, 'com_joomlaupdate', 'com_joomlaupdate', '{"core.admin":[],"core.manage":[],"core.delete":[],"core.edit.state":[]}'),
+(30, 19, 134, 135, 2, 'com_newsfeeds.category.5', 'Uncategorised', '{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'),
+(31, 25, 150, 151, 2, 'com_weblinks.category.6', 'Uncategorised', '{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'),
+(32, 24, 146, 147, 1, 'com_users.category.7', 'Uncategorised', '{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
+(33, 1, 155, 156, 1, 'com_finder', 'com_finder', '{"core.admin":{"7":1},"core.manage":{"6":1}}'),
+(34, 1, 157, 158, 1, 'com_joomlaupdate', 'com_joomlaupdate', '{"core.admin":[],"core.manage":[],"core.delete":[],"core.edit.state":[]}'),
 (35, 8, 20, 21, 2, 'com_content.category.8', 'Menus', '{"core.create":{"6":1,"3":1},"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"core.edit.own":{"6":1,"3":1}}'),
 (36, 8, 22, 23, 2, 'com_content.category.9', 'Company', '{"core.create":{"6":1,"3":1},"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"core.edit.own":{"6":1,"3":1}}'),
-(37, 1, 141, 142, 1, 'com_acymailing', 'acymailing', '{}'),
-(40, 1, 143, 144, 1, 'com_virtuemart_allinone', 'virtuemart_allinone', '{}'),
-(46, 1, 145, 146, 1, 'com_tags', 'com_tags', '{}'),
-(47, 1, 147, 148, 1, 'com_contenthistory', 'com_contenthistory', '{}'),
-(48, 1, 149, 150, 1, 'com_ajax', 'com_ajax', '{}'),
-(49, 1, 151, 152, 1, 'com_postinstall', 'com_postinstall', '{}'),
+(37, 1, 159, 160, 1, 'com_acymailing', 'acymailing', '{}'),
+(40, 1, 161, 162, 1, 'com_virtuemart_allinone', 'virtuemart_allinone', '{}'),
+(46, 1, 163, 164, 1, 'com_tags', 'com_tags', '{}'),
+(47, 1, 165, 166, 1, 'com_contenthistory', 'com_contenthistory', '{}'),
+(48, 1, 167, 168, 1, 'com_ajax', 'com_ajax', '{}'),
+(49, 1, 169, 170, 1, 'com_postinstall', 'com_postinstall', '{}'),
 (51, 18, 44, 45, 2, 'com_modules.module.114', 'Featured Category Menus', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1}}'),
-(54, 1, 153, 154, 1, '#__ucm_content.1', '#__ucm_content.1', '[]'),
+(54, 1, 171, 172, 1, '#__ucm_content.1', '#__ucm_content.1', '[]'),
 (58, 18, 46, 47, 2, 'com_modules.module.115', 'Brand Listing', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1}}'),
 (59, 18, 48, 49, 2, 'com_modules.module.125', 'HikaShop Content Module', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1}}'),
 (60, 18, 50, 51, 2, 'com_modules.module.121', 'Latest products', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1}}'),
@@ -596,9 +599,9 @@ INSERT INTO `pz5yp_assets` (`id`, `parent_id`, `lft`, `rgt`, `level`, `name`, `t
 (64, 18, 58, 59, 2, 'com_modules.module.119', 'Categories on 2 levels', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1}}'),
 (65, 18, 60, 61, 2, 'com_modules.module.131', 'Associated products listing for category listing menu 191', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1}}'),
 (66, 18, 62, 63, 2, 'com_modules.module.133', 'Categories', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1}}'),
-(77, 1, 155, 156, 1, 'com_virtuemart', 'VIRTUEMART', '{}'),
+(77, 1, 173, 174, 1, 'com_virtuemart', 'VIRTUEMART', '{"core.admin":{"1":1},"core.manage":{"1":1},"vm.manage":{"1":1},"vm.managevendors":{"1":1},"vm.raw":{"1":1},"vm.html":{"1":1},"vm.category":[],"vm.category.edit":[],"vm.category.create":[],"vm.category.delete":[],"vm.category.edit.state":[],"vm.product":[],"vm.product.edit":[],"vm.product.create":[],"vm.product.delete":[],"vm.product.edit.state":[],"vm.inventory":[],"vm.ratings":[],"vm.ratings.edit":[],"vm.ratings.delete":[],"vm.ratings.edit.state":[],"vm.custom":[],"vm.custom.edit":[],"vm.custom.create":[],"vm.custom.delete":[],"vm.calc":[],"vm.calc.edit":[],"vm.calc.create":[],"vm.calc.delete":[],"vm.orders":[],"vm.orders.edit":[],"vm.orders.status":[],"vm.report":[],"vm.user":[],"vm.user.edit":[],"vm.user.editshop":[],"vm.shoppergroup":[],"vm.shoppergroup.edit":[],"vm.coupon":[],"vm.coupon.edit":[],"vm.coupon.create":[],"vm.coupon.delete":[],"vm.manufacturer":[],"vm.manufacturer.edit":[],"vm.manufacturer.create":[],"vm.manufacturer.delete":[],"vm.manufacturer.edit.state":[],"vm.manufacturercategories":[],"vm.media":[],"vm.media.edit":[],"vm.media.create":[],"vm.media.delete":[],"vm.shipmentmethod":[],"vm.shipmentmethod.edit":[],"vm.shipmentmethod.create":[],"vm.shipmentmethod.delete":[],"vm.paymentmethod":[],"vm.paymentmethod.edit":[],"vm.paymentmethod.create":[],"vm.paymentmethod.delete":[],"vm.config":[],"vm.userfields":[],"vm.orderstatus":[],"vm.currency":[],"vm.country":[],"vm.updatesmigration":[],"vm.about":[]}'),
 (78, 18, 64, 65, 2, 'com_modules.module.141', 'VM - Administrator Module', '{}'),
-(85, 1, 157, 158, 1, 'com_tcpdf', 'tcpdf', '{}'),
+(85, 1, 175, 176, 1, 'com_tcpdf', 'tcpdf', '{}'),
 (86, 18, 66, 67, 2, 'com_modules.module.142', 'JA Login', '{}'),
 (87, 18, 68, 69, 2, 'com_modules.module.143', 'JA Twitter Module', '{}'),
 (88, 18, 70, 71, 2, 'com_modules.module.144', 'Search', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}'),
@@ -620,9 +623,18 @@ INSERT INTO `pz5yp_assets` (`id`, `parent_id`, `lft`, `rgt`, `level`, `name`, `t
 (104, 18, 102, 103, 2, 'com_modules.module.160', 'Phụ Kiện', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}'),
 (105, 18, 104, 105, 2, 'com_modules.module.161', 'Secondhand', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}'),
 (106, 18, 106, 107, 2, 'com_modules.module.162', 'Features Banner footer', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}'),
-(107, 18, 108, 109, 2, 'com_modules.module.163', 'Footer Map', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}'),
+(107, 18, 108, 109, 2, 'com_modules.module.163', 'Liên Hệ', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}'),
 (108, 18, 110, 111, 2, 'com_modules.module.164', 'Sản Phẩm', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}'),
-(109, 18, 112, 113, 2, 'com_modules.module.165', 'Chính Sách', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}');
+(109, 18, 112, 113, 2, 'com_modules.module.165', 'Chính Sách', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}'),
+(110, 18, 114, 115, 2, 'com_modules.module.166', 'Newsletters', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}'),
+(111, 18, 116, 117, 2, 'com_modules.module.167', 'Footer Features', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}'),
+(112, 18, 118, 119, 2, 'com_modules.module.168', 'Hãng Nổi Bật', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}'),
+(113, 18, 120, 121, 2, 'com_modules.module.169', 'Product Search', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}'),
+(114, 18, 122, 123, 2, 'com_modules.module.170', 'Masthead', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}'),
+(115, 18, 124, 125, 2, 'com_modules.module.171', 'Category', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}'),
+(116, 18, 126, 127, 2, 'com_modules.module.172', 'Login', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}'),
+(117, 18, 128, 129, 2, 'com_modules.module.173', 'Manufacturers', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}'),
+(118, 18, 130, 131, 2, 'com_modules.module.174', 'Shopping Cart', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}');
 
 -- --------------------------------------------------------
 
@@ -1018,7 +1030,7 @@ INSERT INTO `pz5yp_extensions` (`extension_id`, `name`, `type`, `element`, `fold
 (100, 'PHPMailer', 'library', 'phpmailer', '', 0, 1, 1, 1, '{"legacy":false,"name":"PHPMailer","type":"library","creationDate":"2001","author":"PHPMailer","copyright":"(c) 2001-2003, Brent R. Matzelle, (c) 2004-2009, Andy Prevost. All Rights Reserved., (c) 2010-2011, Jim Jagielski. All Rights Reserved.","authorEmail":"jimjag@gmail.com","authorUrl":"https:\\/\\/code.google.com\\/a\\/apache-extras.org\\/p\\/phpmailer\\/","version":"5.2","description":"LIB_PHPMAILER_XML_DESCRIPTION","group":""}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (101, 'SimplePie', 'library', 'simplepie', '', 0, 1, 1, 1, '{"legacy":false,"name":"SimplePie","type":"library","creationDate":"2004","author":"SimplePie","copyright":"Copyright (c) 2004-2009, Ryan Parman and Geoffrey Sneddon","authorEmail":"","authorUrl":"http:\\/\\/simplepie.org\\/","version":"1.2","description":"LIB_SIMPLEPIE_XML_DESCRIPTION","group":""}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (102, 'phputf8', 'library', 'phputf8', '', 0, 1, 1, 1, '{"legacy":false,"name":"phputf8","type":"library","creationDate":"2006","author":"Harry Fuecks","copyright":"Copyright various authors","authorEmail":"hfuecks@gmail.com","authorUrl":"http:\\/\\/sourceforge.net\\/projects\\/phputf8","version":"0.5","description":"LIB_PHPUTF8_XML_DESCRIPTION","group":""}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
-(103, 'Joomla! Platform', 'library', 'joomla', '', 0, 1, 1, 1, '{"legacy":false,"name":"Joomla! Platform","type":"library","creationDate":"2008","author":"Joomla! Project","copyright":"Copyright (C) 2005 - 2014 Open Source Matters. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"http:\\/\\/www.joomla.org","version":"11.4","description":"LIB_JOOMLA_XML_DESCRIPTION","group":""}', '{"mediaversion":"239b4c4e9297e9bc112b70dc21804472"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(103, 'Joomla! Platform', 'library', 'joomla', '', 0, 1, 1, 1, '{"legacy":false,"name":"Joomla! Platform","type":"library","creationDate":"2008","author":"Joomla! Project","copyright":"Copyright (C) 2005 - 2014 Open Source Matters. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"http:\\/\\/www.joomla.org","version":"11.4","description":"LIB_JOOMLA_XML_DESCRIPTION","group":""}', '{"mediaversion":"dc264746d66527c41504b8f95f6aea77"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (104, 'IDNA Convert', 'library', 'idna_convert', '', 0, 1, 1, 1, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (105, 'FOF', 'library', 'fof', '', 0, 1, 1, 1, '{"legacy":false,"name":"FOF","type":"library","creationDate":"2013-10-08","author":"Nicholas K. Dionysopoulos / Akeeba Ltd","copyright":"(C)2011-2013 Nicholas K. Dionysopoulos","authorEmail":"nicholas@akeebabackup.com","authorUrl":"https://www.akeebabackup.com","version":"2.1.rc4","description":"Framework-on-Framework (FOF) - A rapid component development framework for Joomla!","group":""}', '{}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (106, 'PHPass', 'library', 'phpass', '', 0, 1, 1, 1, '{"legacy":false,"name":"PHPass","type":"library","creationDate":"2004-2006","author":"Solar Designer","authorEmail":"solar@openwall.com","authorUrl":"http://www.openwall.com/phpass","version":"0.3","description":"LIB_PHPASS_XML_DESCRIPTION","group":""}', '{}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
@@ -1128,17 +1140,17 @@ INSERT INTO `pz5yp_extensions` (`extension_id`, `name`, `type`, `element`, `fold
 (10007, 'AcyMailing : share on social networks', 'plugin', 'share', 'acymailing', 0, 1, 1, 0, '{"version":"1.0.0","author":"Acyba","creationDate":"August 2010"}', '', '', '', 0, '0000-00-00 00:00:00', 20, 0),
 (10008, 'AcyMailing : Statistics Plugin', 'plugin', 'stats', 'acymailing', 0, 1, 1, 0, '{"version":"3.7.0","author":"Acyba","creationDate":"September 2009"}', '', '', '', 0, '0000-00-00 00:00:00', 50, 0),
 (10009, 'AcyMailing table of contents generator', 'plugin', 'tablecontents', 'acymailing', 0, 1, 1, 0, '{"version":"1.0.0","author":"Acyba","creationDate":"January 2011"}', '', '', '', 0, '0000-00-00 00:00:00', 5, 0),
-(10010, 'AcyMailing Tag : CB User information', 'plugin', 'tagcbuser', 'acymailing', 0, 0, 1, 0, '{"version":"3.7.0","author":"Acyba","creationDate":"September 2009"}', '', '', '', 0, '0000-00-00 00:00:00', 4, 0),
+(10010, 'AcyMailing Tag : CB User information', 'plugin', 'tagcbuser', 'acymailing', 0, 0, 1, 0, '{"version":"3.7.1","author":"Acyba","creationDate":"September 2009"}', '', '', '', 0, '0000-00-00 00:00:00', 4, 0),
 (10011, 'AcyMailing Tag : content insertion', 'plugin', 'tagcontent', 'acymailing', 0, 1, 1, 0, '{"version":"3.7.0","author":"Acyba","creationDate":"September 2009"}', '', '', '', 0, '0000-00-00 00:00:00', 11, 0),
-(10012, 'AcyMailing Tag : Subscriber information', 'plugin', 'tagsubscriber', 'acymailing', 0, 1, 1, 0, '{"version":"4.8.1","author":"Acyba","creationDate":"novembre 2014"}', '', '', '', 0, '0000-00-00 00:00:00', 2, 0),
-(10013, 'AcyMailing Tag : Manage the Subscription', 'plugin', 'tagsubscription', 'acymailing', 0, 1, 1, 0, '{"version":"4.8.1","author":"Acyba","creationDate":"novembre 2014"}', '', '', '', 0, '0000-00-00 00:00:00', 1, 0),
-(10014, 'AcyMailing Tag : Date / Time', 'plugin', 'tagtime', 'acymailing', 0, 1, 1, 0, '{"version":"4.8.1","author":"Acyba","creationDate":"novembre 2014"}', '', '', '', 0, '0000-00-00 00:00:00', 5, 0),
-(10015, 'AcyMailing Tag : Joomla User Information', 'plugin', 'taguser', 'acymailing', 0, 1, 1, 0, '{"version":"4.8.1","author":"Acyba","creationDate":"novembre 2014"}', '', '', '', 0, '0000-00-00 00:00:00', 3, 0),
-(10016, 'AcyMailing Template Class Replacer', 'plugin', 'template', 'acymailing', 0, 1, 1, 0, '{"version":"4.8.1","author":"Acyba","creationDate":"novembre 2014"}', '', '', '', 0, '0000-00-00 00:00:00', 25, 0),
-(10017, 'AcyMailing Editor', 'plugin', 'acyeditor', 'editors', 0, 1, 1, 0, '{"version":"4.8.1","author":"Acyba","creationDate":"novembre 2014"}', '', '', '', 0, '0000-00-00 00:00:00', 5, 0),
-(10018, 'AcyMailing : (auto)Subscribe during Joomla registration', 'plugin', 'regacymailing', 'system', 0, 1, 1, 0, '{"version":"4.8.1","author":"Acyba","creationDate":"novembre 2014"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(10012, 'AcyMailing Tag : Subscriber information', 'plugin', 'tagsubscriber', 'acymailing', 0, 1, 1, 0, '{"version":"5.0.0","author":"Acyba","creationDate":"octobre 2015"}', '', '', '', 0, '0000-00-00 00:00:00', 2, 0),
+(10013, 'AcyMailing Tag : Manage the Subscription', 'plugin', 'tagsubscription', 'acymailing', 0, 1, 1, 0, '{"version":"5.0.0","author":"Acyba","creationDate":"octobre 2015"}', '', '', '', 0, '0000-00-00 00:00:00', 1, 0),
+(10014, 'AcyMailing Tag : Date / Time', 'plugin', 'tagtime', 'acymailing', 0, 1, 1, 0, '{"version":"5.0.0","author":"Acyba","creationDate":"octobre 2015"}', '', '', '', 0, '0000-00-00 00:00:00', 5, 0),
+(10015, 'AcyMailing Tag : Joomla User Information', 'plugin', 'taguser', 'acymailing', 0, 1, 1, 0, '{"version":"5.0.0","author":"Acyba","creationDate":"octobre 2015"}', '', '', '', 0, '0000-00-00 00:00:00', 3, 0),
+(10016, 'AcyMailing Template Class Replacer', 'plugin', 'template', 'acymailing', 0, 1, 1, 0, '{"version":"5.0.0","author":"Acyba","creationDate":"octobre 2015"}', '', '', '', 0, '0000-00-00 00:00:00', 25, 0),
+(10017, 'AcyMailing Editor', 'plugin', 'acyeditor', 'editors', 0, 1, 1, 0, '{"version":"5.0.0","author":"Acyba","creationDate":"octobre 2015"}', '', '', '', 0, '0000-00-00 00:00:00', 5, 0),
+(10018, 'AcyMailing : (auto)Subscribe during Joomla registration', 'plugin', 'regacymailing', 'system', 0, 1, 1, 0, '{"version":"5.0.0","author":"Acyba","creationDate":"octobre 2015"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (10019, 'AcyMailing Module', 'module', 'mod_acymailing', '', 0, 1, 1, 0, '{"version":"3.7.0","author":"Acyba","creationDate":"September 2009"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
-(10034, 'JA Content Popup', 'module', 'mod_jacontentpopup', '', 0, 1, 0, 0, '{"legacy":false,"name":"JA Content Popup","type":"module","creationDate":"22 May 2014","author":"JoomlArt.com","copyright":"Copyright (C), J.O.O.M Solutions Co., Ltd. All Rights Reserved.","authorEmail":"webmaster@joomlart.com","authorUrl":"www.joomlart.com","version":"1.1.0","description":"\\n\\t\\n\\t<div align=\\"left\\">\\n\\t<h2>JA Content Popup module for Joomla! 2.5 and Joomla! 3.3<\\/h2>\\n\\t<div style=''font-weight: normal''>\\n\\t\\t<p><span style=''color: #ff6600;''><strong>Overview:<\\/strong><\\/span> JA Content popup module allows easy and elegant display of articles (from selected categories) and display them with thumbnail image, title and description. The thumnails together build up a portfolio layout. The full article will be opened in a popup, which supports many cool animation types such as fading, verticle slices, zoom or rotate... <\\/p>\\n\\t\\t<strong><span style=''color: #ff0000;''>Features:<\\/span><\\/strong><br \\/>\\n\\t\\t<ul>\\n\\t\\t\\t<li>Native with Joomla! 2.5 & Joomla! 3.3<\\/li>\\n\\t\\t\\t<li>6 animation types supported.<\\/li>\\n\\t\\t\\t<li>Title and description display can be optional.<\\/li>\\n\\t\\t\\t<li>Easy to customize Item''s thumbnail size & popup size.<\\/li>\\n\\t\\t\\t<li>Limit number of items to display on one page.<\\/li>\\n\\t\\t\\t<li>Items can be grouped by categories.<\\/li>\\n\\t\\t\\t<li>...<\\/li>\\n\\t\\t<\\/ul>\\n\\t\\t<p><strong><span style=\\"color: #ff0000;\\">Upgrade Method:<\\/span><br \\/><\\/strong><\\/p>\\n\\t\\t<ol>\\n\\t\\t<li>You can install new version directly over this version. Uninstallation is not required. Backup any customized files before upgrading. OR<\\/li>\\n\\t\\t<li>Use <strong><a href=\\"http:\\/\\/extensions.joomla.org\\/extensions\\/core-enhancements\\/installers\\/12077\\" target=\\"_blank\\">JA Extensions Manager<\\/a><\\/strong> Component for easy upgrades and rollbacks. <strong><a href=\\"http:\\/\\/www.youtube.com\\/user\\/JoomlArt#p\\/c\\/BC9B0C0BFE98657E\\/2\\/mNAuJRmifG8\\" target=\\"_blank\\">Watch Video..<\\/a><\\/strong><\\/li>\\n\\t\\t<\\/ol>\\n\\t\\t<p><span style=\\"color: #008000;\\"><strong>Links:<\\/strong><\\/span><\\/p>\\n\\t\\t<ul>\\n\\t\\t<li><a target=\\"_blank\\" href=\\"http:\\/\\/pm.joomlart.com\\/browse\\/JAMODPOPUP\\">Report Bug<\\/a><\\/li>\\n\\t\\t<li><a target=\\"_blank\\" href=\\"http:\\/\\/update.joomlart.com\\/\\">Updates &amp; Versions<\\/a><\\/li>\\n\\t\\t<\\/ul>\\n\\t\\t<p>Copyright 2004 - 2014 <a href=\\"http:\\/\\/www.joomlart.com\\/\\" title=\\"Visit Joomlart.com!\\">JoomlArt.com<\\/a>.<\\/p>\\n\\t<\\/div>\\n\\t<\\/div>\\n\\t\\n\\t","group":""}', '{"source":"JANewsHelper","catsid":"","k2catsid":"","group_categories":"0","limited":"10","sort_order_field":"created","sort_order_field_cat":"name","sort_order":"DESC","show_titles":"1","show_introtext":"1","show_nav_control":"0","show_paging":"1","thumbnail_mode":"crop","use_ratio":"1","width":"100","height":"100","show_popup":"1","iframewidth":"500","iframeheight":"500","cache":"1","cache_time":"900","cachemode":"static"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(10034, 'JA Content Popup', 'module', 'mod_jacontentpopup', '', 0, 1, 0, 0, '{"name":"JA Content Popup","type":"module","creationDate":"03 April 2015","author":"JoomlArt.com","copyright":"Copyright (C), J.O.O.M Solutions Co., Ltd. All Rights Reserved.","authorEmail":"webmaster@joomlart.com","authorUrl":"www.joomlart.com","version":"1.1.2","description":"\\n\\t\\n\\t<div align=\\"left\\">\\n\\t<h2>JA Content Popup module for Joomla! 2.5 and Joomla! 3.3<\\/h2>\\n\\t<div style=''font-weight: normal''>\\n\\t\\t<p><span style=''color: #ff6600;''><strong>Overview:<\\/strong><\\/span> JA Content popup module allows easy and elegant display of articles (from selected categories) and display them with thumbnail image, title and description. The thumnails together build up a portfolio layout. The full article will be opened in a popup, which supports many cool animation types such as fading, verticle slices, zoom or rotate... <\\/p>\\n\\t\\t<strong><span style=''color: #ff0000;''>Features:<\\/span><\\/strong><br \\/>\\n\\t\\t<ul>\\n\\t\\t\\t<li>Native with Joomla! 2.5 & Joomla! 3.3<\\/li>\\n\\t\\t\\t<li>6 animation types supported.<\\/li>\\n\\t\\t\\t<li>Title and description display can be optional.<\\/li>\\n\\t\\t\\t<li>Easy to customize Item''s thumbnail size & popup size.<\\/li>\\n\\t\\t\\t<li>Limit number of items to display on one page.<\\/li>\\n\\t\\t\\t<li>Items can be grouped by categories.<\\/li>\\n\\t\\t\\t<li>...<\\/li>\\n\\t\\t<\\/ul>\\n\\t\\t<p><strong><span style=\\"color: #ff0000;\\">Upgrade Method:<\\/span><br \\/><\\/strong><\\/p>\\n\\t\\t<ol>\\n\\t\\t<li>You can install new version directly over this version. Uninstallation is not required. Backup any customized files before upgrading. OR<\\/li>\\n\\t\\t<li>Use <strong><a href=\\"http:\\/\\/extensions.joomla.org\\/extensions\\/core-enhancements\\/installers\\/12077\\" target=\\"_blank\\">JA Extensions Manager<\\/a><\\/strong> Component for easy upgrades and rollbacks. <strong><a href=\\"http:\\/\\/www.youtube.com\\/user\\/JoomlArt#p\\/c\\/BC9B0C0BFE98657E\\/2\\/mNAuJRmifG8\\" target=\\"_blank\\">Watch Video..<\\/a><\\/strong><\\/li>\\n\\t\\t<\\/ol>\\n\\t\\t<p><span style=\\"color: #008000;\\"><strong>Links:<\\/strong><\\/span><\\/p>\\n\\t\\t<ul>\\n\\t\\t<li><a target=\\"_blank\\" href=\\"http:\\/\\/pm.joomlart.com\\/browse\\/JAMODPOPUP\\">Report Bug<\\/a><\\/li>\\n\\t\\t<li><a target=\\"_blank\\" href=\\"http:\\/\\/update.joomlart.com\\/\\">Updates &amp; Versions<\\/a><\\/li>\\n\\t\\t<\\/ul>\\n\\t\\t<p>Copyright 2004 - 2014 <a href=\\"http:\\/\\/www.joomlart.com\\/\\" title=\\"Visit Joomlart.com!\\">JoomlArt.com<\\/a>.<\\/p>\\n\\t<\\/div>\\n\\t<\\/div>\\n\\t\\n\\t","group":"","filename":"mod_jacontentpopup"}', '{"source":"JANewsHelper","catsid":"","k2catsid":"","group_categories":"0","limited":"10","sort_order_field":"created","sort_order_field_cat":"name","sort_order":"DESC","show_titles":"1","show_introtext":"1","show_nav_control":"0","show_paging":"1","thumbnail_mode":"crop","use_ratio":"1","width":"100","height":"100","show_popup":"1","iframewidth":"500","iframeheight":"500","cache":"1","cache_time":"900","cachemode":"static"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (10070, 'MOD_JA_ACM', 'module', 'mod_ja_acm', '', 0, 1, 0, 0, '{"name":"MOD_JA_ACM","type":"module","creationDate":"03 July 2015","author":"JoomlArt","copyright":"Copyright \\u00a9 2005 - 2015 JoomlArt.com. All Rights Reserved.","authorEmail":"info@joomlart.com","authorUrl":"www.joomlart.com","version":"2.0.8","description":"\\n\\t\\t\\n\\t\\t<div align=\\"left\\">\\t\\t\\n\\t\\t\\t<div style=\\"background:url(''http:\\/\\/joomlart.s3.amazonaws.com\\/images\\/userguide\\/ja_templates\\/uber\\/acm-logo.png'') no-repeat top left;padding-left:100px;\\">\\n\\t\\t\\t\\t<h1>JA ACM Module for Joomla 2.5 & 3.4<\\/h1>\\n\\t\\t\\t\\t<div style=''font-weight: normal''>\\n\\t\\t\\t\\t\\t<p>JA ACM module (JoomlArt Advanced Custom module) is to help you build content blocks for your Joomla site easily based on pre-made layouts and styles. The content blocks together will build a landing page or a complete site for you. <\\/p>\\n\\t\\t\\t\\t<\\/div>\\n\\t\\t\\t<\\/div>\\n\\t\\t\\t<br \\/>\\n\\t\\t\\t<p>Highlighted features:<\\/p>\\n\\t\\t\\t<div style=''font-weight: normal''>\\n\\t\\t\\t\\t<ul>\\n\\t\\t\\t\\t\\t<li style=\\"background:url(''http:\\/\\/www.joomlart.com\\/templates\\/ja-v4\\/images\\/joomlart\\/icon-checklist.png'') no-repeat left center;padding:10px 0px 10px 20px;\\">12+ block types: At this phase, we round up typical blocks that Uber has to offer. Each block type comes with multiple styles.<\\/li>\\n\\t\\t\\t\\t\\t<li style=\\"background:url(''http:\\/\\/www.joomlart.com\\/templates\\/ja-v4\\/images\\/joomlart\\/icon-checklist.png'') no-repeat left center;padding:10px 0px 10px 20px;\\">Easy editing & defining your page-specific field sets within each block. Each block has its own LESS file, so you have full control to define your own class and style.<\\/li>\\n\\t\\t\\t\\t\\t<li style=\\"background:url(''http:\\/\\/www.joomlart.com\\/templates\\/ja-v4\\/images\\/joomlart\\/icon-checklist.png'') no-repeat left center;padding:10px 0px 10px 20px;\\">Content-creator-friendly: completely separate content & design. No longer mixing HTML syntax embedded inside article.<\\/li>\\n\\t\\t\\t\\t\\t<li style=\\"background:url(''http:\\/\\/www.joomlart.com\\/templates\\/ja-v4\\/images\\/joomlart\\/icon-checklist.png'') no-repeat left center;padding:10px 0px 10px 20px;\\">Allow us to dig deeper into the modular block approach which eases our page management effort.<\\/li>\\n\\t\\t\\t\\t<\\/ul>\\n\\t\\t\\t<\\/div>\\n\\t\\t\\t<br \\/>\\n\\t\\t\\t\\n\\t\\t<\\/div>\\n\\t\\t\\n\\t","group":"","filename":"mod_ja_acm"}', '{"jatools-config":"1","cache":"1","cache_time":"900","cachemode":"itemid"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (10074, 'isis', 'template', 'isis', '', 1, 1, 1, 0, '{"name":"isis","type":"template","creationDate":"3\\/30\\/2012","author":"Kyle Ledbetter","copyright":"Copyright (C) 2005 - 2012 Open Source Matters, Inc. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"","version":"1.0","description":"TPL_ISIS_XML_DESCRIPTION","group":""}', '{"templateColor":"","logoFile":""}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (10077, 'tagcontenttags', 'plugin', 'tagcontenttags', 'acymailing', 0, 0, 1, 0, 'false', '{}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
@@ -1770,19 +1782,19 @@ INSERT INTO `pz5yp_menu` (`id`, `menutype`, `title`, `alias`, `note`, `path`, `l
 (217, 'main', 'COM_VIRTUEMART_MENU_CONFIGURATION', 'com-virtuemart-menu-configuration', '', 'com-virtuemart/com-virtuemart-menu-configuration', 'index.php?option=com_virtuemart&view=config', 'component', 0, 206, 2, 10187, 0, '0000-00-00 00:00:00', 0, 1, 'components/com_virtuemart/assets/images/icon_16/menu-icon16-config.png', 0, '{}', 74, 75, 0, '', 1),
 (219, 'main', 'VirtueMart AIO', 'virtuemart-aio', '', 'virtuemart-aio', 'index.php?option=com_virtuemart_allinone', 'component', 0, 1, 1, 10188, 0, '0000-00-00 00:00:00', 0, 1, 'class:component', 0, '{}', 77, 78, 0, '', 1),
 (220, 'main', 'TCPDF', 'tcpdf', '', 'tcpdf', 'index.php?option=com_tcpdf', 'component', 0, 1, 1, 10216, 0, '0000-00-00 00:00:00', 0, 1, 'class:component', 0, '{}', 79, 80, 0, '', 1),
-(230, 'main', 'AcyMailing', 'acymailing', '', 'acymailing', 'index.php?option=com_acymailing', 'component', 0, 1, 1, 10003, 0, '0000-00-00 00:00:00', 0, 1, '../media/com_acymailing/images/icons/icon-16-acymailing.png', 0, '{}', 81, 96, 0, '', 1),
-(231, 'main', 'Users', 'users', '', 'acymailing/users', 'index.php?option=com_acymailing&ctrl=subscriber', 'component', 0, 230, 2, 10003, 0, '0000-00-00 00:00:00', 0, 1, '../media/com_acymailing/images/icons/icon-16-users.png', 0, '{}', 82, 83, 0, '', 1),
-(232, 'main', 'Lists', 'lists', '', 'acymailing/lists', 'index.php?option=com_acymailing&ctrl=list', 'component', 0, 230, 2, 10003, 0, '0000-00-00 00:00:00', 0, 1, '../media/com_acymailing/images/icons/icon-16-acylist.png', 0, '{}', 84, 85, 0, '', 1),
-(233, 'main', 'Newsletters', 'newsletters', '', 'acymailing/newsletters', 'index.php?option=com_acymailing&ctrl=newsletter', 'component', 0, 230, 2, 10003, 0, '0000-00-00 00:00:00', 0, 1, '../media/com_acymailing/images/icons/icon-16-newsletter.png', 0, '{}', 86, 87, 0, '', 1),
-(234, 'main', 'Templates', 'templates', '', 'acymailing/templates', 'index.php?option=com_acymailing&ctrl=template', 'component', 0, 230, 2, 10003, 0, '0000-00-00 00:00:00', 0, 1, '../media/com_acymailing/images/icons/icon-16-acytemplate.png', 0, '{}', 88, 89, 0, '', 1),
-(235, 'main', 'Queue', 'queue', '', 'acymailing/queue', 'index.php?option=com_acymailing&ctrl=queue', 'component', 0, 230, 2, 10003, 0, '0000-00-00 00:00:00', 0, 1, '../media/com_acymailing/images/icons/icon-16-process.png', 0, '{}', 90, 91, 0, '', 1),
-(236, 'main', 'Statistics', 'statistics', '', 'acymailing/statistics', 'index.php?option=com_acymailing&ctrl=stats', 'component', 0, 230, 2, 10003, 0, '0000-00-00 00:00:00', 0, 1, '../media/com_acymailing/images/icons/icon-16-stats.png', 0, '{}', 92, 93, 0, '', 1),
-(237, 'main', 'Configuration', 'configuration', '', 'acymailing/configuration', 'index.php?option=com_acymailing&ctrl=cpanel', 'component', 0, 230, 2, 10003, 0, '0000-00-00 00:00:00', 0, 1, '../media/com_acymailing/images/icons/icon-16-acyconfig.png', 0, '{}', 94, 95, 0, '', 1),
-(238, 'mainmenu', 'Sony Playstation', '2015-10-26-08-17-43', '', '2015-10-26-08-17-43', '#', 'url', 1, 1, 1, 0, 0, '0000-00-00 00:00:00', 0, 1, ' ', 0, '{"menu-anchor_title":"","menu-anchor_css":"","menu_image":"","menu_text":1}', 97, 98, 0, '*', 0),
-(239, 'mainmenu', 'Microsoft Xbox', '2015-10-26-08-18-45', '', '2015-10-26-08-18-45', '#', 'url', 1, 1, 1, 0, 0, '0000-00-00 00:00:00', 0, 1, ' ', 0, '{"menu-anchor_title":"","menu-anchor_css":"","menu_image":"","menu_text":1}', 99, 100, 0, '*', 0),
-(240, 'mainmenu', 'Digital Code', '2015-10-26-09-01-38', '', '2015-10-26-09-01-38', '#', 'url', 1, 1, 1, 0, 0, '0000-00-00 00:00:00', 0, 1, ' ', 0, '{"menu-anchor_title":"","menu-anchor_css":"","menu_image":"","menu_text":1}', 101, 102, 0, '*', 0),
-(241, 'mainmenu', 'Phụ Kiện', '2015-10-26-09-02-05', '', '2015-10-26-09-02-05', '#', 'url', 1, 1, 1, 0, 0, '0000-00-00 00:00:00', 0, 1, ' ', 0, '{"menu-anchor_title":"","menu-anchor_css":"","menu_image":"","menu_text":1}', 103, 104, 0, '*', 0),
-(242, 'mainmenu', 'Máy cũ', '2015-10-26-09-02-17', '', '2015-10-26-09-02-17', '#', 'url', 1, 1, 1, 0, 0, '0000-00-00 00:00:00', 0, 1, ' ', 0, '{"menu-anchor_title":"","menu-anchor_css":"","menu_image":"","menu_text":1}', 105, 106, 0, '*', 0);
+(238, 'mainmenu', 'Sony Playstation', 'sony-ps', '', 'sony-ps', 'index.php?option=com_virtuemart&view=category&virtuemart_category_id=3&virtuemart_manufacturer_id=0&categorylayout=0&showcategory=1&showproducts=1&productsublayout=0', 'component', 1, 1, 1, 10187, 0, '0000-00-00 00:00:00', 0, 1, ' ', 0, '{"menu-anchor_title":"","menu-anchor_css":"","menu_image":"","menu_text":1,"page_title":"","show_page_heading":"","page_heading":"","pageclass_sfx":"","menu-meta_description":"","menu-meta_keywords":"","robots":"","secure":0}', 81, 82, 0, '*', 0),
+(239, 'mainmenu', 'Microsoft Xbox', 'xbox', '', 'xbox', 'index.php?option=com_virtuemart&view=category&virtuemart_category_id=4&virtuemart_manufacturer_id=0&categorylayout=0&showcategory=1&showproducts=1&productsublayout=0', 'component', 1, 1, 1, 10187, 0, '0000-00-00 00:00:00', 0, 1, ' ', 0, '{"menu-anchor_title":"","menu-anchor_css":"","menu_image":"","menu_text":1,"page_title":"","show_page_heading":"","page_heading":"","pageclass_sfx":"","menu-meta_description":"","menu-meta_keywords":"","robots":"","secure":0}', 83, 84, 0, '*', 0),
+(240, 'mainmenu', 'Digital Code', 'digital-code', '', 'digital-code', 'index.php?option=com_virtuemart&view=category&virtuemart_category_id=2&virtuemart_manufacturer_id=0&categorylayout=0&showcategory=1&showproducts=1&productsublayout=0', 'component', 1, 1, 1, 10187, 0, '0000-00-00 00:00:00', 0, 1, ' ', 0, '{"menu-anchor_title":"","menu-anchor_css":"","menu_image":"","menu_text":1,"page_title":"","show_page_heading":"","page_heading":"","pageclass_sfx":"","menu-meta_description":"","menu-meta_keywords":"","robots":"","secure":0}', 85, 86, 0, '*', 0),
+(241, 'mainmenu', 'Phụ Kiện', 'accessories', '', 'accessories', 'index.php?option=com_virtuemart&view=category&virtuemart_category_id=1&virtuemart_manufacturer_id=0&categorylayout=0&showcategory=1&showproducts=1&productsublayout=0', 'component', 1, 1, 1, 10187, 0, '0000-00-00 00:00:00', 0, 1, ' ', 0, '{"menu-anchor_title":"","menu-anchor_css":"","menu_image":"","menu_text":1,"page_title":"","show_page_heading":"","page_heading":"","pageclass_sfx":"","menu-meta_description":"","menu-meta_keywords":"","robots":"","secure":0}', 87, 88, 0, '*', 0),
+(242, 'mainmenu', 'Máy cũ', '2hand', '', '2hand', 'index.php?option=com_virtuemart&view=category&virtuemart_category_id=7&virtuemart_manufacturer_id=0&categorylayout=0&showcategory=1&showproducts=1&productsublayout=0', 'component', 1, 1, 1, 10187, 0, '0000-00-00 00:00:00', 0, 1, ' ', 0, '{"menu-anchor_title":"","menu-anchor_css":"","menu_image":"","menu_text":1,"page_title":"","show_page_heading":"","page_heading":"","pageclass_sfx":"","menu-meta_description":"","menu-meta_keywords":"","robots":"","secure":0}', 89, 90, 0, '*', 0),
+(243, 'main', 'AcyMailing', 'acymailing', '', 'acymailing', 'index.php?option=com_acymailing', 'component', 0, 1, 1, 10003, 0, '0000-00-00 00:00:00', 0, 1, '../media/com_acymailing/images/icons/icon-16-acymailing.png', 0, '{}', 91, 106, 0, '', 1),
+(244, 'main', 'Users', 'users', '', 'acymailing/users', 'index.php?option=com_acymailing&ctrl=subscriber', 'component', 0, 243, 2, 10003, 0, '0000-00-00 00:00:00', 0, 1, '../media/com_acymailing/images/icons/icon-16-users.png', 0, '{}', 92, 93, 0, '', 1),
+(245, 'main', 'Lists', 'lists', '', 'acymailing/lists', 'index.php?option=com_acymailing&ctrl=list', 'component', 0, 243, 2, 10003, 0, '0000-00-00 00:00:00', 0, 1, '../media/com_acymailing/images/icons/icon-16-acylist.png', 0, '{}', 94, 95, 0, '', 1),
+(246, 'main', 'Newsletters', 'newsletters', '', 'acymailing/newsletters', 'index.php?option=com_acymailing&ctrl=newsletter', 'component', 0, 243, 2, 10003, 0, '0000-00-00 00:00:00', 0, 1, '../media/com_acymailing/images/icons/icon-16-newsletter.png', 0, '{}', 96, 97, 0, '', 1),
+(247, 'main', 'Templates', 'templates', '', 'acymailing/templates', 'index.php?option=com_acymailing&ctrl=template', 'component', 0, 243, 2, 10003, 0, '0000-00-00 00:00:00', 0, 1, '../media/com_acymailing/images/icons/icon-16-acytemplate.png', 0, '{}', 98, 99, 0, '', 1),
+(248, 'main', 'Queue', 'queue', '', 'acymailing/queue', 'index.php?option=com_acymailing&ctrl=queue', 'component', 0, 243, 2, 10003, 0, '0000-00-00 00:00:00', 0, 1, '../media/com_acymailing/images/icons/icon-16-process.png', 0, '{}', 100, 101, 0, '', 1),
+(249, 'main', 'Statistics', 'statistics', '', 'acymailing/statistics', 'index.php?option=com_acymailing&ctrl=stats', 'component', 0, 243, 2, 10003, 0, '0000-00-00 00:00:00', 0, 1, '../media/com_acymailing/images/icons/icon-16-stats.png', 0, '{}', 102, 103, 0, '', 1),
+(250, 'main', 'Configuration', 'configuration', '', 'acymailing/configuration', 'index.php?option=com_acymailing&ctrl=cpanel', 'component', 0, 243, 2, 10003, 0, '0000-00-00 00:00:00', 0, 1, '../media/com_acymailing/images/icons/icon-16-acyconfig.png', 0, '{}', 104, 105, 0, '', 1);
 
 -- --------------------------------------------------------
 
@@ -1881,16 +1893,16 @@ INSERT INTO `pz5yp_modules` (`id`, `asset_id`, `title`, `note`, `content`, `orde
 (86, 0, 'Joomla Version', '', '', 1, 'footer', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_version', 3, 1, '{"format":"short","product":"1","layout":"_:default","moduleclass_sfx":"","cache":"0"}', 1, '*'),
 (141, 78, 'VM - Administrator Module', '', '', 5, 'menu', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_vmmenu', 3, 1, '', 1, '*'),
 (142, 86, 'JA Login', '', '', 0, '', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 'mod_jalogin', 1, 1, '', 0, '*'),
-(143, 87, 'JA Twitter Module', '', '', 0, '', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 'mod_jatwitter', 1, 1, '', 0, '*'),
-(144, 88, 'Search', '', '', 1, 'toolbar-1', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_search', 1, 0, '{"label":"","width":"","text":"","button":"0","button_pos":"left","imagebutton":"0","button_text":"","opensearch":"1","opensearch_title":"","set_itemid":"0","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"itemid","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
+(143, 87, 'JA Twitter Module', '', '', 0, '', 254, '2015-10-27 02:15:51', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 'mod_jatwitter', 1, 1, '', 0, '*'),
+(144, 88, 'Search', '', '', 1, 'toolbar-1', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 'mod_search', 1, 0, '{"label":"","width":"","text":"","button":"0","button_pos":"left","imagebutton":"0","button_text":"","opensearch":"1","opensearch_title":"","set_itemid":"0","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"itemid","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
 (145, 89, 'Cart', '', '', 1, 'toolbar-2', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_virtuemart_cart', 1, 1, '{"moduleid_sfx":"","moduleclass_sfx":"","show_price":"1","show_product_list":"0","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
-(146, 90, 'Slideshow', '', '', 1, 'slideshow', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_jaslideshowlite', 1, 0, '{"folder":"images\\/cms\\/slideshow\\/","description":"[{\\"image\\":\\"1.jpg\\",\\"imageSrc\\":\\"http:\\/\\/localhost\\/joomla\\/images\\/cms\\/slideshow\\/1.jpg\\",\\"title\\":\\"RA MẮT 18.10.2015\\",\\"link\\":\\"\\",\\"description\\":\\"<p>Metal Gear Solid<\\/p>\\\\n<a href=\\\\\\"#\\\\\\" class=\\\\\\"btn btn-primary\\\\\\">MUA NGAY<\\/a>\\",\\"class\\":\\"\\",\\"show\\":true},{\\"image\\":\\"2.jpg\\",\\"imageSrc\\":\\"http:\\/\\/localhost\\/joomla\\/images\\/cms\\/slideshow\\/2.jpg\\",\\"title\\":\\"Ra Mat\\",\\"link\\":\\"#\\",\\"description\\":\\"<p>Metal Gear Solid<\\/p>\\\\n<a href=\\\\\\"#\\\\\\" class=\\\\\\"btn btn-primary\\\\\\">MUA NGAY<\\/a>\\",\\"class\\":\\"\\",\\"show\\":true}]","type":"fade","autoplay":"1","navigation":"0","mainWidth":"auto","mainHeight":"auto","thumbnail":"1","thumbWidth":"10","thumbHeight":"60","moduleclass_sfx":"","cache":"1","cache_time":"900","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
+(146, 90, 'Slideshow', '', '', 1, 'slideshow', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 'mod_jaslideshowlite', 1, 0, '{"folder":"images\\/cms\\/slideshow\\/","description":"[{\\"image\\":\\"1.jpg\\",\\"imageSrc\\":\\"http:\\/\\/localhost\\/joomla\\/images\\/cms\\/slideshow\\/1.jpg\\",\\"title\\":\\"RA MẮT 18.10.2015\\",\\"link\\":\\"\\",\\"description\\":\\"<p>Metal Gear Solid<\\/p>\\\\n<a href=\\\\\\"#\\\\\\" class=\\\\\\"btn btn-primary\\\\\\">MUA NGAY<\\/a>\\",\\"class\\":\\"\\",\\"show\\":true},{\\"image\\":\\"2.jpg\\",\\"imageSrc\\":\\"http:\\/\\/localhost\\/joomla\\/images\\/cms\\/slideshow\\/2.jpg\\",\\"title\\":\\"Ra Mat\\",\\"link\\":\\"#\\",\\"description\\":\\"<p>Metal Gear Solid<\\/p>\\\\n<a href=\\\\\\"#\\\\\\" class=\\\\\\"btn btn-primary\\\\\\">MUA NGAY<\\/a>\\",\\"class\\":\\"\\",\\"show\\":true}]","type":"fade","autoplay":"1","navigation":"0","mainWidth":"auto","mainHeight":"auto","thumbnail":"1","thumbWidth":"10","thumbHeight":"60","moduleclass_sfx":"","cache":"1","cache_time":"900","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
 (147, 91, 'Toolbar Phone', '', 'Phone Number', 1, 'toolbar-2', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_custom', 1, 0, '{"prepare_content":"0","backgroundimage":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"static","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
 (148, 92, 'Home Features Banner', '', '', 1, 'home-1', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_ja_acm', 1, 0, '{"jatools-config":"{\\":type\\":\\"game_hcm:features-intro\\",\\"features-intro\\":{\\"jatools-layout-features-intro\\":\\"style-1\\",\\"features-intro[block-intro]\\":[\\"\\"],\\"features-intro[block-extra-class]\\":[\\"\\"],\\"features-intro[block-bg]\\":[\\"\\"],\\"features-intro[features-style]\\":[\\"style-light\\"],\\"features-intro[full-width]\\":[\\"1\\"],\\"features-intro[columns]\\":[\\"4\\"],\\"features-intro[data]\\":{\\"features-intro[data][font-icon]\\":[\\"\\",\\"\\",\\"\\",\\"\\"],\\"features-intro[data][img-icon]\\":[\\"images\\/cms\\/features-banner\\/1.jpg\\",\\"images\\/cms\\/features-banner\\/2.jpg\\",\\"images\\/cms\\/features-banner\\/3.jpg\\",\\"images\\/cms\\/features-banner\\/4.jpg\\"],\\"features-intro[data][title]\\":[\\" \\",\\" \\",\\" \\",\\" \\"],\\"features-intro[data][description]\\":[\\"\\",\\"\\",\\"\\",\\"\\"],\\"rows\\":4,\\"cols\\":5,\\"type\\":\\"list\\"}}}","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"itemid","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
 (149, 93, 'Home Shop Tabs', '', '', 1, 'home-1', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', -2, 'mod_ja_acm', 1, 1, '{"jatools-config":"{\\":type\\":\\"game_hcm:tabs\\",\\"tabs\\":{\\"jatools-layout-tabs\\":\\"style-1\\",\\"tab[block-extra-class]\\":[\\"\\"],\\"tab[block-bg]\\":[\\"\\"],\\"tab[nav-tabs]\\":[\\"Expertise\\",\\"Selected Works\\"],\\"tab[img]\\":[\\"images\\/joomlart\\/corporate\\/mk_1.png\\",\\"images\\/joomlart\\/corporate\\/mk_2.png\\"],\\"tab[title]\\":[\\"\\",\\"\\"],\\"tab[intro]\\":[\\"We are a strategic consultant firm committed to building world-class brands through powerful, flexible strategies. We deliver comprehensive service in research and digital media.\\",\\"With partners around the globe, we deliver specialised services from an international perspective \\"],\\"tab[link]\\":[\\"#\\",\\"#\\"],\\"tab[text-btn]\\":[\\"Explore Our Works\\",\\"Explore Our Works\\"],\\"tab[icon-btn]\\":[\\"fa fa-angle-right\\",\\"fa fa-angle-right\\"],\\"tab[class-btn]\\":[\\"btn btn-border\\",\\"btn btn-primary btn-border\\"]}}","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"itemid","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
 (150, 94, 'Home Container Tabs', '', '', 1, 'home-1', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_ja_acm', 1, 0, '{"jatools-config":"{\\":type\\":\\"game_hcm:container-tabs\\",\\"container-tabs\\":{\\"jatools-layout-container-tabs\\":\\"style-1\\",\\"container-tabs[block-intro]\\":[\\"\\"],\\"container-tabs[block-extra-class]\\":[\\"\\"],\\"container-tabs[full-width]\\":[\\"1\\"],\\"container-tabs[position]\\":[\\"container-tabs\\"]}}","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"itemid","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
 (151, 95, 'Category', '', '', 1, 'container-tabs', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', -2, 'mod_virtuemart_category', 1, 1, '{"Parent_Category_id":"0","level":"2","layout":"all","cache":"1","moduleclass_sfx":"","class_sfx":"","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
-(152, 96, 'Lastest Products', '', '', 1, 'container-tabs', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_virtuemart_product', 1, 1, '{"layout":"default","product_group":"latest","max_items":"12","products_per_row":"4","display_style":"div","show_price":"1","show_addtocart":"1","headerText":"","footerText":"","filter_category":"0","virtuemart_category_id":"0","vmcache":"1","vmcachetime":"300","cache":"1","moduleclass_sfx":"","class_sfx":"","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
+(152, 96, 'Lastest Products', '', '', 1, 'container-tabs', 254, '2015-10-27 09:43:33', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_virtuemart_product', 1, 1, '{"layout":"default","product_group":"latest","max_items":"12","products_per_row":"4","display_style":"div","show_price":"1","show_addtocart":"1","headerText":"","footerText":"","filter_category":"0","virtuemart_category_id":"0","vmcache":"0","vmcachetime":"300","cache":"1","moduleclass_sfx":"","class_sfx":"","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
 (153, 97, 'Best Sale', '', '', 1, 'container-tabs', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_virtuemart_product', 1, 1, '{"layout":"default","product_group":"topten","max_items":"8","products_per_row":"4","display_style":"div","show_price":"1","show_addtocart":"1","headerText":"","footerText":"","filter_category":"0","virtuemart_category_id":"0","vmcache":"1","vmcachetime":"300","cache":"1","moduleclass_sfx":"","class_sfx":"","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
 (154, 98, 'Home Features Banner 2', '', '', 1, 'home-1', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_ja_acm', 1, 0, '{"jatools-config":"{\\":type\\":\\"game_hcm:features-intro\\",\\"features-intro\\":{\\"jatools-layout-features-intro\\":\\"style-1\\",\\"features-intro[block-intro]\\":[\\"\\"],\\"features-intro[block-extra-class]\\":[\\"\\"],\\"features-intro[block-bg]\\":[\\"\\"],\\"features-intro[features-style]\\":[\\"style-light\\"],\\"features-intro[full-width]\\":[\\"0\\"],\\"features-intro[columns]\\":[\\"3\\"],\\"features-intro[data]\\":{\\"features-intro[data][font-icon]\\":[\\"\\",\\"\\",\\"\\"],\\"features-intro[data][img-icon]\\":[\\"images\\/cms\\/bottom-banners\\/1.jpg\\",\\"images\\/cms\\/bottom-banners\\/2.jpg\\",\\"images\\/cms\\/bottom-banners\\/3.jpg\\"],\\"features-intro[data][title]\\":[\\" \\",\\" \\",\\" \\"],\\"features-intro[data][description]\\":[\\"\\",\\"\\",\\"\\"],\\"rows\\":3,\\"cols\\":5,\\"type\\":\\"list\\"}}}","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"itemid","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
 (155, 99, 'Sản Phẩm Nổi Bật', '', '', 1, 'home-1', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_virtuemart_product', 1, 1, '{"layout":"default","product_group":"random","max_items":"12","products_per_row":"4","display_style":"div","show_price":"1","show_addtocart":"1","headerText":"","footerText":"","filter_category":"0","virtuemart_category_id":"0","vmcache":"0","vmcachetime":"300","cache":"1","moduleclass_sfx":"","class_sfx":"","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
@@ -1900,10 +1912,19 @@ INSERT INTO `pz5yp_modules` (`id`, `asset_id`, `title`, `note`, `content`, `orde
 (159, 103, 'Đồ Hi-tech', '', '', 1, 'container-tabs-2', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_virtuemart_product', 1, 1, '{"layout":"default","product_group":"latest","max_items":"6","products_per_row":"3","display_style":"div","show_price":"1","show_addtocart":"1","headerText":"","footerText":"","filter_category":"0","virtuemart_category_id":"0","vmcache":"1","vmcachetime":"300","cache":"1","moduleclass_sfx":"","class_sfx":"","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
 (160, 104, 'Phụ Kiện', '', '', 1, 'container-tabs-2', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_virtuemart_product', 1, 1, '{"layout":"default","product_group":"random","max_items":"6","products_per_row":"3","display_style":"div","show_price":"1","show_addtocart":"1","headerText":"","footerText":"","filter_category":"0","virtuemart_category_id":"0","vmcache":"1","vmcachetime":"300","cache":"1","moduleclass_sfx":"","class_sfx":"","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
 (161, 105, 'Secondhand', '', '', 1, 'container-tabs-2', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_virtuemart_product', 1, 1, '{"layout":"default","product_group":"random","max_items":"3","products_per_row":"6","display_style":"list","show_price":"1","show_addtocart":"1","headerText":"","footerText":"","filter_category":"0","virtuemart_category_id":"0","vmcache":"1","vmcachetime":"300","cache":"1","moduleclass_sfx":"","class_sfx":"","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
-(162, 106, 'Features Banner footer', '', '', 1, 'footer-features', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_ja_acm', 1, 0, '{"jatools-config":"{\\":type\\":\\"game_hcm:features-intro\\",\\"features-intro\\":{\\"jatools-layout-features-intro\\":\\"style-1\\",\\"features-intro[block-intro]\\":[\\"\\"],\\"features-intro[block-extra-class]\\":[\\"\\"],\\"features-intro[block-bg]\\":[\\"\\"],\\"features-intro[features-style]\\":[\\"style-light\\"],\\"features-intro[full-width]\\":[\\"1\\"],\\"features-intro[columns]\\":[\\"3\\"],\\"features-intro[data]\\":{\\"features-intro[data][font-icon]\\":[\\"\\",\\"\\",\\"\\"],\\"features-intro[data][img-icon]\\":[\\"images\\/cms\\/bottom-banners\\/1.jpg\\",\\"images\\/cms\\/bottom-banners\\/2.jpg\\",\\"images\\/cms\\/bottom-banners\\/3.jpg\\"],\\"features-intro[data][title]\\":[\\" \\",\\" \\",\\" \\"],\\"features-intro[data][description]\\":[\\"\\",\\"\\",\\"\\"],\\"rows\\":3,\\"cols\\":5,\\"type\\":\\"list\\"}}}","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"itemid","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
-(163, 107, 'Footer Map', '', 'asdasd', 1, 'footer-1', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_custom', 1, 1, '{"prepare_content":"0","backgroundimage":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"static","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
+(162, 106, 'Features Banner footer', '', '', 1, 'footer-features', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_ja_acm', 1, 0, '{"jatools-config":"{\\":type\\":\\"game_hcm:features-intro\\",\\"features-intro\\":{\\"jatools-layout-features-intro\\":\\"style-2\\",\\"features-intro[block-intro]\\":[\\"\\"],\\"features-intro[block-extra-class]\\":[\\"\\"],\\"features-intro[block-bg]\\":[\\"\\"],\\"features-intro[features-style]\\":[\\"style-light\\"],\\"features-intro[full-width]\\":[\\"1\\"],\\"features-intro[columns]\\":[\\"3\\"],\\"features-intro[data]\\":{\\"features-intro[data][img-icon]\\":[\\"images\\/cms\\/footer-banner\\/1.png\\",\\"images\\/cms\\/footer-banner\\/2.png\\",\\"images\\/cms\\/footer-banner\\/3.png\\"],\\"features-intro[data][title]\\":[\\"\\",\\"\\",\\"\\"],\\"features-intro[data][url]\\":[\\"#\\",\\"#\\",\\"#\\"],\\"rows\\":3,\\"cols\\":4,\\"type\\":\\"list\\"}}}","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"itemid","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
+(163, 107, 'Liên Hệ', '', '<div class="obj-responsive">\r\n<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29793.996974407903!2d105.81941118949932!3d21.022695749697238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2zSGFub2ksIEhvw6BuIEtp4bq_bSwgSGFub2ksIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1445914562096" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>\r\n</div>', 1, 'footer-1', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_custom', 1, 1, '{"prepare_content":"0","backgroundimage":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"static","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
 (164, 108, 'Sản Phẩm', '', '', 1, 'footer-2', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_menu', 1, 1, '{"menutype":"mainmenu","base":"","startLevel":"1","endLevel":"0","showAllChildren":"0","tag_id":"","class_sfx":"","window_open":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"itemid","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
-(165, 109, 'Chính Sách', '', '', 1, 'footer-3', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_menu', 1, 1, '{"menutype":"defaultmenu","base":"","startLevel":"1","endLevel":"0","showAllChildren":"1","tag_id":"","class_sfx":"","window_open":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"itemid","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*');
+(165, 109, 'Chính Sách', '', '', 1, 'footer-3', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_menu', 1, 1, '{"menutype":"defaultmenu","base":"","startLevel":"1","endLevel":"0","showAllChildren":"1","tag_id":"","class_sfx":"","window_open":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"itemid","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
+(166, 110, 'Newsletters', '', '', 1, 'footer-4', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_acymailing', 1, 1, '{"effect":"normal","lists":"None","hiddenlists":"All","displaymode":"vertical","listschecked":"All","checkmode":"0","dropdown":"0","overlay":"0","link":"1","listposition":"before","customfields":"email","nametext":"","emailtext":"","fieldsize":"100%","displayfields":"0","introtext":"Đăng kí nhận tin Khuyến mãi,\\r\\nGiảm giá, Hàng mới về, \\r\\nSự kiện của HotGameHCM","finaltext":"","showsubscribe":"1","subscribetext":"","subscribetextreg":"","showunsubscribe":"0","unsubscribetext":"","redirectmode":"0","redirectlink":"","redirectlinkunsub":"","showterms":"0","showtermspopup":"1","termscontent":"0","mootoolsintro":"","mootoolsbutton":"","boxwidth":"250","boxheight":"200","moduleclass_sfx":" newsletter-highlight","textalign":"none","loggedin":"1","cache":"0","includejs":"header","itemid":"","loadmootools":"1","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
+(167, 111, 'Footer Features', '', '', 1, 'home-2', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_ja_acm', 1, 0, '{"jatools-config":"{\\":type\\":\\"game_hcm:features-intro\\",\\"features-intro\\":{\\"jatools-layout-features-intro\\":\\"style-2\\",\\"features-intro[block-intro]\\":[\\"\\"],\\"features-intro[block-extra-class]\\":[\\"\\"],\\"features-intro[block-bg]\\":[\\"\\"],\\"features-intro[features-style]\\":[\\"style-light\\"],\\"features-intro[full-width]\\":[\\"1\\"],\\"features-intro[columns]\\":[\\"3\\"],\\"features-intro[data]\\":{\\"features-intro[data][img-icon]\\":[\\"images\\/cms\\/feature-1.jpg\\",\\"images\\/cms\\/feature-2.jpg\\",\\"images\\/cms\\/feature-3.jpg\\"],\\"features-intro[data][title]\\":[\\"Various Design Options\\",\\"Powerful Yet Simple\\",\\"Flexible Customisation\\"],\\"features-intro[data][url]\\":[\\"\\",\\"\\",\\"\\"],\\"rows\\":3,\\"cols\\":4,\\"type\\":\\"list\\"}}}","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"itemid","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
+(168, 112, 'Hãng Nổi Bật', '', '', 2, 'home-2', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_ja_acm', 1, 1, '{"jatools-config":"{\\":type\\":\\"game_hcm:clients\\",\\"clients\\":{\\"jatools-layout-clients\\":\\"style-1\\",\\"clients[block-intro]\\":[\\"\\"],\\"clients[block-extra-class]\\":[\\"\\"],\\"clients[block-bg]\\":[\\"\\"],\\"clients[columns]\\":[\\"6\\"],\\"clients[acm-style]\\":[\\"style-light\\"],\\"clients[full-width]\\":[\\"0\\"],\\"clients[img-gray]\\":[\\"0\\"],\\"clients[img-opacity]\\":[\\"100\\"],\\"clients[client-item]\\":{\\"clients[client-item][client-logo]\\":[\\"images\\/cms\\/clients\\/1.png\\",\\"images\\/cms\\/clients\\/2.png\\",\\"images\\/cms\\/clients\\/3.png\\",\\"images\\/cms\\/clients\\/4.png\\",\\"images\\/cms\\/clients\\/5.png\\",\\"images\\/cms\\/clients\\/6.png\\"],\\"clients[client-item][client-name]\\":[\\"Nivea\\",\\"Biore\\",\\"Rmi\\",\\"\\",\\"\\",\\"\\"],\\"clients[client-item][client-link]\\":[\\"#\\",\\"#\\",\\"#\\",\\"#\\",\\"#\\",\\"#\\"],\\"rows\\":6,\\"cols\\":4,\\"type\\":\\"list\\"}}}","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"itemid","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
+(169, 113, 'Product Search', '', '', 1, 'toolbar-1', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_virtuemart_search', 1, 0, '{"width":"20","text":"Search...","filter_category":"0","button":"0","button_pos":"right","imagebutton":"0","button_text":"","set_itemid":"","moduleclass_sfx":"","cache":"1","cache_time":"900","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
+(170, 114, 'Masthead', '', '', 1, 'masthead', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_jamasshead', 1, 0, '{"default-title":"HCM Games","default-description":"","config":"[Masshead Itemid=\\"238 title=\\"Sony PlayStation\\" ]Description here[\\/Masshead]\\r\\n[Masshead Itemid=\\"239 title=\\"Sony PlayStation\\" ]Description here[\\/Masshead]\\r\\n[Masshead Itemid=\\"240 title=\\"Sony PlayStation\\" ]Description here[\\/Masshead]\\r\\n[Masshead Itemid=\\"241 title=\\"Sony PlayStation\\" ]Description here[\\/Masshead]\\r\\n[Masshead Itemid=\\"242 title=\\"Sony PlayStation\\" ]Description here[\\/Masshead]","layout":"_:default","moduleclass_sfx":"","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
+(171, 115, 'Category', '', '', 1, 'sidebar-2', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_virtuemart_category', 1, 1, '{"Parent_Category_id":"0","level":"0","layout":"default","cache":"1","moduleclass_sfx":"","class_sfx":"","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
+(172, 116, 'Login', '', '', 3, 'sidebar-2', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_login', 1, 1, '{"pretext":"","posttext":"","login":"","logout":"","greeting":"1","name":"0","usesecure":"0","usetext":"0","layout":"_:default","moduleclass_sfx":"","cache":"0","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
+(173, 117, 'Manufacturers', '', '', 4, 'sidebar-2', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_virtuemart_manufacturer', 1, 1, '{"show":"all","display_style":"list","manufacturers_per_row":"","headerText":"","footerText":"","cache":"1","moduleclass_sfx":"","class_sfx":"","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
+(174, 118, 'Shopping Cart', '', '', 2, 'sidebar-2', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_virtuemart_cart', 1, 1, '{"moduleid_sfx":"","moduleclass_sfx":"","show_price":"1","show_product_list":"1","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*');
 
 -- --------------------------------------------------------
 
@@ -1958,7 +1979,16 @@ INSERT INTO `pz5yp_modules_menu` (`moduleid`, `menuid`) VALUES
 (162, 0),
 (163, 0),
 (164, 0),
-(165, 0);
+(165, 0),
+(166, 0),
+(167, 0),
+(168, 0),
+(169, 0),
+(170, 0),
+(171, 0),
+(172, 0),
+(173, 0),
+(174, 0);
 
 -- --------------------------------------------------------
 
@@ -2116,8 +2146,8 @@ CREATE TABLE `pz5yp_session` (
 --
 
 INSERT INTO `pz5yp_session` (`session_id`, `client_id`, `guest`, `time`, `data`, `userid`, `username`) VALUES
-('4lo3sgmlgdrvh4ap7mcd00sem1', 0, 1, '1445872789', '__default|a:7:{s:15:"session.counter";i:122;s:19:"session.timer.start";i:1445865763;s:18:"session.timer.last";i:1445872691;s:17:"session.timer.now";i:1445872786;s:22:"session.client.browser";s:120:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36";s:8:"registry";O:24:"Joomla\\Registry\\Registry":2:{s:7:"\\0\\0\\0data";O:8:"stdClass":7:{s:13:"current_theme";N;s:17:"current_direction";s:3:"ltr";s:17:"current_key_sufix";s:5:"__ltr";s:23:"vars_last_modified__ltr";i:1445866627;s:22:"vars_urls_content__ltr";s:240:"plugins/system/t3/base-bs3/bootstrap/less/variables.less|plugins/system/t3/base-bs3/less/variables.less|templates/game_hcm/less/variables.less|plugins/system/t3/base-bs3/bootstrap/less/mixins.less|plugins/system/t3/base-bs3/less/mixins.less";s:23:"current_responsive__ltr";s:1:"1";s:14:"com_virtuemart";O:8:"stdClass":1:{s:14:"productdetails";O:8:"stdClass":2:{s:5:"limit";s:3:"int";s:10:"limitstart";i:0;}}}s:9:"separator";s:1:".";}s:4:"user";O:5:"JUser":26:{s:9:"\\0\\0\\0isRoot";b:0;s:2:"id";i:0;s:4:"name";N;s:8:"username";N;s:5:"email";N;s:8:"password";N;s:14:"password_clear";s:0:"";s:5:"block";N;s:9:"sendEmail";i:0;s:12:"registerDate";N;s:13:"lastvisitDate";N;s:10:"activation";N;s:6:"params";N;s:6:"groups";a:1:{i:0;s:1:"1";}s:5:"guest";i:1;s:13:"lastResetTime";N;s:10:"resetCount";N;s:12:"requireReset";N;s:10:"\\0\\0\\0_params";O:24:"Joomla\\Registry\\Registry":2:{s:7:"\\0\\0\\0data";O:8:"stdClass":0:{}s:9:"separator";s:1:".";}s:14:"\\0\\0\\0_authGroups";a:1:{i:0;i:1;}s:14:"\\0\\0\\0_authLevels";a:2:{i:0;i:1;i:1;i:1;}s:15:"\\0\\0\\0_authActions";N;s:12:"\\0\\0\\0_errorMsg";N;s:13:"\\0\\0\\0userHelper";O:18:"JUserWrapperHelper":0:{}s:10:"\\0\\0\\0_errors";a:0:{}s:3:"aid";i:0;}}__vm|a:4:{s:6:"manage";i:0;s:6:"vmcart";s:629:"{"cartProductsData":[{"virtuemart_product_id":21,"quantity":1,"customProductData":[]}],"vendorId":"1","lastVisitedCategoryId":0,"virtuemart_shipmentmethod_id":0,"virtuemart_paymentmethod_id":0,"automaticSelectedShipment":false,"automaticSelectedPayment":false,"order_number":null,"BT":0,"ST":0,"cartfields":null,"couponCode":"","_triesValidateCoupon":[],"order_language":"en-GB","pricesCurrency":null,"paymentCurrency":null,"_guest":1,"_inCheckOut":false,"_inConfirm":false,"_dataValidated":false,"_confirmDone":false,"STsameAsBT":1,"selected_shipto":0,"_fromCart":false,"layout":"default","layoutPath":"","virtuemart_cart_id":0}";s:23:"vmlastvisitedcategoryid";i:3;s:23:"vmlastvisitedproductids";a:1:{i:0;i:27;}}', 0, ''),
-('d5ajjtkcnoe0hvtfef81lhd057', 1, 0, '1445872908', '__default|a:9:{s:15:"session.counter";i:328;s:19:"session.timer.start";i:1445866318;s:18:"session.timer.last";i:1445872907;s:17:"session.timer.now";i:1445872908;s:22:"session.client.browser";s:120:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36";s:8:"registry";O:24:"Joomla\\Registry\\Registry":2:{s:7:"\\0\\0\\0data";O:8:"stdClass":6:{s:11:"application";O:8:"stdClass":1:{s:4:"lang";s:5:"en-GB";}s:13:"com_installer";O:8:"stdClass":2:{s:7:"message";s:0:"";s:17:"extension_message";s:0:"";}s:13:"com_templates";O:8:"stdClass":1:{s:4:"edit";O:8:"stdClass":1:{s:5:"style";O:8:"stdClass":2:{s:2:"id";a:1:{i:1;i:20;}s:4:"data";N;}}}s:11:"com_modules";O:8:"stdClass":3:{s:7:"modules";O:8:"stdClass":1:{s:6:"filter";O:8:"stdClass":1:{s:18:"client_id_previous";i:0;}}s:4:"edit";O:8:"stdClass":1:{s:6:"module";O:8:"stdClass":2:{s:2:"id";a:3:{i:0;i:156;i:1;i:152;i:2;i:148;}s:4:"data";N;}}s:3:"add";O:8:"stdClass":1:{s:6:"module";O:8:"stdClass":2:{s:12:"extension_id";i:10019;s:6:"params";a:0:{}}}}s:14:"com_virtuemart";O:8:"stdClass":1:{s:7:"product";O:8:"stdClass":1:{s:16:"filter_order_Dir";s:4:"DESC";}}s:10:"com_config";O:8:"stdClass":1:{s:6:"config";O:8:"stdClass":1:{s:6:"global";O:8:"stdClass":1:{s:4:"data";N;}}}}s:9:"separator";s:1:".";}s:4:"user";O:5:"JUser":28:{s:9:"\\0\\0\\0isRoot";b:1;s:2:"id";s:3:"254";s:4:"name";s:10:"Super User";s:8:"username";s:5:"admin";s:5:"email";s:18:"admin@localhost.cc";s:8:"password";s:60:"$2y$10$fDRO/mg9Lgc5svqzYnHiquiYFn1turqVZPwNlWCH6K6oIvl3VpAUG";s:14:"password_clear";s:0:"";s:5:"block";s:1:"0";s:9:"sendEmail";s:1:"1";s:12:"registerDate";s:19:"2014-10-14 09:21:12";s:13:"lastvisitDate";s:19:"2015-10-26 09:40:08";s:10:"activation";s:1:"0";s:6:"params";s:2:"{}";s:6:"groups";a:1:{i:8;s:1:"8";}s:5:"guest";i:0;s:13:"lastResetTime";s:19:"0000-00-00 00:00:00";s:10:"resetCount";s:1:"0";s:12:"requireReset";s:1:"0";s:10:"\\0\\0\\0_params";O:24:"Joomla\\Registry\\Registry":2:{s:7:"\\0\\0\\0data";O:8:"stdClass":0:{}s:9:"separator";s:1:".";}s:14:"\\0\\0\\0_authGroups";a:2:{i:0;i:1;i:1;i:8;}s:14:"\\0\\0\\0_authLevels";a:4:{i:0;i:1;i:1;i:1;i:2;i:2;i:3;i:3;}s:15:"\\0\\0\\0_authActions";N;s:12:"\\0\\0\\0_errorMsg";N;s:13:"\\0\\0\\0userHelper";O:18:"JUserWrapperHelper":0:{}s:10:"\\0\\0\\0_errors";a:0:{}s:3:"aid";i:0;s:6:"otpKey";s:0:"";s:4:"otep";s:0:"";}s:13:"session.token";s:32:"ffda542192086cac5a92ac8611325754";s:20:"com_media.return_url";s:127:"index.php?option=com_media&view=images&tmpl=component&fieldid=features_intro_data__img_icon_2&e_name=&asset=com_modules&author=";}', 254, 'admin');
+('4124084d37067eac57916743450d380b', 0, 1, '1445939066', '__default|a:8:{s:15:"session.counter";i:27;s:19:"session.timer.start";i:1445936024;s:18:"session.timer.last";i:1445939015;s:17:"session.timer.now";i:1445939066;s:22:"session.client.browser";s:120:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36";s:8:"registry";O:24:"Joomla\\Registry\\Registry":2:{s:7:"\\0\\0\\0data";O:8:"stdClass":4:{s:13:"current_theme";N;s:17:"current_direction";s:3:"ltr";s:17:"current_key_sufix";s:5:"__ltr";s:14:"com_virtuemart";O:8:"stdClass":1:{s:14:"productdetails";O:8:"stdClass":2:{s:5:"limit";s:3:"int";s:10:"limitstart";i:0;}}}s:9:"separator";s:1:".";}s:4:"user";O:5:"JUser":26:{s:9:"\\0\\0\\0isRoot";b:0;s:2:"id";i:0;s:4:"name";N;s:8:"username";N;s:5:"email";N;s:8:"password";N;s:14:"password_clear";s:0:"";s:5:"block";N;s:9:"sendEmail";i:0;s:12:"registerDate";N;s:13:"lastvisitDate";N;s:10:"activation";N;s:6:"params";N;s:6:"groups";a:1:{i:0;s:1:"1";}s:5:"guest";i:1;s:13:"lastResetTime";N;s:10:"resetCount";N;s:12:"requireReset";N;s:10:"\\0\\0\\0_params";O:24:"Joomla\\Registry\\Registry":2:{s:7:"\\0\\0\\0data";O:8:"stdClass":0:{}s:9:"separator";s:1:".";}s:14:"\\0\\0\\0_authGroups";a:1:{i:0;i:1;}s:14:"\\0\\0\\0_authLevels";a:2:{i:0;i:1;i:1;i:1;}s:15:"\\0\\0\\0_authActions";N;s:12:"\\0\\0\\0_errorMsg";N;s:13:"\\0\\0\\0userHelper";O:18:"JUserWrapperHelper":0:{}s:10:"\\0\\0\\0_errors";a:0:{}s:3:"aid";i:0;}s:13:"session.token";s:32:"871b047650e422f0509a2fde0499bd4f";}__vm|a:6:{s:6:"manage";i:0;s:15:"vmlastvisItemid";i:238;s:23:"vmlastvisitedcategoryid";i:3;s:19:"vmlastvisitedmanuid";i:0;s:21:"vmlastproductordering";s:15:"`p`.product_sku";s:23:"vmlastvisitedproductids";a:1:{i:0;i:70;}}', 0, ''),
+('90dc15fe9275a299760547be80bea362', 1, 0, '1445939013', '__default|a:8:{s:15:"session.counter";i:145;s:19:"session.timer.start";i:1445935679;s:18:"session.timer.last";i:1445939013;s:17:"session.timer.now";i:1445939013;s:22:"session.client.browser";s:120:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36";s:8:"registry";O:24:"Joomla\\Registry\\Registry":2:{s:7:"\\0\\0\\0data";O:8:"stdClass":5:{s:11:"application";O:8:"stdClass":1:{s:4:"lang";s:5:"en-GB";}s:11:"com_modules";O:8:"stdClass":3:{s:7:"modules";O:8:"stdClass":4:{s:6:"filter";O:8:"stdClass":8:{s:18:"client_id_previous";i:0;s:6:"search";s:0:"";s:6:"access";i:0;s:5:"state";s:0:"";s:8:"position";s:14:"container-tabs";s:6:"module";s:0:"";s:9:"client_id";i:0;s:8:"language";s:0:"";}s:8:"ordercol";s:8:"ordering";s:9:"orderdirn";s:3:"asc";s:10:"limitstart";i:0;}s:4:"edit";O:8:"stdClass":1:{s:6:"module";O:8:"stdClass":2:{s:4:"data";N;s:2:"id";a:1:{i:0;i:152;}}}s:3:"add";O:8:"stdClass":1:{s:6:"module";O:8:"stdClass":2:{s:12:"extension_id";N;s:6:"params";N;}}}s:14:"com_virtuemart";O:8:"stdClass":3:{s:8:"currency";O:8:"stdClass":4:{s:6:"search";s:7:"vietnam";s:12:"filter_order";s:22:"virtuemart_currency_id";s:16:"filter_order_Dir";s:3:"ASC";s:10:"limitstart";i:0;}s:7:"product";O:8:"stdClass":4:{s:16:"filter_order_Dir";s:3:"ASC";s:12:"filter_order";s:13:"product_price";s:6:"filter";O:8:"stdClass":2:{s:22:"virtuemart_category_id";i:0;s:26:"virtuemart_manufacturer_id";i:0;}s:10:"limitstart";i:0;}s:7:"ratings";O:8:"stdClass":3:{s:12:"filter_order";s:10:"created_on";s:16:"filter_order_Dir";s:4:"DESC";s:10:"limitstart";i:0;}}s:6:"global";O:8:"stdClass":1:{s:4:"list";O:8:"stdClass":1:{s:5:"limit";i:20;}}s:13:"com_installer";O:8:"stdClass":2:{s:7:"message";s:0:"";s:17:"extension_message";s:0:"";}}s:9:"separator";s:1:".";}s:4:"user";O:5:"JUser":28:{s:9:"\\0\\0\\0isRoot";b:1;s:2:"id";s:3:"254";s:4:"name";s:10:"Super User";s:8:"username";s:5:"admin";s:5:"email";s:18:"admin@localhost.cc";s:8:"password";s:60:"$2y$10$fDRO/mg9Lgc5svqzYnHiquiYFn1turqVZPwNlWCH6K6oIvl3VpAUG";s:14:"password_clear";s:0:"";s:5:"block";s:1:"0";s:9:"sendEmail";s:1:"1";s:12:"registerDate";s:19:"2014-10-14 09:21:12";s:13:"lastvisitDate";s:19:"2015-10-27 02:46:06";s:10:"activation";s:1:"0";s:6:"params";s:2:"{}";s:6:"groups";a:1:{i:8;s:1:"8";}s:5:"guest";i:0;s:13:"lastResetTime";s:19:"0000-00-00 00:00:00";s:10:"resetCount";s:1:"0";s:12:"requireReset";s:1:"0";s:10:"\\0\\0\\0_params";O:24:"Joomla\\Registry\\Registry":2:{s:7:"\\0\\0\\0data";O:8:"stdClass":0:{}s:9:"separator";s:1:".";}s:14:"\\0\\0\\0_authGroups";a:2:{i:0;i:1;i:1;i:8;}s:14:"\\0\\0\\0_authLevels";a:4:{i:0;i:1;i:1;i:1;i:2;i:2;i:3;i:3;}s:15:"\\0\\0\\0_authActions";N;s:12:"\\0\\0\\0_errorMsg";N;s:13:"\\0\\0\\0userHelper";O:18:"JUserWrapperHelper":0:{}s:10:"\\0\\0\\0_errors";a:0:{}s:3:"aid";i:0;s:6:"otpKey";s:0:"";s:4:"otep";s:0:"";}s:13:"session.token";s:32:"26ba90ada897a5362b60987a26275cac";}', 254, 'admin');
 
 -- --------------------------------------------------------
 
@@ -2190,8 +2220,8 @@ INSERT INTO `pz5yp_template_styles` (`id`, `template`, `client_id`, `home`, `tit
 (15, 'isis', 1, '1', 'isis - Default', '{"templateColor":"","logoFile":""}'),
 (17, 'beez3', 0, '0', 'beez3 - Default', '{"wrapperSmall":"53","wrapperLarge":"72","sitetitle":"","sitedescription":"","navposition":"center","templatecolor":"nature","backgroundcolor":"#eee"}'),
 (18, 'hathor', 1, '0', 'Hathor Administrator template - Default', '{"showSiteName":"0","logoFile":"","colourChoice":"0","boldText":"0"}'),
-(20, 'game_hcm', 0, '0', 'game_hcm - home', '{"t3_template":"1","devmode":"1","themermode":"1","legacy_css":"0","responsive":"1","non_responsive_width":"970px","build_rtl":"0","t3-assets":"t3-assets","t3-rmvlogo":"0","minify":"0","minify_js":"0","minify_js_tool":"jsmin","minify_exclude":null,"link_titles":"0","theme":"","logotype":"image","sitename":"","slogan":"","logoimage":"images\\/cms\\/logo.png","enable_logoimage_sm":"0","logoimage_sm":"","mainlayout":"home-1","sublayout":"","mm_type":"mainmenu","navigation_trigger":"hover","navigation_type":"megamenu","navigation_animation":"slide","navigation_animation_duration":"400","mm_config":null,"navigation_collapse_enable":"1","addon_offcanvas_enable":"1","addon_offcanvas_effect":"off-canvas-effect-4","snippet_open_head":null,"snippet_close_head":null,"snippet_open_body":null,"snippet_close_body":null,"snippet_debug":"0"}'),
-(21, 'game_hcm', 0, '1', 'game_hcm - default', '{"t3_template":"1","devmode":"1","themermode":"1","legacy_css":"0","responsive":"1","non_responsive_width":"970px","build_rtl":"0","t3-assets":"t3-assets","t3-rmvlogo":"0","minify":"0","minify_js":"0","minify_js_tool":"jsmin","minify_exclude":"","link_titles":"0","theme":"","logotype":"image","sitename":"","slogan":"","logoimage":"images\\/cms\\/logo.png","enable_logoimage_sm":"0","logoimage_sm":"","mainlayout":"default-content-right","sublayout":"","mm_type":"mainmenu","navigation_trigger":"hover","navigation_type":"megamenu","navigation_animation":"slide","navigation_animation_duration":"400","mm_config":"","navigation_collapse_enable":"1","addon_offcanvas_enable":"1","addon_offcanvas_effect":"off-canvas-effect-4","snippet_open_head":"","snippet_close_head":"","snippet_open_body":"","snippet_close_body":"","snippet_debug":"0"}');
+(20, 'game_hcm', 0, '0', 'game_hcm - home', '{"t3_template":"1","devmode":"1","themermode":"1","legacy_css":"0","responsive":"1","non_responsive_width":"970px","build_rtl":"0","t3-assets":"t3-assets","t3-rmvlogo":"0","minify":"0","minify_js":"0","minify_js_tool":"jsmin","minify_exclude":"","link_titles":"0","theme":"","logotype":"image","sitename":"","slogan":"","logoimage":"images\\/cms\\/logo.png","enable_logoimage_sm":"0","logoimage_sm":"","mainlayout":"home-1","sublayout":"","mm_type":"mainmenu","navigation_trigger":"hover","navigation_type":"megamenu","navigation_animation":"slide","navigation_animation_duration":"400","mm_config":"","navigation_collapse_enable":"1","addon_offcanvas_enable":"1","addon_offcanvas_effect":"off-canvas-effect-4","snippet_open_head":"","snippet_close_head":"","snippet_open_body":"","snippet_close_body":"","snippet_debug":"0"}'),
+(21, 'game_hcm', 0, '1', 'game_hcm - default', '{"t3_template":"1","devmode":"1","themermode":"1","legacy_css":"0","responsive":"1","non_responsive_width":"970px","build_rtl":"0","t3-assets":"t3-assets","t3-rmvlogo":"0","minify":"0","minify_js":"0","minify_js_tool":"jsmin","minify_exclude":null,"link_titles":"0","theme":"","logotype":"image","sitename":"","slogan":"","logoimage":"images\\/cms\\/logo.png","enable_logoimage_sm":"0","logoimage_sm":"","mainlayout":"default-content-right","sublayout":"","mm_type":"mainmenu","navigation_trigger":"hover","navigation_type":"megamenu","navigation_animation":"slide","navigation_animation_duration":"400","mm_config":null,"navigation_collapse_enable":"1","addon_offcanvas_enable":"1","addon_offcanvas_effect":"off-canvas-effect-4","snippet_open_head":null,"snippet_close_head":null,"snippet_open_body":null,"snippet_close_body":null,"snippet_debug":"0"}');
 
 -- --------------------------------------------------------
 
@@ -2324,43 +2354,43 @@ CREATE TABLE `pz5yp_update_sites` (
 --
 
 INSERT INTO `pz5yp_update_sites` (`update_site_id`, `name`, `type`, `location`, `enabled`, `last_check_timestamp`, `extra_query`) VALUES
-(1, 'Joomla Core', 'collection', 'http://update.joomla.org/core/sts/list_sts.xml', 1, 1445866322, ''),
+(1, 'Joomla Core', 'collection', 'http://update.joomla.org/core/sts/list_sts.xml', 1, 1445938485, ''),
 (2, 'Joomla Extension Directory', 'collection', 'http://update.joomla.org/jed/list.xml', 0, 0, ''),
 (3, 'Accredited Joomla! Translations', 'collection', 'http://update.joomla.org/language/translationlist_3.xml', 0, 0, ''),
 (4, '', 'collection', 'http://update.joomlart.com/service/tracking/list.xml', 0, 0, ''),
-(5, 'AcyMailing', 'extension', 'http://www.acyba.com/component/updateme/updatexml/component-acymailing/level-Starter/file-extension.xml', 1, 1445866320, ''),
-(42, 'Joomla! Update Component Update Site', 'extension', 'http://update.joomla.org/core/extensions/com_joomlaupdate.xml', 1, 1445866320, ''),
-(43, '', 'collection', 'http://update.joomla.org/core/list.xml', 1, 1445866320, ''),
-(44, 'VirtueMart3 Update Site', 'extension', 'http://virtuemart.net/releases/vm3/virtuemart_update.xml', 1, 1445866320, ''),
-(45, 'VirtueMart plg_vmpayment_standard Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_standard_update.xml', 1, 1445866320, ''),
-(46, 'VirtueMart plg_vmpayment_klarna Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_klarna_update.xml', 1, 1445866320, ''),
-(47, 'VirtueMart plg_vmpayment_klarnacheckout Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_klarnacheckout_update.xml', 1, 1445866320, ''),
-(48, 'VirtueMart plg_vmpayment_sofort Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_sofort_update.xml', 1, 1445866320, ''),
-(49, 'VirtueMart plg_vmpayment_paypal Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_paypal_update.xml', 1, 1445866320, ''),
-(50, 'VirtueMart plg_vmpayment_heidelpay Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_heidelpay_update.xml', 1, 1445866320, ''),
-(51, 'VirtueMart plg_vmpayment_paybox Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_paybox_update.xml', 1, 1445866320, ''),
-(52, 'VirtueMart plg_vmpayment_amazon Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_amazon_update.xml', 1, 1445866320, ''),
-(53, 'VirtueMart plg_system_amazon Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_system_amazon_update.xml', 1, 1445866320, ''),
-(54, 'VirtueMart plg_vmpayment_realex_hpp_api Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_realex_hpp_api_update.xml', 1, 1445866320, ''),
-(55, 'VirtueMart plg_vmuserfield_realex_hpp_api Update Site', 'extension', '\n            http://virtuemart.net/releases/vm3/plg_vmuserfield_realex_hpp_api_update.xml', 1, 1445866320, ''),
-(56, 'VirtueMart3 plg_vmpayment_skrill Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_skrill_update.xml', 1, 1445866320, ''),
-(57, 'VirtueMart plg_vmpayment_authorizenet Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_authorisenet_update.xml', 1, 1445866320, ''),
-(58, 'VirtueMart plg_vmpayment_sofort_ideal Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_sofort_ideal_update.xml', 1, 1445866320, ''),
-(59, 'VirtueMart plg_vmpayment_klikandpay Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_klikandpay_update.xml', 1, 1445866320, ''),
-(60, 'VirtueMart3 plg_vmshipment_weight_countries Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmshipment_weight_countries_update.xml', 1, 1445866320, ''),
-(61, 'VirtueMart3 plg_vmcustom_textinput Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmcustom_textinput_update.xml', 1, 1445866320, ''),
-(62, 'VirtueMart3 plg_vmcustom_specification Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmcustom_specification_update.xml', 1, 1445866320, ''),
-(63, 'VirtueMart3 plg_vmcalculation_avalara Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmcalculation_avalara_update.xml', 1, 1445866320, ''),
-(64, 'VirtueMart3 plg_search_virtuemart Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_search_virtuemart_update.xml', 1, 1445866320, ''),
-(65, 'VirtueMart3 MOD_VMENU Update Site', 'extension', 'http://virtuemart.net/releases/vm3/mod_vmmenu_update.xml', 1, 1445866320, ''),
-(66, 'VirtueMart3 mod_virtuemart_currencies Update Site', 'extension', 'http://virtuemart.net/releases/vm3/mod_virtuemart_currencies_update.xml', 1, 1445866320, ''),
-(67, 'VirtueMart3 mod_virtuemart_product Update Site', 'extension', 'http://virtuemart.net/releases/vm3/mod_virtuemart_product_update.xml', 1, 1445866320, ''),
-(68, 'VirtueMart3 mod_virtuemart_search Update Site', 'extension', 'http://virtuemart.net/releases/vm3/mod_virtuemart_search_update.xml', 1, 1445866320, ''),
-(69, 'VirtueMart3 mod_virtuemart_manufacturer Update Site', 'extension', 'http://virtuemart.net/releases/vm3/mod_virtuemart_manufacturer_update.xml', 1, 1445866320, ''),
-(70, 'VirtueMart3 mod_virtuemart_cart Update Site', 'extension', 'http://virtuemart.net/releases/vm3/mod_virtuemart_cart_update.xml', 1, 1445866320, ''),
-(71, 'VirtueMart3 mod_virtuemart_category Update Site', 'extension', 'http://virtuemart.net/releases/vm3/mod_virtuemart_category_update.xml', 1, 1445866320, ''),
-(72, 'VirtueMart3 AIO Update Site', 'extension', 'http://virtuemart.net/releases/vm3/virtuemart_aio_update.xml', 1, 1445866320, ''),
-(73, 'TCPDF Update Site', 'extension', 'http://virtuemart.net/releases/TCPDF/tcpdf.xml', 1, 1445866320, '');
+(5, 'AcyMailing', 'extension', 'http://www.acyba.com/component/updateme/updatexml/component-acymailing/level-Starter/file-extension.xml', 1, 0, ''),
+(42, 'Joomla! Update Component Update Site', 'extension', 'http://update.joomla.org/core/extensions/com_joomlaupdate.xml', 1, 0, ''),
+(43, '', 'collection', 'http://update.joomla.org/core/list.xml', 1, 1445938483, ''),
+(44, 'VirtueMart3 Update Site', 'extension', 'http://virtuemart.net/releases/vm3/virtuemart_update.xml', 1, 1445938483, ''),
+(45, 'VirtueMart plg_vmpayment_standard Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_standard_update.xml', 1, 1445938483, ''),
+(46, 'VirtueMart plg_vmpayment_klarna Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_klarna_update.xml', 1, 1445938483, ''),
+(47, 'VirtueMart plg_vmpayment_klarnacheckout Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_klarnacheckout_update.xml', 1, 1445938483, ''),
+(48, 'VirtueMart plg_vmpayment_sofort Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_sofort_update.xml', 1, 1445938483, ''),
+(49, 'VirtueMart plg_vmpayment_paypal Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_paypal_update.xml', 1, 1445938483, ''),
+(50, 'VirtueMart plg_vmpayment_heidelpay Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_heidelpay_update.xml', 1, 1445938483, ''),
+(51, 'VirtueMart plg_vmpayment_paybox Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_paybox_update.xml', 1, 1445938483, ''),
+(52, 'VirtueMart plg_vmpayment_amazon Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_amazon_update.xml', 1, 1445938483, ''),
+(53, 'VirtueMart plg_system_amazon Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_system_amazon_update.xml', 1, 1445938483, ''),
+(54, 'VirtueMart plg_vmpayment_realex_hpp_api Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_realex_hpp_api_update.xml', 1, 1445938483, ''),
+(55, 'VirtueMart plg_vmuserfield_realex_hpp_api Update Site', 'extension', '\n            http://virtuemart.net/releases/vm3/plg_vmuserfield_realex_hpp_api_update.xml', 1, 1445938483, ''),
+(56, 'VirtueMart3 plg_vmpayment_skrill Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_skrill_update.xml', 1, 1445938483, ''),
+(57, 'VirtueMart plg_vmpayment_authorizenet Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_authorisenet_update.xml', 1, 1445938483, ''),
+(58, 'VirtueMart plg_vmpayment_sofort_ideal Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_sofort_ideal_update.xml', 1, 1445938483, ''),
+(59, 'VirtueMart plg_vmpayment_klikandpay Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_klikandpay_update.xml', 1, 1445938483, ''),
+(60, 'VirtueMart3 plg_vmshipment_weight_countries Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmshipment_weight_countries_update.xml', 1, 1445938483, ''),
+(61, 'VirtueMart3 plg_vmcustom_textinput Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmcustom_textinput_update.xml', 1, 1445938483, ''),
+(62, 'VirtueMart3 plg_vmcustom_specification Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmcustom_specification_update.xml', 1, 1445938483, ''),
+(63, 'VirtueMart3 plg_vmcalculation_avalara Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmcalculation_avalara_update.xml', 1, 1445938483, ''),
+(64, 'VirtueMart3 plg_search_virtuemart Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_search_virtuemart_update.xml', 1, 1445938483, ''),
+(65, 'VirtueMart3 MOD_VMENU Update Site', 'extension', 'http://virtuemart.net/releases/vm3/mod_vmmenu_update.xml', 1, 1445938483, ''),
+(66, 'VirtueMart3 mod_virtuemart_currencies Update Site', 'extension', 'http://virtuemart.net/releases/vm3/mod_virtuemart_currencies_update.xml', 1, 1445938483, ''),
+(67, 'VirtueMart3 mod_virtuemart_product Update Site', 'extension', 'http://virtuemart.net/releases/vm3/mod_virtuemart_product_update.xml', 1, 1445938483, ''),
+(68, 'VirtueMart3 mod_virtuemart_search Update Site', 'extension', 'http://virtuemart.net/releases/vm3/mod_virtuemart_search_update.xml', 1, 1445938483, ''),
+(69, 'VirtueMart3 mod_virtuemart_manufacturer Update Site', 'extension', 'http://virtuemart.net/releases/vm3/mod_virtuemart_manufacturer_update.xml', 1, 1445938483, ''),
+(70, 'VirtueMart3 mod_virtuemart_cart Update Site', 'extension', 'http://virtuemart.net/releases/vm3/mod_virtuemart_cart_update.xml', 1, 1445938483, ''),
+(71, 'VirtueMart3 mod_virtuemart_category Update Site', 'extension', 'http://virtuemart.net/releases/vm3/mod_virtuemart_category_update.xml', 1, 1445938483, ''),
+(72, 'VirtueMart3 AIO Update Site', 'extension', 'http://virtuemart.net/releases/vm3/virtuemart_aio_update.xml', 1, 1445938483, ''),
+(73, 'TCPDF Update Site', 'extension', 'http://virtuemart.net/releases/TCPDF/tcpdf.xml', 1, 1445938483, '');
 
 -- --------------------------------------------------------
 
@@ -2478,7 +2508,7 @@ CREATE TABLE `pz5yp_users` (
 --
 
 INSERT INTO `pz5yp_users` (`id`, `name`, `username`, `email`, `password`, `block`, `sendEmail`, `registerDate`, `lastvisitDate`, `activation`, `params`, `lastResetTime`, `resetCount`, `otpKey`, `otep`, `requireReset`) VALUES
-(254, 'Super User', 'admin', 'admin@localhost.cc', '$2y$10$fDRO/mg9Lgc5svqzYnHiquiYFn1turqVZPwNlWCH6K6oIvl3VpAUG', 0, 1, '2014-10-14 09:21:12', '2015-10-26 13:31:59', '0', '{}', '0000-00-00 00:00:00', 0, '', '', 0);
+(254, 'Super User', 'admin', 'admin@localhost.cc', '$2y$10$fDRO/mg9Lgc5svqzYnHiquiYFn1turqVZPwNlWCH6K6oIvl3VpAUG', 0, 1, '2014-10-14 09:21:12', '2015-10-27 08:48:01', '0', '{}', '0000-00-00 00:00:00', 0, '', '', 0);
 
 -- --------------------------------------------------------
 
@@ -2663,15 +2693,6 @@ CREATE TABLE `pz5yp_virtuemart_calcs` (
   `locked_by` int(1) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `pz5yp_virtuemart_calcs`
---
-
-INSERT INTO `pz5yp_virtuemart_calcs` (`virtuemart_calc_id`, `virtuemart_vendor_id`, `calc_jplugin_id`, `calc_name`, `calc_descr`, `calc_kind`, `calc_value_mathop`, `calc_value`, `calc_currency`, `calc_shopper_published`, `calc_vendor_published`, `publish_up`, `publish_down`, `for_override`, `calc_params`, `ordering`, `shared`, `published`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`) VALUES
-(1, 1, 0, 'Tax 20%', '', 'VatTax', '+%', '20.0000', 47, 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '', 0, 0, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(2, 1, 0, 'Discount 5%', '', 'DATax', '-%', '5.0000', 47, 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '', 0, 0, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(3, 1, 0, 'Special tax for category pagination 10%, an example for rule per', '', 'VatTax', '+%', '10.0000', 47, 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '', 0, 0, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0);
-
 -- --------------------------------------------------------
 
 --
@@ -2683,13 +2704,6 @@ CREATE TABLE `pz5yp_virtuemart_calc_categories` (
   `virtuemart_calc_id` smallint(1) UNSIGNED NOT NULL DEFAULT '0',
   `virtuemart_category_id` int(1) UNSIGNED NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `pz5yp_virtuemart_calc_categories`
---
-
-INSERT INTO `pz5yp_virtuemart_calc_categories` (`id`, `virtuemart_calc_id`, `virtuemart_category_id`) VALUES
-(1, 3, 3);
 
 -- --------------------------------------------------------
 
@@ -2790,15 +2804,11 @@ CREATE TABLE `pz5yp_virtuemart_categories` (
 --
 
 INSERT INTO `pz5yp_virtuemart_categories` (`virtuemart_category_id`, `virtuemart_vendor_id`, `category_template`, `category_layout`, `category_product_layout`, `products_per_row`, `limit_list_step`, `limit_list_initial`, `hits`, `metarobot`, `metaauthor`, `ordering`, `shared`, `published`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`) VALUES
-(1, 1, '0', '0', '0', 0, '0', 0, 0, '', '', 1, 0, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(2, 1, '0', '0', '0', 0, '0', 0, 0, '', '', 2, 0, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(3, 1, '0', '0', '0', 0, '0', 0, 0, '', '', 3, 0, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(4, 1, '0', '0', '0', 0, '0', 0, 0, '', '', 4, 0, 1, '0000-00-00 00:00:00', 0, '2015-10-26 09:47:03', 254, '0000-00-00 00:00:00', 0),
-(5, 1, '0', '0', '0', 0, '0', 0, 0, '', '', 1, 0, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(6, 1, '0', '0', '0', 0, '0', 0, 0, '', '', 2, 0, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(7, 1, '0', '0', '0', 0, '0', 0, 0, '', '', 5, 0, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(8, 1, '0', '0', '0', 0, '0', 0, 0, '', '', 1, 0, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(9, 1, '0', '0', '0', 0, '0', 0, 0, '', '', 1, 0, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0);
+(1, 1, '0', '0', '0', 0, '0', 0, 0, '', '', 1, 0, 1, '0000-00-00 00:00:00', 0, '2015-10-27 07:32:04', 254, '0000-00-00 00:00:00', 0),
+(2, 1, '0', '0', '0', 0, '0', 0, 0, '', '', 2, 0, 1, '0000-00-00 00:00:00', 0, '2015-10-27 07:32:54', 254, '0000-00-00 00:00:00', 0),
+(3, 1, '0', '0', '0', 0, '0', 0, 0, '', '', 3, 0, 1, '0000-00-00 00:00:00', 0, '2015-10-27 07:31:15', 254, '0000-00-00 00:00:00', 0),
+(4, 1, '0', '0', '0', 0, '0', 0, 0, '', '', 4, 0, 1, '0000-00-00 00:00:00', 0, '2015-10-27 07:31:43', 254, '0000-00-00 00:00:00', 0),
+(7, 1, '0', '0', '0', 0, '0', 0, 0, '', '', 5, 0, 1, '0000-00-00 00:00:00', 0, '2015-10-27 07:32:21', 254, '0000-00-00 00:00:00', 0);
 
 -- --------------------------------------------------------
 
@@ -2821,15 +2831,11 @@ CREATE TABLE `pz5yp_virtuemart_categories_en_gb` (
 --
 
 INSERT INTO `pz5yp_virtuemart_categories_en_gb` (`virtuemart_category_id`, `category_name`, `category_description`, `metadesc`, `metakey`, `customtitle`, `slug`) VALUES
-(1, 'Default Products', '<p>Sample of several default products. You will find settings displayed.</p>', '', '', '', 'default-products'),
-(2, 'Default Pattern', '<p><span style="background-color: #FCDB73; text-align: center;padding: 5px 40px; ">Example for usage of product pattern. For showcase reason the PATTERN is NOT unpublished.</span></p>', '', '', '', 'default-pattern'),
-(3, 'Pagination testarea', '<p><span style="background-color: #FCDB73; text-align: center;padding: 5px 40px;">Notice: for correct ordering in product view set valid ordering in BE.</span><br />Ordering showcase category. Use this category to test the ordering of products. You can also select several Manufacturer.</p>', '', '', '', 'pagination-testarea'),
-(4, 'Headgear', '<p><span style="background-color: #FCDB73; text-align: center;padding: 5px 40px;">Showcase for subcategory with several sample product.</span></p>', '', '', '', 'headgear'),
-(5, 'Hats', '<p><span style="background-color: #FCDB73; text-align: center;padding: 5px 40px;">Example for usage of product pattern. For showcase reason the PATTERN is NOT unpublished.</span><br />Sample for product category. Create new category in VM BE > <em>Product Categories</em> > <em>New</em></p>', '', '', '', 'hats'),
-(6, 'Caps', '<p><span style="background-color: #FCDB73; text-align: center;padding: 5px 40px;">Example for usage of product pattern. For showcase reason the PATTERN is NOT unpublished.</span><br />Sample for product category. Create new category in VM BE > <em>Product Categories</em> > <em>New</em></p>', '', '', '', 'caps'),
-(7, 'Clothes', '', '', '', '', 'clothes'),
-(8, 'Men clothes', '<p>Sample for Subcategory. <br />Select superordinated category in VM BE > <em>Product Categories</em> > Your Category in section <em>Details > Category Ordering </em></p>', '', '', '', 'men-clothes'),
-(9, 'Women clothes', '<p>Sample for Subcategory. <br />Select superordinated category in VM BE > <em>Product Categories</em> > Your Category in section <em>Details > Category Ordering </em></p>', '', '', '', 'women-clothes');
+(1, 'Accessories', '<p>Sample of several default products. You will find settings displayed.</p>', '', '', '', 'accessories'),
+(2, 'Digital Code', '<p><span style="background-color: #FCDB73; text-align: center;padding: 5px 40px; ">Example for usage of product pattern. For showcase reason the PATTERN is NOT unpublished.</span></p>', '', '', '', 'digital-code'),
+(3, 'Sony PlayStation', '<p><span style="background-color: #FCDB73; text-align: center;padding: 5px 40px;">Notice: for correct ordering in product view set valid ordering in BE.</span><br />Ordering showcase category. Use this category to test the ordering of products. You can also select several Manufacturer.</p>', '', '', '', 'sony-playstation'),
+(4, 'Microsoft Xbox', '<p><span style="background-color: #FCDB73; text-align: center;padding: 5px 40px;">Showcase for subcategory with several sample product.</span></p>', '', '', '', 'headgear'),
+(7, 'Secondhand', '', '', '', '', 'secondhand');
 
 -- --------------------------------------------------------
 
@@ -2849,15 +2855,11 @@ CREATE TABLE `pz5yp_virtuemart_category_categories` (
 --
 
 INSERT INTO `pz5yp_virtuemart_category_categories` (`id`, `category_parent_id`, `category_child_id`, `ordering`) VALUES
-(1, 0, 1, 0),
-(2, 0, 2, 0),
-(3, 0, 3, 0),
+(1, 0, 1, 1),
+(2, 0, 2, 2),
+(3, 0, 3, 3),
 (4, 0, 4, 4),
-(5, 4, 5, 5),
-(6, 4, 6, 6),
-(7, 0, 7, 5),
-(8, 7, 8, 1),
-(9, 7, 9, 1);
+(7, 0, 7, 5);
 
 -- --------------------------------------------------------
 
@@ -2879,13 +2881,7 @@ CREATE TABLE `pz5yp_virtuemart_category_medias` (
 INSERT INTO `pz5yp_virtuemart_category_medias` (`id`, `virtuemart_category_id`, `virtuemart_media_id`, `ordering`) VALUES
 (1, 1, 2, 1),
 (2, 2, 2, 1),
-(3, 3, 2, 1),
-(4, 4, 3, 1),
-(8, 7, 6, 1),
-(6, 6, 5, 1),
-(7, 5, 3, 1),
-(9, 8, 6, 1),
-(10, 9, 7, 1);
+(3, 3, 2, 1);
 
 -- --------------------------------------------------------
 
@@ -2909,7 +2905,7 @@ CREATE TABLE `pz5yp_virtuemart_configs` (
 --
 
 INSERT INTO `pz5yp_virtuemart_configs` (`virtuemart_config_id`, `config`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`) VALUES
-(1, 'shop_is_offline="0"|offline_message="Our Shop is currently down for maintenance. Please check back again soon."|use_as_catalog="0"|currency_converter_module="convertECB.php"|order_mail_html="1"|useSSL="0"|useVendorEmail="0"|dangeroustools="0"|debug_enable="none"|dev="none"|vmdev="none"|google_jquery="0"|multix="none"|usefancy="1"|jchosen="1"|enableEnglish="1"|pdf_button_enable="1"|show_emailfriend="0"|show_printicon="1"|show_out_of_stock_products="1"|ask_captcha="0"|coupons_enable="1"|show_uncat_products="0"|show_uncat_child_products="0"|show_unpub_cat_products="1"|coupons_default_expire="1,D"|weight_unit_default="KG"|lwh_unit_default="M"|list_limit="30"|showReviewFor="all"|reviewMode="bought"|showRatingFor="all"|ratingMode="bought"|reviews_autopublish="1"|reviews_minimum_comment_length="0"|reviews_maximum_comment_length="2000"|product_navigation="1"|display_stock="1"|vmtemplate="default"|categorytemplate="default"|showCategory="1"|categorylayout="0"|categories_per_row="3"|productlayout="0"|products_per_row="3"|llimit_init_FE="20"|vmlayout="0"|show_store_desc="1"|show_categories="1"|homepage_categories_per_row="3"|homepage_products_per_row="3"|show_featured="1"|featured_products_rows="1"|show_topTen="1"|topTen_products_rows="1"|show_recent="1"|recent_products_rows="1"|show_latest="1"|latest_products_rows="1"|assets_general_path="components\\/com_virtuemart\\/assets\\/"|media_category_path="images\\/stories\\/virtuemart\\/category\\/"|media_product_path="images\\/stories\\/virtuemart\\/product\\/"|media_manufacturer_path="images\\/stories\\/virtuemart\\/manufacturer\\/"|media_vendor_path="images\\/stories\\/virtuemart\\/vendor\\/"|forSale_path_thumb="images\\/stories\\/virtuemart\\/forSale\\/resized\\/"|img_resize_enable="1"|img_width="90"|img_height="90"|no_image_set="noimage.gif"|no_image_found="warning.png"|browse_orderby_field="pc.ordering"|browse_cat_orderby_field="c.ordering,category_name"|browse_orderby_fields=["product_name","`p`.product_sku","category_name","mf_name","pc.ordering"]|browse_search_fields=["product_name","`p`.product_sku","product_s_desc","product_desc","category_name","category_description","mf_name"]|askprice="1"|roundindig="1"|show_prices="1"|price_show_packaging_pricelabel="0"|show_tax="1"|basePrice="1"|basePriceText="1"|basePriceRounding="-1"|variantModification="1"|variantModificationText="1"|variantModificationRounding="-1"|basePriceVariant="1"|basePriceVariantText="1"|basePriceVariantRounding="-1"|basePriceWithTax="1"|basePriceWithTaxText="1"|basePriceWithTaxRounding="-1"|discountedPriceWithoutTax="1"|discountedPriceWithoutTaxText="1"|discountedPriceWithoutTaxRounding="-1"|salesPriceWithDiscount="1"|salesPriceWithDiscountText="1"|salesPriceWithDiscountRounding="-1"|salesPrice="1"|salesPriceText="1"|salesPriceRounding="-1"|priceWithoutTax="1"|priceWithoutTaxText="1"|priceWithoutTaxRounding="-1"|discountAmount="1"|discountAmountText="1"|discountAmountRounding="-1"|taxAmount="1"|taxAmountText="1"|taxAmountRounding="-1"|unitPrice="1"|unitPriceText="1"|unitPriceRounding="-1"|addtocart_popup="1"|check_stock="0"|automatic_payment="1"|automatic_shipment="1"|agree_to_tos_onorder="0"|oncheckout_opc="1"|oncheckout_show_legal_info="1"|oncheckout_show_register="1"|oncheckout_show_steps="0"|oncheckout_show_register_text="COM_VIRTUEMART_ONCHECKOUT_DEFAULT_TEXT_REGISTER"|inv_os=["C"]|email_os_s=["U","C","X","R","S"]|email_os_v=["U","C","X","R"]|seo_disabled="0"|seo_translate="0"|seo_use_id="0"|enable_content_plugin="0"|reg_captcha="0"|active_languages=["en-GB"]|revproxvar=""|multixcart="0"|pdf_icon="0"|recommend_unauth="0"|ask_question="0"|asks_minimum_comment_length="50"|asks_maximum_comment_length="2000"|handle_404="1"|cp_rm=["C"]|show_pcustoms="1"|show_uncat_parent_products="0"|latest_products_days="7"|latest_products_orderBy="created_on"|lstockmail="0"|stockhandle="none"|rised_availability=""|image=""|rr_os=["C"]|show_manufacturers="1"|cartlayout="default"|productsublayout="0"|manufacturer_per_row="3"|mediaLimit="20"|llimit_init_BE="20"|pagseq=""|pagseq_1=""|pagseq_2=""|pagseq_3=""|pagseq_4=""|pagseq_5=""|feed_cat_published="0"|feed_cat_show_images="0"|feed_cat_show_prices="0"|feed_cat_show_description="0"|feed_cat_description_type="product_s_desc"|feed_cat_max_text_length="500"|forSale_path="joomla\\/vmfiles\\/"|add_img_main="0"|feed_latest_published="0"|feed_latest_nb="5"|feed_topten_published="0"|feed_topten_nb="5"|feed_featured_published="0"|feed_featured_nb="5"|feed_home_show_images="1"|feed_home_show_prices="1"|feed_home_show_description="0"|feed_home_description_type="product_s_desc"|feed_home_max_text_length="500"|css="1"|jquery="1"|jprice="1"|jsite="1"|jdynupdate="1"|rappenrundung="0"|cVarswT="1"|popup_rel="1"|oncheckout_ajax="1"|set_automatic_shipment="0"|set_automatic_payment="0"|oncheckout_only_registered="0"|oncheckout_show_images="0"|oncheckout_change_shopper="1"|del_date_type="m"|attach=""|attach_os=["U","C","X","R"]|prd_brws_orderby_dir="ASC"|cat_brws_orderby_dir="ASC"|seo_sufix="-detail"|task="apply"|option="com_virtuemart"|view="config"|f7004cca1ad0f118e5d3c89f4dcdaea8="1"', '0000-00-00 00:00:00', 0, '2015-10-26 15:21:48', 254, '0000-00-00 00:00:00', 0);
+(1, 'shop_is_offline="0"|offline_message="Our Shop is currently down for maintenance. Please check back again soon."|use_as_catalog="0"|currency_converter_module="convertECB.php"|order_mail_html="1"|useSSL="0"|useVendorEmail="0"|dangeroustools="0"|debug_enable="none"|dev="none"|vmdev="none"|google_jquery="0"|multix="none"|usefancy="1"|jchosen="1"|enableEnglish="1"|pdf_button_enable="1"|show_emailfriend="1"|show_printicon="1"|show_out_of_stock_products="1"|ask_captcha="1"|coupons_enable="1"|show_uncat_products="0"|show_uncat_child_products="0"|show_unpub_cat_products="1"|coupons_default_expire="1,D"|weight_unit_default="KG"|lwh_unit_default="M"|list_limit="30"|showReviewFor="all"|reviewMode="bought"|showRatingFor="all"|ratingMode="bought"|reviews_autopublish="1"|reviews_minimum_comment_length="0"|reviews_maximum_comment_length="2000"|product_navigation="1"|display_stock="1"|vmtemplate="default"|categorytemplate="default"|showCategory="1"|categorylayout="default"|categories_per_row="3"|productlayout="0"|products_per_row="3"|llimit_init_FE="20"|vmlayout="0"|show_store_desc="1"|show_categories="1"|homepage_categories_per_row="3"|homepage_products_per_row="3"|show_featured="1"|featured_products_rows="1"|show_topTen="1"|topTen_products_rows="1"|show_recent="1"|recent_products_rows="1"|show_latest="1"|latest_products_rows="1"|assets_general_path="components\\/com_virtuemart\\/assets\\/"|media_category_path="images\\/stories\\/virtuemart\\/category\\/"|media_product_path="images\\/stories\\/virtuemart\\/product\\/"|media_manufacturer_path="images\\/stories\\/virtuemart\\/manufacturer\\/"|media_vendor_path="images\\/stories\\/virtuemart\\/vendor\\/"|forSale_path_thumb="images\\/stories\\/virtuemart\\/forSale\\/resized\\/"|img_resize_enable="1"|img_width="90"|img_height="90"|no_image_set="noimage.gif"|no_image_found="warning.png"|browse_orderby_field="pc.ordering"|browse_cat_orderby_field="c.ordering,category_name"|browse_orderby_fields=["product_name","`p`.product_sku","category_name","mf_name","pc.ordering"]|browse_search_fields=["product_name","`p`.product_sku","product_s_desc","product_desc","category_name","category_description","mf_name"]|askprice="1"|roundindig="1"|show_prices="1"|price_show_packaging_pricelabel="0"|show_tax="1"|basePrice="0"|basePriceText="0"|basePriceRounding="-1"|variantModification="0"|variantModificationText="0"|variantModificationRounding="-1"|basePriceVariant="0"|basePriceVariantText="0"|basePriceVariantRounding="-1"|basePriceWithTax="0"|basePriceWithTaxText="0"|basePriceWithTaxRounding="-1"|discountedPriceWithoutTax="0"|discountedPriceWithoutTaxText="0"|discountedPriceWithoutTaxRounding="-1"|salesPriceWithDiscount="0"|salesPriceWithDiscountText="0"|salesPriceWithDiscountRounding="-1"|salesPrice="0"|salesPriceText="0"|salesPriceRounding="-1"|priceWithoutTax="0"|priceWithoutTaxText="0"|priceWithoutTaxRounding="-1"|discountAmount="0"|discountAmountText="0"|discountAmountRounding="-1"|taxAmount="0"|taxAmountText="0"|taxAmountRounding="-1"|unitPrice="1"|unitPriceText="1"|unitPriceRounding="-1"|addtocart_popup="1"|check_stock="0"|automatic_payment="1"|automatic_shipment="1"|agree_to_tos_onorder="0"|oncheckout_opc="1"|oncheckout_show_legal_info="1"|oncheckout_show_register="1"|oncheckout_show_steps="0"|oncheckout_show_register_text="COM_VIRTUEMART_ONCHECKOUT_DEFAULT_TEXT_REGISTER"|inv_os=["C"]|email_os_s=["U","C","X","R","S"]|email_os_v=["U","C","X","R"]|seo_disabled="0"|seo_translate="0"|seo_use_id="0"|enable_content_plugin="0"|reg_captcha="0"|active_languages=["en-GB"]|revproxvar=""|multixcart="0"|pdf_icon="0"|recommend_unauth="0"|ask_question="1"|asks_minimum_comment_length="50"|asks_maximum_comment_length="2000"|handle_404="1"|cp_rm=["C"]|show_pcustoms="1"|show_uncat_parent_products="0"|latest_products_days="7"|latest_products_orderBy="created_on"|lstockmail="0"|stockhandle="none"|rised_availability="24h.gif"|image="24h.gif"|rr_os=["C"]|show_manufacturers="1"|cartlayout="default"|productsublayout="0"|manufacturer_per_row="3"|mediaLimit="20"|llimit_init_BE="20"|pagseq=""|pagseq_1=""|pagseq_2=""|pagseq_3=""|pagseq_4=""|pagseq_5=""|feed_cat_published="0"|feed_cat_show_images="0"|feed_cat_show_prices="0"|feed_cat_show_description="0"|feed_cat_description_type="product_s_desc"|feed_cat_max_text_length="500"|forSale_path="joomla\\/vmfiles\\/"|add_img_main="0"|feed_latest_published="0"|feed_latest_nb="5"|feed_topten_published="0"|feed_topten_nb="5"|feed_featured_published="0"|feed_featured_nb="5"|feed_home_show_images="1"|feed_home_show_prices="1"|feed_home_show_description="0"|feed_home_description_type="product_s_desc"|feed_home_max_text_length="500"|css="1"|jquery="1"|jprice="1"|jsite="1"|jdynupdate="1"|rappenrundung="0"|cVarswT="1"|popup_rel="1"|oncheckout_ajax="1"|set_automatic_shipment="0"|set_automatic_payment="0"|oncheckout_only_registered="0"|oncheckout_show_images="0"|oncheckout_change_shopper="1"|del_date_type="m"|attach=""|attach_os=["U","C","X","R"]|prd_brws_orderby_dir="ASC"|cat_brws_orderby_dir="ASC"|seo_sufix="-detail"|task="apply"|option="com_virtuemart"|view="config"|bb742effe8f86e5766a70e246f1a58d7="1"', '0000-00-00 00:00:00', 0, '2015-10-27 09:21:53', 254, '0000-00-00 00:00:00', 0);
 
 -- --------------------------------------------------------
 
@@ -3568,9 +3564,9 @@ CREATE TABLE `pz5yp_virtuemart_manufacturers` (
 --
 
 INSERT INTO `pz5yp_virtuemart_manufacturers` (`virtuemart_manufacturer_id`, `virtuemart_manufacturercategories_id`, `hits`, `published`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`) VALUES
-(1, 1, 0, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(2, 1, 0, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(3, 1, 0, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0);
+(5, 1, 0, 1, '2015-10-27 09:09:18', 254, '2015-10-27 09:09:18', 254, '0000-00-00 00:00:00', 0),
+(4, 1, 0, 1, '2015-10-27 09:09:10', 254, '2015-10-27 09:09:10', 254, '0000-00-00 00:00:00', 0),
+(6, 1, 0, 1, '2015-10-27 09:09:26', 254, '2015-10-27 09:09:26', 254, '0000-00-00 00:00:00', 0);
 
 -- --------------------------------------------------------
 
@@ -3592,9 +3588,9 @@ CREATE TABLE `pz5yp_virtuemart_manufacturers_en_gb` (
 --
 
 INSERT INTO `pz5yp_virtuemart_manufacturers_en_gb` (`virtuemart_manufacturer_id`, `mf_name`, `mf_email`, `mf_desc`, `mf_url`, `slug`) VALUES
-(1, 'Manufacturer', 'manufacturer@example.org', '<p>An example for a manufacturer</p>', 'http://www.example.org', 'manufacturer'),
-(2, 'Default', 'example@manufacturer.net', '<p>Default manufacturer</p>', 'example.manufacturer.net', 'default'),
-(3, 'Producer', 'info@producer.com', '<p>An example for another manufacturer.</p>', 'producer.com', 'producer');
+(4, 'Sony', '', '', '', 'sony'),
+(5, 'Microsoft', '', '', '', 'microsoft'),
+(6, 'Nintendo', '', '', '', 'nintendo');
 
 -- --------------------------------------------------------
 
@@ -3656,12 +3652,12 @@ CREATE TABLE `pz5yp_virtuemart_medias` (
 
 INSERT INTO `pz5yp_virtuemart_medias` (`virtuemart_media_id`, `virtuemart_vendor_id`, `file_title`, `file_description`, `file_meta`, `file_class`, `file_mimetype`, `file_type`, `file_url`, `file_url_thumb`, `file_is_product_image`, `file_is_downloadable`, `file_is_forSale`, `file_params`, `file_lang`, `shared`, `published`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`) VALUES
 (1, 1, 'vendor.gif', '', '', '', 'image/gif', 'vendor', 'images/stories/virtuemart/vendor/vendor.gif', '', 0, 0, 0, '', '', 0, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(2, 1, 'student_hat_16.jpg', '', '', '', 'image/jpeg', 'category', 'images/stories/virtuemart/category/student_hat_16.jpg', '', 0, 0, 0, '', '', 0, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
+(2, 1, 'student_hat_16.jpg', '', '', '', 'image/jpeg', 'category', 'images/stories/virtuemart/category/student_hat_16.jpg', '', 0, 0, 0, '', '', 0, 1, '0000-00-00 00:00:00', 0, '2015-10-27 07:32:54', 254, '0000-00-00 00:00:00', 0),
 (3, 1, 'hat_category8.jpg', '', '', '', 'image/jpeg', 'category', 'images/stories/virtuemart/category/hat_category8.jpg', '0', 0, 0, 0, '', '', 0, 1, '0000-00-00 00:00:00', 0, '2015-10-26 09:47:03', 254, '0000-00-00 00:00:00', 0),
 (5, 1, 'cap6.jpg', '', '', '', 'image/jpeg', 'category', 'images/stories/virtuemart/category/cap6.jpg', '', 0, 0, 0, '', '', 0, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
 (6, 1, 'jacket_classic7.jpg', '', '', '', 'image/jpeg', 'category', 'images/stories/virtuemart/category/jacket_classic7.jpg', '', 0, 0, 0, '', '', 0, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
 (7, 1, 'black_dress_2.jpg', '', '', '', 'image/jpeg', 'category', 'images/stories/virtuemart/category/black_dress_2.jpg', '', 0, 0, 0, '', '', 0, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(8, 1, 'cart_logo.jpg', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/cart_logo.jpg', '', 0, 0, 0, '', '', 0, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
+(8, 1, 'cart_logo.jpg', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/cart_logo.jpg', '', 0, 0, 0, '', '', 0, 1, '0000-00-00 00:00:00', 0, '2015-10-27 09:31:43', 254, '0000-00-00 00:00:00', 0),
 (9, 1, 'manufacturer.jpg', '', '', '', 'image/jpeg', 'manufacturer', 'images/stories/virtuemart/manufacturer/manufacturer.jpg', '', 0, 0, 0, '', '', 0, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
 (10, 1, 'classic_hat.jpg', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/classic_hat.jpg', '', 0, 0, 0, '', '', 0, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
 (11, 1, 'cowboy_hat.jpg', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/cowboy_hat.jpg', '', 0, 0, 0, '', '', 0, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
@@ -3674,7 +3670,8 @@ INSERT INTO `pz5yp_virtuemart_medias` (`virtuemart_media_id`, `virtuemart_vendor
 (18, 1, 'jacket_classic.jpg', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/jacket_classic.jpg', '', 0, 0, 0, '', '', 0, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
 (19, 1, 'poncho.jpg', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/poncho.jpg', '', 0, 0, 0, '', '', 0, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
 (20, 1, 'dress.jpg', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/dress.jpg', '', 0, 0, 0, '', '', 0, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(21, 1, 'cart_logo.jpg_product', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/pasta-ebi-tempura-to-gomatare-490x314.jpg', '', 0, 0, 0, '', '', 0, 1, '2014-10-19 02:49:50', 254, '2014-10-19 02:49:50', 254, '0000-00-00 00:00:00', 0);
+(21, 1, 'cart_logo.jpg_product', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/pasta-ebi-tempura-to-gomatare-490x314.jpg', '', 0, 0, 0, '', '', 0, 1, '2014-10-19 02:49:50', 254, '2014-10-19 02:49:50', 254, '0000-00-00 00:00:00', 0),
+(22, 1, 'ps49.jpg', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/ps49.jpg', '', 0, 0, 0, '', '', 0, 1, '2015-10-27 09:31:38', 254, '2015-10-27 09:41:02', 254, '0000-00-00 00:00:00', 0);
 
 -- --------------------------------------------------------
 
@@ -4105,20 +4102,14 @@ CREATE TABLE `pz5yp_virtuemart_products` (
 --
 
 INSERT INTO `pz5yp_virtuemart_products` (`virtuemart_product_id`, `virtuemart_vendor_id`, `product_parent_id`, `product_sku`, `product_gtin`, `product_mpn`, `product_weight`, `product_weight_uom`, `product_length`, `product_width`, `product_height`, `product_lwh_uom`, `product_url`, `product_in_stock`, `product_ordered`, `low_stock_notification`, `product_available_date`, `product_availability`, `product_special`, `product_sales`, `product_unit`, `product_packaging`, `product_params`, `hits`, `intnotes`, `metarobot`, `metaauthor`, `layout`, `published`, `pordering`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`) VALUES
-(11, 1, 0, '', '', '', '0.4000', 'KG', '0.1000', '0.2000', '0.3000', 'M', '', 150, 0, 0, '0000-00-00 00:00:00', '', 0, 0, 'KG', NULL, 'min_order_level=""|max_order_level=""|step_order_level=""|product_box=""|', NULL, '', '', '', '0', 1, 0, '2014-10-19 02:49:50', 254, '2014-10-19 02:49:50', 254, '0000-00-00 00:00:00', 0),
-(15, 1, 0, '', NULL, NULL, '0.1000', 'KG', '0.1000', '0.2000', '0.3000', 'M', '', 100, 0, 0, '0000-00-00 00:00:00', '', 0, 0, 'KG', NULL, 'min_order_level=""|max_order_level=""|step_order_level=""|product_box=""|', NULL, '', '', '', '0', 1, 0, '0000-00-00 00:00:00', 635, '0000-00-00 00:00:00', 635, '0000-00-00 00:00:00', 0),
-(19, 1, 0, '', NULL, NULL, '0.4000', 'KG', '0.1000', '0.2000', '0.3000', 'M', '', 100, 0, 0, '0000-00-00 00:00:00', '', 0, 0, 'KG', NULL, 'min_order_level=""|max_order_level=""|step_order_level=""|product_box="1"|', NULL, '', '', '', '0', 1, 0, '0000-00-00 00:00:00', 635, '0000-00-00 00:00:00', 635, '0000-00-00 00:00:00', 0),
-(20, 1, 19, '', NULL, NULL, NULL, 'KG', NULL, NULL, NULL, 'M', '', 0, 0, 0, '0000-00-00 00:00:00', '', 0, 0, 'KG', NULL, 'min_order_level=""|max_order_level=""|step_order_level=""|product_box=""|', NULL, '', '', '', '0', 1, 0, '0000-00-00 00:00:00', 635, '0000-00-00 00:00:00', 635, '0000-00-00 00:00:00', 0),
-(21, 1, 19, '', NULL, NULL, NULL, 'KG', NULL, NULL, NULL, 'M', '', 0, 0, 0, '0000-00-00 00:00:00', '', 0, 0, 'KG', NULL, 'min_order_level=""|max_order_level=""|step_order_level=""|product_box=""|', NULL, '', '', '', '0', 1, 0, '0000-00-00 00:00:00', 635, '0000-00-00 00:00:00', 635, '0000-00-00 00:00:00', 0),
-(27, 1, 0, '', NULL, NULL, NULL, 'KG', NULL, NULL, NULL, 'M', '', 0, 0, 0, '0000-00-00 00:00:00', '', 0, 0, 'KG', NULL, 'min_order_level=""|max_order_level=""|step_order_level=""|product_box=""|', NULL, '', '', '', '0', 1, 0, '0000-00-00 00:00:00', 635, '0000-00-00 00:00:00', 635, '0000-00-00 00:00:00', 0),
-(60, 1, 0, '', NULL, NULL, NULL, 'KG', NULL, NULL, NULL, 'M', '', 0, 0, 0, '0000-00-00 00:00:00', '', 0, 0, 'KG', NULL, 'min_order_level=""|max_order_level=""|step_order_level=""|product_box=""|', NULL, '', '', '', '0', 1, 0, '0000-00-00 00:00:00', 635, '0000-00-00 00:00:00', 635, '0000-00-00 00:00:00', 0),
-(61, 1, 60, '', NULL, NULL, '125.0000', 'G', '20.0000', '20.0000', '10.0000', 'CM', '', 35, 2, 5, '0000-00-00 00:00:00', '', 0, 0, '100G', '0.5000', 'min_order_level=""|max_order_level=""|step_order_level=""|product_box="1"|', NULL, '', '', '', '0', 1, 1, '0000-00-00 00:00:00', 635, '0000-00-00 00:00:00', 635, '0000-00-00 00:00:00', 0),
-(62, 1, 60, '', NULL, NULL, '150.0000', 'G', '35.0000', '30.0000', '15.0000', 'CM', '', 15, 1, 5, '0000-00-00 00:00:00', '', 0, 0, 'KG', NULL, 'min_order_level=""|max_order_level=""|step_order_level=""|product_box="1"|', NULL, '', '', '', '0', 1, 2, '0000-00-00 00:00:00', 635, '0000-00-00 00:00:00', 635, '0000-00-00 00:00:00', 0),
-(64, 1, 0, '', NULL, NULL, NULL, 'KG', NULL, NULL, NULL, 'M', '', 0, 0, 0, '0000-00-00 00:00:00', '', 0, 0, 'KG', NULL, 'min_order_level=""|max_order_level=""|step_order_level=""|product_box=""|', NULL, '', '', '', '0', 1, 0, '0000-00-00 00:00:00', 635, '0000-00-00 00:00:00', 635, '0000-00-00 00:00:00', 0),
-(65, 1, 64, '', NULL, NULL, '0.1000', 'KG', '25.0000', '20.0000', '2.0000', 'CM', '', 77, 0, 0, '0000-00-00 00:00:00', '', 0, 0, 'KG', '1.0000', 'min_order_level=""|max_order_level=""|step_order_level=""|product_box=""|', NULL, '', '', '', '0', 1, 1, '0000-00-00 00:00:00', 635, '0000-00-00 00:00:00', 635, '0000-00-00 00:00:00', 0),
-(66, 1, 64, '', NULL, NULL, '0.0750', 'KG', '0.2000', '0.2000', '0.1500', 'M', '', 152, 0, 0, '0000-00-00 00:00:00', '', 0, 0, 'KG', NULL, 'min_order_level=""|max_order_level=""|step_order_level=""|product_box="1"|', NULL, '', '', '', '0', 1, 2, '0000-00-00 00:00:00', 635, '0000-00-00 00:00:00', 635, '0000-00-00 00:00:00', 0),
-(68, 1, 0, '', NULL, NULL, NULL, 'KG', NULL, NULL, NULL, 'M', '', 0, 0, 0, '0000-00-00 00:00:00', '', 0, 0, 'KG', NULL, 'min_order_level=""|max_order_level=""|step_order_level=""|product_box=""|', NULL, '', '', '', '0', 1, 0, '0000-00-00 00:00:00', 635, '0000-00-00 00:00:00', 635, '0000-00-00 00:00:00', 0),
-(69, 1, 68, '', NULL, NULL, '350.0000', 'G', NULL, NULL, NULL, 'M', '', 45, 0, 2, '0000-00-00 00:00:00', '', 0, 0, 'KG', NULL, 'min_order_level=""|max_order_level=""|step_order_level=""|product_box=""|', NULL, '', '', '', '0', 1, 1, '0000-00-00 00:00:00', 635, '0000-00-00 00:00:00', 635, '0000-00-00 00:00:00', 0);
+(77, 1, 0, 'PS4', '', '', NULL, 'KG', NULL, NULL, NULL, 'M', '', 10, 0, 0, '2015-10-26 00:00:00', '24h.gif', 0, 0, 'KG', NULL, 'min_order_level="1"|max_order_level=null|step_order_level=null|product_box="1"|', NULL, '', '', '', 'default', 1, 0, '2015-10-27 09:42:52', 254, '2015-10-27 09:42:52', 254, '0000-00-00 00:00:00', 0),
+(72, 1, 0, 'PS4', '', '', NULL, 'KG', NULL, NULL, NULL, 'M', '', 10, 0, 0, '2015-10-26 00:00:00', '24h.gif', 0, 0, 'KG', NULL, 'min_order_level="1"|max_order_level=null|step_order_level=null|product_box="1"|', NULL, '', '', '', 'default', 1, 0, '2015-10-27 09:42:45', 254, '2015-10-27 09:42:45', 254, '0000-00-00 00:00:00', 0),
+(73, 1, 0, 'PS4', '', '', NULL, 'KG', NULL, NULL, NULL, 'M', '', 10, 0, 0, '2015-10-26 00:00:00', '24h.gif', 0, 0, 'KG', NULL, 'min_order_level="1"|max_order_level=null|step_order_level=null|product_box="1"|', NULL, '', '', '', 'default', 1, 0, '2015-10-27 09:42:45', 254, '2015-10-27 09:42:45', 254, '0000-00-00 00:00:00', 0),
+(74, 1, 0, 'PS4', '', '', NULL, 'KG', NULL, NULL, NULL, 'M', '', 10, 0, 0, '2015-10-26 00:00:00', '24h.gif', 0, 0, 'KG', NULL, 'min_order_level="1"|max_order_level=null|step_order_level=null|product_box="1"|', NULL, '', '', '', 'default', 1, 0, '2015-10-27 09:42:52', 254, '2015-10-27 09:42:52', 254, '0000-00-00 00:00:00', 0),
+(75, 1, 0, 'PS4', '', '', NULL, 'KG', NULL, NULL, NULL, 'M', '', 10, 0, 0, '2015-10-26 00:00:00', '24h.gif', 0, 0, 'KG', NULL, 'min_order_level="1"|max_order_level=null|step_order_level=null|product_box="1"|', NULL, '', '', '', 'default', 1, 0, '2015-10-27 09:42:52', 254, '2015-10-27 09:42:52', 254, '0000-00-00 00:00:00', 0),
+(76, 1, 0, 'PS4', '', '', NULL, 'KG', NULL, NULL, NULL, 'M', '', 10, 0, 0, '2015-10-26 00:00:00', '24h.gif', 0, 0, 'KG', NULL, 'min_order_level="1"|max_order_level=null|step_order_level=null|product_box="1"|', NULL, '', '', '', 'default', 1, 0, '2015-10-27 09:42:52', 254, '2015-10-27 09:42:52', 254, '0000-00-00 00:00:00', 0),
+(70, 1, 0, 'PS4', '', '', NULL, 'KG', NULL, NULL, NULL, 'M', '', 10, 0, 0, '2015-10-26 00:00:00', '24h.gif', 0, 0, 'KG', NULL, 'min_order_level="1"|max_order_level=""|step_order_level=""|product_box="1"|', NULL, '', '', '', 'default', 1, 0, '2015-10-27 09:08:30', 254, '2015-10-27 09:41:02', 254, '0000-00-00 00:00:00', 0),
+(71, 1, 0, 'PS4', '', '', NULL, 'KG', NULL, NULL, NULL, 'M', '', 10, 0, 0, '2015-10-26 00:00:00', '24h.gif', 0, 0, 'KG', NULL, 'min_order_level="1"|max_order_level=null|step_order_level=null|product_box="1"|', NULL, '', '', '', 'default', 1, 0, '2015-10-27 09:42:42', 254, '2015-10-27 09:42:42', 254, '0000-00-00 00:00:00', 0);
 
 -- --------------------------------------------------------
 
@@ -4142,20 +4133,14 @@ CREATE TABLE `pz5yp_virtuemart_products_en_gb` (
 --
 
 INSERT INTO `pz5yp_virtuemart_products_en_gb` (`virtuemart_product_id`, `product_s_desc`, `product_desc`, `product_name`, `metadesc`, `metakey`, `customtitle`, `slug`) VALUES
-(11, 'Product with child variant; parent not ordable', '<p>This product will explain the usage of customfield generic (dynamic) child variant. The base product is not ordable in this case.</p>\r\n<p>Consider you sell products in different color settings: you want to change the color of the product by selecting a color variant.<br />Therefore dynamic child variants can be used to allow you different description, images, or product status for every variant of your base product.<br /><br />Set up a new product, set price, add child products. Add created customfield generic child variant. <br />The child products are assigned to another category as the parent product for caclulation or like in this case to no category.<br />Do not tick the checkbox <em>Display parent as option in this case</em>.</p>', 'Product w/child variant parent not ordable', '', '', '', 'product-w-child-variant-parent-not-ordable'),
-(15, 'Default product with child variant and cart variant.', '<p>This product is a showcase to present the combination of product price, child variant price, and cart variant price.</p>', 'Product w/child variant w/cart variant', '', '', '', 'product-w-child-variant-w-cart-variant'),
-(19, 'Showcase for pattern usage.', '<p>This product is used as a pattern for other products. It is a parent product and has multiple child products. <br />You can set several settings (content, customfields) for parent product. Childs of this parent will basically have the same settings as the parent automatically inherite until you overwrite.<br /><br /></p>\r\n<p>In this case product price is set in pattern.</p>', 'Basic PATTERN', '', '', '', 'basic-pattern'),
-(20, 'This is a basic child of Product PATTERN.', '<p>This is a basic child of Product PATTERN. You see inherited settings, only Product description is overwritten.<br /><br /><span style="background-color: #FCDB73; text-align: center;padding: 5px 40px;">In case the child product should be available by browsing set the product category.</span></p>', 'Basic child', '', '', '', 'basic-pattern197'),
-(21, 'This is a basic child of Product PATTERN. You see inherited settings.', '<p>This is a basic child of Product PATTERN. You see inherited settings. <br />Overwritten are following setting/content:<br />- Product desc<br />- Product price<br /><br /><span style="background-color: #FCDB73; text-align: center;padding: 5px 40px;">In case the child product should be available by browsing set the product category.</span></p>', 'Basic price overwrite', '', '', '', 'basic-price-overwrite'),
-(27, '', '', '3- Product 1st PATTERN', '', '', '', '3-product-1st-pattern'),
-(60, '', '', 'PATTERN Hats', '', '', '', 'pattern-hats'),
-(61, 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.', '<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>', 'Classic Hat', '', '', '', 'classic-hat'),
-(62, 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.', '<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>', 'Cowboy Hat', '', '', '', 'cowboy-hat'),
-(64, '', '', 'PATTERN Caps', '', '', '', 'pattern-caps'),
-(65, 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.', '<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>', 'Santa Cap', '', '', '', 'santa-cap'),
-(66, 'Base lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.', '<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>', 'Baseball Cap', '', '', '', 'baseball-cap'),
-(68, 'Pattern for Clothing. For showcase reason this pattern is NOT unpublished.', '<p>For showcase reason this pattern is NOT unpublished.</p>', 'PATTERN Clothing', '', '', '', 'pattern-outer-garments'),
-(69, 'Jumper dress ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.', '', 'Jumper', '', '', '', 'jumper');
+(70, 'The PlayStation®4 system opens the door to an incredible journey through immersive new gaming worlds and a deeply connected gaming community. PS4™ puts gamers first with an astounding launch lineup and over 180 games in development. Play amazing top-tier blockbusters and innovative indie hits on PS4™. Developer Inspired, Gamer Focus.\r\n\r\nPlayStation®4. Greatness Awaits™', '', 'PlayStation 4', '', '', '', 'playstation-4'),
+(71, 'The PlayStation®4 system opens the door to an incredible journey through immersive new gaming worlds and a deeply connected gaming community. PS4™ puts gamers first with an astounding launch lineup and over 180 games in development. Play amazing top-tier blockbusters and innovative indie hits on PS4™. Developer Inspired, Gamer Focus.\r\n\r\nPlayStation®4. Greatness Awaits™', '', 'PlayStation 4', '', '', '', 'playstation-4-70'),
+(72, 'The PlayStation®4 system opens the door to an incredible journey through immersive new gaming worlds and a deeply connected gaming community. PS4™ puts gamers first with an astounding launch lineup and over 180 games in development. Play amazing top-tier blockbusters and innovative indie hits on PS4™. Developer Inspired, Gamer Focus.\r\n\r\nPlayStation®4. Greatness Awaits™', '', 'PlayStation 4', '', '', '', 'playstation-4-71'),
+(73, 'The PlayStation®4 system opens the door to an incredible journey through immersive new gaming worlds and a deeply connected gaming community. PS4™ puts gamers first with an astounding launch lineup and over 180 games in development. Play amazing top-tier blockbusters and innovative indie hits on PS4™. Developer Inspired, Gamer Focus.\r\n\r\nPlayStation®4. Greatness Awaits™', '', 'PlayStation 4', '', '', '', 'playstation-4-70-71'),
+(74, 'The PlayStation®4 system opens the door to an incredible journey through immersive new gaming worlds and a deeply connected gaming community. PS4™ puts gamers first with an astounding launch lineup and over 180 games in development. Play amazing top-tier blockbusters and innovative indie hits on PS4™. Developer Inspired, Gamer Focus.\r\n\r\nPlayStation®4. Greatness Awaits™', '', 'PlayStation 4', '', '', '', 'playstation-4-70-72'),
+(75, 'The PlayStation®4 system opens the door to an incredible journey through immersive new gaming worlds and a deeply connected gaming community. PS4™ puts gamers first with an astounding launch lineup and over 180 games in development. Play amazing top-tier blockbusters and innovative indie hits on PS4™. Developer Inspired, Gamer Focus.\r\n\r\nPlayStation®4. Greatness Awaits™', '', 'PlayStation 4', '', '', '', 'playstation-4-72'),
+(76, 'The PlayStation®4 system opens the door to an incredible journey through immersive new gaming worlds and a deeply connected gaming community. PS4™ puts gamers first with an astounding launch lineup and over 180 games in development. Play amazing top-tier blockbusters and innovative indie hits on PS4™. Developer Inspired, Gamer Focus.\r\n\r\nPlayStation®4. Greatness Awaits™', '', 'PlayStation 4', '', '', '', 'playstation-4-71-72'),
+(77, 'The PlayStation®4 system opens the door to an incredible journey through immersive new gaming worlds and a deeply connected gaming community. PS4™ puts gamers first with an astounding launch lineup and over 180 games in development. Play amazing top-tier blockbusters and innovative indie hits on PS4™. Developer Inspired, Gamer Focus.\r\n\r\nPlayStation®4. Greatness Awaits™', '', 'PlayStation 4', '', '', '', 'playstation-4-70-71-73');
 
 -- --------------------------------------------------------
 
@@ -4175,27 +4160,14 @@ CREATE TABLE `pz5yp_virtuemart_product_categories` (
 --
 
 INSERT INTO `pz5yp_virtuemart_product_categories` (`id`, `virtuemart_product_id`, `virtuemart_category_id`, `ordering`) VALUES
-(8, 11, 1, 8),
-(9, 15, 1, 9),
-(13, 21, 2, 3),
-(11, 20, 2, 2),
-(12, 19, 2, 1),
-(20, 27, 3, 3),
-(53, 60, 5, 1),
-(54, 61, 5, 2),
-(55, 62, 5, 3),
-(57, 64, 6, 1),
-(58, 65, 6, 2),
-(59, 66, 6, 3),
-(61, 68, 7, 1),
-(64, 69, 7, 2),
-(65, 69, 8, 1),
-(74, 62, 4, 3),
-(75, 61, 4, 2),
-(76, 60, 4, 1),
-(78, 66, 4, 7),
-(79, 65, 4, 6),
-(80, 64, 4, 5);
+(86, 75, 3, 0),
+(83, 72, 3, 0),
+(88, 77, 3, 0),
+(81, 70, 3, 0),
+(84, 73, 3, 0),
+(87, 76, 3, 0),
+(85, 74, 3, 0),
+(82, 71, 3, 0);
 
 -- --------------------------------------------------------
 
@@ -4225,52 +4197,6 @@ CREATE TABLE `pz5yp_virtuemart_product_customfields` (
   `ordering` int(1) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='custom fields';
 
---
--- Dumping data for table `pz5yp_virtuemart_product_customfields`
---
-
-INSERT INTO `pz5yp_virtuemart_product_customfields` (`virtuemart_customfield_id`, `virtuemart_product_id`, `virtuemart_custom_id`, `customfield_value`, `customfield_price`, `disabler`, `override`, `customfield_params`, `product_sku`, `product_gtin`, `product_mpn`, `published`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`, `ordering`) VALUES
-(12, 11, 10, 'product_sku', NULL, 0, 0, 'withParent="1"|parentOrderable="0"|', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '2014-10-19 02:49:50', 254, '0000-00-00 00:00:00', 0, 0),
-(15, 15, 10, 'product_sku', NULL, 0, 0, 'withParent="1"|parentOrderable="1"|', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 0),
-(16, 15, 9, '(default)', NULL, 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 1),
-(17, 15, 9, 'Variante A', '10.000000', 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 2),
-(18, 15, 9, 'Variante B', '20.000000', 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 3),
-(19, 15, 9, 'Variante C', '30.000000', 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 4),
-(28, 61, 1, '62', NULL, 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 0),
-(31, 62, 1, '61', NULL, 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 1),
-(44, 64, 13, 'Details: ', NULL, 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 5),
-(43, 64, 11, '', NULL, 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 4),
-(41, 64, 12, 'M-L', '1.000000', 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 2),
-(40, 64, 12, 'S-M', NULL, 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 1),
-(46, 65, 12, 'S', NULL, 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 1),
-(42, 64, 12, 'L-XL', '2.000000', 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 3),
-(45, 64, 14, 'Components: ', NULL, 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 6),
-(47, 65, 12, 'M', '1.000000', 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 2),
-(48, 65, 12, 'L', '3.000000', 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 3),
-(49, 65, 11, '', NULL, 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 4),
-(50, 65, 13, 'Extra fluffy cap your Santa will be amused', NULL, 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 5),
-(51, 65, 14, '100% Synthetic Deerimitation', NULL, 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 6),
-(52, 66, 12, 'S', NULL, 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 1),
-(53, 66, 12, 'M', '3.000000', 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 2),
-(54, 66, 12, 'L', '5.000000', 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 3),
-(55, 66, 11, '', NULL, 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 4),
-(56, 66, 13, 'The players choice!', NULL, 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 5),
-(57, 66, 14, '100% Cotton', NULL, 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 6),
-(58, 66, 1, '65', NULL, 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 0),
-(60, 65, 1, '66', NULL, 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 0),
-(70, 68, 15, 'Twill', NULL, 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 0),
-(71, 68, 15, 'Rip-stop', '10.000000', 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 1),
-(72, 68, 16, 'M', NULL, 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 2),
-(73, 68, 16, 'L', '10.000000', 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 3),
-(74, 68, 17, '', NULL, 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 4),
-(75, 68, 18, '100% natural wool', NULL, 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 5),
-(76, 68, 19, 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.', NULL, 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 6),
-(77, 69, 16, 'M-L', NULL, 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 2),
-(78, 69, 16, 'L-XL', '15.000000', 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 3),
-(79, 69, 17, '', NULL, 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 4),
-(80, 69, 18, '100% Cotton', NULL, 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 5),
-(81, 69, 19, 'Jumper ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.', NULL, 0, 0, '', NULL, NULL, NULL, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 6);
-
 -- --------------------------------------------------------
 
 --
@@ -4288,20 +4214,14 @@ CREATE TABLE `pz5yp_virtuemart_product_manufacturers` (
 --
 
 INSERT INTO `pz5yp_virtuemart_product_manufacturers` (`id`, `virtuemart_product_id`, `virtuemart_manufacturer_id`) VALUES
-(11, 11, 2),
-(12, 15, 2),
-(13, 19, 2),
-(14, 20, 2),
-(15, 21, 2),
-(21, 27, 2),
-(54, 60, 3),
-(55, 61, 3),
-(56, 62, 2),
-(58, 64, 2),
-(59, 65, 2),
-(60, 66, 1),
-(62, 68, 2),
-(64, 69, 3);
+(67, 72, 4),
+(70, 75, 4),
+(72, 77, 4),
+(66, 71, 4),
+(69, 74, 4),
+(71, 76, 4),
+(65, 70, 4),
+(68, 73, 4);
 
 -- --------------------------------------------------------
 
@@ -4321,18 +4241,14 @@ CREATE TABLE `pz5yp_virtuemart_product_medias` (
 --
 
 INSERT INTO `pz5yp_virtuemart_product_medias` (`id`, `virtuemart_product_id`, `virtuemart_media_id`, `ordering`) VALUES
-(9, 15, 8, 1),
-(10, 19, 8, 1),
-(14, 27, 8, 1),
-(17, 60, 8, 1),
-(18, 61, 10, 1),
-(19, 62, 11, 1),
-(31, 11, 21, 1),
-(21, 64, 8, 1),
-(22, 65, 13, 1),
-(23, 66, 14, 1),
-(25, 68, 8, 1),
-(26, 69, 16, 1);
+(35, 72, 22, 1),
+(39, 76, 22, 1),
+(33, 70, 22, 1),
+(37, 74, 22, 1),
+(38, 75, 22, 1),
+(40, 77, 22, 1),
+(34, 71, 22, 1),
+(36, 73, 22, 1);
 
 -- --------------------------------------------------------
 
@@ -4367,22 +4283,14 @@ CREATE TABLE `pz5yp_virtuemart_product_prices` (
 --
 
 INSERT INTO `pz5yp_virtuemart_product_prices` (`virtuemart_product_price_id`, `virtuemart_product_id`, `virtuemart_shoppergroup_id`, `product_price`, `override`, `product_override_price`, `product_tax_id`, `product_discount_id`, `product_currency`, `product_price_publish_up`, `product_price_publish_down`, `price_quantity_start`, `price_quantity_end`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`) VALUES
-(10, 11, 0, '10.000000', 0, '0.00000', 0, 0, 47, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '2014-10-19 02:49:50', 254, '2014-10-19 02:49:50', 254, '0000-00-00 00:00:00', 0),
-(14, 15, 0, '10.000000', 0, '0.00000', 0, 0, 47, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(19, 19, 0, '10.000000', 0, '0.00000', 0, 0, 47, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(20, 21, 0, '20.000000', 0, '0.00000', 0, 0, 47, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(25, 27, 0, '40.000000', 0, '0.00000', 0, 0, 47, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(28, 61, 0, '29.000000', 0, '0.00000', 0, 0, 47, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(29, 62, 0, '34.900000', 0, '0.00000', 0, 0, 47, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(31, 64, 0, '25.000000', 0, '0.00000', 0, 0, 47, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(32, 65, 0, '24.900000', 0, '0.00000', 0, 0, 47, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(33, 66, 0, '15.000000', 0, '0.00000', 0, 0, 47, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(35, 68, 0, '249.900000', 0, '0.00000', 0, 0, 47, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(36, 69, 0, '149.900000', 0, '0.00000', 0, 0, 47, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(43, 61, 3, '14.900000', 0, '0.00000', 0, 0, 47, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(44, 62, 3, '24.900000', 0, '0.00000', 0, 0, 47, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(46, 65, 3, '14.900000', 0, '0.00000', 0, 0, 47, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(47, 66, 3, '9.900000', 0, '0.00000', 0, 0, 47, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0);
+(49, 71, 0, '10000000.000000', 0, '0.00000', -1, -1, 147, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '2015-10-27 09:42:42', 254, '2015-10-27 09:42:42', 254, '0000-00-00 00:00:00', 0),
+(55, 77, 0, '10000000.000000', 0, '0.00000', -1, -1, 147, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '2015-10-27 09:42:52', 254, '2015-10-27 09:42:52', 254, '0000-00-00 00:00:00', 0),
+(52, 74, 0, '10000000.000000', 0, '0.00000', -1, -1, 147, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '2015-10-27 09:42:52', 254, '2015-10-27 09:42:52', 254, '0000-00-00 00:00:00', 0),
+(54, 76, 0, '10000000.000000', 0, '0.00000', -1, -1, 147, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '2015-10-27 09:42:52', 254, '2015-10-27 09:42:52', 254, '0000-00-00 00:00:00', 0),
+(48, 70, 0, '10000000.000000', 0, '0.00000', -1, -1, 147, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '2015-10-27 09:08:30', 254, '2015-10-27 09:41:02', 254, '0000-00-00 00:00:00', 0),
+(50, 72, 0, '10000000.000000', 0, '0.00000', -1, -1, 147, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '2015-10-27 09:42:45', 254, '2015-10-27 09:42:45', 254, '0000-00-00 00:00:00', 0),
+(51, 73, 0, '10000000.000000', 0, '0.00000', -1, -1, 147, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '2015-10-27 09:42:45', 254, '2015-10-27 09:42:45', 254, '0000-00-00 00:00:00', 0),
+(53, 75, 0, '10000000.000000', 0, '0.00000', -1, -1, 147, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '2015-10-27 09:42:52', 254, '2015-10-27 09:42:52', 254, '0000-00-00 00:00:00', 0);
 
 -- --------------------------------------------------------
 
@@ -4414,24 +4322,6 @@ CREATE TABLE `pz5yp_virtuemart_ratings` (
   `modified_on` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `modified_by` int(1) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Stores all ratings for a product';
-
---
--- Dumping data for table `pz5yp_virtuemart_ratings`
---
-
-INSERT INTO `pz5yp_virtuemart_ratings` (`virtuemart_rating_id`, `virtuemart_product_id`, `rates`, `ratingcount`, `rating`, `published`, `created_on`, `created_by`, `modified_on`, `modified_by`) VALUES
-(5, 11, 5, 1, '5.0', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(6, 15, 5, 1, '5.0', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(12, 21, 5, 1, '5.0', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(13, 20, 3, 1, '3.0', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(14, 19, 5, 1, '5.0', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(16, 60, 5, 1, '5.0', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(17, 61, 4, 1, '4.0', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(18, 62, 4, 1, '4.0', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(20, 64, 4, 1, '4.0', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(21, 65, 5, 1, '5.0', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(22, 66, 5, 1, '5.0', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(27, 69, 4, 1, '4.0', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0);
 
 -- --------------------------------------------------------
 
@@ -4474,24 +4364,6 @@ CREATE TABLE `pz5yp_virtuemart_rating_votes` (
   `modified_on` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `modified_by` int(1) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Stores all ratings for a product';
-
---
--- Dumping data for table `pz5yp_virtuemart_rating_votes`
---
-
-INSERT INTO `pz5yp_virtuemart_rating_votes` (`virtuemart_rating_vote_id`, `virtuemart_product_id`, `vote`, `lastip`, `created_on`, `created_by`, `modified_on`, `modified_by`) VALUES
-(5, 11, 5, '::1', '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(6, 15, 5, '::1', '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(12, 21, 5, '::1', '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(13, 20, 3, '::1', '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(14, 19, 5, '::1', '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(16, 60, 5, '::1', '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(17, 61, 4, '::1', '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(18, 62, 4, '::1', '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(20, 64, 4, '::1', '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(21, 65, 5, '::1', '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(22, 66, 5, '::1', '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(27, 69, 4, '::1', '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0);
 
 -- --------------------------------------------------------
 
@@ -7020,7 +6892,7 @@ ALTER TABLE `pz5yp_acymailing_url`
 -- AUTO_INCREMENT for table `pz5yp_assets`
 --
 ALTER TABLE `pz5yp_assets`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Primary Key', AUTO_INCREMENT=110;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Primary Key', AUTO_INCREMENT=119;
 --
 -- AUTO_INCREMENT for table `pz5yp_banners`
 --
@@ -7090,7 +6962,7 @@ ALTER TABLE `pz5yp_languages`
 -- AUTO_INCREMENT for table `pz5yp_menu`
 --
 ALTER TABLE `pz5yp_menu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=243;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=251;
 --
 -- AUTO_INCREMENT for table `pz5yp_menu_types`
 --
@@ -7105,7 +6977,7 @@ ALTER TABLE `pz5yp_messages`
 -- AUTO_INCREMENT for table `pz5yp_modules`
 --
 ALTER TABLE `pz5yp_modules`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=166;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=175;
 --
 -- AUTO_INCREMENT for table `pz5yp_newsfeeds`
 --
@@ -7275,7 +7147,7 @@ ALTER TABLE `pz5yp_virtuemart_manufacturercategories`
 -- AUTO_INCREMENT for table `pz5yp_virtuemart_manufacturers`
 --
 ALTER TABLE `pz5yp_virtuemart_manufacturers`
-  MODIFY `virtuemart_manufacturer_id` smallint(1) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `virtuemart_manufacturer_id` smallint(1) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `pz5yp_virtuemart_manufacturer_medias`
 --
@@ -7285,7 +7157,7 @@ ALTER TABLE `pz5yp_virtuemart_manufacturer_medias`
 -- AUTO_INCREMENT for table `pz5yp_virtuemart_medias`
 --
 ALTER TABLE `pz5yp_virtuemart_medias`
-  MODIFY `virtuemart_media_id` int(1) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `virtuemart_media_id` int(1) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 --
 -- AUTO_INCREMENT for table `pz5yp_virtuemart_migration_oldtonew_ids`
 --
@@ -7350,12 +7222,12 @@ ALTER TABLE `pz5yp_virtuemart_permgroups`
 -- AUTO_INCREMENT for table `pz5yp_virtuemart_products`
 --
 ALTER TABLE `pz5yp_virtuemart_products`
-  MODIFY `virtuemart_product_id` int(1) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
+  MODIFY `virtuemart_product_id` int(1) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78;
 --
 -- AUTO_INCREMENT for table `pz5yp_virtuemart_product_categories`
 --
 ALTER TABLE `pz5yp_virtuemart_product_categories`
-  MODIFY `id` int(1) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
+  MODIFY `id` int(1) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=89;
 --
 -- AUTO_INCREMENT for table `pz5yp_virtuemart_product_customfields`
 --
@@ -7365,17 +7237,17 @@ ALTER TABLE `pz5yp_virtuemart_product_customfields`
 -- AUTO_INCREMENT for table `pz5yp_virtuemart_product_manufacturers`
 --
 ALTER TABLE `pz5yp_virtuemart_product_manufacturers`
-  MODIFY `id` int(1) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
+  MODIFY `id` int(1) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
 --
 -- AUTO_INCREMENT for table `pz5yp_virtuemart_product_medias`
 --
 ALTER TABLE `pz5yp_virtuemart_product_medias`
-  MODIFY `id` int(1) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id` int(1) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 --
 -- AUTO_INCREMENT for table `pz5yp_virtuemart_product_prices`
 --
 ALTER TABLE `pz5yp_virtuemart_product_prices`
-  MODIFY `virtuemart_product_price_id` int(1) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+  MODIFY `virtuemart_product_price_id` int(1) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 --
 -- AUTO_INCREMENT for table `pz5yp_virtuemart_product_shoppergroups`
 --
