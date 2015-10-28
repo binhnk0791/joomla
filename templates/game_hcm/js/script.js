@@ -10,3 +10,9 @@
  * @Link:         http://t3-framework.org 
  *------------------------------------------------------------------------------
  */
+
+(function($){
+  $(document).ready(function(){
+    $("#t3-header").sticky({topSpacing:0});
+  });
+})(jQuery);

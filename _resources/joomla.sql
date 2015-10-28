@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 27, 2015 at 09:45 AM
+-- Generation Time: Oct 28, 2015 at 09:05 AM
 -- Server version: 5.6.27
 -- PHP Version: 5.5.27
 
@@ -546,7 +546,7 @@ CREATE TABLE `pz5yp_assets` (
 --
 
 INSERT INTO `pz5yp_assets` (`id`, `parent_id`, `lft`, `rgt`, `level`, `name`, `title`, `rules`) VALUES
-(1, 0, 1, 177, 0, 'root.1', 'Root Asset', '{"core.login.site":{"6":1,"2":1},"core.login.admin":{"6":1},"core.login.offline":{"6":1},"core.admin":{"8":1},"core.manage":{"7":1},"core.create":{"6":1,"3":1},"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"core.edit.own":{"6":1,"3":1}}'),
+(1, 0, 1, 183, 0, 'root.1', 'Root Asset', '{"core.login.site":{"6":1,"2":1},"core.login.admin":{"6":1},"core.login.offline":{"6":1},"core.admin":{"8":1},"core.manage":{"7":1},"core.create":{"6":1,"3":1},"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"core.edit.own":{"6":1,"3":1}}'),
 (2, 1, 1, 2, 1, 'com_admin', 'com_admin', '{}'),
 (3, 1, 3, 6, 1, 'com_banners', 'com_banners', '{"core.admin":{"7":1},"core.manage":{"6":1},"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
 (4, 1, 7, 8, 1, 'com_cache', 'com_cache', '{"core.admin":{"7":1},"core.manage":{"7":1}}'),
@@ -563,33 +563,33 @@ INSERT INTO `pz5yp_assets` (`id`, `parent_id`, `lft`, `rgt`, `level`, `name`, `t
 (15, 1, 37, 38, 1, 'com_media', 'com_media', '{"core.admin":{"7":1},"core.manage":{"6":1},"core.create":{"3":1},"core.delete":{"5":1}}'),
 (16, 1, 39, 40, 1, 'com_menus', 'com_menus', '{"core.admin":{"7":1},"core.manage":[],"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
 (17, 1, 41, 42, 1, 'com_messages', 'com_messages', '{"core.admin":{"7":1},"core.manage":{"7":1}}'),
-(18, 1, 43, 132, 1, 'com_modules', 'com_modules', '{"core.admin":{"7":1},"core.manage":[],"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
-(19, 1, 133, 136, 1, 'com_newsfeeds', 'com_newsfeeds', '{"core.admin":{"7":1},"core.manage":{"6":1},"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'),
-(20, 1, 137, 138, 1, 'com_plugins', 'com_plugins', '{"core.admin":{"7":1},"core.manage":[],"core.edit":[],"core.edit.state":[]}'),
-(21, 1, 139, 140, 1, 'com_redirect', 'com_redirect', '{"core.admin":{"7":1},"core.manage":[]}'),
-(22, 1, 141, 142, 1, 'com_search', 'com_search', '{"core.admin":{"7":1},"core.manage":{"6":1}}'),
-(23, 1, 143, 144, 1, 'com_templates', 'com_templates', '{"core.admin":{"7":1},"core.manage":[],"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
-(24, 1, 145, 148, 1, 'com_users', 'com_users', '{"core.admin":{"7":1},"core.manage":[],"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
-(25, 1, 149, 152, 1, 'com_weblinks', 'com_weblinks', '{"core.admin":{"7":1},"core.manage":{"6":1},"core.create":{"3":1},"core.delete":[],"core.edit":{"4":1},"core.edit.state":{"5":1},"core.edit.own":[]}'),
-(26, 1, 153, 154, 1, 'com_wrapper', 'com_wrapper', '{}'),
+(18, 1, 43, 138, 1, 'com_modules', 'com_modules', '{"core.admin":{"7":1},"core.manage":[],"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
+(19, 1, 139, 142, 1, 'com_newsfeeds', 'com_newsfeeds', '{"core.admin":{"7":1},"core.manage":{"6":1},"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'),
+(20, 1, 143, 144, 1, 'com_plugins', 'com_plugins', '{"core.admin":{"7":1},"core.manage":[],"core.edit":[],"core.edit.state":[]}'),
+(21, 1, 145, 146, 1, 'com_redirect', 'com_redirect', '{"core.admin":{"7":1},"core.manage":[]}'),
+(22, 1, 147, 148, 1, 'com_search', 'com_search', '{"core.admin":{"7":1},"core.manage":{"6":1}}'),
+(23, 1, 149, 150, 1, 'com_templates', 'com_templates', '{"core.admin":{"7":1},"core.manage":[],"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
+(24, 1, 151, 154, 1, 'com_users', 'com_users', '{"core.admin":{"7":1},"core.manage":[],"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
+(25, 1, 155, 158, 1, 'com_weblinks', 'com_weblinks', '{"core.admin":{"7":1},"core.manage":{"6":1},"core.create":{"3":1},"core.delete":[],"core.edit":{"4":1},"core.edit.state":{"5":1},"core.edit.own":[]}'),
+(26, 1, 159, 160, 1, 'com_wrapper', 'com_wrapper', '{}'),
 (27, 8, 18, 19, 2, 'com_content.category.2', 'Uncategorised', '{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'),
 (28, 3, 4, 5, 2, 'com_banners.category.3', 'Uncategorised', '{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
 (29, 7, 14, 15, 2, 'com_contact.category.4', 'Uncategorised', '{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'),
-(30, 19, 134, 135, 2, 'com_newsfeeds.category.5', 'Uncategorised', '{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'),
-(31, 25, 150, 151, 2, 'com_weblinks.category.6', 'Uncategorised', '{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'),
-(32, 24, 146, 147, 1, 'com_users.category.7', 'Uncategorised', '{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
-(33, 1, 155, 156, 1, 'com_finder', 'com_finder', '{"core.admin":{"7":1},"core.manage":{"6":1}}'),
-(34, 1, 157, 158, 1, 'com_joomlaupdate', 'com_joomlaupdate', '{"core.admin":[],"core.manage":[],"core.delete":[],"core.edit.state":[]}'),
+(30, 19, 140, 141, 2, 'com_newsfeeds.category.5', 'Uncategorised', '{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'),
+(31, 25, 156, 157, 2, 'com_weblinks.category.6', 'Uncategorised', '{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'),
+(32, 24, 152, 153, 1, 'com_users.category.7', 'Uncategorised', '{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
+(33, 1, 161, 162, 1, 'com_finder', 'com_finder', '{"core.admin":{"7":1},"core.manage":{"6":1}}'),
+(34, 1, 163, 164, 1, 'com_joomlaupdate', 'com_joomlaupdate', '{"core.admin":[],"core.manage":[],"core.delete":[],"core.edit.state":[]}'),
 (35, 8, 20, 21, 2, 'com_content.category.8', 'Menus', '{"core.create":{"6":1,"3":1},"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"core.edit.own":{"6":1,"3":1}}'),
 (36, 8, 22, 23, 2, 'com_content.category.9', 'Company', '{"core.create":{"6":1,"3":1},"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"core.edit.own":{"6":1,"3":1}}'),
-(37, 1, 159, 160, 1, 'com_acymailing', 'acymailing', '{}'),
-(40, 1, 161, 162, 1, 'com_virtuemart_allinone', 'virtuemart_allinone', '{}'),
-(46, 1, 163, 164, 1, 'com_tags', 'com_tags', '{}'),
-(47, 1, 165, 166, 1, 'com_contenthistory', 'com_contenthistory', '{}'),
-(48, 1, 167, 168, 1, 'com_ajax', 'com_ajax', '{}'),
-(49, 1, 169, 170, 1, 'com_postinstall', 'com_postinstall', '{}'),
+(37, 1, 165, 166, 1, 'com_acymailing', 'acymailing', '{}'),
+(40, 1, 167, 168, 1, 'com_virtuemart_allinone', 'virtuemart_allinone', '{}'),
+(46, 1, 169, 170, 1, 'com_tags', 'com_tags', '{}'),
+(47, 1, 171, 172, 1, 'com_contenthistory', 'com_contenthistory', '{}'),
+(48, 1, 173, 174, 1, 'com_ajax', 'com_ajax', '{}'),
+(49, 1, 175, 176, 1, 'com_postinstall', 'com_postinstall', '{}'),
 (51, 18, 44, 45, 2, 'com_modules.module.114', 'Featured Category Menus', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1}}'),
-(54, 1, 171, 172, 1, '#__ucm_content.1', '#__ucm_content.1', '[]'),
+(54, 1, 177, 178, 1, '#__ucm_content.1', '#__ucm_content.1', '[]'),
 (58, 18, 46, 47, 2, 'com_modules.module.115', 'Brand Listing', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1}}'),
 (59, 18, 48, 49, 2, 'com_modules.module.125', 'HikaShop Content Module', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1}}'),
 (60, 18, 50, 51, 2, 'com_modules.module.121', 'Latest products', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1}}'),
@@ -599,9 +599,9 @@ INSERT INTO `pz5yp_assets` (`id`, `parent_id`, `lft`, `rgt`, `level`, `name`, `t
 (64, 18, 58, 59, 2, 'com_modules.module.119', 'Categories on 2 levels', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1}}'),
 (65, 18, 60, 61, 2, 'com_modules.module.131', 'Associated products listing for category listing menu 191', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1}}'),
 (66, 18, 62, 63, 2, 'com_modules.module.133', 'Categories', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1}}'),
-(77, 1, 173, 174, 1, 'com_virtuemart', 'VIRTUEMART', '{"core.admin":{"1":1},"core.manage":{"1":1},"vm.manage":{"1":1},"vm.managevendors":{"1":1},"vm.raw":{"1":1},"vm.html":{"1":1},"vm.category":[],"vm.category.edit":[],"vm.category.create":[],"vm.category.delete":[],"vm.category.edit.state":[],"vm.product":[],"vm.product.edit":[],"vm.product.create":[],"vm.product.delete":[],"vm.product.edit.state":[],"vm.inventory":[],"vm.ratings":[],"vm.ratings.edit":[],"vm.ratings.delete":[],"vm.ratings.edit.state":[],"vm.custom":[],"vm.custom.edit":[],"vm.custom.create":[],"vm.custom.delete":[],"vm.calc":[],"vm.calc.edit":[],"vm.calc.create":[],"vm.calc.delete":[],"vm.orders":[],"vm.orders.edit":[],"vm.orders.status":[],"vm.report":[],"vm.user":[],"vm.user.edit":[],"vm.user.editshop":[],"vm.shoppergroup":[],"vm.shoppergroup.edit":[],"vm.coupon":[],"vm.coupon.edit":[],"vm.coupon.create":[],"vm.coupon.delete":[],"vm.manufacturer":[],"vm.manufacturer.edit":[],"vm.manufacturer.create":[],"vm.manufacturer.delete":[],"vm.manufacturer.edit.state":[],"vm.manufacturercategories":[],"vm.media":[],"vm.media.edit":[],"vm.media.create":[],"vm.media.delete":[],"vm.shipmentmethod":[],"vm.shipmentmethod.edit":[],"vm.shipmentmethod.create":[],"vm.shipmentmethod.delete":[],"vm.paymentmethod":[],"vm.paymentmethod.edit":[],"vm.paymentmethod.create":[],"vm.paymentmethod.delete":[],"vm.config":[],"vm.userfields":[],"vm.orderstatus":[],"vm.currency":[],"vm.country":[],"vm.updatesmigration":[],"vm.about":[]}'),
+(77, 1, 179, 180, 1, 'com_virtuemart', 'VIRTUEMART', '{"core.admin":{"1":1},"core.manage":{"1":1},"vm.manage":{"1":1},"vm.managevendors":{"1":1},"vm.raw":{"1":1},"vm.html":{"1":1},"vm.category":[],"vm.category.edit":[],"vm.category.create":[],"vm.category.delete":[],"vm.category.edit.state":[],"vm.product":[],"vm.product.edit":[],"vm.product.create":[],"vm.product.delete":[],"vm.product.edit.state":[],"vm.inventory":[],"vm.ratings":[],"vm.ratings.edit":[],"vm.ratings.delete":[],"vm.ratings.edit.state":[],"vm.custom":[],"vm.custom.edit":[],"vm.custom.create":[],"vm.custom.delete":[],"vm.calc":[],"vm.calc.edit":[],"vm.calc.create":[],"vm.calc.delete":[],"vm.orders":[],"vm.orders.edit":[],"vm.orders.status":[],"vm.report":[],"vm.user":[],"vm.user.edit":[],"vm.user.editshop":[],"vm.shoppergroup":[],"vm.shoppergroup.edit":[],"vm.coupon":[],"vm.coupon.edit":[],"vm.coupon.create":[],"vm.coupon.delete":[],"vm.manufacturer":[],"vm.manufacturer.edit":[],"vm.manufacturer.create":[],"vm.manufacturer.delete":[],"vm.manufacturer.edit.state":[],"vm.manufacturercategories":[],"vm.media":[],"vm.media.edit":[],"vm.media.create":[],"vm.media.delete":[],"vm.shipmentmethod":[],"vm.shipmentmethod.edit":[],"vm.shipmentmethod.create":[],"vm.shipmentmethod.delete":[],"vm.paymentmethod":[],"vm.paymentmethod.edit":[],"vm.paymentmethod.create":[],"vm.paymentmethod.delete":[],"vm.config":[],"vm.userfields":[],"vm.orderstatus":[],"vm.currency":[],"vm.country":[],"vm.updatesmigration":[],"vm.about":[]}'),
 (78, 18, 64, 65, 2, 'com_modules.module.141', 'VM - Administrator Module', '{}'),
-(85, 1, 175, 176, 1, 'com_tcpdf', 'tcpdf', '{}'),
+(85, 1, 181, 182, 1, 'com_tcpdf', 'tcpdf', '{}'),
 (86, 18, 66, 67, 2, 'com_modules.module.142', 'JA Login', '{}'),
 (87, 18, 68, 69, 2, 'com_modules.module.143', 'JA Twitter Module', '{}'),
 (88, 18, 70, 71, 2, 'com_modules.module.144', 'Search', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}'),
@@ -623,7 +623,7 @@ INSERT INTO `pz5yp_assets` (`id`, `parent_id`, `lft`, `rgt`, `level`, `name`, `t
 (104, 18, 102, 103, 2, 'com_modules.module.160', 'Phụ Kiện', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}'),
 (105, 18, 104, 105, 2, 'com_modules.module.161', 'Secondhand', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}'),
 (106, 18, 106, 107, 2, 'com_modules.module.162', 'Features Banner footer', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}'),
-(107, 18, 108, 109, 2, 'com_modules.module.163', 'Liên Hệ', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}'),
+(107, 18, 108, 109, 2, 'com_modules.module.163', 'Bản đồ', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}'),
 (108, 18, 110, 111, 2, 'com_modules.module.164', 'Sản Phẩm', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}'),
 (109, 18, 112, 113, 2, 'com_modules.module.165', 'Chính Sách', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}'),
 (110, 18, 114, 115, 2, 'com_modules.module.166', 'Newsletters', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}'),
@@ -634,7 +634,10 @@ INSERT INTO `pz5yp_assets` (`id`, `parent_id`, `lft`, `rgt`, `level`, `name`, `t
 (115, 18, 124, 125, 2, 'com_modules.module.171', 'Category', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}'),
 (116, 18, 126, 127, 2, 'com_modules.module.172', 'Login', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}'),
 (117, 18, 128, 129, 2, 'com_modules.module.173', 'Manufacturers', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}'),
-(118, 18, 130, 131, 2, 'com_modules.module.174', 'Shopping Cart', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}');
+(118, 18, 130, 131, 2, 'com_modules.module.174', 'Shopping Cart', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}'),
+(119, 18, 132, 133, 2, 'com_modules.module.175', 'Liên Hệ', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}'),
+(120, 18, 134, 135, 2, 'com_modules.module.176', 'JA Facebook Like Box Module', '{"core.delete":[],"core.edit":[],"core.edit.state":[],"module.edit.frontend":[]}'),
+(121, 18, 136, 137, 2, 'com_modules.module.177', 'Facebook Likebox', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"module.edit.frontend":[]}');
 
 -- --------------------------------------------------------
 
@@ -1030,7 +1033,7 @@ INSERT INTO `pz5yp_extensions` (`extension_id`, `name`, `type`, `element`, `fold
 (100, 'PHPMailer', 'library', 'phpmailer', '', 0, 1, 1, 1, '{"legacy":false,"name":"PHPMailer","type":"library","creationDate":"2001","author":"PHPMailer","copyright":"(c) 2001-2003, Brent R. Matzelle, (c) 2004-2009, Andy Prevost. All Rights Reserved., (c) 2010-2011, Jim Jagielski. All Rights Reserved.","authorEmail":"jimjag@gmail.com","authorUrl":"https:\\/\\/code.google.com\\/a\\/apache-extras.org\\/p\\/phpmailer\\/","version":"5.2","description":"LIB_PHPMAILER_XML_DESCRIPTION","group":""}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (101, 'SimplePie', 'library', 'simplepie', '', 0, 1, 1, 1, '{"legacy":false,"name":"SimplePie","type":"library","creationDate":"2004","author":"SimplePie","copyright":"Copyright (c) 2004-2009, Ryan Parman and Geoffrey Sneddon","authorEmail":"","authorUrl":"http:\\/\\/simplepie.org\\/","version":"1.2","description":"LIB_SIMPLEPIE_XML_DESCRIPTION","group":""}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (102, 'phputf8', 'library', 'phputf8', '', 0, 1, 1, 1, '{"legacy":false,"name":"phputf8","type":"library","creationDate":"2006","author":"Harry Fuecks","copyright":"Copyright various authors","authorEmail":"hfuecks@gmail.com","authorUrl":"http:\\/\\/sourceforge.net\\/projects\\/phputf8","version":"0.5","description":"LIB_PHPUTF8_XML_DESCRIPTION","group":""}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
-(103, 'Joomla! Platform', 'library', 'joomla', '', 0, 1, 1, 1, '{"legacy":false,"name":"Joomla! Platform","type":"library","creationDate":"2008","author":"Joomla! Project","copyright":"Copyright (C) 2005 - 2014 Open Source Matters. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"http:\\/\\/www.joomla.org","version":"11.4","description":"LIB_JOOMLA_XML_DESCRIPTION","group":""}', '{"mediaversion":"dc264746d66527c41504b8f95f6aea77"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(103, 'Joomla! Platform', 'library', 'joomla', '', 0, 1, 1, 1, '{"legacy":false,"name":"Joomla! Platform","type":"library","creationDate":"2008","author":"Joomla! Project","copyright":"Copyright (C) 2005 - 2014 Open Source Matters. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"http:\\/\\/www.joomla.org","version":"11.4","description":"LIB_JOOMLA_XML_DESCRIPTION","group":""}', '{"mediaversion":"c3def54baa548ead6e35e6bdbb48c028"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (104, 'IDNA Convert', 'library', 'idna_convert', '', 0, 1, 1, 1, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (105, 'FOF', 'library', 'fof', '', 0, 1, 1, 1, '{"legacy":false,"name":"FOF","type":"library","creationDate":"2013-10-08","author":"Nicholas K. Dionysopoulos / Akeeba Ltd","copyright":"(C)2011-2013 Nicholas K. Dionysopoulos","authorEmail":"nicholas@akeebabackup.com","authorUrl":"https://www.akeebabackup.com","version":"2.1.rc4","description":"Framework-on-Framework (FOF) - A rapid component development framework for Joomla!","group":""}', '{}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (106, 'PHPass', 'library', 'phpass', '', 0, 1, 1, 1, '{"legacy":false,"name":"PHPass","type":"library","creationDate":"2004-2006","author":"Solar Designer","authorEmail":"solar@openwall.com","authorUrl":"http://www.openwall.com/phpass","version":"0.3","description":"LIB_PHPASS_XML_DESCRIPTION","group":""}', '{}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
@@ -1196,7 +1199,8 @@ INSERT INTO `pz5yp_extensions` (`extension_id`, `name`, `type`, `element`, `fold
 (10218, 'hathor', 'template', 'hathor', '', 1, 1, 1, 0, '{"name":"hathor","type":"template","creationDate":"May 2010","author":"Andrea Tarr","copyright":"Copyright (C) 2005 - 2015 Open Source Matters, Inc. All rights reserved.","authorEmail":"hathor@tarrconsulting.com","authorUrl":"http:\\/\\/www.tarrconsulting.com","version":"3.0.0","description":"TPL_HATHOR_XML_DESCRIPTION","group":"","filename":"templateDetails"}', '{"showSiteName":"0","logoFile":"","colourChoice":"0","boldText":"0"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (10219, 'game_hcm', 'template', 'game_hcm', '', 0, 1, 1, 0, '{"name":"game_hcm","type":"template","creationDate":"30 Oct 2015","author":"binhnk.info","copyright":"Copyright (C), J.O.O.M Solutions Co., Ltd. All Rights Reserved.","authorEmail":"binhnk0791@gmail.com","authorUrl":"http:\\/\\/binhnk.info","version":"1.0","description":"\\n\\t\\t\\n\\t\\t<div align=\\"center\\">\\n\\t\\t\\t<div class=\\"alert alert-success\\" style=\\"background-color:#DFF0D8;border-color:#D6E9C6;color: #468847;padding: 1px 0;\\">\\n\\t\\t\\t\\t<a href=\\"http:\\/\\/t3-framework.org\\/\\"><img src=\\"http:\\/\\/joomlart.s3.amazonaws.com\\/images\\/jat3v3-documents\\/message-installation\\/logo.png\\" alt=\\"some_text\\" width=\\"300\\" height=\\"99\\"><\\/a>\\n\\t\\t\\t\\t<h4><a href=\\"http:\\/\\/t3-framework.org\\/\\" title=\\"\\">Home<\\/a> | <a href=\\"http:\\/\\/demo.t3-framework.org\\/\\" title=\\"\\">Demo<\\/a> | <a href=\\"http:\\/\\/t3-framework.org\\/documentation\\" title=\\"\\">Document<\\/a> | <a href=\\"https:\\/\\/github.com\\/t3framework\\/t3\\/blob\\/master\\/CHANGELOG.md\\" title=\\"\\">Changelog<\\/a><\\/h4>\\n\\t\\t\\t\\t<p> <\\/p>\\n\\t\\t\\t\\t<span style=\\"color:#FF0000\\">Note: T3 blank requires T3 plugin to be installed and enabled.<\\/span><p><\\/p>\\n\\t\\t\\t\\t<p>Copyright 2004 - 2015 <a href=''http:\\/\\/www.joomlart.com\\/'' title=''Visit Joomlart.com!''>JoomlArt.com<\\/a>.<\\/p>\\n\\t\\t\\t<\\/div>\\n\\t\\t\\t<style>table.adminform{width: 100%;}<\\/style>\\n\\t\\t<\\/div>\\n\\t\\t\\n\\t","group":"","filename":"templateDetails"}', '{}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (10220, 'JA Login', 'module', 'mod_jalogin', '', 0, 1, 0, 0, '{"name":"JA Login","type":"module","creationDate":"21 May 2015","author":"JoomlArt.com","copyright":"J.O.O.M Solutions Co., Ltd.","authorEmail":"webmaster@joomlart.com","authorUrl":"www.joomlart.com","version":"2.6.5","description":"\\n\\t \\n\\t \\t<style type=\\"text\\/css\\">\\n\\t \\t\\t.mod-desc li{\\t\\t\\t\\t\\n\\t\\t\\t\\tmargin-left:10px;\\n\\t\\t\\t\\tpadding-left:12px;\\n\\t\\t\\t}\\n\\t\\t\\t.mod-desc p{\\n\\t\\t\\t\\tmargin:15px 0;\\n\\t\\t\\t}\\n\\t \\t<\\/style>\\n\\t \\t<span style=\\"color: #008000;\\"><strong>JA Login Module for Joomla! 2.5 & 3.3<\\/strong><\\/span><br \\/>\\n\\t \\t<p><img alt=\\"JA Login Module\\" src=\\"http:\\/\\/static.joomlart.com\\/images\\/stories\\/extensions\\/joomla\\/jaec_ja_login_mod.png\\" \\/><\\/p>\\n\\t\\t<div style=''font-weight:normal''>\\n\\t \\tJA login module is alternate login module for Joomla!, so that CSS overrides can be made for the same, without affecting the default Joomla login module.\\n\\t \\t\\n\\t\\t<p><strong><span style=\\"color: #ff0000;\\">Upgrade Methods:<\\/span><br \\/><\\/strong><\\/p>\\n\\t\\t<ul>\\n\\t\\t\\t<li>You can install new version directly over this version. Uninstallation is not required. Backup any customized files before upgrading. OR<\\/li>\\n\\t\\t\\t<li>Use <strong><a href=\\"http:\\/\\/extensions.joomla.org\\/extensions\\/core-enhancements\\/installers\\/12077\\" target=\\"_blank\\">JA Extensions Manager<\\/a><\\/strong> Component for easy upgrades and rollbacks. <strong><a href=\\"http:\\/\\/www.youtube.com\\/user\\/JoomlArt#p\\/c\\/BC9B0C0BFE98657E\\/2\\/mNAuJRmifG8\\" target=\\"_blank\\">Watch Video..<\\/a><\\/strong><\\/li>\\n\\t\\t<\\/ul>\\n\\t\\t\\n\\t\\t<p><span style=\\"color: #008000;\\"><strong>Links:<\\/strong><\\/span><\\/p>\\n\\t\\t<ul><li><a target=''_blank'' href=''http:\\/\\/update.joomlart.com\\/''>Updates &amp; Versions<\\/a><\\/li><li><a target=''_blank'' href=''http:\\/\\/www.joomlart.com\\/forums\\/showthread.php?52050''>General Userguide<\\/a><\\/li><\\/ul>\\n\\t\\t<p><\\/p>\\n\\t\\t<p>Copyright 2004 - 2015 <a href=\\"http:\\/\\/www.joomlart.com\\/\\" title=\\"Visit Joomlart.com!\\">JoomlArt.com<\\/a>.<\\/p>\\n\\t\\t<\\/div>\\n\\t \\n\\t","group":"","filename":"mod_jalogin"}', '{"pretext":"","greeting":"1","name":"0","show_register_form":"1","usesecure":"0"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
-(10221, 'JA Twitter Module', 'module', 'mod_jatwitter', '', 0, 1, 0, 0, '{"name":"JA Twitter Module","type":"module","creationDate":"27 March 2015","author":"Joomlart.com","copyright":"Copyright (C), J.O.O.M Solutions Co., Ltd. All Rights\\n\\t\\tReserved.","authorEmail":"webmaster@joomlart.com","authorUrl":"http:\\/\\/www.joomlart.com","version":"2.6.3","description":"\\n\\t\\n\\t<div align=\\"left\\">\\n\\t\\t<h1><img border=''0'' alt=''JA Twitter Module'' src=''http:\\/\\/asset.joomlart.com\\/images\\/stories\\/extensions\\/drupal\\/jdec_twitter.png?javer=1110040930'' style=''float: left''\\/>JA Twitter Module for Joomla! 2.5 & 3.x<\\/h1>\\n\\t\\t<div style=\\"font-weight:normal\\">\\n\\t\\tThis module provides API integration with the Twitter microblogging service to drive more traffic to your site. Tweets from your Twitter account and Friends are displayed neatly.\\n\\t\\t<br\\/><br\\/><br\\/><br\\/>\\n\\t\\t\\n\\t\\t<p style=\\"border:1px solid #F29A3C; padding: 10px 15px; background:#F7E6D4;\\">\\n\\t\\t<strong><span style=''color: #ff0000;''>NOTE: update OAuth information to get new version worked!<\\/span><\\/strong><br \\/><br \\/>\\n\\t\\tSince 2013-06-11, Twitter has stopped supporting API v1 and fully moved to API v1.1<br \\/>In API v1.1, Twitter deny non-Authorized request, that means you need to provide the information below to authorize your request.<br \\/>\\n\\t\\t<a target=\\"_blank\\" href=\\"http:\\/\\/www.joomlart.com\\/forums\\/showthread.php?50154-Joomla-1.6-JA-Twitter-Module-Installation-Guide\\">Check how to get OAuth information now<\\/a>\\n\\t\\t<\\/p>\\n\\t\\t\\n\\t\\t<strong><span style=''color: #ff0000;''>Usage Ideas:<\\/span><br \\/><\\/strong>\\n\\t\\t<ol>\\n\\t\\t  <li>Easily configure Twitter account, show or hide Friends list, account infomation, and Twitter updates.<\\/li>\\n\\t\\t  <li>Show Twitter account infomation.<\\/li>\\n\\t\\t  <li>Show Twitter friends list.<\\/li>\\n\\t\\t  <li>Display Twitter updates.<\\/li>\\n\\t\\t<\\/ol>\\n\\t\\n\\t\\t<strong><span style=''color: #ff0000;''>Upgrade Methods:<\\/span><\\/strong><br\\/>\\n\\t\\t<ol>\\n\\t\\t  <li>You can install new version directly over this version. Uninstallation is not required. <\\/li>\\n\\t\\t  <li>Backup any customized files (i.e. CSS files) before upgrading.<\\/li>\\n\\t\\t<\\/ol>\\n\\t\\n\\t\\t<span style=''color: #008000;''><strong>Links:<\\/strong><\\/span><br\\/>\\n\\t\\t<ul>\\n\\t\\t  <li><a target=\\"_blank\\" href=\\"http:\\/\\/www.joomlart.com\\/forums\\/showthread.php?50154-Joomla-1.6-JA-Twitter-Module-Installation-Guide\\">General Userguide<\\/a><\\/li>\\n\\t\\t  <li><a target=''_blank'' href=''http:\\/\\/update.joomlart.com\\/#products.list\\/\\/JA%20Twitter%20Module%20for%20Joomla%202.5\\/''>Updates &amp; Versions<\\/a><\\/li>\\n\\t\\t<\\/ul>\\n\\t\\t<p>Copyright 2004 - 2014 <a href=''http:\\/\\/www.joomlart.com\\/'' title=''Visit Joomlart.com!''>JoomlArt.com<\\/a>.<\\/p>\\n\\t\\t<\\/div>\\n\\t<\\/div>\\n\\t\\n\\t","group":"","filename":"mod_jatwitter"}', '{"consumer_key":"","consumer_secret":"","oauth_access_token":"","oauth_access_token_secret":"","taccount":"JoomlartDemo","use_display_taccount":"0","size_iconaccount":"48","show_tweet":"1","show_limit":"5","show_icon":"1","icon_size":"30","show_username":"1","show_source":"1","showtextheading":"1","headingtext":"My Twitter Updates","use_friends":"0","size_iconfriend":"24","max_friends":"10","showfollowlink":"1","typefollowbutton":"apiconnect","style_of_follow_button":"follow_me-a.png","data-show-count":"false","data-lang":"en","data-width":"","data-align":"left","data-show-screen-name":"false","moduleclass_sfx":"","cache":"1","cache_time":"900"}', '', '', 0, '0000-00-00 00:00:00', 0, 0);
+(10221, 'JA Twitter Module', 'module', 'mod_jatwitter', '', 0, 1, 0, 0, '{"name":"JA Twitter Module","type":"module","creationDate":"27 March 2015","author":"Joomlart.com","copyright":"Copyright (C), J.O.O.M Solutions Co., Ltd. All Rights\\n\\t\\tReserved.","authorEmail":"webmaster@joomlart.com","authorUrl":"http:\\/\\/www.joomlart.com","version":"2.6.3","description":"\\n\\t\\n\\t<div align=\\"left\\">\\n\\t\\t<h1><img border=''0'' alt=''JA Twitter Module'' src=''http:\\/\\/asset.joomlart.com\\/images\\/stories\\/extensions\\/drupal\\/jdec_twitter.png?javer=1110040930'' style=''float: left''\\/>JA Twitter Module for Joomla! 2.5 & 3.x<\\/h1>\\n\\t\\t<div style=\\"font-weight:normal\\">\\n\\t\\tThis module provides API integration with the Twitter microblogging service to drive more traffic to your site. Tweets from your Twitter account and Friends are displayed neatly.\\n\\t\\t<br\\/><br\\/><br\\/><br\\/>\\n\\t\\t\\n\\t\\t<p style=\\"border:1px solid #F29A3C; padding: 10px 15px; background:#F7E6D4;\\">\\n\\t\\t<strong><span style=''color: #ff0000;''>NOTE: update OAuth information to get new version worked!<\\/span><\\/strong><br \\/><br \\/>\\n\\t\\tSince 2013-06-11, Twitter has stopped supporting API v1 and fully moved to API v1.1<br \\/>In API v1.1, Twitter deny non-Authorized request, that means you need to provide the information below to authorize your request.<br \\/>\\n\\t\\t<a target=\\"_blank\\" href=\\"http:\\/\\/www.joomlart.com\\/forums\\/showthread.php?50154-Joomla-1.6-JA-Twitter-Module-Installation-Guide\\">Check how to get OAuth information now<\\/a>\\n\\t\\t<\\/p>\\n\\t\\t\\n\\t\\t<strong><span style=''color: #ff0000;''>Usage Ideas:<\\/span><br \\/><\\/strong>\\n\\t\\t<ol>\\n\\t\\t  <li>Easily configure Twitter account, show or hide Friends list, account infomation, and Twitter updates.<\\/li>\\n\\t\\t  <li>Show Twitter account infomation.<\\/li>\\n\\t\\t  <li>Show Twitter friends list.<\\/li>\\n\\t\\t  <li>Display Twitter updates.<\\/li>\\n\\t\\t<\\/ol>\\n\\t\\n\\t\\t<strong><span style=''color: #ff0000;''>Upgrade Methods:<\\/span><\\/strong><br\\/>\\n\\t\\t<ol>\\n\\t\\t  <li>You can install new version directly over this version. Uninstallation is not required. <\\/li>\\n\\t\\t  <li>Backup any customized files (i.e. CSS files) before upgrading.<\\/li>\\n\\t\\t<\\/ol>\\n\\t\\n\\t\\t<span style=''color: #008000;''><strong>Links:<\\/strong><\\/span><br\\/>\\n\\t\\t<ul>\\n\\t\\t  <li><a target=\\"_blank\\" href=\\"http:\\/\\/www.joomlart.com\\/forums\\/showthread.php?50154-Joomla-1.6-JA-Twitter-Module-Installation-Guide\\">General Userguide<\\/a><\\/li>\\n\\t\\t  <li><a target=''_blank'' href=''http:\\/\\/update.joomlart.com\\/#products.list\\/\\/JA%20Twitter%20Module%20for%20Joomla%202.5\\/''>Updates &amp; Versions<\\/a><\\/li>\\n\\t\\t<\\/ul>\\n\\t\\t<p>Copyright 2004 - 2014 <a href=''http:\\/\\/www.joomlart.com\\/'' title=''Visit Joomlart.com!''>JoomlArt.com<\\/a>.<\\/p>\\n\\t\\t<\\/div>\\n\\t<\\/div>\\n\\t\\n\\t","group":"","filename":"mod_jatwitter"}', '{"consumer_key":"","consumer_secret":"","oauth_access_token":"","oauth_access_token_secret":"","taccount":"JoomlartDemo","use_display_taccount":"0","size_iconaccount":"48","show_tweet":"1","show_limit":"5","show_icon":"1","icon_size":"30","show_username":"1","show_source":"1","showtextheading":"1","headingtext":"My Twitter Updates","use_friends":"0","size_iconfriend":"24","max_friends":"10","showfollowlink":"1","typefollowbutton":"apiconnect","style_of_follow_button":"follow_me-a.png","data-show-count":"false","data-lang":"en","data-width":"","data-align":"left","data-show-screen-name":"false","moduleclass_sfx":"","cache":"1","cache_time":"900"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(10222, 'JA Facebook Like Box Module', 'module', 'mod_jafacebooklikebox', '', 0, 1, 0, 0, '{"name":"JA Facebook Like Box Module","type":"module","creationDate":"July 2015","author":"JoomlArt.com","copyright":"J.O.O.M Solutions Co., Ltd.","authorEmail":"webmaster@joomlart.com","authorUrl":"www.joomlart.com","version":"2.6.1","description":"\\n\\t \\n\\t\\t<div style=''text-align: left;''>\\n\\t \\t<span style=\\"color: #008000;\\"><strong>JA Facebook LikeBox Module for Joomla! 2.5 & 3,x<\\/strong><\\/span><br \\/>\\n\\t \\t<p><img alt=\\"JA Facebook LikeBox Module\\" src=\\"http:\\/\\/static.joomlart.com\\/images\\/stories\\/extensions\\/joomla\\/jaec_facebook_likebox_plg.png\\" \\/><\\/p>\\n\\t\\t<div style=''font-weight:normal''>\\n\\t \\tJA Facebook LikeBox Module, provides Facebook Page owners to attract and gain Likes from their own website content, it uses the <strong><a href=\\"https:\\/\\/developers.facebook.com\\/docs\\/plugins\\/page-plugin\\" target=\\"_blank\\">FaceBook Page Plugin<\\/a><\\/strong> API. \\n\\t \\t<p style=\\"clear:both\\"><span style=\\"color: #ff6600;\\"><strong>Features:<\\/strong><\\/span><\\/p>\\n\\t \\t<ol><li>Show how many users already like your page, and which of their friends like it too<\\/li>\\n\\t\\t<li>Like the page with one click.<\\/li><\\/ol>\\n\\t \\t\\n\\t\\t<p><strong><span style=\\"color: #ff0000;\\">Upgrade Methods:<\\/span><br \\/><\\/strong><\\/p>\\n\\t\\t<ol><li>You can install new version directly over this version. Uninstallation is not required. Backup any customized file before upgrading. OR<\\/li><li>Use <strong><a href=\\"http:\\/\\/extensions.joomla.org\\/extensions\\/core-enhancements\\/installers\\/12077\\" target=\\"_blank\\">JA Extensions Manager<\\/a><\\/strong> Component for easy upgrades and rollbacks. <strong><a href=\\"http:\\/\\/www.youtube.com\\/user\\/JoomlArt#p\\/c\\/BC9B0C0BFE98657E\\/2\\/mNAuJRmifG8\\" target=\\"_blank\\">Watch Video..<\\/a><\\/strong><\\/li><\\/ol>\\n\\t\\t<p><span style=\\"color: #008000;\\"><strong>Links:<\\/strong><\\/span><\\/p>\\n\\t\\t<ul><li><a target=\\"_blank\\" href=\\"http:\\/\\/www.joomlart.com\\/forums\\/showthread.php?49870\\">JA FaceBook LikeBox General Userguide<\\/a><\\/li><li><a target=\\"_blank\\" href=\\"http:\\/\\/pm.joomlart.com\\/browse\\/JAECMODFBLIKEBOXJIVI\\">Report Bug<\\/a><\\/li><li><a target=\\"_blank\\" href=\\"http:\\/\\/update.joomlart.com\\/\\">Updates &amp; Versions<\\/a><\\/li><\\/ul>\\n\\t\\t<p>Copyright 2004 - 2014 <a href=\\"http:\\/\\/www.joomlart.com\\/\\" title=\\"Visit Joomlart.com!\\">JoomlArt.com<\\/a>.<\\/p>\\n\\t\\t<\\/div>\\n\\t\\t<\\/div>\\n\\t \\n\\t","group":"","filename":"mod_jafacebooklikebox"}', '{"jafacebookid":"123144964369587","connections":"1","posts":"1","header":"1","width":"300","height":"587","adapt_width":"1","cache":"1","cache_time":"900"}', '', '', 0, '0000-00-00 00:00:00', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -1739,7 +1743,7 @@ CREATE TABLE `pz5yp_menu` (
 --
 
 INSERT INTO `pz5yp_menu` (`id`, `menutype`, `title`, `alias`, `note`, `path`, `link`, `type`, `published`, `parent_id`, `level`, `component_id`, `checked_out`, `checked_out_time`, `browserNav`, `access`, `img`, `template_style_id`, `params`, `lft`, `rgt`, `home`, `language`, `client_id`) VALUES
-(1, '', 'Menu_Item_Root', 'root', '', '', '', '', 1, 0, 0, 0, 0, '0000-00-00 00:00:00', 0, 0, '', 0, '', 0, 107, 0, '*', 0),
+(1, '', 'Menu_Item_Root', 'root', '', '', '', '', 1, 0, 0, 0, 0, '0000-00-00 00:00:00', 0, 0, '', 0, '', 0, 125, 0, '*', 0),
 (2, 'menu', 'com_banners', 'Banners', '', 'Banners', 'index.php?option=com_banners', 'component', 0, 1, 1, 4, 0, '0000-00-00 00:00:00', 0, 0, 'class:banners', 0, '', 1, 10, 0, '*', 1),
 (3, 'menu', 'com_banners', 'Banners', '', 'Banners/Banners', 'index.php?option=com_banners', 'component', 0, 2, 2, 4, 0, '0000-00-00 00:00:00', 0, 0, 'class:banners', 0, '', 2, 3, 0, '*', 1),
 (4, 'menu', 'com_banners_categories', 'Categories', '', 'Banners/Categories', 'index.php?option=com_categories&extension=com_banners', 'component', 0, 2, 2, 6, 0, '0000-00-00 00:00:00', 0, 0, 'class:banners-cat', 0, '', 4, 5, 0, '*', 1),
@@ -1794,7 +1798,16 @@ INSERT INTO `pz5yp_menu` (`id`, `menutype`, `title`, `alias`, `note`, `path`, `l
 (247, 'main', 'Templates', 'templates', '', 'acymailing/templates', 'index.php?option=com_acymailing&ctrl=template', 'component', 0, 243, 2, 10003, 0, '0000-00-00 00:00:00', 0, 1, '../media/com_acymailing/images/icons/icon-16-acytemplate.png', 0, '{}', 98, 99, 0, '', 1),
 (248, 'main', 'Queue', 'queue', '', 'acymailing/queue', 'index.php?option=com_acymailing&ctrl=queue', 'component', 0, 243, 2, 10003, 0, '0000-00-00 00:00:00', 0, 1, '../media/com_acymailing/images/icons/icon-16-process.png', 0, '{}', 100, 101, 0, '', 1),
 (249, 'main', 'Statistics', 'statistics', '', 'acymailing/statistics', 'index.php?option=com_acymailing&ctrl=stats', 'component', 0, 243, 2, 10003, 0, '0000-00-00 00:00:00', 0, 1, '../media/com_acymailing/images/icons/icon-16-stats.png', 0, '{}', 102, 103, 0, '', 1),
-(250, 'main', 'Configuration', 'configuration', '', 'acymailing/configuration', 'index.php?option=com_acymailing&ctrl=cpanel', 'component', 0, 243, 2, 10003, 0, '0000-00-00 00:00:00', 0, 1, '../media/com_acymailing/images/icons/icon-16-acyconfig.png', 0, '{}', 104, 105, 0, '', 1);
+(250, 'main', 'Configuration', 'configuration', '', 'acymailing/configuration', 'index.php?option=com_acymailing&ctrl=cpanel', 'component', 0, 243, 2, 10003, 0, '0000-00-00 00:00:00', 0, 1, '../media/com_acymailing/images/icons/icon-16-acyconfig.png', 0, '{}', 104, 105, 0, '', 1),
+(251, 'policy', 'Mua/Đổi/Trả Hàng', '2015-10-27-09-55-02', '', '2015-10-27-09-55-02', '#', 'url', 1, 1, 1, 0, 0, '0000-00-00 00:00:00', 0, 1, ' ', 0, '{"menu-anchor_title":"","menu-anchor_css":"","menu_image":"","menu_text":1}', 107, 108, 0, '*', 0),
+(252, 'policy', 'Thanh toán', '2015-10-27-09-55-17', '', '2015-10-27-09-55-17', '#', 'url', 1, 1, 1, 0, 0, '0000-00-00 00:00:00', 0, 1, ' ', 0, '{"menu-anchor_title":"","menu-anchor_css":"","menu_image":"","menu_text":1}', 109, 110, 0, '*', 0),
+(253, 'policy', 'Vận chuyển', '2015-10-27-09-55-30', '', '2015-10-27-09-55-30', '#', 'url', 1, 1, 1, 0, 0, '0000-00-00 00:00:00', 0, 1, ' ', 0, '{"menu-anchor_title":"","menu-anchor_css":"","menu_image":"","menu_text":1}', 111, 112, 0, '*', 0),
+(254, 'policy', 'Bảo Hành', '2015-10-27-09-56-07', '', '2015-10-27-09-56-07', '#', 'url', 1, 1, 1, 0, 0, '0000-00-00 00:00:00', 0, 1, ' ', 0, '{"menu-anchor_title":"","menu-anchor_css":"","menu_image":"","menu_text":1}', 113, 114, 0, '*', 0),
+(255, 'policy', 'About', '2015-10-27-09-56-24', '', '2015-10-27-09-56-24', '#', 'url', 1, 1, 1, 0, 0, '0000-00-00 00:00:00', 0, 1, ' ', 0, '{"menu-anchor_title":"","menu-anchor_css":"","menu_image":"","menu_text":1}', 115, 116, 0, '*', 0),
+(256, 'products', 'Consoles', '2015-10-27-09-56-54', '', '2015-10-27-09-56-54', '#', 'url', 1, 1, 1, 0, 0, '0000-00-00 00:00:00', 0, 1, ' ', 0, '{"menu-anchor_title":"","menu-anchor_css":"","menu_image":"","menu_text":1}', 117, 118, 0, '*', 0),
+(257, 'products', 'Phụ Kiện', '2015-10-27-09-57-09', '', '2015-10-27-09-57-09', '#', 'url', 1, 1, 1, 0, 0, '0000-00-00 00:00:00', 0, 1, ' ', 0, '{"menu-anchor_title":"","menu-anchor_css":"","menu_image":"","menu_text":1}', 119, 120, 0, '*', 0),
+(258, 'products', 'Digital Code', '2015-10-27-09-57-23', '', '2015-10-27-09-57-23', '#', 'url', 1, 1, 1, 0, 0, '0000-00-00 00:00:00', 0, 1, ' ', 0, '{"menu-anchor_title":"","menu-anchor_css":"","menu_image":"","menu_text":1}', 121, 122, 0, '*', 0),
+(259, 'products', 'SecondHand', '2015-10-27-09-57-38', '', '2015-10-27-09-57-38', '#', 'url', 1, 1, 1, 0, 0, '0000-00-00 00:00:00', 0, 1, ' ', 0, '{"menu-anchor_title":"","menu-anchor_css":"","menu_image":"","menu_text":1}', 123, 124, 0, '*', 0);
 
 -- --------------------------------------------------------
 
@@ -1815,7 +1828,10 @@ CREATE TABLE `pz5yp_menu_types` (
 
 INSERT INTO `pz5yp_menu_types` (`id`, `menutype`, `title`, `description`) VALUES
 (1, 'mainmenu', 'Main Menu', 'The main menu for the site'),
-(5, 'defaultmenu', 'Default Menu', '');
+(5, 'defaultmenu', 'Default Menu', ''),
+(6, 'policy', 'Chính Sách', ''),
+(7, 'products', 'Sản Phẩm', ''),
+(8, 'faqs', 'FAQs', '');
 
 -- --------------------------------------------------------
 
@@ -1892,11 +1908,11 @@ INSERT INTO `pz5yp_modules` (`id`, `asset_id`, `title`, `note`, `content`, `orde
 (79, 0, 'Multilanguage status', '', '', 1, 'status', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 'mod_multilangstatus', 3, 1, '{"layout":"_:default","moduleclass_sfx":"","cache":"0"}', 1, '*'),
 (86, 0, 'Joomla Version', '', '', 1, 'footer', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_version', 3, 1, '{"format":"short","product":"1","layout":"_:default","moduleclass_sfx":"","cache":"0"}', 1, '*'),
 (141, 78, 'VM - Administrator Module', '', '', 5, 'menu', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_vmmenu', 3, 1, '', 1, '*'),
-(142, 86, 'JA Login', '', '', 0, '', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 'mod_jalogin', 1, 1, '', 0, '*'),
-(143, 87, 'JA Twitter Module', '', '', 0, '', 254, '2015-10-27 02:15:51', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 'mod_jatwitter', 1, 1, '', 0, '*'),
+(142, 86, 'JA Login', '', '', 0, '', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', -2, 'mod_jalogin', 1, 1, '', 0, '*'),
+(143, 87, 'JA Twitter Module', '', '', 0, '', 254, '2015-10-27 02:15:51', '0000-00-00 00:00:00', '0000-00-00 00:00:00', -2, 'mod_jatwitter', 1, 1, '', 0, '*'),
 (144, 88, 'Search', '', '', 1, 'toolbar-1', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 'mod_search', 1, 0, '{"label":"","width":"","text":"","button":"0","button_pos":"left","imagebutton":"0","button_text":"","opensearch":"1","opensearch_title":"","set_itemid":"0","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"itemid","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
 (145, 89, 'Cart', '', '', 1, 'toolbar-2', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_virtuemart_cart', 1, 1, '{"moduleid_sfx":"","moduleclass_sfx":"","show_price":"1","show_product_list":"0","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
-(146, 90, 'Slideshow', '', '', 1, 'slideshow', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 'mod_jaslideshowlite', 1, 0, '{"folder":"images\\/cms\\/slideshow\\/","description":"[{\\"image\\":\\"1.jpg\\",\\"imageSrc\\":\\"http:\\/\\/localhost\\/joomla\\/images\\/cms\\/slideshow\\/1.jpg\\",\\"title\\":\\"RA MẮT 18.10.2015\\",\\"link\\":\\"\\",\\"description\\":\\"<p>Metal Gear Solid<\\/p>\\\\n<a href=\\\\\\"#\\\\\\" class=\\\\\\"btn btn-primary\\\\\\">MUA NGAY<\\/a>\\",\\"class\\":\\"\\",\\"show\\":true},{\\"image\\":\\"2.jpg\\",\\"imageSrc\\":\\"http:\\/\\/localhost\\/joomla\\/images\\/cms\\/slideshow\\/2.jpg\\",\\"title\\":\\"Ra Mat\\",\\"link\\":\\"#\\",\\"description\\":\\"<p>Metal Gear Solid<\\/p>\\\\n<a href=\\\\\\"#\\\\\\" class=\\\\\\"btn btn-primary\\\\\\">MUA NGAY<\\/a>\\",\\"class\\":\\"\\",\\"show\\":true}]","type":"fade","autoplay":"1","navigation":"0","mainWidth":"auto","mainHeight":"auto","thumbnail":"1","thumbWidth":"10","thumbHeight":"60","moduleclass_sfx":"","cache":"1","cache_time":"900","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
+(146, 90, 'Slideshow', '', '', 1, 'slideshow', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_jaslideshowlite', 1, 0, '{"folder":"images\\/cms\\/slideshow\\/","description":"[{\\"image\\":\\"1.jpg\\",\\"imageSrc\\":\\"http:\\/\\/localhost\\/joomla\\/images\\/cms\\/slideshow\\/1.jpg\\",\\"title\\":\\"RA MẮT 18.10.2015\\",\\"link\\":\\"\\",\\"description\\":\\"<p>Metal Gear Solid<\\/p>\\\\n<a href=\\\\\\"#\\\\\\" class=\\\\\\"btn btn-primary\\\\\\">MUA NGAY<\\/a>\\",\\"class\\":\\"\\",\\"show\\":true},{\\"image\\":\\"2.jpg\\",\\"imageSrc\\":\\"http:\\/\\/localhost\\/joomla\\/images\\/cms\\/slideshow\\/2.jpg\\",\\"title\\":\\"Ra Mat\\",\\"link\\":\\"#\\",\\"description\\":\\"<p>Metal Gear Solid<\\/p>\\\\n<a href=\\\\\\"#\\\\\\" class=\\\\\\"btn btn-primary\\\\\\">MUA NGAY<\\/a>\\",\\"class\\":\\"\\",\\"show\\":true}]","type":"fade","autoplay":"1","navigation":"0","mainWidth":"auto","mainHeight":"auto","thumbnail":"1","thumbWidth":"10","thumbHeight":"60","moduleclass_sfx":"","cache":"1","cache_time":"900","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
 (147, 91, 'Toolbar Phone', '', 'Phone Number', 1, 'toolbar-2', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_custom', 1, 0, '{"prepare_content":"0","backgroundimage":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"static","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
 (148, 92, 'Home Features Banner', '', '', 1, 'home-1', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_ja_acm', 1, 0, '{"jatools-config":"{\\":type\\":\\"game_hcm:features-intro\\",\\"features-intro\\":{\\"jatools-layout-features-intro\\":\\"style-1\\",\\"features-intro[block-intro]\\":[\\"\\"],\\"features-intro[block-extra-class]\\":[\\"\\"],\\"features-intro[block-bg]\\":[\\"\\"],\\"features-intro[features-style]\\":[\\"style-light\\"],\\"features-intro[full-width]\\":[\\"1\\"],\\"features-intro[columns]\\":[\\"4\\"],\\"features-intro[data]\\":{\\"features-intro[data][font-icon]\\":[\\"\\",\\"\\",\\"\\",\\"\\"],\\"features-intro[data][img-icon]\\":[\\"images\\/cms\\/features-banner\\/1.jpg\\",\\"images\\/cms\\/features-banner\\/2.jpg\\",\\"images\\/cms\\/features-banner\\/3.jpg\\",\\"images\\/cms\\/features-banner\\/4.jpg\\"],\\"features-intro[data][title]\\":[\\" \\",\\" \\",\\" \\",\\" \\"],\\"features-intro[data][description]\\":[\\"\\",\\"\\",\\"\\",\\"\\"],\\"rows\\":4,\\"cols\\":5,\\"type\\":\\"list\\"}}}","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"itemid","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
 (149, 93, 'Home Shop Tabs', '', '', 1, 'home-1', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', -2, 'mod_ja_acm', 1, 1, '{"jatools-config":"{\\":type\\":\\"game_hcm:tabs\\",\\"tabs\\":{\\"jatools-layout-tabs\\":\\"style-1\\",\\"tab[block-extra-class]\\":[\\"\\"],\\"tab[block-bg]\\":[\\"\\"],\\"tab[nav-tabs]\\":[\\"Expertise\\",\\"Selected Works\\"],\\"tab[img]\\":[\\"images\\/joomlart\\/corporate\\/mk_1.png\\",\\"images\\/joomlart\\/corporate\\/mk_2.png\\"],\\"tab[title]\\":[\\"\\",\\"\\"],\\"tab[intro]\\":[\\"We are a strategic consultant firm committed to building world-class brands through powerful, flexible strategies. We deliver comprehensive service in research and digital media.\\",\\"With partners around the globe, we deliver specialised services from an international perspective \\"],\\"tab[link]\\":[\\"#\\",\\"#\\"],\\"tab[text-btn]\\":[\\"Explore Our Works\\",\\"Explore Our Works\\"],\\"tab[icon-btn]\\":[\\"fa fa-angle-right\\",\\"fa fa-angle-right\\"],\\"tab[class-btn]\\":[\\"btn btn-border\\",\\"btn btn-primary btn-border\\"]}}","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"itemid","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
@@ -1909,22 +1925,25 @@ INSERT INTO `pz5yp_modules` (`id`, `asset_id`, `title`, `note`, `content`, `orde
 (156, 100, 'Home Side Banner', '', '', 1, 'home-side-1', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_ja_acm', 1, 0, '{"jatools-config":"{\\":type\\":\\"game_hcm:features-intro\\",\\"features-intro\\":{\\"jatools-layout-features-intro\\":\\"style-1\\",\\"features-intro[block-intro]\\":[\\"\\"],\\"features-intro[block-extra-class]\\":[\\"\\"],\\"features-intro[block-bg]\\":[\\"\\"],\\"features-intro[features-style]\\":[\\"style-light\\"],\\"features-intro[full-width]\\":[\\"1\\"],\\"features-intro[columns]\\":[\\"1\\"],\\"features-intro[data]\\":{\\"features-intro[data][font-icon]\\":[\\"\\"],\\"features-intro[data][img-icon]\\":[\\"images\\/cms\\/adv\\/side-banner.jpg\\"],\\"features-intro[data][title]\\":[\\" \\"],\\"features-intro[data][description]\\":[\\"\\"],\\"rows\\":1,\\"cols\\":5,\\"type\\":\\"list\\"}}}","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"itemid","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
 (157, 101, 'Home Full Banner ', '', '', 1, 'home-1', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_ja_acm', 1, 0, '{"jatools-config":"{\\":type\\":\\"game_hcm:features-intro\\",\\"features-intro\\":{\\"jatools-layout-features-intro\\":\\"style-1\\",\\"features-intro[block-intro]\\":[\\"\\"],\\"features-intro[block-extra-class]\\":[\\"\\"],\\"features-intro[block-bg]\\":[\\"\\"],\\"features-intro[features-style]\\":[\\"style-light\\"],\\"features-intro[full-width]\\":[\\"1\\"],\\"features-intro[columns]\\":[\\"1\\"],\\"features-intro[data]\\":{\\"features-intro[data][font-icon]\\":[\\"\\"],\\"features-intro[data][img-icon]\\":[\\"images\\/cms\\/adv\\/big-banner.jpg\\"],\\"features-intro[data][title]\\":[\\" \\"],\\"features-intro[data][description]\\":[\\"\\"],\\"rows\\":1,\\"cols\\":5,\\"type\\":\\"list\\"}}}","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"itemid","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
 (158, 102, 'Home Container Tabs 2', '', '', 1, 'home-side-2', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_ja_acm', 1, 0, '{"jatools-config":"{\\":type\\":\\"game_hcm:container-tabs\\",\\"container-tabs\\":{\\"jatools-layout-container-tabs\\":\\"style-2\\",\\"container-tabs[block-intro]\\":[\\"\\"],\\"container-tabs[block-extra-class]\\":[\\"\\"],\\"container-tabs[position]\\":[\\"container-tabs-2\\"]}}","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"itemid","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
-(159, 103, 'Đồ Hi-tech', '', '', 1, 'container-tabs-2', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_virtuemart_product', 1, 1, '{"layout":"default","product_group":"latest","max_items":"6","products_per_row":"3","display_style":"div","show_price":"1","show_addtocart":"1","headerText":"","footerText":"","filter_category":"0","virtuemart_category_id":"0","vmcache":"1","vmcachetime":"300","cache":"1","moduleclass_sfx":"","class_sfx":"","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
+(159, 103, 'Đồ Hi-tech', '', '', 1, 'container-tabs-2', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_virtuemart_product', 1, 1, '{"layout":"default","product_group":"latest","max_items":"6","products_per_row":"3","display_style":"div","show_price":"1","show_addtocart":"1","headerText":"","footerText":"","filter_category":"0","virtuemart_category_id":"1","vmcache":"0","vmcachetime":"300","cache":"1","moduleclass_sfx":"","class_sfx":"","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
 (160, 104, 'Phụ Kiện', '', '', 1, 'container-tabs-2', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_virtuemart_product', 1, 1, '{"layout":"default","product_group":"random","max_items":"6","products_per_row":"3","display_style":"div","show_price":"1","show_addtocart":"1","headerText":"","footerText":"","filter_category":"0","virtuemart_category_id":"0","vmcache":"1","vmcachetime":"300","cache":"1","moduleclass_sfx":"","class_sfx":"","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
 (161, 105, 'Secondhand', '', '', 1, 'container-tabs-2', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_virtuemart_product', 1, 1, '{"layout":"default","product_group":"random","max_items":"3","products_per_row":"6","display_style":"list","show_price":"1","show_addtocart":"1","headerText":"","footerText":"","filter_category":"0","virtuemart_category_id":"0","vmcache":"1","vmcachetime":"300","cache":"1","moduleclass_sfx":"","class_sfx":"","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
 (162, 106, 'Features Banner footer', '', '', 1, 'footer-features', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_ja_acm', 1, 0, '{"jatools-config":"{\\":type\\":\\"game_hcm:features-intro\\",\\"features-intro\\":{\\"jatools-layout-features-intro\\":\\"style-2\\",\\"features-intro[block-intro]\\":[\\"\\"],\\"features-intro[block-extra-class]\\":[\\"\\"],\\"features-intro[block-bg]\\":[\\"\\"],\\"features-intro[features-style]\\":[\\"style-light\\"],\\"features-intro[full-width]\\":[\\"1\\"],\\"features-intro[columns]\\":[\\"3\\"],\\"features-intro[data]\\":{\\"features-intro[data][img-icon]\\":[\\"images\\/cms\\/footer-banner\\/1.png\\",\\"images\\/cms\\/footer-banner\\/2.png\\",\\"images\\/cms\\/footer-banner\\/3.png\\"],\\"features-intro[data][title]\\":[\\"\\",\\"\\",\\"\\"],\\"features-intro[data][url]\\":[\\"#\\",\\"#\\",\\"#\\"],\\"rows\\":3,\\"cols\\":4,\\"type\\":\\"list\\"}}}","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"itemid","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
-(163, 107, 'Liên Hệ', '', '<div class="obj-responsive">\r\n<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29793.996974407903!2d105.81941118949932!3d21.022695749697238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2zSGFub2ksIEhvw6BuIEtp4bq_bSwgSGFub2ksIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1445914562096" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>\r\n</div>', 1, 'footer-1', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_custom', 1, 1, '{"prepare_content":"0","backgroundimage":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"static","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
-(164, 108, 'Sản Phẩm', '', '', 1, 'footer-2', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_menu', 1, 1, '{"menutype":"mainmenu","base":"","startLevel":"1","endLevel":"0","showAllChildren":"0","tag_id":"","class_sfx":"","window_open":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"itemid","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
-(165, 109, 'Chính Sách', '', '', 1, 'footer-3', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_menu', 1, 1, '{"menutype":"defaultmenu","base":"","startLevel":"1","endLevel":"0","showAllChildren":"1","tag_id":"","class_sfx":"","window_open":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"itemid","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
-(166, 110, 'Newsletters', '', '', 1, 'footer-4', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_acymailing', 1, 1, '{"effect":"normal","lists":"None","hiddenlists":"All","displaymode":"vertical","listschecked":"All","checkmode":"0","dropdown":"0","overlay":"0","link":"1","listposition":"before","customfields":"email","nametext":"","emailtext":"","fieldsize":"100%","displayfields":"0","introtext":"Đăng kí nhận tin Khuyến mãi,\\r\\nGiảm giá, Hàng mới về, \\r\\nSự kiện của HotGameHCM","finaltext":"","showsubscribe":"1","subscribetext":"","subscribetextreg":"","showunsubscribe":"0","unsubscribetext":"","redirectmode":"0","redirectlink":"","redirectlinkunsub":"","showterms":"0","showtermspopup":"1","termscontent":"0","mootoolsintro":"","mootoolsbutton":"","boxwidth":"250","boxheight":"200","moduleclass_sfx":" newsletter-highlight","textalign":"none","loggedin":"1","cache":"0","includejs":"header","itemid":"","loadmootools":"1","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
+(163, 107, 'Bản đồ', '', '<div class="obj-responsive">\r\n<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29793.996974407903!2d105.81941118949932!3d21.022695749697238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2zSGFub2ksIEhvw6BuIEtp4bq_bSwgSGFub2ksIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1445914562096" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>\r\n</div>', 1, 'footer-1', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_custom', 1, 1, '{"prepare_content":"0","backgroundimage":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"static","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
+(164, 108, 'Sản Phẩm', '', '', 1, 'footer-2', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_menu', 1, 1, '{"menutype":"products","base":"","startLevel":"1","endLevel":"0","showAllChildren":"0","tag_id":"","class_sfx":"","window_open":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"itemid","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
+(165, 109, 'Chính Sách', '', '', 1, 'footer-3', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_menu', 1, 1, '{"menutype":"policy","base":"","startLevel":"1","endLevel":"0","showAllChildren":"1","tag_id":"","class_sfx":"","window_open":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"itemid","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
+(166, 110, 'Newsletters', '', '', 1, 'footer-5', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 'mod_acymailing', 1, 1, '{"effect":"normal","lists":"None","hiddenlists":"All","displaymode":"vertical","listschecked":"All","checkmode":"0","dropdown":"0","overlay":"0","link":"1","listposition":"before","customfields":"email","nametext":"","emailtext":"","fieldsize":"100%","displayfields":"0","introtext":"Đăng kí nhận tin Khuyến mãi,\\r\\nGiảm giá, Hàng mới về, \\r\\nSự kiện của HotGameHCM","finaltext":"","showsubscribe":"1","subscribetext":"","subscribetextreg":"","showunsubscribe":"0","unsubscribetext":"","redirectmode":"0","redirectlink":"","redirectlinkunsub":"","showterms":"0","showtermspopup":"1","termscontent":"0","mootoolsintro":"","mootoolsbutton":"","boxwidth":"250","boxheight":"200","moduleclass_sfx":" newsletter-highlight","textalign":"none","loggedin":"1","cache":"0","includejs":"header","itemid":"","loadmootools":"1","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
 (167, 111, 'Footer Features', '', '', 1, 'home-2', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_ja_acm', 1, 0, '{"jatools-config":"{\\":type\\":\\"game_hcm:features-intro\\",\\"features-intro\\":{\\"jatools-layout-features-intro\\":\\"style-2\\",\\"features-intro[block-intro]\\":[\\"\\"],\\"features-intro[block-extra-class]\\":[\\"\\"],\\"features-intro[block-bg]\\":[\\"\\"],\\"features-intro[features-style]\\":[\\"style-light\\"],\\"features-intro[full-width]\\":[\\"1\\"],\\"features-intro[columns]\\":[\\"3\\"],\\"features-intro[data]\\":{\\"features-intro[data][img-icon]\\":[\\"images\\/cms\\/feature-1.jpg\\",\\"images\\/cms\\/feature-2.jpg\\",\\"images\\/cms\\/feature-3.jpg\\"],\\"features-intro[data][title]\\":[\\"Various Design Options\\",\\"Powerful Yet Simple\\",\\"Flexible Customisation\\"],\\"features-intro[data][url]\\":[\\"\\",\\"\\",\\"\\"],\\"rows\\":3,\\"cols\\":4,\\"type\\":\\"list\\"}}}","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"itemid","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
 (168, 112, 'Hãng Nổi Bật', '', '', 2, 'home-2', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_ja_acm', 1, 1, '{"jatools-config":"{\\":type\\":\\"game_hcm:clients\\",\\"clients\\":{\\"jatools-layout-clients\\":\\"style-1\\",\\"clients[block-intro]\\":[\\"\\"],\\"clients[block-extra-class]\\":[\\"\\"],\\"clients[block-bg]\\":[\\"\\"],\\"clients[columns]\\":[\\"6\\"],\\"clients[acm-style]\\":[\\"style-light\\"],\\"clients[full-width]\\":[\\"0\\"],\\"clients[img-gray]\\":[\\"0\\"],\\"clients[img-opacity]\\":[\\"100\\"],\\"clients[client-item]\\":{\\"clients[client-item][client-logo]\\":[\\"images\\/cms\\/clients\\/1.png\\",\\"images\\/cms\\/clients\\/2.png\\",\\"images\\/cms\\/clients\\/3.png\\",\\"images\\/cms\\/clients\\/4.png\\",\\"images\\/cms\\/clients\\/5.png\\",\\"images\\/cms\\/clients\\/6.png\\"],\\"clients[client-item][client-name]\\":[\\"Nivea\\",\\"Biore\\",\\"Rmi\\",\\"\\",\\"\\",\\"\\"],\\"clients[client-item][client-link]\\":[\\"#\\",\\"#\\",\\"#\\",\\"#\\",\\"#\\",\\"#\\"],\\"rows\\":6,\\"cols\\":4,\\"type\\":\\"list\\"}}}","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"itemid","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
 (169, 113, 'Product Search', '', '', 1, 'toolbar-1', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_virtuemart_search', 1, 0, '{"width":"20","text":"Search...","filter_category":"0","button":"0","button_pos":"right","imagebutton":"0","button_text":"","set_itemid":"","moduleclass_sfx":"","cache":"1","cache_time":"900","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
 (170, 114, 'Masthead', '', '', 1, 'masthead', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_jamasshead', 1, 0, '{"default-title":"HCM Games","default-description":"","config":"[Masshead Itemid=\\"238 title=\\"Sony PlayStation\\" ]Description here[\\/Masshead]\\r\\n[Masshead Itemid=\\"239 title=\\"Sony PlayStation\\" ]Description here[\\/Masshead]\\r\\n[Masshead Itemid=\\"240 title=\\"Sony PlayStation\\" ]Description here[\\/Masshead]\\r\\n[Masshead Itemid=\\"241 title=\\"Sony PlayStation\\" ]Description here[\\/Masshead]\\r\\n[Masshead Itemid=\\"242 title=\\"Sony PlayStation\\" ]Description here[\\/Masshead]","layout":"_:default","moduleclass_sfx":"","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
 (171, 115, 'Category', '', '', 1, 'sidebar-2', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_virtuemart_category', 1, 1, '{"Parent_Category_id":"0","level":"0","layout":"default","cache":"1","moduleclass_sfx":"","class_sfx":"","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
 (172, 116, 'Login', '', '', 3, 'sidebar-2', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_login', 1, 1, '{"pretext":"","posttext":"","login":"","logout":"","greeting":"1","name":"0","usesecure":"0","usetext":"0","layout":"_:default","moduleclass_sfx":"","cache":"0","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
-(173, 117, 'Manufacturers', '', '', 4, 'sidebar-2', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_virtuemart_manufacturer', 1, 1, '{"show":"all","display_style":"list","manufacturers_per_row":"","headerText":"","footerText":"","cache":"1","moduleclass_sfx":"","class_sfx":"","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
-(174, 118, 'Shopping Cart', '', '', 2, 'sidebar-2', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_virtuemart_cart', 1, 1, '{"moduleid_sfx":"","moduleclass_sfx":"","show_price":"1","show_product_list":"1","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*');
+(173, 117, 'Manufacturers', '', '', 4, 'sidebar-2', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_virtuemart_manufacturer', 1, 1, '{"show":"image","display_style":"div","manufacturers_per_row":"2","headerText":"","footerText":"","cache":"1","moduleclass_sfx":"","class_sfx":"","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
+(174, 118, 'Shopping Cart', '', '', 2, 'sidebar-2', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_virtuemart_cart', 1, 1, '{"moduleid_sfx":"","moduleclass_sfx":"","show_price":"1","show_product_list":"1","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
+(175, 119, 'Liên Hệ', '', '<p><strong>Hỗ trợ khách hàng</strong> <p>\r\n<p><i class="fa fa-phone"></i> 09003338888</p>\r\n\r\n<p><i class="fa fa-map-marker"></i> 123 Any Street, Any City <p>\r\n\r\n<p><strong>Thời gian làm việc</strong> <p>\r\n<p><i class="fa fa-clock-o"></i><strong>Từ t2 - t6:</strong> 9h - 20h <p>\r\n<p><i class="fa fa-clock-o"></i><strong>CN và Lễ Lớn:</strong> 9h - 19h <p>', 1, 'footer-4', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_custom', 1, 1, '{"prepare_content":"0","backgroundimage":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"static","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
+(176, 120, 'JA Facebook Like Box Module', '', '', 1, 'footer-5', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', -2, 'mod_jafacebooklikebox', 1, 0, '{"jafacebookid":"laanh05","connections":"1","posts":"1","header":"1","width":280,"height":300,"adapt_width":"1","layout":"_:default","cache":"1","cache_time":900,"module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
+(177, 121, 'Facebook Likebox', '', '<div id="fb-root"></div>\r\n<script>(function(d, s, id) {\r\n  var js, fjs = d.getElementsByTagName(s)[0];\r\n  if (d.getElementById(id)) return;\r\n  js = d.createElement(s); js.id = id;\r\n  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";\r\n  fjs.parentNode.insertBefore(js, fjs);\r\n}(document, ''script'', ''facebook-jssdk''));</script>\r\n\r\n<div class="fb-page" data-href="https://www.facebook.com/facebook" data-width="280" data-height="130" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div></div>', 1, 'footer-5', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_custom', 1, 0, '{"prepare_content":"0","backgroundimage":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"static","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*');
 
 -- --------------------------------------------------------
 
@@ -1988,7 +2007,10 @@ INSERT INTO `pz5yp_modules_menu` (`moduleid`, `menuid`) VALUES
 (171, 0),
 (172, 0),
 (173, 0),
-(174, 0);
+(174, 0),
+(175, 0),
+(176, 0),
+(177, 0);
 
 -- --------------------------------------------------------
 
@@ -2146,8 +2168,8 @@ CREATE TABLE `pz5yp_session` (
 --
 
 INSERT INTO `pz5yp_session` (`session_id`, `client_id`, `guest`, `time`, `data`, `userid`, `username`) VALUES
-('4124084d37067eac57916743450d380b', 0, 1, '1445939066', '__default|a:8:{s:15:"session.counter";i:27;s:19:"session.timer.start";i:1445936024;s:18:"session.timer.last";i:1445939015;s:17:"session.timer.now";i:1445939066;s:22:"session.client.browser";s:120:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36";s:8:"registry";O:24:"Joomla\\Registry\\Registry":2:{s:7:"\\0\\0\\0data";O:8:"stdClass":4:{s:13:"current_theme";N;s:17:"current_direction";s:3:"ltr";s:17:"current_key_sufix";s:5:"__ltr";s:14:"com_virtuemart";O:8:"stdClass":1:{s:14:"productdetails";O:8:"stdClass":2:{s:5:"limit";s:3:"int";s:10:"limitstart";i:0;}}}s:9:"separator";s:1:".";}s:4:"user";O:5:"JUser":26:{s:9:"\\0\\0\\0isRoot";b:0;s:2:"id";i:0;s:4:"name";N;s:8:"username";N;s:5:"email";N;s:8:"password";N;s:14:"password_clear";s:0:"";s:5:"block";N;s:9:"sendEmail";i:0;s:12:"registerDate";N;s:13:"lastvisitDate";N;s:10:"activation";N;s:6:"params";N;s:6:"groups";a:1:{i:0;s:1:"1";}s:5:"guest";i:1;s:13:"lastResetTime";N;s:10:"resetCount";N;s:12:"requireReset";N;s:10:"\\0\\0\\0_params";O:24:"Joomla\\Registry\\Registry":2:{s:7:"\\0\\0\\0data";O:8:"stdClass":0:{}s:9:"separator";s:1:".";}s:14:"\\0\\0\\0_authGroups";a:1:{i:0;i:1;}s:14:"\\0\\0\\0_authLevels";a:2:{i:0;i:1;i:1;i:1;}s:15:"\\0\\0\\0_authActions";N;s:12:"\\0\\0\\0_errorMsg";N;s:13:"\\0\\0\\0userHelper";O:18:"JUserWrapperHelper":0:{}s:10:"\\0\\0\\0_errors";a:0:{}s:3:"aid";i:0;}s:13:"session.token";s:32:"871b047650e422f0509a2fde0499bd4f";}__vm|a:6:{s:6:"manage";i:0;s:15:"vmlastvisItemid";i:238;s:23:"vmlastvisitedcategoryid";i:3;s:19:"vmlastvisitedmanuid";i:0;s:21:"vmlastproductordering";s:15:"`p`.product_sku";s:23:"vmlastvisitedproductids";a:1:{i:0;i:70;}}', 0, ''),
-('90dc15fe9275a299760547be80bea362', 1, 0, '1445939013', '__default|a:8:{s:15:"session.counter";i:145;s:19:"session.timer.start";i:1445935679;s:18:"session.timer.last";i:1445939013;s:17:"session.timer.now";i:1445939013;s:22:"session.client.browser";s:120:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36";s:8:"registry";O:24:"Joomla\\Registry\\Registry":2:{s:7:"\\0\\0\\0data";O:8:"stdClass":5:{s:11:"application";O:8:"stdClass":1:{s:4:"lang";s:5:"en-GB";}s:11:"com_modules";O:8:"stdClass":3:{s:7:"modules";O:8:"stdClass":4:{s:6:"filter";O:8:"stdClass":8:{s:18:"client_id_previous";i:0;s:6:"search";s:0:"";s:6:"access";i:0;s:5:"state";s:0:"";s:8:"position";s:14:"container-tabs";s:6:"module";s:0:"";s:9:"client_id";i:0;s:8:"language";s:0:"";}s:8:"ordercol";s:8:"ordering";s:9:"orderdirn";s:3:"asc";s:10:"limitstart";i:0;}s:4:"edit";O:8:"stdClass":1:{s:6:"module";O:8:"stdClass":2:{s:4:"data";N;s:2:"id";a:1:{i:0;i:152;}}}s:3:"add";O:8:"stdClass":1:{s:6:"module";O:8:"stdClass":2:{s:12:"extension_id";N;s:6:"params";N;}}}s:14:"com_virtuemart";O:8:"stdClass":3:{s:8:"currency";O:8:"stdClass":4:{s:6:"search";s:7:"vietnam";s:12:"filter_order";s:22:"virtuemart_currency_id";s:16:"filter_order_Dir";s:3:"ASC";s:10:"limitstart";i:0;}s:7:"product";O:8:"stdClass":4:{s:16:"filter_order_Dir";s:3:"ASC";s:12:"filter_order";s:13:"product_price";s:6:"filter";O:8:"stdClass":2:{s:22:"virtuemart_category_id";i:0;s:26:"virtuemart_manufacturer_id";i:0;}s:10:"limitstart";i:0;}s:7:"ratings";O:8:"stdClass":3:{s:12:"filter_order";s:10:"created_on";s:16:"filter_order_Dir";s:4:"DESC";s:10:"limitstart";i:0;}}s:6:"global";O:8:"stdClass":1:{s:4:"list";O:8:"stdClass":1:{s:5:"limit";i:20;}}s:13:"com_installer";O:8:"stdClass":2:{s:7:"message";s:0:"";s:17:"extension_message";s:0:"";}}s:9:"separator";s:1:".";}s:4:"user";O:5:"JUser":28:{s:9:"\\0\\0\\0isRoot";b:1;s:2:"id";s:3:"254";s:4:"name";s:10:"Super User";s:8:"username";s:5:"admin";s:5:"email";s:18:"admin@localhost.cc";s:8:"password";s:60:"$2y$10$fDRO/mg9Lgc5svqzYnHiquiYFn1turqVZPwNlWCH6K6oIvl3VpAUG";s:14:"password_clear";s:0:"";s:5:"block";s:1:"0";s:9:"sendEmail";s:1:"1";s:12:"registerDate";s:19:"2014-10-14 09:21:12";s:13:"lastvisitDate";s:19:"2015-10-27 02:46:06";s:10:"activation";s:1:"0";s:6:"params";s:2:"{}";s:6:"groups";a:1:{i:8;s:1:"8";}s:5:"guest";i:0;s:13:"lastResetTime";s:19:"0000-00-00 00:00:00";s:10:"resetCount";s:1:"0";s:12:"requireReset";s:1:"0";s:10:"\\0\\0\\0_params";O:24:"Joomla\\Registry\\Registry":2:{s:7:"\\0\\0\\0data";O:8:"stdClass":0:{}s:9:"separator";s:1:".";}s:14:"\\0\\0\\0_authGroups";a:2:{i:0;i:1;i:1;i:8;}s:14:"\\0\\0\\0_authLevels";a:4:{i:0;i:1;i:1;i:1;i:2;i:2;i:3;i:3;}s:15:"\\0\\0\\0_authActions";N;s:12:"\\0\\0\\0_errorMsg";N;s:13:"\\0\\0\\0userHelper";O:18:"JUserWrapperHelper":0:{}s:10:"\\0\\0\\0_errors";a:0:{}s:3:"aid";i:0;s:6:"otpKey";s:0:"";s:4:"otep";s:0:"";}s:13:"session.token";s:32:"26ba90ada897a5362b60987a26275cac";}', 254, 'admin');
+('83d7afe4d73c14d9fcd4f31185b729bc', 1, 0, '1446016795', '__default|a:8:{s:15:"session.counter";i:6;s:19:"session.timer.start";i:1446015896;s:18:"session.timer.last";i:1446015904;s:17:"session.timer.now";i:1446016795;s:22:"session.client.browser";s:120:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36";s:8:"registry";O:24:"Joomla\\Registry\\Registry":2:{s:7:"\\0\\0\\0data";O:8:"stdClass":2:{s:11:"application";O:8:"stdClass":1:{s:4:"lang";s:5:"en-GB";}s:14:"com_virtuemart";O:8:"stdClass":1:{s:7:"product";O:8:"stdClass":4:{s:16:"filter_order_Dir";s:4:"DESC";s:12:"filter_order";s:10:"created_on";s:6:"filter";O:8:"stdClass":2:{s:22:"virtuemart_category_id";i:0;s:26:"virtuemart_manufacturer_id";i:0;}s:10:"limitstart";i:0;}}}s:9:"separator";s:1:".";}s:4:"user";O:5:"JUser":28:{s:9:"\\0\\0\\0isRoot";b:1;s:2:"id";s:3:"254";s:4:"name";s:10:"Super User";s:8:"username";s:5:"admin";s:5:"email";s:18:"admin@localhost.cc";s:8:"password";s:60:"$2y$10$fDRO/mg9Lgc5svqzYnHiquiYFn1turqVZPwNlWCH6K6oIvl3VpAUG";s:14:"password_clear";s:0:"";s:5:"block";s:1:"0";s:9:"sendEmail";s:1:"1";s:12:"registerDate";s:19:"2014-10-14 09:21:12";s:13:"lastvisitDate";s:19:"2015-10-28 06:35:15";s:10:"activation";s:1:"0";s:6:"params";s:2:"{}";s:6:"groups";a:1:{i:8;s:1:"8";}s:5:"guest";i:0;s:13:"lastResetTime";s:19:"0000-00-00 00:00:00";s:10:"resetCount";s:1:"0";s:12:"requireReset";s:1:"0";s:10:"\\0\\0\\0_params";O:24:"Joomla\\Registry\\Registry":2:{s:7:"\\0\\0\\0data";O:8:"stdClass":0:{}s:9:"separator";s:1:".";}s:14:"\\0\\0\\0_authGroups";a:2:{i:0;i:1;i:1;i:8;}s:14:"\\0\\0\\0_authLevels";a:4:{i:0;i:1;i:1;i:1;i:2;i:2;i:3;i:3;}s:15:"\\0\\0\\0_authActions";N;s:12:"\\0\\0\\0_errorMsg";N;s:13:"\\0\\0\\0userHelper";O:18:"JUserWrapperHelper":0:{}s:10:"\\0\\0\\0_errors";a:0:{}s:3:"aid";i:0;s:6:"otpKey";s:0:"";s:4:"otep";s:0:"";}s:13:"session.token";s:32:"eb4c73385146aad24b42b6c2735a5b7d";}', 254, 'admin'),
+('88dadd5d50412d5f72fc37a8cd90078c', 0, 1, '1446015907', '__default|a:7:{s:15:"session.counter";i:1;s:19:"session.timer.start";i:1446015907;s:18:"session.timer.last";i:1446015907;s:17:"session.timer.now";i:1446015907;s:22:"session.client.browser";s:120:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36";s:8:"registry";O:24:"Joomla\\Registry\\Registry":2:{s:7:"\\0\\0\\0data";O:8:"stdClass":3:{s:13:"current_theme";N;s:17:"current_direction";s:3:"ltr";s:17:"current_key_sufix";s:5:"__ltr";}s:9:"separator";s:1:".";}s:4:"user";O:5:"JUser":26:{s:9:"\\0\\0\\0isRoot";b:0;s:2:"id";i:0;s:4:"name";N;s:8:"username";N;s:5:"email";N;s:8:"password";N;s:14:"password_clear";s:0:"";s:5:"block";N;s:9:"sendEmail";i:0;s:12:"registerDate";N;s:13:"lastvisitDate";N;s:10:"activation";N;s:6:"params";N;s:6:"groups";a:1:{i:0;s:1:"1";}s:5:"guest";i:1;s:13:"lastResetTime";N;s:10:"resetCount";N;s:12:"requireReset";N;s:10:"\\0\\0\\0_params";O:24:"Joomla\\Registry\\Registry":2:{s:7:"\\0\\0\\0data";O:8:"stdClass":0:{}s:9:"separator";s:1:".";}s:14:"\\0\\0\\0_authGroups";a:1:{i:0;i:1;}s:14:"\\0\\0\\0_authLevels";a:2:{i:0;i:1;i:1;i:1;}s:15:"\\0\\0\\0_authActions";N;s:12:"\\0\\0\\0_errorMsg";N;s:13:"\\0\\0\\0userHelper";O:18:"JUserWrapperHelper":0:{}s:10:"\\0\\0\\0_errors";a:0:{}s:3:"aid";i:0;}}', 0, '');
 
 -- --------------------------------------------------------
 
@@ -2220,8 +2242,8 @@ INSERT INTO `pz5yp_template_styles` (`id`, `template`, `client_id`, `home`, `tit
 (15, 'isis', 1, '1', 'isis - Default', '{"templateColor":"","logoFile":""}'),
 (17, 'beez3', 0, '0', 'beez3 - Default', '{"wrapperSmall":"53","wrapperLarge":"72","sitetitle":"","sitedescription":"","navposition":"center","templatecolor":"nature","backgroundcolor":"#eee"}'),
 (18, 'hathor', 1, '0', 'Hathor Administrator template - Default', '{"showSiteName":"0","logoFile":"","colourChoice":"0","boldText":"0"}'),
-(20, 'game_hcm', 0, '0', 'game_hcm - home', '{"t3_template":"1","devmode":"1","themermode":"1","legacy_css":"0","responsive":"1","non_responsive_width":"970px","build_rtl":"0","t3-assets":"t3-assets","t3-rmvlogo":"0","minify":"0","minify_js":"0","minify_js_tool":"jsmin","minify_exclude":"","link_titles":"0","theme":"","logotype":"image","sitename":"","slogan":"","logoimage":"images\\/cms\\/logo.png","enable_logoimage_sm":"0","logoimage_sm":"","mainlayout":"home-1","sublayout":"","mm_type":"mainmenu","navigation_trigger":"hover","navigation_type":"megamenu","navigation_animation":"slide","navigation_animation_duration":"400","mm_config":"","navigation_collapse_enable":"1","addon_offcanvas_enable":"1","addon_offcanvas_effect":"off-canvas-effect-4","snippet_open_head":"","snippet_close_head":"","snippet_open_body":"","snippet_close_body":"","snippet_debug":"0"}'),
-(21, 'game_hcm', 0, '1', 'game_hcm - default', '{"t3_template":"1","devmode":"1","themermode":"1","legacy_css":"0","responsive":"1","non_responsive_width":"970px","build_rtl":"0","t3-assets":"t3-assets","t3-rmvlogo":"0","minify":"0","minify_js":"0","minify_js_tool":"jsmin","minify_exclude":null,"link_titles":"0","theme":"","logotype":"image","sitename":"","slogan":"","logoimage":"images\\/cms\\/logo.png","enable_logoimage_sm":"0","logoimage_sm":"","mainlayout":"default-content-right","sublayout":"","mm_type":"mainmenu","navigation_trigger":"hover","navigation_type":"megamenu","navigation_animation":"slide","navigation_animation_duration":"400","mm_config":null,"navigation_collapse_enable":"1","addon_offcanvas_enable":"1","addon_offcanvas_effect":"off-canvas-effect-4","snippet_open_head":null,"snippet_close_head":null,"snippet_open_body":null,"snippet_close_body":null,"snippet_debug":"0"}');
+(20, 'game_hcm', 0, '0', 'game_hcm - home', '{"t3_template":"1","devmode":"1","themermode":"1","legacy_css":"0","responsive":"1","non_responsive_width":"970px","build_rtl":"0","t3-assets":"t3-assets","t3-rmvlogo":"0","minify":"0","minify_js":"0","minify_js_tool":"jsmin","minify_exclude":null,"link_titles":"0","theme":"","logotype":"image","sitename":"","slogan":"","logoimage":"images\\/cms\\/logo.png","enable_logoimage_sm":"0","logoimage_sm":"","mainlayout":"home-1","sublayout":"","mm_type":"mainmenu","navigation_trigger":"hover","navigation_type":"megamenu","navigation_animation":"slide","navigation_animation_duration":"400","mm_config":null,"navigation_collapse_enable":"1","addon_offcanvas_enable":"1","addon_offcanvas_effect":"off-canvas-effect-4","snippet_open_head":null,"snippet_close_head":null,"snippet_open_body":null,"snippet_close_body":null,"snippet_debug":"0"}'),
+(21, 'game_hcm', 0, '1', 'game_hcm - default', '{"t3_template":"1","devmode":"1","themermode":"1","legacy_css":"0","responsive":"1","non_responsive_width":"970px","build_rtl":"0","t3-assets":"t3-assets","t3-rmvlogo":"0","minify":"0","minify_js":"0","minify_js_tool":"jsmin","minify_exclude":"","link_titles":"0","theme":"","logotype":"image","sitename":"","slogan":"","logoimage":"images\\/cms\\/logo.png","enable_logoimage_sm":"0","logoimage_sm":"","mainlayout":"default-content-right","sublayout":"","mm_type":"mainmenu","navigation_trigger":"hover","navigation_type":"megamenu","navigation_animation":"slide","navigation_animation_duration":"400","mm_config":"","navigation_collapse_enable":"1","addon_offcanvas_enable":"1","addon_offcanvas_effect":"off-canvas-effect-4","snippet_open_head":"","snippet_close_head":"","snippet_open_body":"","snippet_close_body":"","snippet_debug":"0"}');
 
 -- --------------------------------------------------------
 
@@ -2354,43 +2376,43 @@ CREATE TABLE `pz5yp_update_sites` (
 --
 
 INSERT INTO `pz5yp_update_sites` (`update_site_id`, `name`, `type`, `location`, `enabled`, `last_check_timestamp`, `extra_query`) VALUES
-(1, 'Joomla Core', 'collection', 'http://update.joomla.org/core/sts/list_sts.xml', 1, 1445938485, ''),
+(1, 'Joomla Core', 'collection', 'http://update.joomla.org/core/sts/list_sts.xml', 1, 1445997354, ''),
 (2, 'Joomla Extension Directory', 'collection', 'http://update.joomla.org/jed/list.xml', 0, 0, ''),
 (3, 'Accredited Joomla! Translations', 'collection', 'http://update.joomla.org/language/translationlist_3.xml', 0, 0, ''),
 (4, '', 'collection', 'http://update.joomlart.com/service/tracking/list.xml', 0, 0, ''),
-(5, 'AcyMailing', 'extension', 'http://www.acyba.com/component/updateme/updatexml/component-acymailing/level-Starter/file-extension.xml', 1, 0, ''),
-(42, 'Joomla! Update Component Update Site', 'extension', 'http://update.joomla.org/core/extensions/com_joomlaupdate.xml', 1, 0, ''),
-(43, '', 'collection', 'http://update.joomla.org/core/list.xml', 1, 1445938483, ''),
-(44, 'VirtueMart3 Update Site', 'extension', 'http://virtuemart.net/releases/vm3/virtuemart_update.xml', 1, 1445938483, ''),
-(45, 'VirtueMart plg_vmpayment_standard Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_standard_update.xml', 1, 1445938483, ''),
-(46, 'VirtueMart plg_vmpayment_klarna Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_klarna_update.xml', 1, 1445938483, ''),
-(47, 'VirtueMart plg_vmpayment_klarnacheckout Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_klarnacheckout_update.xml', 1, 1445938483, ''),
-(48, 'VirtueMart plg_vmpayment_sofort Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_sofort_update.xml', 1, 1445938483, ''),
-(49, 'VirtueMart plg_vmpayment_paypal Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_paypal_update.xml', 1, 1445938483, ''),
-(50, 'VirtueMart plg_vmpayment_heidelpay Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_heidelpay_update.xml', 1, 1445938483, ''),
-(51, 'VirtueMart plg_vmpayment_paybox Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_paybox_update.xml', 1, 1445938483, ''),
-(52, 'VirtueMart plg_vmpayment_amazon Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_amazon_update.xml', 1, 1445938483, ''),
-(53, 'VirtueMart plg_system_amazon Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_system_amazon_update.xml', 1, 1445938483, ''),
-(54, 'VirtueMart plg_vmpayment_realex_hpp_api Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_realex_hpp_api_update.xml', 1, 1445938483, ''),
-(55, 'VirtueMart plg_vmuserfield_realex_hpp_api Update Site', 'extension', '\n            http://virtuemart.net/releases/vm3/plg_vmuserfield_realex_hpp_api_update.xml', 1, 1445938483, ''),
-(56, 'VirtueMart3 plg_vmpayment_skrill Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_skrill_update.xml', 1, 1445938483, ''),
-(57, 'VirtueMart plg_vmpayment_authorizenet Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_authorisenet_update.xml', 1, 1445938483, ''),
-(58, 'VirtueMart plg_vmpayment_sofort_ideal Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_sofort_ideal_update.xml', 1, 1445938483, ''),
-(59, 'VirtueMart plg_vmpayment_klikandpay Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_klikandpay_update.xml', 1, 1445938483, ''),
-(60, 'VirtueMart3 plg_vmshipment_weight_countries Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmshipment_weight_countries_update.xml', 1, 1445938483, ''),
-(61, 'VirtueMart3 plg_vmcustom_textinput Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmcustom_textinput_update.xml', 1, 1445938483, ''),
-(62, 'VirtueMart3 plg_vmcustom_specification Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmcustom_specification_update.xml', 1, 1445938483, ''),
-(63, 'VirtueMart3 plg_vmcalculation_avalara Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmcalculation_avalara_update.xml', 1, 1445938483, ''),
-(64, 'VirtueMart3 plg_search_virtuemart Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_search_virtuemart_update.xml', 1, 1445938483, ''),
-(65, 'VirtueMart3 MOD_VMENU Update Site', 'extension', 'http://virtuemart.net/releases/vm3/mod_vmmenu_update.xml', 1, 1445938483, ''),
-(66, 'VirtueMart3 mod_virtuemart_currencies Update Site', 'extension', 'http://virtuemart.net/releases/vm3/mod_virtuemart_currencies_update.xml', 1, 1445938483, ''),
-(67, 'VirtueMart3 mod_virtuemart_product Update Site', 'extension', 'http://virtuemart.net/releases/vm3/mod_virtuemart_product_update.xml', 1, 1445938483, ''),
-(68, 'VirtueMart3 mod_virtuemart_search Update Site', 'extension', 'http://virtuemart.net/releases/vm3/mod_virtuemart_search_update.xml', 1, 1445938483, ''),
-(69, 'VirtueMart3 mod_virtuemart_manufacturer Update Site', 'extension', 'http://virtuemart.net/releases/vm3/mod_virtuemart_manufacturer_update.xml', 1, 1445938483, ''),
-(70, 'VirtueMart3 mod_virtuemart_cart Update Site', 'extension', 'http://virtuemart.net/releases/vm3/mod_virtuemart_cart_update.xml', 1, 1445938483, ''),
-(71, 'VirtueMart3 mod_virtuemart_category Update Site', 'extension', 'http://virtuemart.net/releases/vm3/mod_virtuemart_category_update.xml', 1, 1445938483, ''),
-(72, 'VirtueMart3 AIO Update Site', 'extension', 'http://virtuemart.net/releases/vm3/virtuemart_aio_update.xml', 1, 1445938483, ''),
-(73, 'TCPDF Update Site', 'extension', 'http://virtuemart.net/releases/TCPDF/tcpdf.xml', 1, 1445938483, '');
+(5, 'AcyMailing', 'extension', 'http://www.acyba.com/component/updateme/updatexml/component-acymailing/level-Starter/file-extension.xml', 1, 1445997352, ''),
+(42, 'Joomla! Update Component Update Site', 'extension', 'http://update.joomla.org/core/extensions/com_joomlaupdate.xml', 1, 1445997352, ''),
+(43, '', 'collection', 'http://update.joomla.org/core/list.xml', 1, 1445997352, ''),
+(44, 'VirtueMart3 Update Site', 'extension', 'http://virtuemart.net/releases/vm3/virtuemart_update.xml', 1, 1445997352, ''),
+(45, 'VirtueMart plg_vmpayment_standard Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_standard_update.xml', 1, 1445997352, ''),
+(46, 'VirtueMart plg_vmpayment_klarna Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_klarna_update.xml', 1, 1445997352, ''),
+(47, 'VirtueMart plg_vmpayment_klarnacheckout Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_klarnacheckout_update.xml', 1, 1445997352, ''),
+(48, 'VirtueMart plg_vmpayment_sofort Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_sofort_update.xml', 1, 1445997352, ''),
+(49, 'VirtueMart plg_vmpayment_paypal Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_paypal_update.xml', 1, 1445997352, ''),
+(50, 'VirtueMart plg_vmpayment_heidelpay Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_heidelpay_update.xml', 1, 1445997352, ''),
+(51, 'VirtueMart plg_vmpayment_paybox Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_paybox_update.xml', 1, 1445997352, ''),
+(52, 'VirtueMart plg_vmpayment_amazon Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_amazon_update.xml', 1, 1445997352, ''),
+(53, 'VirtueMart plg_system_amazon Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_system_amazon_update.xml', 1, 1445997352, ''),
+(54, 'VirtueMart plg_vmpayment_realex_hpp_api Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_realex_hpp_api_update.xml', 1, 1445997352, ''),
+(55, 'VirtueMart plg_vmuserfield_realex_hpp_api Update Site', 'extension', '\n            http://virtuemart.net/releases/vm3/plg_vmuserfield_realex_hpp_api_update.xml', 1, 1445997352, ''),
+(56, 'VirtueMart3 plg_vmpayment_skrill Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_skrill_update.xml', 1, 1445997352, ''),
+(57, 'VirtueMart plg_vmpayment_authorizenet Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_authorisenet_update.xml', 1, 1445997352, ''),
+(58, 'VirtueMart plg_vmpayment_sofort_ideal Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_sofort_ideal_update.xml', 1, 1445997352, ''),
+(59, 'VirtueMart plg_vmpayment_klikandpay Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmpayment_klikandpay_update.xml', 1, 1445997352, ''),
+(60, 'VirtueMart3 plg_vmshipment_weight_countries Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmshipment_weight_countries_update.xml', 1, 1445997352, ''),
+(61, 'VirtueMart3 plg_vmcustom_textinput Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmcustom_textinput_update.xml', 1, 1445997352, ''),
+(62, 'VirtueMart3 plg_vmcustom_specification Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmcustom_specification_update.xml', 1, 1445997352, ''),
+(63, 'VirtueMart3 plg_vmcalculation_avalara Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_vmcalculation_avalara_update.xml', 1, 1445997352, ''),
+(64, 'VirtueMart3 plg_search_virtuemart Update Site', 'extension', 'http://virtuemart.net/releases/vm3/plg_search_virtuemart_update.xml', 1, 1445997352, ''),
+(65, 'VirtueMart3 MOD_VMENU Update Site', 'extension', 'http://virtuemart.net/releases/vm3/mod_vmmenu_update.xml', 1, 1445997352, ''),
+(66, 'VirtueMart3 mod_virtuemart_currencies Update Site', 'extension', 'http://virtuemart.net/releases/vm3/mod_virtuemart_currencies_update.xml', 1, 1445997352, ''),
+(67, 'VirtueMart3 mod_virtuemart_product Update Site', 'extension', 'http://virtuemart.net/releases/vm3/mod_virtuemart_product_update.xml', 1, 1445997352, ''),
+(68, 'VirtueMart3 mod_virtuemart_search Update Site', 'extension', 'http://virtuemart.net/releases/vm3/mod_virtuemart_search_update.xml', 1, 1445997352, ''),
+(69, 'VirtueMart3 mod_virtuemart_manufacturer Update Site', 'extension', 'http://virtuemart.net/releases/vm3/mod_virtuemart_manufacturer_update.xml', 1, 1445997352, ''),
+(70, 'VirtueMart3 mod_virtuemart_cart Update Site', 'extension', 'http://virtuemart.net/releases/vm3/mod_virtuemart_cart_update.xml', 1, 1445997352, ''),
+(71, 'VirtueMart3 mod_virtuemart_category Update Site', 'extension', 'http://virtuemart.net/releases/vm3/mod_virtuemart_category_update.xml', 1, 1445997352, ''),
+(72, 'VirtueMart3 AIO Update Site', 'extension', 'http://virtuemart.net/releases/vm3/virtuemart_aio_update.xml', 1, 1445997352, ''),
+(73, 'TCPDF Update Site', 'extension', 'http://virtuemart.net/releases/TCPDF/tcpdf.xml', 1, 1445997352, '');
 
 -- --------------------------------------------------------
 
@@ -2508,7 +2530,7 @@ CREATE TABLE `pz5yp_users` (
 --
 
 INSERT INTO `pz5yp_users` (`id`, `name`, `username`, `email`, `password`, `block`, `sendEmail`, `registerDate`, `lastvisitDate`, `activation`, `params`, `lastResetTime`, `resetCount`, `otpKey`, `otep`, `requireReset`) VALUES
-(254, 'Super User', 'admin', 'admin@localhost.cc', '$2y$10$fDRO/mg9Lgc5svqzYnHiquiYFn1turqVZPwNlWCH6K6oIvl3VpAUG', 0, 1, '2014-10-14 09:21:12', '2015-10-27 08:48:01', '0', '{}', '0000-00-00 00:00:00', 0, '', '', 0);
+(254, 'Super User', 'admin', 'admin@localhost.cc', '$2y$10$fDRO/mg9Lgc5svqzYnHiquiYFn1turqVZPwNlWCH6K6oIvl3VpAUG', 0, 1, '2014-10-14 09:21:12', '2015-10-28 07:04:58', '0', '{}', '0000-00-00 00:00:00', 0, '', '', 0);
 
 -- --------------------------------------------------------
 
@@ -2693,6 +2715,13 @@ CREATE TABLE `pz5yp_virtuemart_calcs` (
   `locked_by` int(1) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `pz5yp_virtuemart_calcs`
+--
+
+INSERT INTO `pz5yp_virtuemart_calcs` (`virtuemart_calc_id`, `virtuemart_vendor_id`, `calc_jplugin_id`, `calc_name`, `calc_descr`, `calc_kind`, `calc_value_mathop`, `calc_value`, `calc_currency`, `calc_shopper_published`, `calc_vendor_published`, `publish_up`, `publish_down`, `for_override`, `calc_params`, `ordering`, `shared`, `published`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`) VALUES
+(4, 1, 0, 'Thuế', '', 'Marge', '+', '100000.0000', 147, 0, 0, '2015-10-28 02:18:26', '0000-00-00 00:00:00', 0, '', 0, 0, 1, '2015-10-28 02:18:26', 254, '2015-10-28 02:18:26', 254, '0000-00-00 00:00:00', 0);
+
 -- --------------------------------------------------------
 
 --
@@ -2717,6 +2746,13 @@ CREATE TABLE `pz5yp_virtuemart_calc_countries` (
   `virtuemart_country_id` smallint(1) UNSIGNED NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `pz5yp_virtuemart_calc_countries`
+--
+
+INSERT INTO `pz5yp_virtuemart_calc_countries` (`id`, `virtuemart_calc_id`, `virtuemart_country_id`) VALUES
+(1, 4, 230);
+
 -- --------------------------------------------------------
 
 --
@@ -2728,6 +2764,15 @@ CREATE TABLE `pz5yp_virtuemart_calc_manufacturers` (
   `virtuemart_calc_id` smallint(1) UNSIGNED NOT NULL DEFAULT '0',
   `virtuemart_manufacturer_id` smallint(1) UNSIGNED NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `pz5yp_virtuemart_calc_manufacturers`
+--
+
+INSERT INTO `pz5yp_virtuemart_calc_manufacturers` (`id`, `virtuemart_calc_id`, `virtuemart_manufacturer_id`) VALUES
+(1, 4, 5),
+(2, 4, 6),
+(3, 4, 4);
 
 -- --------------------------------------------------------
 
@@ -2741,6 +2786,13 @@ CREATE TABLE `pz5yp_virtuemart_calc_shoppergroups` (
   `virtuemart_shoppergroup_id` smallint(1) UNSIGNED NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `pz5yp_virtuemart_calc_shoppergroups`
+--
+
+INSERT INTO `pz5yp_virtuemart_calc_shoppergroups` (`id`, `virtuemart_calc_id`, `virtuemart_shoppergroup_id`) VALUES
+(1, 4, 2);
+
 -- --------------------------------------------------------
 
 --
@@ -2752,6 +2804,13 @@ CREATE TABLE `pz5yp_virtuemart_calc_states` (
   `virtuemart_calc_id` smallint(1) UNSIGNED NOT NULL DEFAULT '0',
   `virtuemart_state_id` smallint(1) UNSIGNED NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `pz5yp_virtuemart_calc_states`
+--
+
+INSERT INTO `pz5yp_virtuemart_calc_states` (`id`, `virtuemart_calc_id`, `virtuemart_state_id`) VALUES
+(1, 4, 0);
 
 -- --------------------------------------------------------
 
@@ -2806,9 +2865,17 @@ CREATE TABLE `pz5yp_virtuemart_categories` (
 INSERT INTO `pz5yp_virtuemart_categories` (`virtuemart_category_id`, `virtuemart_vendor_id`, `category_template`, `category_layout`, `category_product_layout`, `products_per_row`, `limit_list_step`, `limit_list_initial`, `hits`, `metarobot`, `metaauthor`, `ordering`, `shared`, `published`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`) VALUES
 (1, 1, '0', '0', '0', 0, '0', 0, 0, '', '', 1, 0, 1, '0000-00-00 00:00:00', 0, '2015-10-27 07:32:04', 254, '0000-00-00 00:00:00', 0),
 (2, 1, '0', '0', '0', 0, '0', 0, 0, '', '', 2, 0, 1, '0000-00-00 00:00:00', 0, '2015-10-27 07:32:54', 254, '0000-00-00 00:00:00', 0),
-(3, 1, '0', '0', '0', 0, '0', 0, 0, '', '', 3, 0, 1, '0000-00-00 00:00:00', 0, '2015-10-27 07:31:15', 254, '0000-00-00 00:00:00', 0),
-(4, 1, '0', '0', '0', 0, '0', 0, 0, '', '', 4, 0, 1, '0000-00-00 00:00:00', 0, '2015-10-27 07:31:43', 254, '0000-00-00 00:00:00', 0),
-(7, 1, '0', '0', '0', 0, '0', 0, 0, '', '', 5, 0, 1, '0000-00-00 00:00:00', 0, '2015-10-27 07:32:21', 254, '0000-00-00 00:00:00', 0);
+(3, 1, '0', '0', '0', 0, '0', 0, 0, '', '', 3, 0, 1, '0000-00-00 00:00:00', 0, '2015-10-28 02:24:25', 254, '0000-00-00 00:00:00', 0),
+(4, 1, '0', '0', '0', 0, '0', 0, 0, '', '', 4, 0, 1, '0000-00-00 00:00:00', 0, '2015-10-28 02:24:35', 254, '0000-00-00 00:00:00', 0),
+(13, 1, '0', '0', '0', 0, '0', 0, 0, '', '', 1, 0, 1, '2015-10-28 02:28:40', 254, '2015-10-28 02:28:40', 254, '0000-00-00 00:00:00', 0),
+(12, 1, '0', '0', '0', 0, '0', 0, 0, '', '', 1, 0, 1, '2015-10-28 02:28:21', 254, '2015-10-28 02:28:21', 254, '0000-00-00 00:00:00', 0),
+(7, 1, '0', '0', '0', 0, '0', 0, 0, '', '', 5, 0, 1, '0000-00-00 00:00:00', 0, '2015-10-27 07:32:21', 254, '0000-00-00 00:00:00', 0),
+(10, 1, '0', '0', '0', 0, '0', 0, 0, '', '', 1, 0, 1, '2015-10-28 02:24:16', 254, '2015-10-28 02:24:16', 254, '0000-00-00 00:00:00', 0),
+(11, 1, '0', '0', '0', 0, '0', 0, 0, '', '', 1, 0, 0, '2015-10-28 02:24:55', 254, '2015-10-28 02:24:55', 254, '0000-00-00 00:00:00', 0),
+(14, 1, '0', '0', '0', 0, '0', 0, 0, '', '', 1, 0, 1, '2015-10-28 02:28:57', 254, '2015-10-28 02:28:57', 254, '0000-00-00 00:00:00', 0),
+(15, 1, '0', '0', '0', 0, '0', 0, 0, '', '', 1, 0, 0, '2015-10-28 02:29:13', 254, '2015-10-28 02:29:13', 254, '0000-00-00 00:00:00', 0),
+(16, 1, '0', '0', '0', 0, '0', 0, 0, '', '', 1, 0, 1, '2015-10-28 02:29:35', 254, '2015-10-28 02:29:35', 254, '0000-00-00 00:00:00', 0),
+(17, 1, '0', '0', '0', 0, '0', 0, 0, '', '', 1, 0, 1, '2015-10-28 02:30:01', 254, '2015-10-28 02:30:01', 254, '0000-00-00 00:00:00', 0);
 
 -- --------------------------------------------------------
 
@@ -2835,7 +2902,15 @@ INSERT INTO `pz5yp_virtuemart_categories_en_gb` (`virtuemart_category_id`, `cate
 (2, 'Digital Code', '<p><span style="background-color: #FCDB73; text-align: center;padding: 5px 40px; ">Example for usage of product pattern. For showcase reason the PATTERN is NOT unpublished.</span></p>', '', '', '', 'digital-code'),
 (3, 'Sony PlayStation', '<p><span style="background-color: #FCDB73; text-align: center;padding: 5px 40px;">Notice: for correct ordering in product view set valid ordering in BE.</span><br />Ordering showcase category. Use this category to test the ordering of products. You can also select several Manufacturer.</p>', '', '', '', 'sony-playstation'),
 (4, 'Microsoft Xbox', '<p><span style="background-color: #FCDB73; text-align: center;padding: 5px 40px;">Showcase for subcategory with several sample product.</span></p>', '', '', '', 'headgear'),
-(7, 'Secondhand', '', '', '', '', 'secondhand');
+(7, 'Secondhand', '', '', '', '', 'secondhand'),
+(10, 'Consoles', '', '', '', '', 'consoles'),
+(11, 'Nintendo', '', '', '', '', 'nintendo'),
+(12, 'Games', '', '', '', '', 'games'),
+(13, 'Games PS3', '', '', '', '', 'games-ps3'),
+(14, 'Games PS4', '', '', '', '', 'games-ps4'),
+(15, 'Games PS Vita', '', '', '', '', 'games-ps-vita'),
+(16, 'Game Nintendo', '', '', '', '', 'game-nintendo'),
+(17, 'Games Xbox', '', '', '', '', 'games-xbox');
 
 -- --------------------------------------------------------
 
@@ -2857,9 +2932,17 @@ CREATE TABLE `pz5yp_virtuemart_category_categories` (
 INSERT INTO `pz5yp_virtuemart_category_categories` (`id`, `category_parent_id`, `category_child_id`, `ordering`) VALUES
 (1, 0, 1, 1),
 (2, 0, 2, 2),
-(3, 0, 3, 3),
-(4, 0, 4, 4),
-(7, 0, 7, 5);
+(3, 10, 3, 3),
+(4, 10, 4, 4),
+(13, 12, 13, 1),
+(12, 0, 12, 1),
+(7, 0, 7, 5),
+(11, 10, 11, 1),
+(10, 0, 10, 1),
+(14, 12, 14, 1),
+(15, 12, 15, 1),
+(16, 12, 16, 1),
+(17, 12, 17, 1);
 
 -- --------------------------------------------------------
 
@@ -3361,7 +3444,7 @@ INSERT INTO `pz5yp_virtuemart_currencies` (`virtuemart_currency_id`, `virtuemart
 (141, 1, 'New Taiwan dollar', '', 'TWD', 901, '0.00000', 'NT$', '2', ',', '', '{number} {symbol}', '{sign}{number} {symbol}', 0, 1, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
 (142, 1, 'Tanzanian shilling', '', 'TZS', 834, '0.00000', 'Sh', '2', ',', '', '{number} {symbol}', '{sign}{number} {symbol}', 0, 1, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
 (144, 1, 'United States dollar', '', 'USD', 840, '0.00000', '$', '2', '.', ',', '{symbol}{number}', '{symbol}{sign}{number}', 0, 1, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(147, 1, 'Vietnamese Dong', '', 'VND', 704, '0.00000', '₫', '0', '', '', '{number} {symbol}', '{sign}{number} {symbol}', 0, 1, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
+(147, 1, 'Vietnamese Dong', '', 'VND', 704, '0.00000', '₫', '0', '', '', '{number}đ', '{sign}{number}đ', 0, 0, 1, '0000-00-00 00:00:00', 0, '2015-10-28 02:20:26', 254, '0000-00-00 00:00:00', 0),
 (148, 1, 'Vanuatu vatu', '', 'VUV', 548, '0.00000', 'Vt', '2', ',', '', '{number} {symbol}', '{sign}{number} {symbol}', 0, 1, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
 (149, 1, 'Samoan tala', '', 'WST', 882, '0.00000', 'T', '2', ',', '', '{number} {symbol}', '{sign}{number} {symbol}', 0, 1, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
 (151, 1, 'Yemeni rial', '', 'YER', 886, '0.00000', '﷼', '2', ',', '', '{number} {symbol}', '{sign}{number} {symbol}', 0, 1, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
@@ -3652,7 +3735,7 @@ CREATE TABLE `pz5yp_virtuemart_medias` (
 
 INSERT INTO `pz5yp_virtuemart_medias` (`virtuemart_media_id`, `virtuemart_vendor_id`, `file_title`, `file_description`, `file_meta`, `file_class`, `file_mimetype`, `file_type`, `file_url`, `file_url_thumb`, `file_is_product_image`, `file_is_downloadable`, `file_is_forSale`, `file_params`, `file_lang`, `shared`, `published`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`) VALUES
 (1, 1, 'vendor.gif', '', '', '', 'image/gif', 'vendor', 'images/stories/virtuemart/vendor/vendor.gif', '', 0, 0, 0, '', '', 0, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(2, 1, 'student_hat_16.jpg', '', '', '', 'image/jpeg', 'category', 'images/stories/virtuemart/category/student_hat_16.jpg', '', 0, 0, 0, '', '', 0, 1, '0000-00-00 00:00:00', 0, '2015-10-27 07:32:54', 254, '0000-00-00 00:00:00', 0),
+(2, 1, 'student_hat_16.jpg', '', '', '', 'image/jpeg', 'category', 'images/stories/virtuemart/category/student_hat_16.jpg', '', 0, 0, 0, '', '', 0, 1, '0000-00-00 00:00:00', 0, '2015-10-28 02:24:25', 254, '0000-00-00 00:00:00', 0),
 (3, 1, 'hat_category8.jpg', '', '', '', 'image/jpeg', 'category', 'images/stories/virtuemart/category/hat_category8.jpg', '0', 0, 0, 0, '', '', 0, 1, '0000-00-00 00:00:00', 0, '2015-10-26 09:47:03', 254, '0000-00-00 00:00:00', 0),
 (5, 1, 'cap6.jpg', '', '', '', 'image/jpeg', 'category', 'images/stories/virtuemart/category/cap6.jpg', '', 0, 0, 0, '', '', 0, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
 (6, 1, 'jacket_classic7.jpg', '', '', '', 'image/jpeg', 'category', 'images/stories/virtuemart/category/jacket_classic7.jpg', '', 0, 0, 0, '', '', 0, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
@@ -3671,7 +3754,14 @@ INSERT INTO `pz5yp_virtuemart_medias` (`virtuemart_media_id`, `virtuemart_vendor
 (19, 1, 'poncho.jpg', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/poncho.jpg', '', 0, 0, 0, '', '', 0, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
 (20, 1, 'dress.jpg', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/dress.jpg', '', 0, 0, 0, '', '', 0, 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
 (21, 1, 'cart_logo.jpg_product', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/pasta-ebi-tempura-to-gomatare-490x314.jpg', '', 0, 0, 0, '', '', 0, 1, '2014-10-19 02:49:50', 254, '2014-10-19 02:49:50', 254, '0000-00-00 00:00:00', 0),
-(22, 1, 'ps49.jpg', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/ps49.jpg', '', 0, 0, 0, '', '', 0, 1, '2015-10-27 09:31:38', 254, '2015-10-27 09:41:02', 254, '0000-00-00 00:00:00', 0);
+(22, 1, 'ps49.jpg', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/ps49.jpg', '', 0, 0, 0, '', '', 0, 1, '2015-10-27 09:31:38', 254, '2015-10-27 09:41:02', 254, '0000-00-00 00:00:00', 0),
+(23, 1, 'xbox-3603.jpg', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/xbox-3603.jpg', '', 0, 0, 0, '', '', 0, 1, '2015-10-28 02:15:13', 254, '2015-10-28 02:15:18', 254, '0000-00-00 00:00:00', 0),
+(24, 1, 'ps49.jpg_product', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/xbox-7201.jpg', '', 0, 0, 0, '', '', 0, 1, '2015-10-28 02:17:01', 254, '2015-10-28 02:17:04', 254, '0000-00-00 00:00:00', 0),
+(25, 1, 'ps49.jpg_product_product', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/ps3-dualshock3.jpg', '', 0, 0, 0, '', '', 0, 1, '2015-10-28 02:20:58', 254, '2015-10-28 02:21:41', 254, '0000-00-00 00:00:00', 0),
+(26, 1, 'ps49.jpg_product', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/wii8.jpg', '', 0, 0, 0, '', '', 0, 1, '2015-10-28 02:25:35', 254, '2015-10-28 02:25:35', 254, '0000-00-00 00:00:00', 0),
+(27, 1, 'ps49.jpg_product', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/ps4-dualshock7.jpg', '', 0, 0, 0, '', '', 0, 1, '2015-10-28 02:27:01', 254, '2015-10-28 02:27:01', 254, '0000-00-00 00:00:00', 0),
+(28, 1, 'ps49.jpg_product', '', '', '', 'image/png', 'product', 'images/stories/virtuemart/product/300x300-COD.png', '', 0, 0, 0, '', '', 0, 1, '2015-10-28 02:31:06', 254, '2015-10-28 02:31:06', 254, '0000-00-00 00:00:00', 0),
+(29, 1, 'ps49.jpg_product', '', '', '', 'image/png', 'product', 'images/stories/virtuemart/product/300x300-tomb-raider.png', '', 0, 0, 0, '', '', 0, 1, '2015-10-28 02:32:06', 254, '2015-10-28 02:32:06', 254, '0000-00-00 00:00:00', 0);
 
 -- --------------------------------------------------------
 
@@ -4102,13 +4192,13 @@ CREATE TABLE `pz5yp_virtuemart_products` (
 --
 
 INSERT INTO `pz5yp_virtuemart_products` (`virtuemart_product_id`, `virtuemart_vendor_id`, `product_parent_id`, `product_sku`, `product_gtin`, `product_mpn`, `product_weight`, `product_weight_uom`, `product_length`, `product_width`, `product_height`, `product_lwh_uom`, `product_url`, `product_in_stock`, `product_ordered`, `low_stock_notification`, `product_available_date`, `product_availability`, `product_special`, `product_sales`, `product_unit`, `product_packaging`, `product_params`, `hits`, `intnotes`, `metarobot`, `metaauthor`, `layout`, `published`, `pordering`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`) VALUES
-(77, 1, 0, 'PS4', '', '', NULL, 'KG', NULL, NULL, NULL, 'M', '', 10, 0, 0, '2015-10-26 00:00:00', '24h.gif', 0, 0, 'KG', NULL, 'min_order_level="1"|max_order_level=null|step_order_level=null|product_box="1"|', NULL, '', '', '', 'default', 1, 0, '2015-10-27 09:42:52', 254, '2015-10-27 09:42:52', 254, '0000-00-00 00:00:00', 0),
-(72, 1, 0, 'PS4', '', '', NULL, 'KG', NULL, NULL, NULL, 'M', '', 10, 0, 0, '2015-10-26 00:00:00', '24h.gif', 0, 0, 'KG', NULL, 'min_order_level="1"|max_order_level=null|step_order_level=null|product_box="1"|', NULL, '', '', '', 'default', 1, 0, '2015-10-27 09:42:45', 254, '2015-10-27 09:42:45', 254, '0000-00-00 00:00:00', 0),
-(73, 1, 0, 'PS4', '', '', NULL, 'KG', NULL, NULL, NULL, 'M', '', 10, 0, 0, '2015-10-26 00:00:00', '24h.gif', 0, 0, 'KG', NULL, 'min_order_level="1"|max_order_level=null|step_order_level=null|product_box="1"|', NULL, '', '', '', 'default', 1, 0, '2015-10-27 09:42:45', 254, '2015-10-27 09:42:45', 254, '0000-00-00 00:00:00', 0),
-(74, 1, 0, 'PS4', '', '', NULL, 'KG', NULL, NULL, NULL, 'M', '', 10, 0, 0, '2015-10-26 00:00:00', '24h.gif', 0, 0, 'KG', NULL, 'min_order_level="1"|max_order_level=null|step_order_level=null|product_box="1"|', NULL, '', '', '', 'default', 1, 0, '2015-10-27 09:42:52', 254, '2015-10-27 09:42:52', 254, '0000-00-00 00:00:00', 0),
-(75, 1, 0, 'PS4', '', '', NULL, 'KG', NULL, NULL, NULL, 'M', '', 10, 0, 0, '2015-10-26 00:00:00', '24h.gif', 0, 0, 'KG', NULL, 'min_order_level="1"|max_order_level=null|step_order_level=null|product_box="1"|', NULL, '', '', '', 'default', 1, 0, '2015-10-27 09:42:52', 254, '2015-10-27 09:42:52', 254, '0000-00-00 00:00:00', 0),
-(76, 1, 0, 'PS4', '', '', NULL, 'KG', NULL, NULL, NULL, 'M', '', 10, 0, 0, '2015-10-26 00:00:00', '24h.gif', 0, 0, 'KG', NULL, 'min_order_level="1"|max_order_level=null|step_order_level=null|product_box="1"|', NULL, '', '', '', 'default', 1, 0, '2015-10-27 09:42:52', 254, '2015-10-27 09:42:52', 254, '0000-00-00 00:00:00', 0),
-(70, 1, 0, 'PS4', '', '', NULL, 'KG', NULL, NULL, NULL, 'M', '', 10, 0, 0, '2015-10-26 00:00:00', '24h.gif', 0, 0, 'KG', NULL, 'min_order_level="1"|max_order_level=""|step_order_level=""|product_box="1"|', NULL, '', '', '', 'default', 1, 0, '2015-10-27 09:08:30', 254, '2015-10-27 09:41:02', 254, '0000-00-00 00:00:00', 0),
+(77, 1, 0, 'Xbox360', '', '', NULL, 'KG', NULL, NULL, NULL, 'M', '', 10, 0, 0, '2015-10-26 00:00:00', '24h.gif', 1, 0, 'KG', NULL, 'min_order_level="1"|max_order_level=""|step_order_level=""|product_box="1"|', NULL, '', '', '', 'default', 1, 0, '2015-10-27 09:42:52', 254, '2015-10-28 02:15:18', 254, '0000-00-00 00:00:00', 0),
+(72, 1, 0, 'xbox720', '', '', NULL, 'KG', NULL, NULL, NULL, 'M', '', 10, 0, 0, '2015-10-26 00:00:00', '24h.gif', 0, 0, 'KG', NULL, 'min_order_level="1"|max_order_level=""|step_order_level=""|product_box="1"|', NULL, '', '', '', 'default', 1, 0, '2015-10-27 09:42:45', 254, '2015-10-28 02:17:04', 254, '0000-00-00 00:00:00', 0),
+(73, 1, 0, 'Controller', '', '', NULL, 'KG', NULL, NULL, NULL, 'M', '', 10, 0, 0, '2015-10-26 00:00:00', '24h.gif', 0, 0, 'KG', NULL, 'min_order_level="1"|max_order_level=""|step_order_level=""|product_box="1"|', NULL, '', '', '', 'default', 1, 0, '2015-10-27 09:42:45', 254, '2015-10-28 02:21:41', 254, '0000-00-00 00:00:00', 0),
+(74, 1, 0, 'WII', '', '', NULL, 'KG', NULL, NULL, NULL, 'M', '', 10, 0, 0, '2015-10-26 00:00:00', '24h.gif', 0, 0, 'KG', NULL, 'min_order_level="1"|max_order_level=""|step_order_level=""|product_box="1"|', NULL, '', '', '', 'default', 1, 0, '2015-10-27 09:42:52', 254, '2015-10-28 02:25:35', 254, '0000-00-00 00:00:00', 0),
+(75, 1, 0, 'DUALSHOCKPS4', '', '', NULL, 'KG', NULL, NULL, NULL, 'M', '', 10, 0, 0, '2015-10-26 00:00:00', '24h.gif', 0, 0, 'KG', NULL, 'min_order_level="1"|max_order_level=""|step_order_level=""|product_box="1"|', NULL, '', '', '', 'default', 1, 0, '2015-10-27 09:42:52', 254, '2015-10-28 02:27:01', 254, '0000-00-00 00:00:00', 0),
+(76, 1, 0, 'COD', '', '', NULL, 'KG', NULL, NULL, NULL, 'M', '', 10, 0, 0, '2015-10-26 00:00:00', '24h.gif', 0, 0, 'KG', NULL, 'min_order_level="1"|max_order_level=""|step_order_level=""|product_box="1"|', NULL, '', '', '', 'default', 1, 0, '2015-10-27 09:42:52', 254, '2015-10-28 02:31:06', 254, '0000-00-00 00:00:00', 0),
+(70, 1, 0, 'PS4', '', '', NULL, 'KG', NULL, NULL, NULL, 'M', '', 10, 0, 0, '2015-10-26 00:00:00', '24h.gif', 0, 0, 'KG', NULL, 'min_order_level="1"|max_order_level=""|step_order_level=""|product_box="1"|', NULL, '', '', '', 'default', 1, 0, '2015-10-27 09:08:30', 254, '2015-10-28 02:32:06', 254, '0000-00-00 00:00:00', 0),
 (71, 1, 0, 'PS4', '', '', NULL, 'KG', NULL, NULL, NULL, 'M', '', 10, 0, 0, '2015-10-26 00:00:00', '24h.gif', 0, 0, 'KG', NULL, 'min_order_level="1"|max_order_level=null|step_order_level=null|product_box="1"|', NULL, '', '', '', 'default', 1, 0, '2015-10-27 09:42:42', 254, '2015-10-27 09:42:42', 254, '0000-00-00 00:00:00', 0);
 
 -- --------------------------------------------------------
@@ -4133,14 +4223,14 @@ CREATE TABLE `pz5yp_virtuemart_products_en_gb` (
 --
 
 INSERT INTO `pz5yp_virtuemart_products_en_gb` (`virtuemart_product_id`, `product_s_desc`, `product_desc`, `product_name`, `metadesc`, `metakey`, `customtitle`, `slug`) VALUES
-(70, 'The PlayStation®4 system opens the door to an incredible journey through immersive new gaming worlds and a deeply connected gaming community. PS4™ puts gamers first with an astounding launch lineup and over 180 games in development. Play amazing top-tier blockbusters and innovative indie hits on PS4™. Developer Inspired, Gamer Focus.\r\n\r\nPlayStation®4. Greatness Awaits™', '', 'PlayStation 4', '', '', '', 'playstation-4'),
+(70, 'The PlayStation®4 system opens the door to an incredible journey through immersive new gaming worlds and a deeply connected gaming community. PS4™ puts gamers first with an astounding launch lineup and over 180 games in development. Play amazing top-tier blockbusters and innovative indie hits on PS4™. Developer Inspired, Gamer Focus.\r\n\r\nPlayStation®4. Greatness Awaits™', '', 'Tom Raider', '', '', '', 'tom-raider'),
 (71, 'The PlayStation®4 system opens the door to an incredible journey through immersive new gaming worlds and a deeply connected gaming community. PS4™ puts gamers first with an astounding launch lineup and over 180 games in development. Play amazing top-tier blockbusters and innovative indie hits on PS4™. Developer Inspired, Gamer Focus.\r\n\r\nPlayStation®4. Greatness Awaits™', '', 'PlayStation 4', '', '', '', 'playstation-4-70'),
-(72, 'The PlayStation®4 system opens the door to an incredible journey through immersive new gaming worlds and a deeply connected gaming community. PS4™ puts gamers first with an astounding launch lineup and over 180 games in development. Play amazing top-tier blockbusters and innovative indie hits on PS4™. Developer Inspired, Gamer Focus.\r\n\r\nPlayStation®4. Greatness Awaits™', '', 'PlayStation 4', '', '', '', 'playstation-4-71'),
-(73, 'The PlayStation®4 system opens the door to an incredible journey through immersive new gaming worlds and a deeply connected gaming community. PS4™ puts gamers first with an astounding launch lineup and over 180 games in development. Play amazing top-tier blockbusters and innovative indie hits on PS4™. Developer Inspired, Gamer Focus.\r\n\r\nPlayStation®4. Greatness Awaits™', '', 'PlayStation 4', '', '', '', 'playstation-4-70-71'),
-(74, 'The PlayStation®4 system opens the door to an incredible journey through immersive new gaming worlds and a deeply connected gaming community. PS4™ puts gamers first with an astounding launch lineup and over 180 games in development. Play amazing top-tier blockbusters and innovative indie hits on PS4™. Developer Inspired, Gamer Focus.\r\n\r\nPlayStation®4. Greatness Awaits™', '', 'PlayStation 4', '', '', '', 'playstation-4-70-72'),
-(75, 'The PlayStation®4 system opens the door to an incredible journey through immersive new gaming worlds and a deeply connected gaming community. PS4™ puts gamers first with an astounding launch lineup and over 180 games in development. Play amazing top-tier blockbusters and innovative indie hits on PS4™. Developer Inspired, Gamer Focus.\r\n\r\nPlayStation®4. Greatness Awaits™', '', 'PlayStation 4', '', '', '', 'playstation-4-72'),
-(76, 'The PlayStation®4 system opens the door to an incredible journey through immersive new gaming worlds and a deeply connected gaming community. PS4™ puts gamers first with an astounding launch lineup and over 180 games in development. Play amazing top-tier blockbusters and innovative indie hits on PS4™. Developer Inspired, Gamer Focus.\r\n\r\nPlayStation®4. Greatness Awaits™', '', 'PlayStation 4', '', '', '', 'playstation-4-71-72'),
-(77, 'The PlayStation®4 system opens the door to an incredible journey through immersive new gaming worlds and a deeply connected gaming community. PS4™ puts gamers first with an astounding launch lineup and over 180 games in development. Play amazing top-tier blockbusters and innovative indie hits on PS4™. Developer Inspired, Gamer Focus.\r\n\r\nPlayStation®4. Greatness Awaits™', '', 'PlayStation 4', '', '', '', 'playstation-4-70-71-73');
+(72, 'The PlayStation®4 system opens the door to an incredible journey through immersive new gaming worlds and a deeply connected gaming community. PS4™ puts gamers first with an astounding launch lineup and over 180 games in development. Play amazing top-tier blockbusters and innovative indie hits on PS4™. Developer Inspired, Gamer Focus.\r\n\r\nPlayStation®4. Greatness Awaits™', '', 'Xbox720', '', '', '', 'xbox720'),
+(73, 'The PlayStation®4 system opens the door to an incredible journey through immersive new gaming worlds and a deeply connected gaming community. PS4™ puts gamers first with an astounding launch lineup and over 180 games in development. Play amazing top-tier blockbusters and innovative indie hits on PS4™. Developer Inspired, Gamer Focus.\r\n\r\nPlayStation®4. Greatness Awaits™', '', 'Dualshock PlayStation 3', '', '', '', 'dualshock-playstation-3'),
+(74, 'The PlayStation®4 system opens the door to an incredible journey through immersive new gaming worlds and a deeply connected gaming community. PS4™ puts gamers first with an astounding launch lineup and over 180 games in development. Play amazing top-tier blockbusters and innovative indie hits on PS4™. Developer Inspired, Gamer Focus.\r\n\r\nPlayStation®4. Greatness Awaits™', '', 'Wii', '', '', '', 'wii'),
+(75, 'The PlayStation®4 system opens the door to an incredible journey through immersive new gaming worlds and a deeply connected gaming community. PS4™ puts gamers first with an astounding launch lineup and over 180 games in development. Play amazing top-tier blockbusters and innovative indie hits on PS4™. Developer Inspired, Gamer Focus.\r\n\r\nPlayStation®4. Greatness Awaits™', '', 'Dualshock PlayStation 4', '', '', '', 'dualshock-playstation-4'),
+(76, 'The PlayStation®4 system opens the door to an incredible journey through immersive new gaming worlds and a deeply connected gaming community. PS4™ puts gamers first with an astounding launch lineup and over 180 games in development. Play amazing top-tier blockbusters and innovative indie hits on PS4™. Developer Inspired, Gamer Focus.\r\n\r\nPlayStation®4. Greatness Awaits™', '', 'Call of Duty', '', '', '', 'call-of-duty'),
+(77, 'The PlayStation®4 system opens the door to an incredible journey through immersive new gaming worlds and a deeply connected gaming community. PS4™ puts gamers first with an astounding launch lineup and over 180 games in development. Play amazing top-tier blockbusters and innovative indie hits on PS4™. Developer Inspired, Gamer Focus.\r\n\r\nPlayStation®4. Greatness Awaits™', '', 'Xbox360', '', '', '', 'xbox360');
 
 -- --------------------------------------------------------
 
@@ -4160,13 +4250,13 @@ CREATE TABLE `pz5yp_virtuemart_product_categories` (
 --
 
 INSERT INTO `pz5yp_virtuemart_product_categories` (`id`, `virtuemart_product_id`, `virtuemart_category_id`, `ordering`) VALUES
-(86, 75, 3, 0),
-(83, 72, 3, 0),
-(88, 77, 3, 0),
-(81, 70, 3, 0),
-(84, 73, 3, 0),
-(87, 76, 3, 0),
-(85, 74, 3, 0),
+(89, 77, 4, 0),
+(94, 76, 14, 0),
+(91, 73, 1, 0),
+(90, 72, 4, 0),
+(92, 74, 11, 0),
+(95, 70, 17, 0),
+(93, 75, 1, 0),
 (82, 71, 3, 0);
 
 -- --------------------------------------------------------
@@ -4214,11 +4304,11 @@ CREATE TABLE `pz5yp_virtuemart_product_manufacturers` (
 --
 
 INSERT INTO `pz5yp_virtuemart_product_manufacturers` (`id`, `virtuemart_product_id`, `virtuemart_manufacturer_id`) VALUES
-(67, 72, 4),
+(75, 74, 6),
 (70, 75, 4),
-(72, 77, 4),
+(73, 77, 5),
+(74, 72, 5),
 (66, 71, 4),
-(69, 74, 4),
 (71, 76, 4),
 (65, 70, 4),
 (68, 73, 4);
@@ -4241,14 +4331,14 @@ CREATE TABLE `pz5yp_virtuemart_product_medias` (
 --
 
 INSERT INTO `pz5yp_virtuemart_product_medias` (`id`, `virtuemart_product_id`, `virtuemart_media_id`, `ordering`) VALUES
-(35, 72, 22, 1),
-(39, 76, 22, 1),
-(33, 70, 22, 1),
-(37, 74, 22, 1),
-(38, 75, 22, 1),
-(40, 77, 22, 1),
+(43, 73, 25, 1),
+(47, 70, 29, 1),
+(45, 75, 27, 1),
+(46, 76, 28, 1),
+(41, 77, 23, 1),
+(42, 72, 24, 1),
 (34, 71, 22, 1),
-(36, 73, 22, 1);
+(44, 74, 26, 1);
 
 -- --------------------------------------------------------
 
@@ -4284,13 +4374,13 @@ CREATE TABLE `pz5yp_virtuemart_product_prices` (
 
 INSERT INTO `pz5yp_virtuemart_product_prices` (`virtuemart_product_price_id`, `virtuemart_product_id`, `virtuemart_shoppergroup_id`, `product_price`, `override`, `product_override_price`, `product_tax_id`, `product_discount_id`, `product_currency`, `product_price_publish_up`, `product_price_publish_down`, `price_quantity_start`, `price_quantity_end`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`) VALUES
 (49, 71, 0, '10000000.000000', 0, '0.00000', -1, -1, 147, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '2015-10-27 09:42:42', 254, '2015-10-27 09:42:42', 254, '0000-00-00 00:00:00', 0),
-(55, 77, 0, '10000000.000000', 0, '0.00000', -1, -1, 147, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '2015-10-27 09:42:52', 254, '2015-10-27 09:42:52', 254, '0000-00-00 00:00:00', 0),
-(52, 74, 0, '10000000.000000', 0, '0.00000', -1, -1, 147, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '2015-10-27 09:42:52', 254, '2015-10-27 09:42:52', 254, '0000-00-00 00:00:00', 0),
-(54, 76, 0, '10000000.000000', 0, '0.00000', -1, -1, 147, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '2015-10-27 09:42:52', 254, '2015-10-27 09:42:52', 254, '0000-00-00 00:00:00', 0),
-(48, 70, 0, '10000000.000000', 0, '0.00000', -1, -1, 147, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '2015-10-27 09:08:30', 254, '2015-10-27 09:41:02', 254, '0000-00-00 00:00:00', 0),
-(50, 72, 0, '10000000.000000', 0, '0.00000', -1, -1, 147, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '2015-10-27 09:42:45', 254, '2015-10-27 09:42:45', 254, '0000-00-00 00:00:00', 0),
-(51, 73, 0, '10000000.000000', 0, '0.00000', -1, -1, 147, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '2015-10-27 09:42:45', 254, '2015-10-27 09:42:45', 254, '0000-00-00 00:00:00', 0),
-(53, 75, 0, '10000000.000000', 0, '0.00000', -1, -1, 147, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '2015-10-27 09:42:52', 254, '2015-10-27 09:42:52', 254, '0000-00-00 00:00:00', 0);
+(55, 77, 0, '10000000.000000', 0, '0.00000', -1, -1, 147, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '2015-10-27 09:42:52', 254, '2015-10-28 02:15:18', 254, '0000-00-00 00:00:00', 0),
+(52, 74, 0, '10000000.000000', 0, '0.00000', -1, -1, 147, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '2015-10-27 09:42:52', 254, '2015-10-28 02:25:35', 254, '0000-00-00 00:00:00', 0),
+(54, 76, 0, '10000000.000000', 0, '0.00000', -1, -1, 147, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '2015-10-27 09:42:52', 254, '2015-10-28 02:31:06', 254, '0000-00-00 00:00:00', 0),
+(48, 70, 0, '10000000.000000', 0, '0.00000', -1, -1, 147, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '2015-10-27 09:08:30', 254, '2015-10-28 02:32:06', 254, '0000-00-00 00:00:00', 0),
+(50, 72, 0, '10000000.000000', 0, '0.00000', -1, -1, 147, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '2015-10-27 09:42:45', 254, '2015-10-28 02:17:04', 254, '0000-00-00 00:00:00', 0),
+(51, 73, 0, '400000.000000', 0, '0.00000', -1, -1, 147, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '2015-10-27 09:42:45', 254, '2015-10-28 02:21:41', 254, '0000-00-00 00:00:00', 0),
+(53, 75, 0, '10000000.000000', 0, '0.00000', -1, -1, 147, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, '2015-10-27 09:42:52', 254, '2015-10-28 02:27:01', 254, '0000-00-00 00:00:00', 0);
 
 -- --------------------------------------------------------
 
@@ -6892,7 +6982,7 @@ ALTER TABLE `pz5yp_acymailing_url`
 -- AUTO_INCREMENT for table `pz5yp_assets`
 --
 ALTER TABLE `pz5yp_assets`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Primary Key', AUTO_INCREMENT=119;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Primary Key', AUTO_INCREMENT=122;
 --
 -- AUTO_INCREMENT for table `pz5yp_banners`
 --
@@ -6927,7 +7017,7 @@ ALTER TABLE `pz5yp_content_types`
 -- AUTO_INCREMENT for table `pz5yp_extensions`
 --
 ALTER TABLE `pz5yp_extensions`
-  MODIFY `extension_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10222;
+  MODIFY `extension_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10223;
 --
 -- AUTO_INCREMENT for table `pz5yp_finder_filters`
 --
@@ -6962,12 +7052,12 @@ ALTER TABLE `pz5yp_languages`
 -- AUTO_INCREMENT for table `pz5yp_menu`
 --
 ALTER TABLE `pz5yp_menu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=251;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=260;
 --
 -- AUTO_INCREMENT for table `pz5yp_menu_types`
 --
 ALTER TABLE `pz5yp_menu_types`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT for table `pz5yp_messages`
 --
@@ -6977,7 +7067,7 @@ ALTER TABLE `pz5yp_messages`
 -- AUTO_INCREMENT for table `pz5yp_modules`
 --
 ALTER TABLE `pz5yp_modules`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=175;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=178;
 --
 -- AUTO_INCREMENT for table `pz5yp_newsfeeds`
 --
@@ -7062,7 +7152,7 @@ ALTER TABLE `pz5yp_virtuemart_adminmenuentries`
 -- AUTO_INCREMENT for table `pz5yp_virtuemart_calcs`
 --
 ALTER TABLE `pz5yp_virtuemart_calcs`
-  MODIFY `virtuemart_calc_id` smallint(1) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `virtuemart_calc_id` smallint(1) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `pz5yp_virtuemart_calc_categories`
 --
@@ -7072,22 +7162,22 @@ ALTER TABLE `pz5yp_virtuemart_calc_categories`
 -- AUTO_INCREMENT for table `pz5yp_virtuemart_calc_countries`
 --
 ALTER TABLE `pz5yp_virtuemart_calc_countries`
-  MODIFY `id` int(1) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(1) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `pz5yp_virtuemart_calc_manufacturers`
 --
 ALTER TABLE `pz5yp_virtuemart_calc_manufacturers`
-  MODIFY `id` int(1) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(1) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `pz5yp_virtuemart_calc_shoppergroups`
 --
 ALTER TABLE `pz5yp_virtuemart_calc_shoppergroups`
-  MODIFY `id` int(1) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(1) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `pz5yp_virtuemart_calc_states`
 --
 ALTER TABLE `pz5yp_virtuemart_calc_states`
-  MODIFY `id` int(1) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(1) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `pz5yp_virtuemart_carts`
 --
@@ -7097,12 +7187,12 @@ ALTER TABLE `pz5yp_virtuemart_carts`
 -- AUTO_INCREMENT for table `pz5yp_virtuemart_categories`
 --
 ALTER TABLE `pz5yp_virtuemart_categories`
-  MODIFY `virtuemart_category_id` int(1) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `virtuemart_category_id` int(1) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 --
 -- AUTO_INCREMENT for table `pz5yp_virtuemart_category_categories`
 --
 ALTER TABLE `pz5yp_virtuemart_category_categories`
-  MODIFY `id` int(1) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(1) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 --
 -- AUTO_INCREMENT for table `pz5yp_virtuemart_category_medias`
 --
@@ -7157,7 +7247,7 @@ ALTER TABLE `pz5yp_virtuemart_manufacturer_medias`
 -- AUTO_INCREMENT for table `pz5yp_virtuemart_medias`
 --
 ALTER TABLE `pz5yp_virtuemart_medias`
-  MODIFY `virtuemart_media_id` int(1) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `virtuemart_media_id` int(1) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 --
 -- AUTO_INCREMENT for table `pz5yp_virtuemart_migration_oldtonew_ids`
 --
@@ -7227,7 +7317,7 @@ ALTER TABLE `pz5yp_virtuemart_products`
 -- AUTO_INCREMENT for table `pz5yp_virtuemart_product_categories`
 --
 ALTER TABLE `pz5yp_virtuemart_product_categories`
-  MODIFY `id` int(1) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=89;
+  MODIFY `id` int(1) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
 --
 -- AUTO_INCREMENT for table `pz5yp_virtuemart_product_customfields`
 --
@@ -7237,12 +7327,12 @@ ALTER TABLE `pz5yp_virtuemart_product_customfields`
 -- AUTO_INCREMENT for table `pz5yp_virtuemart_product_manufacturers`
 --
 ALTER TABLE `pz5yp_virtuemart_product_manufacturers`
-  MODIFY `id` int(1) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
+  MODIFY `id` int(1) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
 --
 -- AUTO_INCREMENT for table `pz5yp_virtuemart_product_medias`
 --
 ALTER TABLE `pz5yp_virtuemart_product_medias`
-  MODIFY `id` int(1) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id` int(1) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 --
 -- AUTO_INCREMENT for table `pz5yp_virtuemart_product_prices`
 --

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <assets>
 	<scripts>
-		
+		<file>js/jquery.sticky.js</file>
+		<file>js/script.js</file>
 	</scripts>
 	
 	<stylesheets>

@@ -56,6 +56,15 @@
   left: 0;
   right: 0;
   z-index: 1000;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.sticky-wrapper {
+  height: auto !important;
+}
+.sticky-wrapper.is-sticky .t3-header {
+  background: #000000;
 }
 .logo {
   text-align: center;
@@ -73,6 +82,10 @@
 .logo-image span,
 .logo-image small {
   display: none;
+}
+.logo-image img {
+  height: 40px;
+  margin: 5px 0;
 }
 .logo-text a {
   text-decoration: none;

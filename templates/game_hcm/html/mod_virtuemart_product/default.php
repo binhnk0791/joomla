@@ -58,14 +58,13 @@ if ($products_per_row > 1) {
 			</div>
 			<?php
 			if ($col == $products_per_row && $products_per_row && $col < $totalProd) {
-				echo "	</div><div style='clear:both;'>";
+				echo "	</div><div class='row'>";
 				$col = 1;
 			} else {
 				$col++;
 			}
 		} ?>
 		</div>
-		<br style='clear:both;'/>
 
 		<?php
 	} else {
