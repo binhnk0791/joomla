@@ -8,7 +8,7 @@ html {
 				color: @white;
 				font-size: @font-size-base;
 				text-transform: uppercase;
-				padding: @t3-global-padding/3;
+				padding: @t3-global-padding/2;
 				border-radius: @border-radius-base;
 				font-weight: 700;
 				border-color: darken(@brand-primary, 5%);
@@ -117,8 +117,230 @@ html {
 	.browse-view {
 		h1 {
 			font-size: @font-size-h3;
-			text-transform: uppercase;
+			text-transform: none;
 			font-weight: 700;
+		}
+
+		.ratingbox {
+
+		}
+	}
+
+	.orderby-displaynumber {
+		border: 1px solid @t3-border-color;
+    background: @gray-lightest;
+    margin: 0 0 @t3-global-padding 0;
+    padding: @t3-global-padding/2 @t3-global-padding;
+
+    .orderlistcontainer {
+    	margin-left: 0;
+    	margin-right: 10px;
+    	font-size: @font-size-base;
+    	.title {
+    		font-weight: bold;
+    		text-transform: uppercase;
+    		margin-bottom: 10px;
+    	}
+    }
+	}
+
+	.activeOrder {
+		border-radius: 2px;
+		a {
+			color: @text-color;
+
+			&:hover,
+			&:focus {
+				text-decoration: none;
+				color: @link-color;
+			}
+		}
+	}
+
+	.orderlist {
+		padding: 0;
+		> div {
+			padding: 0 !important;
+			margin: 0;
+			&:hover,
+			&:focus {
+				background: none;
+				margin: 0;
+			}
+			a {
+				color: @text-color;
+				padding: @t3-global-padding/2;
+				border-bottom: 1px solid @t3-border-color;
+				line-height: 1;
+
+				&:hover,
+				&:focus {
+					background: @link-color;
+					color: @white;
+					text-decoration: none;
+					border-color: @link-color;
+				}
+			}
+		}
+	}
+
+	#fancybox-close {
+		right: auto;
+		left: 100%;
+	}
+
+	#fancybox-content {
+		background: #fff;
+
+		h4 {
+			font-size: @font-size-base;
+			font-weight: 400;
+		}
+
+		a.continue_link,
+		a.showcart {
+			background: @brand-primary;
+			color: #fff;
+			padding: 10px;
+			line-height: 1;
+			font-weight: 400;
+			float: none;
+			display: inline-block;
+			vertical-align: middle;
+
+			&:hover,
+			&:focus {
+				text-decoration: none;
+				background: darken(@brand-primary, 10%);
+				color: @white;
+			}
+		}
+
+		a.showcart {
+			background: @gray-lightest;
+			color: @gray;
+
+			&:hover,
+			&:focus {
+				background: @gray-lighter;
+				color: @gray-darker;
+			}
+		}
+	}
+
+
+	// Cart Module Header
+
+	.toolbar {
+		.vmCartModule  {
+			> div {
+				display: inline-block;
+				vertical-align: middle;
+			}
+			.total {
+				display: none;
+			}
+
+			.total_products {
+				font-weight: 400;
+
+				&:before {
+					content: "\f07a";
+					font-family: FontAwesome;
+					margin-right: 3px;
+					display: inline-block;
+					vertical-align: middle;
+				}
+			}
+
+			.show_cart {
+				a {
+					color: @white;
+					text-decoration: none;
+					border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+					line-height: 1;
+
+					&:hover,
+					&:focus {
+						color: lighten(@link-color, 10%);
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+
+	.vm-product-descr-container-1 {
+		min-height: 0;
+	}
+
+	.vm-product-rating-container {
+		.ratingbox,
+		.vmicon {
+			float: none;
+			display: block;
+			margin: 10px auto;
+		}
+
+		.vmicon {
+			display: block;
+		}
+	}
+
+	.product {
+		.spacer {
+			padding: @t3-global-padding !important;
+			text-align: center;
+		}
+
+		h2 {
+			a {
+				font-size: @font-size-base;
+				text-transform: uppercase;
+				color: @text-color;
+
+				&:hover,
+				&:focus {
+					color: @link-color;
+					text-decoration: none;
+				}
+			}
+		}
+
+		.vm-details-button {
+			a {
+				padding: @t3-global-padding/2;
+				background: @white;
+				border-color: @t3-border-color;
+				border-radius: @border-radius-base;
+				line-height: 1;
+				width: auto;
+				&:hover,
+				&:focus {
+					color: @link-color;
+					border-color: @link-color;
+				}
+			}
+		}
+	}
+
+	.ask-a-question,
+	.back-to-category {
+		a {
+			padding: @t3-global-padding/2;
+			background: @white;
+			border-color: @t3-border-color;
+			border-radius: @border-radius-base;
+			line-height: 1;
+			width: auto;
+			margin: 0;
+			font-weight: 400;
+			font-size: @font-size-base;
+			&:hover,
+			&:focus {
+				color: @link-color;
+				border-color: @link-color;
+			}
 		}
 	}
 }

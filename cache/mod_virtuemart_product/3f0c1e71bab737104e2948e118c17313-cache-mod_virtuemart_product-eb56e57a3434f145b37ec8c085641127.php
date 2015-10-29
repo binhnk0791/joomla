@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#s:5652:"
+<?php die("Access Denied"); ?>#x#s:5713:"
 
 <div class="vmgroup abbba">
 
@@ -36,14 +36,14 @@
 
 			</li>
 						<li class="2 floatleft">
-				<a href="/joomla/index.php/accessories/dualshock-playstation-4-detail" title="Dualshock PlayStation 4"><img src="/joomla/images/stories/virtuemart/product/resized/ps4-dualshock7_90x90.jpg" alt="ps4-dualshock7" class="featuredProductImage" border="0" /></a><div class="clear"></div>				<a href="/joomla/index.php/accessories/dualshock-playstation-4-detail">Dualshock PlayStation 4</a>        <div class="clear"></div><div class="product-price"></div>
+				<a href="/joomla/index.php/component/virtuemart/consoles/404/wii-detail?Itemid=0" title="Wii"><img src="/joomla/images/stories/virtuemart/product/resized/wii8_90x90.jpg" alt="wii8" class="featuredProductImage" border="0" /></a><div class="clear"></div>				<a href="/joomla/index.php/component/virtuemart/consoles/404/wii-detail?Itemid=0">Wii</a>        <div class="clear"></div><div class="product-price"></div>
 	<div class="addtocart-area">
 		<form method="post" class="product js-recalculate" action="/joomla/index.php/component/virtuemart/">
 			<div class="vm-customfields-wrap">
 							</div>			
 				
 	<div class="addtocart-bar">
-								<!-- <label for="quantity75" class="quantity_box">Quantity: </label> -->
+								<!-- <label for="quantity74" class="quantity_box">Quantity: </label> -->
 				<span class="quantity-box">
 				<input type="text" class="quantity-input js-recalculate" name="quantity[]"
 					data-errStr="You can buy this product only in multiples of %s pieces!"
@@ -54,27 +54,27 @@
 				<input type="button" class="quantity-controls quantity-minus"/>
 			</span>
 			<span class="addtocart-button">
-				<input type="submit" name="addtocart" class="addtocart-button" value="Add to Cart" title="Add to Cart" />				</span> 			<input type="hidden" name="virtuemart_product_id[]" value="75"/>
+				<input type="submit" name="addtocart" class="addtocart-button" value="Add to Cart" title="Add to Cart" />				</span> 			<input type="hidden" name="virtuemart_product_id[]" value="74"/>
 			<noscript><input type="hidden" name="task" value="add"/></noscript> 
 	</div>			<input type="hidden" name="option" value="com_virtuemart"/>
 			<input type="hidden" name="view" value="cart"/>
-			<input type="hidden" name="virtuemart_product_id[]" value="75"/>
-			<input type="hidden" name="pname" value="Dualshock PlayStation 4"/>
-			<input type="hidden" name="pid" value="75"/>
+			<input type="hidden" name="virtuemart_product_id[]" value="74"/>
+			<input type="hidden" name="pname" value="Wii"/>
+			<input type="hidden" name="pid" value="74"/>
 			<input type="hidden" name="Itemid" value="101"/>		</form>
 
 	</div>
 
 			</li>
 						<li class="2 floatleft">
-				<a href="/joomla/index.php/xbox/xbox360-detail" title="Xbox360"><img src="/joomla/images/stories/virtuemart/product/resized/xbox-3603_90x90.jpg" alt="xbox-3603" class="featuredProductImage" border="0" /></a><div class="clear"></div>				<a href="/joomla/index.php/xbox/xbox360-detail">Xbox360</a>        <div class="clear"></div><div class="product-price"></div>
+				<a href="/joomla/index.php/component/virtuemart/games/games-xbox/tom-raider-detail?Itemid=0" title="Tom Raider"><img src="/joomla/images/stories/virtuemart/product/resized/300x300-tomb-raider_90x90.png" alt="300x300-tomb-raider" class="featuredProductImage" border="0" /></a><div class="clear"></div>				<a href="/joomla/index.php/component/virtuemart/games/games-xbox/tom-raider-detail?Itemid=0">Tom Raider</a>        <div class="clear"></div><div class="product-price"></div>
 	<div class="addtocart-area">
 		<form method="post" class="product js-recalculate" action="/joomla/index.php/component/virtuemart/">
 			<div class="vm-customfields-wrap">
 							</div>			
 				
 	<div class="addtocart-bar">
-								<!-- <label for="quantity77" class="quantity_box">Quantity: </label> -->
+								<!-- <label for="quantity70" class="quantity_box">Quantity: </label> -->
 				<span class="quantity-box">
 				<input type="text" class="quantity-input js-recalculate" name="quantity[]"
 					data-errStr="You can buy this product only in multiples of %s pieces!"
@@ -85,13 +85,13 @@
 				<input type="button" class="quantity-controls quantity-minus"/>
 			</span>
 			<span class="addtocart-button">
-				<input type="submit" name="addtocart" class="addtocart-button" value="Add to Cart" title="Add to Cart" />				</span> 			<input type="hidden" name="virtuemart_product_id[]" value="77"/>
+				<input type="submit" name="addtocart" class="addtocart-button" value="Add to Cart" title="Add to Cart" />				</span> 			<input type="hidden" name="virtuemart_product_id[]" value="70"/>
 			<noscript><input type="hidden" name="task" value="add"/></noscript> 
 	</div>			<input type="hidden" name="option" value="com_virtuemart"/>
 			<input type="hidden" name="view" value="cart"/>
-			<input type="hidden" name="virtuemart_product_id[]" value="77"/>
-			<input type="hidden" name="pname" value="Xbox360"/>
-			<input type="hidden" name="pid" value="77"/>
+			<input type="hidden" name="virtuemart_product_id[]" value="70"/>
+			<input type="hidden" name="pname" value="Tom Raider"/>
+			<input type="hidden" name="pid" value="70"/>
 			<input type="hidden" name="Itemid" value="101"/>		</form>
 
 	</div>

@@ -4,7 +4,7 @@ html .addtocart-bar .addtocart-button .addtocart-button {
   color: #ffffff;
   font-size: 14px;
   text-transform: uppercase;
-  padding: 6.66666667px;
+  padding: 10px;
   border-radius: 2px;
   font-weight: 700;
   border-color: #0198db;
@@ -116,6 +116,233 @@ html .vmmanufacturer li {
 .com_virtuemart .browse-view h1,
 html .browse-view h1 {
   font-size: 24px;
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: 700;
+}
+.com_virtuemart .orderby-displaynumber,
+html .orderby-displaynumber {
+  border: 1px solid #eeeeee;
+  background: #f7f7f7;
+  margin: 0 0 20px 0;
+  padding: 10px 20px;
+}
+.com_virtuemart .orderby-displaynumber .orderlistcontainer,
+html .orderby-displaynumber .orderlistcontainer {
+  margin-left: 0;
+  margin-right: 10px;
+  font-size: 14px;
+}
+.com_virtuemart .orderby-displaynumber .orderlistcontainer .title,
+html .orderby-displaynumber .orderlistcontainer .title {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.com_virtuemart .activeOrder,
+html .activeOrder {
+  border-radius: 2px;
+}
+.com_virtuemart .activeOrder a,
+html .activeOrder a {
+  color: #333333;
+}
+.com_virtuemart .activeOrder a:hover,
+html .activeOrder a:hover,
+.com_virtuemart .activeOrder a:focus,
+html .activeOrder a:focus {
+  text-decoration: none;
+  color: #01aaf4;
+}
+.com_virtuemart .orderlist,
+html .orderlist {
+  padding: 0;
+}
+.com_virtuemart .orderlist > div,
+html .orderlist > div {
+  padding: 0 !important;
+  margin: 0;
+}
+.com_virtuemart .orderlist > div:hover,
+html .orderlist > div:hover,
+.com_virtuemart .orderlist > div:focus,
+html .orderlist > div:focus {
+  background: none;
+  margin: 0;
+}
+.com_virtuemart .orderlist > div a,
+html .orderlist > div a {
+  color: #333333;
+  padding: 10px;
+  border-bottom: 1px solid #eeeeee;
+  line-height: 1;
+}
+.com_virtuemart .orderlist > div a:hover,
+html .orderlist > div a:hover,
+.com_virtuemart .orderlist > div a:focus,
+html .orderlist > div a:focus {
+  background: #01aaf4;
+  color: #ffffff;
+  text-decoration: none;
+  border-color: #01aaf4;
+}
+.com_virtuemart #fancybox-close,
+html #fancybox-close {
+  right: auto;
+  left: 100%;
+}
+.com_virtuemart #fancybox-content,
+html #fancybox-content {
+  background: #fff;
+}
+.com_virtuemart #fancybox-content h4,
+html #fancybox-content h4 {
+  font-size: 14px;
+  font-weight: 400;
+}
+.com_virtuemart #fancybox-content a.continue_link,
+html #fancybox-content a.continue_link,
+.com_virtuemart #fancybox-content a.showcart,
+html #fancybox-content a.showcart {
+  background: #01aaf4;
+  color: #fff;
+  padding: 10px;
+  line-height: 1;
+  font-weight: 400;
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+.com_virtuemart #fancybox-content a.continue_link:hover,
+html #fancybox-content a.continue_link:hover,
+.com_virtuemart #fancybox-content a.showcart:hover,
+html #fancybox-content a.showcart:hover,
+.com_virtuemart #fancybox-content a.continue_link:focus,
+html #fancybox-content a.continue_link:focus,
+.com_virtuemart #fancybox-content a.showcart:focus,
+html #fancybox-content a.showcart:focus {
+  text-decoration: none;
+  background: #0187c1;
+  color: #ffffff;
+}
+.com_virtuemart #fancybox-content a.showcart,
+html #fancybox-content a.showcart {
+  background: #f7f7f7;
+  color: #555555;
+}
+.com_virtuemart #fancybox-content a.showcart:hover,
+html #fancybox-content a.showcart:hover,
+.com_virtuemart #fancybox-content a.showcart:focus,
+html #fancybox-content a.showcart:focus {
+  background: #eeeeee;
+  color: #222222;
+}
+.com_virtuemart .toolbar .vmCartModule > div,
+html .toolbar .vmCartModule > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+.com_virtuemart .toolbar .vmCartModule .total,
+html .toolbar .vmCartModule .total {
+  display: none;
+}
+.com_virtuemart .toolbar .vmCartModule .total_products,
+html .toolbar .vmCartModule .total_products {
+  font-weight: 400;
+}
+.com_virtuemart .toolbar .vmCartModule .total_products:before,
+html .toolbar .vmCartModule .total_products:before {
+  content: "\f07a";
+  font-family: FontAwesome;
+  margin-right: 3px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.com_virtuemart .toolbar .vmCartModule .show_cart a,
+html .toolbar .vmCartModule .show_cart a {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+  line-height: 1;
+}
+.com_virtuemart .toolbar .vmCartModule .show_cart a:hover,
+html .toolbar .vmCartModule .show_cart a:hover,
+.com_virtuemart .toolbar .vmCartModule .show_cart a:focus,
+html .toolbar .vmCartModule .show_cart a:focus {
+  color: #2abdfe;
+  text-decoration: none;
+}
+.com_virtuemart .vm-product-descr-container-1,
+html .vm-product-descr-container-1 {
+  min-height: 0;
+}
+.com_virtuemart .vm-product-rating-container .ratingbox,
+html .vm-product-rating-container .ratingbox,
+.com_virtuemart .vm-product-rating-container .vmicon,
+html .vm-product-rating-container .vmicon {
+  float: none;
+  display: block;
+  margin: 10px auto;
+}
+.com_virtuemart .vm-product-rating-container .vmicon,
+html .vm-product-rating-container .vmicon {
+  display: block;
+}
+.com_virtuemart .product .spacer,
+html .product .spacer {
+  padding: 20px !important;
+  text-align: center;
+}
+.com_virtuemart .product h2 a,
+html .product h2 a {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #333333;
+}
+.com_virtuemart .product h2 a:hover,
+html .product h2 a:hover,
+.com_virtuemart .product h2 a:focus,
+html .product h2 a:focus {
+  color: #01aaf4;
+  text-decoration: none;
+}
+.com_virtuemart .product .vm-details-button a,
+html .product .vm-details-button a {
+  padding: 10px;
+  background: #ffffff;
+  border-color: #eeeeee;
+  border-radius: 2px;
+  line-height: 1;
+  width: auto;
+}
+.com_virtuemart .product .vm-details-button a:hover,
+html .product .vm-details-button a:hover,
+.com_virtuemart .product .vm-details-button a:focus,
+html .product .vm-details-button a:focus {
+  color: #01aaf4;
+  border-color: #01aaf4;
+}
+.com_virtuemart .ask-a-question a,
+html .ask-a-question a,
+.com_virtuemart .back-to-category a,
+html .back-to-category a {
+  padding: 10px;
+  background: #ffffff;
+  border-color: #eeeeee;
+  border-radius: 2px;
+  line-height: 1;
+  width: auto;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+}
+.com_virtuemart .ask-a-question a:hover,
+html .ask-a-question a:hover,
+.com_virtuemart .back-to-category a:hover,
+html .back-to-category a:hover,
+.com_virtuemart .ask-a-question a:focus,
+html .ask-a-question a:focus,
+.com_virtuemart .back-to-category a:focus,
+html .back-to-category a:focus {
+  color: #01aaf4;
+  border-color: #01aaf4;
 }

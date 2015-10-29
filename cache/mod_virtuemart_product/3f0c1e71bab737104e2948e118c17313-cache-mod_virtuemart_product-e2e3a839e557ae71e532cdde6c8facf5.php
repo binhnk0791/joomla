@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#s:15388:"
+<?php die("Access Denied"); ?>#x#s:15344:"
 
 <div class="vmgroup abbba">
 
@@ -143,7 +143,7 @@
 
 				</div>
 			</div>
-				</div><div style='clear:both;'>			<div class="col-sm-3">
+				</div><div class='row'>			<div class="col-sm-3">
 				<div class="spacer">
 					
 					<a href="/joomla/index.php/component/virtuemart/games/games-ps4/call-of-duty-detail?Itemid=0" class="prod-title">Tom Raider</a>        
@@ -283,7 +283,6 @@
 
 				</div>
 			</div>
-				</div><div style='clear:both;'>		</div>
-		<br style='clear:both;'/>
+				</div><div class='row'>		</div>
 
 		</div>";
