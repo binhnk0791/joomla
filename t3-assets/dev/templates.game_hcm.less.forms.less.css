@@ -5,14 +5,14 @@
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
 .form-control::-moz-placeholder {
-  color: #999999;
+  color: #888888;
   opacity: 1;
 }
 .form-control:-ms-input-placeholder {
-  color: #999999;
+  color: #888888;
 }
 .form-control::-webkit-input-placeholder {
-  color: #999999;
+  color: #888888;
 }
 textarea.form-control {
   height: auto;
@@ -116,7 +116,7 @@ input[type="search"]::-moz-placeholder,
 input[type="tel"]::-moz-placeholder,
 input[type="color"]::-moz-placeholder,
 .inputbox::-moz-placeholder {
-  color: #999999;
+  color: #888888;
   opacity: 1;
 }
 select:-ms-input-placeholder,
@@ -136,7 +136,7 @@ input[type="search"]:-ms-input-placeholder,
 input[type="tel"]:-ms-input-placeholder,
 input[type="color"]:-ms-input-placeholder,
 .inputbox:-ms-input-placeholder {
-  color: #999999;
+  color: #888888;
 }
 select::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder,
@@ -155,7 +155,7 @@ input[type="search"]::-webkit-input-placeholder,
 input[type="tel"]::-webkit-input-placeholder,
 input[type="color"]::-webkit-input-placeholder,
 .inputbox::-webkit-input-placeholder {
-  color: #999999;
+  color: #888888;
 }
 textareaselect,
 textareatextarea,

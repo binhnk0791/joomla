@@ -7,10 +7,10 @@
 .divider-vertical {
   margin: 0 0 40px;
   border: 0;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #dddddd;
 }
 .article-aside {
-  color: #999999;
+  color: #888888;
   font-size: 13px;
   margin-bottom: 20px;
 }
@@ -31,7 +31,7 @@
   font-weight: bold;
 }
 .article-footer {
-  color: #999999;
+  color: #888888;
   font-size: 12px;
   margin-bottom: 20px;
 }
@@ -102,7 +102,7 @@
   margin-bottom: 1px !important;
 }
 .img_caption p.img_caption {
-  background: #eeeeee;
+  background: #dddddd;
   color: #555555;
   font-size: 12px;
   width: 100%;
@@ -330,8 +330,8 @@ article aside .btn-group > .dropdown-toggle .caret {
 }
 .reset .form-validate p,
 .remind .form-validate p {
-  background: #eeeeee;
-  border: 1px solid #eeeeee;
+  background: #dddddd;
+  border: 1px solid #dddddd;
   margin-bottom: 20px;
   padding: 10px 20px;
   border-radius: 2px;
@@ -430,7 +430,7 @@ article aside .btn-group > .dropdown-toggle .caret {
 }
 .search-results .result-category {
   font-size: 12px;
-  color: #999999;
+  color: #888888;
 }
 .search-results .result-text {
   margin-top: 5px;
@@ -442,7 +442,7 @@ article aside .btn-group > .dropdown-toggle .caret {
 }
 .search-results .result-created {
   font-size: 12px;
-  color: #999999;
+  color: #888888;
 }
 div.finder {
   margin-bottom: 20px;
@@ -536,7 +536,7 @@ div.finder {
 }
 .newsfeed-category > h2,
 .newsfeed > h2 {
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #dddddd;
   padding-bottom: 20px;
   margin-bottom: 20px;
   margin-top: 0;
@@ -557,7 +557,7 @@ div.finder {
   clear: both;
 }
 .newsfeed > h2 {
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #dddddd;
   padding-bottom: 20px;
   margin-bottom: 20px;
   margin-top: 0;
@@ -580,7 +580,7 @@ div.finder {
   overflow: hidden;
 }
 .article-content .pagination ul li {
-  border: 1px solid #eeeeee;
+  border: 1px solid #dddddd;
   float: left;
   line-height: normal;
   margin-right: 10px;
@@ -599,7 +599,7 @@ div.finder {
 }
 #article-index,
 .article-index {
-  border: 1px solid #eeeeee;
+  border: 1px solid #dddddd;
   border-radius: 2px;
   float: right;
   padding: 10px;
@@ -663,13 +663,13 @@ div.finder {
 .pagenav li > a:hover,
 .pagenav li > a:active,
 .pagenav li > a:focus {
-  background-color: #eeeeee;
+  background-color: #dddddd;
 }
 .items-more h3 {
   margin: 0 0 20px;
 }
 .items-more .nav > li {
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #dddddd;
 }
 .items-more .nav > li > a {
   padding: 6px 5px;

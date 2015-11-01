@@ -26,7 +26,6 @@
 
         a {
           border: 0;
-          border-bottom: 1px solid @gray-lighter;
           color: @text-color;
           font-weight: @font-weight-semibold;
           outline: none;
@@ -35,28 +34,11 @@
           padding-right: 0;
           position: relative;
 
-          @media (min-width: @screen-sm) {
-            border: 0;
-          }
-
-          &:after {
-            background: @gray-light;
-            bottom: -1px;
-            content: "";
-            display: block;
-            height: 1px;
-            left: 0;
-            position: absolute;
-            width: 0px;
-            .transition(width 0.35s);
-          }
-
+          
           &:hover {
-            background-color: transparent;
-
-            &:after {
-              width: 100%;
-            }
+            background-color: @link-color;
+            color: @white;
+            
           }
         }
         

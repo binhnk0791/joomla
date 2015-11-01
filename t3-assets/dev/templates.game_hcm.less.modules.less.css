@@ -79,7 +79,7 @@
   font-weight: bold;
 }
 .bannerfooter {
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #dddddd;
   font-size: 12px;
   padding-top: 10px;
   text-align: right;
@@ -96,7 +96,7 @@ ul.categories-module li,
 ul.category-module li {
   list-style: none;
   padding: 10px 0;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #dddddd;
 }
 .categories-module li:first-child,
 ul.categories-module li:first-child,
@@ -117,7 +117,7 @@ ul.category-module h4 {
 }
 .feed .newsfeed,
 .feed ul.newsfeed {
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #dddddd;
 }
 .feed .newsfeed .feed-link,
 .feed ul.newsfeed .feed-link,
@@ -133,7 +133,7 @@ ul.latestusers {
 }
 .latestusers li,
 ul.latestusers li {
-  background: #eeeeee;
+  background: #dddddd;
   display: inline-block;
   padding: 5px 10px;
   border-radius: 2px;
@@ -163,7 +163,7 @@ ul.latestusers li {
   margin: 0 5px 5px 0;
 }
 .tagspopular ul > li > a {
-  background: #eeeeee;
+  background: #dddddd;
   border-radius: 3px;
   color: #555555;
   display: block;
@@ -172,7 +172,7 @@ ul.latestusers li {
 .tagspopular ul > li > a:hover,
 .tagspopular ul > li > a:focus,
 .tagspopular ul > li > a:active {
-  background: #0175a8;
+  background: #1a62bd;
   color: #ffffff;
   text-decoration: none;
 }
@@ -182,7 +182,7 @@ ul.latestusers li {
   list-style: none;
 }
 .tagssimilar ul > li {
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #dddddd;
   padding: 8px 0;
 }
 .tagssimilar ul > li > a {
@@ -191,7 +191,7 @@ ul.latestusers li {
 .tagssimilar ul > li > a:hover,
 .tagssimilar ul > li > a:focus,
 .tagssimilar ul > li > a:active {
-  color: #0175a8;
+  color: #1a62bd;
 }
 .module-ct > ol.breadcrumb {
   padding: 6px 12px;

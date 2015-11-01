@@ -84,11 +84,19 @@ html,
 			.transition(all .2s ease-in-out);
 
 			.prod-title {
-				text-transform: uppercase;
+				text-transform: none;
 				font-weight: bold;
-				color: @gray;
+				font-size: @font-size-h4;
+				color: lighten(@gray, 5%);
 				display: block;
 				margin-bottom: @t3-global-padding/2;
+
+
+				&:hover,
+				&:focus {
+					color: @link-color;
+					text-decoration: none;
+				}
 			}
 
 			&:hover {
@@ -129,5 +137,14 @@ html,
 		font-weight: bold;
 		margin: @t3-global-margin 0;
 		color: @brand-primary;
+	}
+
+	// Module
+	.vm-module-rate-score {
+		display: block;
+		margin-top: @t3-global-margin/2;
+		.fa {
+			color: @gray-lighter;
+		}
 	}
 }

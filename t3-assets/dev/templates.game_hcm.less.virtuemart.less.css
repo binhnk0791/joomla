@@ -29,7 +29,7 @@ html .addtocart-bar .quantity-box,
 html .addtocart-bar .quantity-box .quantity-input,
 .com_content .addtocart-bar .quantity-box .quantity-input {
   background: #ffffff;
-  border-color: #eeeeee;
+  border-color: #dddddd;
   width: 30px;
   height: 30px;
   border-radius: 2px;
@@ -62,7 +62,7 @@ html .VMmenu li,
 .com_virtuemart .VMmenu li a,
 html .VMmenu li a,
 .com_content .VMmenu li a {
-  border-bottom: 1px dotted #eeeeee;
+  border-bottom: 1px dotted #dddddd;
   display: block;
   padding: 10px 0;
 }
@@ -95,7 +95,7 @@ html .vmproduct li,
 .com_virtuemart .vmgroup div.spacer,
 html .vmgroup div.spacer,
 .com_content .vmgroup div.spacer {
-  border: 1px solid #eeeeee;
+  border: 1px solid #dddddd;
   padding: 20px;
   text-align: center;
   margin: 10px 0;
@@ -106,11 +106,21 @@ html .vmgroup div.spacer,
 .com_virtuemart .vmgroup div.spacer .prod-title,
 html .vmgroup div.spacer .prod-title,
 .com_content .vmgroup div.spacer .prod-title {
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: bold;
-  color: #555555;
+  font-size: 18px;
+  color: #626262;
   display: block;
   margin-bottom: 10px;
+}
+.com_virtuemart .vmgroup div.spacer .prod-title:hover,
+html .vmgroup div.spacer .prod-title:hover,
+.com_content .vmgroup div.spacer .prod-title:hover,
+.com_virtuemart .vmgroup div.spacer .prod-title:focus,
+html .vmgroup div.spacer .prod-title:focus,
+.com_content .vmgroup div.spacer .prod-title:focus {
+  color: #113f7a;
+  text-decoration: none;
 }
 .com_virtuemart .vmgroup div.spacer:hover,
 html .vmgroup div.spacer:hover,
@@ -147,4 +157,15 @@ html .PricesalesPrice,
   font-weight: bold;
   margin: 20px 0;
   color: #01aaf4;
+}
+.com_virtuemart .vm-module-rate-score,
+html .vm-module-rate-score,
+.com_content .vm-module-rate-score {
+  display: block;
+  margin-top: 10px;
+}
+.com_virtuemart .vm-module-rate-score .fa,
+html .vm-module-rate-score .fa,
+.com_content .vm-module-rate-score .fa {
+  color: #dddddd;
 }

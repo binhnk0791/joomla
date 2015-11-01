@@ -29,41 +29,19 @@
             padding: (@t3-global-padding / 2) @t3-global-padding;
             text-transform: uppercase;
 
-            @media (min-width: @screen-xs) {
-              border: 0;
-              margin: 0;
-            }
-
-            &:after {
-              background: url(../images/arrow-up.gif) no-repeat left top;
-              bottom: -1px;
-              display: none;
-              left: 50%;
-              height: 7px;
-              margin-left: -6px;
-              width: 13px;
-            }
-
+           
             &:hover, &:focus, &:active {
-              color: @brand-primary;
+              background: @link-color;
+              color: @white;
             }
 
           }
         
           &.active {
             a {
-              border: 1px solid @brand-primary;
-
-              @media (min-width: @screen-xs) {
-                border: 0;
-              }
-             
-              @media (min-width: @screen-xs) {
-                &:after {
-                  display: block;
-                }
-              }
-              
+              border: 0;
+              background: @link-color;
+              color: @white;
             }
           }
         }

@@ -26,7 +26,7 @@ if ($products_per_row > 1) {
 			<?php foreach ($products as $product) { ?>
 			<div class="col-sm-<?php echo $pwidth ?>">
 				<div class="spacer">
-					
+
 					<a href="<?php echo $url ?>" class="prod-title"><?php echo $product->product_name ?></a>        
 					<?php
 					if (!empty($product->images[0])) {
@@ -38,6 +38,25 @@ if ($products_per_row > 1) {
 					echo '<div class="clear"></div>';
 					$url = JRoute::_ ('index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=' . $product->virtuemart_product_id . '&virtuemart_category_id=' .
 						$product->virtuemart_category_id); ?>
+					<div class="spacer-rating">
+						<?php 
+	             if (!empty($product->rating)):
+	                $ratingwidth = ( $product->rating->rating * 100 ) / $maxrating; ?>
+	                <span class="rating">
+	                   <span title=" <?php echo (JText::_("COM_VIRTUEMART_RATING_TITLE") . $product->rating->rating . '/' . $maxrating) ?>" class="vmicon ratingbox" style="display:inline-block;">
+	                      <span class="stars-orange" style="width:<?php echo $ratingwidth.'%'; ?>"></span>
+	                   </span>
+	                </span>
+	             <?php else:?>
+	                <span class="vm-module-rate-score">
+	                	<i class="fa fa-star"></i>
+	                	<i class="fa fa-star"></i>
+	                	<i class="fa fa-star"></i>
+	                	<i class="fa fa-star"></i>
+	                	<i class="fa fa-star"></i>
+	                </span>
+							<?php endif ?>
+		    	</div>
 					<?php    echo '<div class="clear"></div>';
 
 					if ($show_price) {
@@ -54,6 +73,7 @@ if ($products_per_row > 1) {
 						echo shopFunctionsF::renderVmSubLayout('addtocart',array('product'=>$product));
 					}
 					?>
+
 				</div>
 			</div>
 			<?php

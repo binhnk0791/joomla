@@ -265,6 +265,8 @@
   padding-bottom: @line-height-computed;
 
   .t3-module {
+  	background: @gray-lightest;
+  	padding: @t3-global-padding;
   	.module-title {
   		background: none;
   		color: @text-color;
@@ -276,6 +278,24 @@
   			display: inline-block;
   			border-bottom: 2px solid @t3-border-color;
   			padding-bottom: 10px;
+  		}
+  	}
+
+  	.show_cart {
+  		a {
+  			background: @brand-primary;
+  			color: @white;
+  			padding: @t3-global-padding/3 @t3-global-padding/2;
+  			display: inline-block;
+  			margin-top: @t3-global-margin;
+  			border-radius: @border-radius-base;
+
+  			&:hover,
+  			&:focus {
+  				background: @link-color;
+  				color: @white;
+  				text-decoration: none;
+  			}
   		}
   	}
   }
@@ -460,6 +480,18 @@
 			padding: 5px;
 			display: inline-block;
 			font-size: @font-size-base;
+		}
+	}
+}
+
+
+.footer-features {
+	.features-item {
+		.img-icon {
+			display: block;
+			max-height: 200px;
+			overflow: hidden;
+			border: 5px solid @white;
 		}
 	}
 }
