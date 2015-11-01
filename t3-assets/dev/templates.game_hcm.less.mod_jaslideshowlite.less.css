@@ -1,0 +1,66 @@
+.ja-ss .ja-ss-item {
+  background: #000000;
+}
+.ja-ss .ja-ss-item img {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.ja-ss .ja-ss-item .ja-ss-desc {
+  left: 0;
+  right: 0;
+  background: none;
+  color: #ffffff;
+  text-align: right;
+}
+.ja-ss .ja-ss-item .ja-ss-desc h3 {
+  display: inline-block;
+  font-size: 30px;
+  padding: 10px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.ja-ss .ja-ss-item .ja-ss-desc p {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.ja-ss .ja-ss-item .ja-ss-desc a {
+  background: #01aaf4;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.ja-ss .ja-ss-item .ja-ss-desc a:hover,
+.ja-ss .ja-ss-item .ja-ss-desc a:focus {
+  background: #0187c1;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 2px;
+}
+.ja-ss .ja-ss-thumbs-wrap {
+  background: none;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  height: auto;
+  text-align: center;
+}
+.ja-ss .ja-ss-thumbs-wrap .ja-ss-thumbs {
+  position: relative;
+  width: auto;
+}
+.ja-ss .ja-ss-thumbs-wrap .ja-ss-thumbs .ja-ss-thumb {
+  height: 10px;
+  border-radius: 10px;
+  border: 0;
+  background: rgba(255, 255, 255, 0.5);
+  text-indent: 999em;
+  overflow: hidden;
+}
+.ja-ss .ja-ss-thumbs-wrap .ja-ss-thumbs .ja-ss-thumb.active {
+  background: #01aaf4;
+}

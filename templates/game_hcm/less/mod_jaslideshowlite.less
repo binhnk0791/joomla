@@ -1,0 +1,74 @@
+@import "vars.less"; 
+
+.ja-ss {
+	.ja-ss-item {
+	background: @black;
+		img {
+			.opacity(.8);
+		}
+		.ja-ss-desc{
+			left: 0;
+			right: 0;
+			background: none;
+			color: @white;
+			text-align: right;
+
+			h3 {
+				display: inline-block;
+				font-size: @font-size-h2;
+				padding: 10px;
+				border: 2px solid @white;
+				color: @white;
+				line-height: 1;
+				font-weight: 700;
+				text-transform: uppercase;
+			}
+			p {
+				font-size: @font-size-h3;
+				text-transform: uppercase;
+				font-weight: 400
+			}
+			a {
+				background: @brand-primary;
+				color: @white;
+				padding: @t3-global-padding/2 @t3-global-padding;
+				font-weight: bold;
+				text-transform: uppercase;
+
+				&:hover,
+				&:focus {
+					background: darken(@brand-primary, 10%);
+					color: @white;
+					text-decoration: none;
+					border-radius: @border-radius-base;
+				}
+			}
+		}
+	}
+
+	.ja-ss-thumbs-wrap {
+		background: none;
+		bottom: 40px;
+		left: 0;
+		right: 0;
+		height: auto;
+		text-align: center;
+
+		.ja-ss-thumbs {
+			position: relative;
+			width: auto;
+			.ja-ss-thumb {
+				height: 10px;
+				border-radius: 10px;
+				border: 0;
+				background: rgba(255, 255, 255, 0.5);
+				text-indent: 999em;
+				overflow: hidden;
+
+				&.active {
+					background: @brand-primary;
+				}
+			}
+		}
+	}
+}
