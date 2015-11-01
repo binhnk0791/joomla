@@ -336,7 +336,7 @@
   width: 100%;
 }
 .t3-masthead {
-  background: #222222;
+  background: #222222 url('../../templates/game_hcm/images/masthead-sony.jpg') no-repeat bottom center / cover;
   color: #ffffff;
   text-align: center;
   padding: 120px 0 30px 0;

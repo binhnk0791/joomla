@@ -2,11 +2,13 @@
 <assets>
 	<scripts>
 		<file>js/jquery.sticky.js</file>
+		<file>js/slick/slick.min.js</file>
 		<file>js/script.js</file>
 	</scripts>
 	
 	<stylesheets>
 		<file>fonts/font-awesome/css/font-awesome.min.css</file>
+		<file>js/slick/slick.css</file>
 	</stylesheets>
 	
 </assets>
