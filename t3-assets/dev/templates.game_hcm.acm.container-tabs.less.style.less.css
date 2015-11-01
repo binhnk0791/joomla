@@ -1,57 +1,37 @@
 .acm-container-tabs .container-tabs-nav {
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 0;
 }
 .acm-container-tabs .container-tabs-nav .nav-tabs {
   border: 0;
+  text-align: center;
+  background: none;
 }
 .acm-container-tabs .container-tabs-nav .nav-tabs li {
-  width: 100%;
+  float: none;
+  display: inline-block;
 }
 @media (min-width: 480px) {
   .acm-container-tabs .container-tabs-nav .nav-tabs li {
-    margin-right: 20px;
     width: auto;
   }
 }
 .acm-container-tabs .container-tabs-nav .nav-tabs li a {
-  border: 0;
-  border-bottom: 1px solid #eeeeee;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
   color: #333333;
-  font-weight: 500;
-  outline: none;
-  margin: 0;
-  padding-left: 0;
-  padding-right: 0;
-  position: relative;
-}
-@media (min-width: 768px) {
-  .acm-container-tabs .container-tabs-nav .nav-tabs li a {
-    border: 0;
-  }
-}
-.acm-container-tabs .container-tabs-nav .nav-tabs li a:after {
-  background: #999999;
-  bottom: -1px;
-  content: "";
-  display: block;
-  height: 1px;
-  left: 0;
-  position: absolute;
-  width: 0px;
-  -webkit-transition: width 0.35s;
-  -o-transition: width 0.35s;
-  transition: width 0.35s;
+  padding: 6.66666667px 10px;
+  border-radius: 2px;
+  border: 0;
+  line-height: 1;
 }
 .acm-container-tabs .container-tabs-nav .nav-tabs li a:hover {
-  background-color: transparent;
-}
-.acm-container-tabs .container-tabs-nav .nav-tabs li a:hover:after {
-  width: 100%;
+  background: #01aaf4;
+  color: #ffffff;
 }
 .acm-container-tabs .container-tabs-nav .nav-tabs li.active a {
-  background: transparent;
-  border-bottom: 1px solid #01aaf4;
-  color: #01aaf4;
+  background: #01aaf4;
+  color: #ffffff;
 }
 .acm-container-tabs .tab-pane {
   display: none;
@@ -62,30 +42,11 @@
 .acm-container-tabs .tab-pane.active {
   display: block;
 }
-.acm-container-tabs .style-2 .container-tabs-nav {
-  background: #f7f7f7;
-  border-top: 1px solid #eeeeee;
-}
-.acm-container-tabs .style-2 .container-tabs-nav .nav-tabs {
-  padding-top: 5px;
-}
-@media (min-width: 480px) {
-  .acm-container-tabs .style-2 .container-tabs-nav .nav-tabs {
-    border-left: 1px solid #eeeeee;
-    padding-top: 0;
-  }
-}
 .acm-container-tabs .style-2 .container-tabs-nav .nav-tabs li {
   margin: 0;
 }
-@media (min-width: 480px) {
-  .acm-container-tabs .style-2 .container-tabs-nav .nav-tabs li {
-    border-right: 1px solid #eeeeee;
-  }
-}
 .acm-container-tabs .style-2 .container-tabs-nav .nav-tabs li a {
-  border: 1px solid #eeeeee;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   margin-bottom: 5px;
   padding: 10px 20px;

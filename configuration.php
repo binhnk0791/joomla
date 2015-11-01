@@ -84,3 +84,5 @@ class JConfig {
 	public $frontediting = '1';
 	public $asset_id = '1';
 }
+
+define ('T3_LOCAL_DISABLED', 1);
