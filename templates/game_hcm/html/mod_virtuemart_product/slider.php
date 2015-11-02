@@ -146,7 +146,7 @@ if ($products_per_row > 1) {
 		autoplay: false,
 		arrows: true,
 		pauseOnHover: true,
-		slidesToShow: 10,
+		slidesToShow: <?php echo $products_per_row; ?>,
   	slidesToScroll: 1,
 		nextArrow: '<button type="button" class="slick-next"><i class="fa fa-chevron-right"></i></button>',
 		prevArrow: '<button type="button" class="slick-back"><i class="fa fa-chevron-left"></i></button>',
