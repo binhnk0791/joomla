@@ -3,7 +3,7 @@ defined ('_JEXEC') or die('Restricted access');
 // add javascript for price and cart, need even for quantity buttons, so we need it almost anywhere
 vmJsApi::jPrice();
 
-
+$showRating = $viewData['showRating'];
 $col = 1;
 $pwidth = floor (12 / $products_per_row);
 if ($products_per_row > 1) {
@@ -23,9 +23,16 @@ if ($products_per_row > 1) {
 	if ($display_style == "div") {
 		?>
 			<?php foreach ($products as $product) { ?>
-			
+			<div class="ds-slider-item">
 				<div class="spacer">
-
+					<div class="vm-product-rating-container">
+						<?php 
+						if ( VmConfig::get ('display_stock', 1)) { ?>
+							<span class="vmicon vm2-<?php echo $product->stock->stock_level ?>" title="<?php echo $product->stock->stock_tip ?>"></span>
+						<?php }
+						  echo shopFunctionsF::renderVmSubLayout('stockhandle',array('product'=>$product));
+						?>
+					</div>
 					<a href="<?php echo $url ?>" class="prod-title"><?php echo $product->product_name ?></a>        
 					<?php
 					if (!empty($product->images[0])) {
@@ -38,6 +45,8 @@ if ($products_per_row > 1) {
 					$url = JRoute::_ ('index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=' . $product->virtuemart_product_id . '&virtuemart_category_id=' .
 						$product->virtuemart_category_id); ?>
 					<div class="spacer-rating">
+					<?php echo shopFunctionsF::renderVmSubLayout('rating',array('showRating'=>$showRating, 'product'=>$product));
+	?>
 						<?php 
 	             if (!empty($product->rating)):
 	                $ratingwidth = ( $product->rating->rating * 100 ) / $maxrating; ?>
@@ -72,6 +81,7 @@ if ($products_per_row > 1) {
 						echo shopFunctionsF::renderVmSubLayout('addtocart',array('product'=>$product));
 					}
 					?>
+			</div>
 			</div>
 			<?php
 			if ($col == $products_per_row && $products_per_row && $col < $totalProd) {
@@ -143,28 +153,22 @@ if ($products_per_row > 1) {
   $(document).ready(function(){
     
     $('.ds-product-slider').slick({
-		autoplay: false,
+		autoplay: true,
 		arrows: true,
 		pauseOnHover: true,
 		slidesToShow: <?php echo $products_per_row; ?>,
   	slidesToScroll: 1,
 		nextArrow: '<button type="button" class="slick-next"><i class="fa fa-chevron-right"></i></button>',
 		prevArrow: '<button type="button" class="slick-back"><i class="fa fa-chevron-left"></i></button>',
-		appendArrows: '.ds-product-slider-control',
-		centerMode: true,
+		centerMode: false,
+		dots: true,
 		responsive: [
   	{
       breakpoint: 767,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1,
         centerMode: false
-      }
-    },{
-      breakpoint: 1199,
-      settings: {
-        slidesToShow:  4,
-        slidesToScroll: 1
       }
     }
 

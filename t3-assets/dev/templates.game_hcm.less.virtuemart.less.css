@@ -1,3 +1,127 @@
+.com_virtuemart .toolbar .vmCartModule .total,
+html .toolbar .vmCartModule .total,
+.com_content .toolbar .vmCartModule .total {
+  display: none;
+}
+.com_virtuemart .toolbar .vmCartModule div,
+html .toolbar .vmCartModule div,
+.com_content .toolbar .vmCartModule div {
+  display: inline-block;
+  vertical-align: middle;
+}
+.com_virtuemart .toolbar .vmCartModule div a,
+html .toolbar .vmCartModule div a,
+.com_content .toolbar .vmCartModule div a {
+  color: #ffffff;
+}
+.com_virtuemart a.ask-a-question,
+html a.ask-a-question,
+.com_content a.ask-a-question,
+.com_virtuemart a.product-details,
+html a.product-details,
+.com_content a.product-details,
+.com_virtuemart .billto-shipto .output-billto a.details,
+html .billto-shipto .output-billto a.details,
+.com_content .billto-shipto .output-billto a.details {
+  background: #ffffff;
+  color: #333333;
+  font-size: 14px;
+  padding: 6.66666667px;
+  border-radius: 2px;
+  border-color: #dddddd;
+  font-weight: normal;
+}
+.com_virtuemart a.ask-a-question:hover,
+html a.ask-a-question:hover,
+.com_content a.ask-a-question:hover,
+.com_virtuemart a.product-details:hover,
+html a.product-details:hover,
+.com_content a.product-details:hover,
+.com_virtuemart .billto-shipto .output-billto a.details:hover,
+html .billto-shipto .output-billto a.details:hover,
+.com_content .billto-shipto .output-billto a.details:hover,
+.com_virtuemart a.ask-a-question:focus,
+html a.ask-a-question:focus,
+.com_content a.ask-a-question:focus,
+.com_virtuemart a.product-details:focus,
+html a.product-details:focus,
+.com_content a.product-details:focus,
+.com_virtuemart .billto-shipto .output-billto a.details:focus,
+html .billto-shipto .output-billto a.details:focus,
+.com_content .billto-shipto .output-billto a.details:focus {
+  border-color: #dddddd;
+  background: #f7f7f7;
+  color: #333333;
+}
+.com_virtuemart .PricesalesPrice,
+html .PricesalesPrice,
+.com_content .PricesalesPrice,
+.com_virtuemart .PricepriceWithoutTax,
+html .PricepriceWithoutTax,
+.com_content .PricepriceWithoutTax {
+  margin: 15px 0 !important;
+  text-align: center;
+}
+.com_virtuemart .PricesalesPrice span.PricesalesPrice,
+html .PricesalesPrice span.PricesalesPrice,
+.com_content .PricesalesPrice span.PricesalesPrice,
+.com_virtuemart .PricepriceWithoutTax span.PricesalesPrice,
+html .PricepriceWithoutTax span.PricesalesPrice,
+.com_content .PricepriceWithoutTax span.PricesalesPrice {
+  font-size: 18px !important;
+  color: #01aaf4 !important;
+}
+.com_virtuemart .PricesalesPrice .vm-price-desc,
+html .PricesalesPrice .vm-price-desc,
+.com_content .PricesalesPrice .vm-price-desc,
+.com_virtuemart .PricepriceWithoutTax .vm-price-desc,
+html .PricepriceWithoutTax .vm-price-desc,
+.com_content .PricepriceWithoutTax .vm-price-desc {
+  display: none;
+}
+.com_virtuemart .PricepriceWithoutTax,
+html .PricepriceWithoutTax,
+.com_content .PricepriceWithoutTax {
+  font-size: 14px;
+  font-weight: bold;
+}
+.com_virtuemart .product-price,
+html .product-price,
+.com_content .product-price {
+  float: none;
+  text-align: left;
+}
+.com_virtuemart .ratingbox,
+html .ratingbox,
+.com_content .ratingbox {
+  margin-bottom: 0;
+}
+.com_virtuemart .manufacturer,
+html .manufacturer,
+.com_content .manufacturer {
+  margin-bottom: 20px;
+}
+.com_virtuemart .manufacturer > a,
+html .manufacturer > a,
+.com_content .manufacturer > a {
+  border: 2px solid #dddddd;
+  color: #555555;
+  background: none;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 8px 10px;
+  font-weight: bold;
+}
+.com_virtuemart .manufacturer > a:hover,
+html .manufacturer > a:hover,
+.com_content .manufacturer > a:hover,
+.com_virtuemart .manufacturer > a:focus,
+html .manufacturer > a:focus,
+.com_content .manufacturer > a:focus {
+  color: #01aaf4;
+  border-color: #01aaf4;
+  text-decoration: none;
+}
 .com_virtuemart .addtocart-bar .addtocart-button .addtocart-button,
 html .addtocart-bar .addtocart-button .addtocart-button,
 .com_content .addtocart-bar .addtocart-button .addtocart-button {
@@ -7,8 +131,9 @@ html .addtocart-bar .addtocart-button .addtocart-button,
   text-transform: uppercase;
   padding: 6.66666667px;
   border-radius: 2px;
-  font-weight: 700;
+  font-weight: 400;
   border-color: #0198db;
+  line-height: 1.4;
 }
 .com_virtuemart .addtocart-bar .addtocart-button .addtocart-button:hover,
 html .addtocart-bar .addtocart-button .addtocart-button:hover,
@@ -19,6 +144,21 @@ html .addtocart-bar .addtocart-button .addtocart-button:focus,
   border-color: #01aaf4;
   background: #2abdfe;
   color: #ffffff;
+}
+.com_virtuemart .addtocart-bar .productdetails .icons,
+html .addtocart-bar .productdetails .icons,
+.com_content .addtocart-bar .productdetails .icons {
+  display: none;
+}
+.com_virtuemart .addtocart-bar .vm-product-container .vm-product-media-container,
+html .addtocart-bar .vm-product-container .vm-product-media-container,
+.com_content .addtocart-bar .vm-product-container .vm-product-media-container {
+  width: 30%;
+}
+.com_virtuemart .addtocart-bar .vm-product-container .vm-product-details-container,
+html .addtocart-bar .vm-product-container .vm-product-details-container,
+.com_content .addtocart-bar .vm-product-container .vm-product-details-container {
+  width: 70%;
 }
 .com_virtuemart .addtocart-bar .quantity-box,
 html .addtocart-bar .quantity-box,
@@ -147,7 +287,7 @@ html .vmmanufacturer li,
 html .browse-view h1,
 .com_content .browse-view h1 {
   font-size: 24px;
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: 700;
 }
 .com_virtuemart .PricesalesPrice,
@@ -168,4 +308,164 @@ html .vm-module-rate-score,
 html .vm-module-rate-score .fa,
 .com_content .vm-module-rate-score .fa {
   color: #dddddd;
+}
+.com_virtuemart .vm-product-descr-container-1,
+html .vm-product-descr-container-1,
+.com_content .vm-product-descr-container-1 {
+  height: auto;
+  min-height: 0;
+}
+.com_virtuemart .vm-product-descr-container-1 h2,
+html .vm-product-descr-container-1 h2,
+.com_content .vm-product-descr-container-1 h2 {
+  font-size: 18px;
+}
+.com_virtuemart .vm-product-rating-container,
+html .vm-product-rating-container,
+.com_content .vm-product-rating-container {
+  text-align: center;
+}
+.com_virtuemart .vm-product-rating-container .ratingbox,
+html .vm-product-rating-container .ratingbox,
+.com_content .vm-product-rating-container .ratingbox,
+.com_virtuemart .vm-product-rating-container div,
+html .vm-product-rating-container div,
+.com_content .vm-product-rating-container div,
+.com_virtuemart .vm-product-rating-container span,
+html .vm-product-rating-container span,
+.com_content .vm-product-rating-container span,
+.com_virtuemart .vm-product-rating-container .vmicon,
+html .vm-product-rating-container .vmicon,
+.com_content .vm-product-rating-container .vmicon {
+  margin: 5px auto;
+  float: none;
+  display: block;
+}
+.com_virtuemart .vm-product-rating-container .vmicon,
+html .vm-product-rating-container .vmicon,
+.com_content .vm-product-rating-container .vmicon {
+  width: 104px;
+  height: 22px;
+}
+.com_virtuemart .vm-product-rating-container .vmicon.vm2-normalstock,
+html .vm-product-rating-container .vmicon.vm2-normalstock,
+.com_content .vm-product-rating-container .vmicon.vm2-normalstock {
+  background: url('../../templates/game_hcm/images/vm-normal-stock.jpg') no-repeat 0 0;
+}
+.com_virtuemart .orderby-displaynumber .title,
+html .orderby-displaynumber .title,
+.com_content .orderby-displaynumber .title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.com_virtuemart .category_description,
+html .category_description,
+.com_content .category_description {
+  display: none;
+}
+.com_virtuemart div.product,
+html div.product,
+.com_content div.product {
+  border: 0;
+  padding: 10px;
+}
+.com_virtuemart div.product .spacer,
+html div.product .spacer,
+.com_content div.product .spacer {
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  padding: 15px !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.com_virtuemart div.product .spacer .vm-details-button,
+html div.product .spacer .vm-details-button,
+.com_content div.product .spacer .vm-details-button,
+.com_virtuemart div.product .spacer .PricepriceWithoutTax,
+html div.product .spacer .PricepriceWithoutTax,
+.com_content div.product .spacer .PricepriceWithoutTax {
+  display: none;
+}
+.com_virtuemart div.product .spacer .prod-title,
+html div.product .spacer .prod-title,
+.com_content div.product .spacer .prod-title {
+  text-transform: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: #626262;
+  display: block;
+  margin-bottom: 10px;
+}
+.com_virtuemart div.product .spacer .prod-title:hover,
+html div.product .spacer .prod-title:hover,
+.com_content div.product .spacer .prod-title:hover,
+.com_virtuemart div.product .spacer .prod-title:focus,
+html div.product .spacer .prod-title:focus,
+.com_content div.product .spacer .prod-title:focus {
+  color: #113f7a;
+  text-decoration: none;
+}
+.com_virtuemart div.product .spacer:hover,
+html div.product .spacer:hover,
+.com_content div.product .spacer:hover {
+  -webkit-box-shadow: 0 0px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 25px rgba(0, 0, 0, 0.1);
+}
+.ds-product-slider {
+  margin-bottom: 30px;
+}
+.ds-product-slider .ds-slider-item {
+  padding: 0 10px;
+  text-align: center;
+}
+.ds-product-slider .slick-arrow {
+  width: 40px;
+  height: 40px;
+  background: none;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+  color: #888888;
+  position: absolute;
+  z-index: 100;
+  margin-top: -20px;
+  top: 50%;
+  left: 0;
+  padding: 0;
+  border: 0;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.ds-product-slider .slick-arrow.slick-next {
+  left: auto;
+  right: 0;
+}
+.ds-product-slider .slick-arrow:hover,
+.ds-product-slider .slick-arrow:focus {
+  background: #01aaf4;
+  color: #ffffff;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.slick-dots {
+  text-align: center;
+}
+.slick-dots li {
+  width: 60px;
+  height: 10px;
+  border-radius: 5px;
+  background: #dddddd;
+  border-radius: 10px;
+  text-indent: 999em;
+  overflow: hidden;
+  display: inline-block;
+  margin: 0 5px;
+}
+.slick-dots li button {
+  display: none;
+}
+.slick-dots li.slick-active {
+  background: #01aaf4;
 }

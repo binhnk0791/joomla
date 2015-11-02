@@ -43,26 +43,6 @@ if(vRequest::getInt('print',false)){ ?>
 
 <div class="productdetails-view productdetails">
 
-    <?php
-    // Product Navigation
-    if (VmConfig::get('product_navigation', 1)) {
-	?>
-        <div class="product-neighbours">
-	    <?php
-	    if (!empty($this->product->neighbours ['previous'][0])) {
-		$prev_link = JRoute::_('index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=' . $this->product->neighbours ['previous'][0] ['virtuemart_product_id'] . '&virtuemart_category_id=' . $this->product->virtuemart_category_id, FALSE);
-		echo JHtml::_('link', $prev_link, $this->product->neighbours ['previous'][0]
-			['product_name'], array('rel'=>'prev', 'class' => 'previous-page','data-dynamic-update' => '1'));
-	    }
-	    if (!empty($this->product->neighbours ['next'][0])) {
-		$next_link = JRoute::_('index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=' . $this->product->neighbours ['next'][0] ['virtuemart_product_id'] . '&virtuemart_category_id=' . $this->product->virtuemart_category_id, FALSE);
-		echo JHtml::_('link', $next_link, $this->product->neighbours ['next'][0] ['product_name'], array('rel'=>'next','class' => 'next-page','data-dynamic-update' => '1'));
-	    }
-	    ?>
-    	<div class="clear"></div>
-        </div>
-    <?php } // Product Navigation END
-    ?>
 
 	<?php // Back To Category Button
 	if ($this->product->virtuemart_category_id) {
@@ -73,9 +53,10 @@ if(vRequest::getInt('print',false)){ ?>
 		$categoryName = vmText::_('COM_VIRTUEMART_SHOP_HOME') ;
 	}
 	?>
-
-    <div class="vm-product-container">
-		<div class="vm-product-media-container">
+	<a href="<?php echo $catURL ?>" class="btn btn-default btn-sm" title="<?php echo $categoryName ?>"><?php echo vmText::sprintf('COM_VIRTUEMART_CATEGORY_BACK_TO',$categoryName) ?></a>
+	<hr>
+    <div class="row">
+		<div class="col-sm-4">
 			<?php
 			echo $this->loadTemplate('images');
 			?>
@@ -92,44 +73,18 @@ if(vRequest::getInt('print',false)){ ?>
 
 		</div>
 
-		<div class="vm-product-details-container">
+		<div class="col-sm-8">
 
-		<div class="back-to-category">
-	    	<a href="<?php echo $catURL ?>" class="product-details" title="<?php echo $categoryName ?>"><?php echo vmText::sprintf('COM_VIRTUEMART_CATEGORY_BACK_TO',$categoryName) ?></a>
-		</div>
 
 	    <?php // Product Title   ?>
-	    	<h1><?php echo $this->product->product_name ?></h1>
+	    	<h2 class="title"><?php echo $this->product->product_name ?></h2>
 	    <?php // Product Title END   ?>
 
 	    <?php // afterDisplayTitle Event
 	    	echo $this->product->event->afterDisplayTitle ?>
 
-	    <?php
-	    // Product Edit Link
-	   		echo $this->edit_link;
-	    // Product Edit Link END
-	    ?>
 
-	    <?php
-	    // PDF - Print - Email Icon
-	    if (VmConfig::get('show_emailfriend') || VmConfig::get('show_printicon') || VmConfig::get('pdf_icon')) {
-		?>
-	        <div class="icons">
-			    <?php
-
-			    $link = 'index.php?tmpl=component&option=com_virtuemart&view=productdetails&virtuemart_product_id=' . $this->product->virtuemart_product_id;
-
-				echo $this->linkIcon($link . '&format=pdf', 'COM_VIRTUEMART_PDF', 'pdf_button', 'pdf_icon', false,true,false,'class="pdf_icon"');
-			    //echo $this->linkIcon($link . '&print=1', 'COM_VIRTUEMART_PRINT', 'printButton', 'show_printicon');
-				echo $this->linkIcon($link . '&print=1', 'COM_VIRTUEMART_PRINT', 'printButton', 'show_printicon',false,true,false,'class="printModal"');
-				$MailLink = 'index.php?option=com_virtuemart&view=productdetails&task=recommend&virtuemart_product_id=' . $this->product->virtuemart_product_id . '&virtuemart_category_id=' . $this->product->virtuemart_category_id . '&tmpl=component';
-			    echo $this->linkIcon($MailLink, 'COM_VIRTUEMART_EMAIL', 'emailButton', 'show_emailfriend', false,true,false,'class="recommened-to-friend"');
-			    ?>
-	    		<div class="clear"></div>
-	        </div>
-		    <?php } // PDF - Print - Email Icon END
-		    ?>
+	  
 
 		    <div class="spacer-rating">
 
