@@ -9,11 +9,14 @@ textarea {
 a {
   color: #113f7a;
   text-decoration: none;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 a:hover,
 a:focus {
   color: #1a62bd;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:focus {
   outline: thin dotted;

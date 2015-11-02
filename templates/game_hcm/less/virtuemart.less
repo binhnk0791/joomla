@@ -1,10 +1,22 @@
 .com_virtuemart,
 html,
 .com_content {
+	.show_cart {
+		.fa {
+			display: none;
+		}
+	}
 	.toolbar {
 		.vmCartModule  {
 			.total {
 				display: none;
+			}
+
+			.show_cart {
+				.fa {
+					display: inline-block;
+					margin: 0 5px;
+				}
 			}
 			div {
 				display: inline-block;
@@ -16,6 +28,7 @@ html,
 			}
 		}
 	}
+
 	a.ask-a-question,
 	a.product-details,
 	.billto-shipto .output-billto a.details  {

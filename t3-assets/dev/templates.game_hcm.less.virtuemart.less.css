@@ -1,7 +1,18 @@
+.com_virtuemart .show_cart .fa,
+html .show_cart .fa,
+.com_content .show_cart .fa {
+  display: none;
+}
 .com_virtuemart .toolbar .vmCartModule .total,
 html .toolbar .vmCartModule .total,
 .com_content .toolbar .vmCartModule .total {
   display: none;
+}
+.com_virtuemart .toolbar .vmCartModule .show_cart .fa,
+html .toolbar .vmCartModule .show_cart .fa,
+.com_content .toolbar .vmCartModule .show_cart .fa {
+  display: inline-block;
+  margin: 0 5px;
 }
 .com_virtuemart .toolbar .vmCartModule div,
 html .toolbar .vmCartModule div,
