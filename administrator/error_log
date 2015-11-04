@@ -1,0 +1,2 @@
+[03-Nov-2015 03:35:50 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;/home/nhhotjnx/public_html/administrator/components/com_virtuemart/virtuemart.xml&quot; in /home/nhhotjnx/public_html/administrator/components/com_virtuemart/models/updatesmigration.php on line 480
+[03-Nov-2015 06:29:57 UTC] PHP Warning:  constant(): Couldn't find constant JPATH_ in /home/nhhotjnx/public_html/libraries/cms/installer/adapter/module.php on line 205

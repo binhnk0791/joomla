@@ -33,7 +33,24 @@
 	}
 }
 
+
+
 .toolbar {
+	#jshopping-search-form {
+	.inputbox{
+		border-radius: 20px;
+    background: transparent;
+    border-color: rgba(255,255,255,.2);
+    padding: 5px 15px;
+    height: 26px;
+    margin: 7px 0 0 0;
+	}
+
+	.button,
+	a {
+		display: none;
+	}
+}
 	background: @black;
 	color: @white;
 	font-size: @t3-font-size-small;
@@ -45,9 +62,13 @@
 	z-index: 1000;
 	background: rgba(0, 0, 0, 0.8);
 
+	@media screen and (max-width: @screen-sm-max) {
+		display: none;
+	}
+
 	.search {
 		#mod-search-searchword,
-		#mod_virtuemart_search {
+		#mod_virtuemart_search{
 			border-radius: 20px;
 	    background: transparent;
 	    border-color: rgba(255,255,255,.2);
@@ -57,6 +78,8 @@
 		}
 	}
 
+
+
 	.toolbar-2 {
 		padding: 10px 0;
 		text-align: center;
@@ -64,10 +87,20 @@
 			text-align: right;
 		}
 		.vmCartModule ,
+		#jshop_module_cart,
 		.custom {
 			display: inline-block;
 			vertical-align: middle;
 			margin:  0 5px;
+
+			a {
+				color: @white;
+
+				&:hover,
+				&:focus {
+					color: @brand-primary;
+				}
+			}
 		}
 	}
 }
@@ -81,6 +114,13 @@
 	right: 0;
 	z-index: 1000;
 	.transition(all .2s linear);
+
+	@media screen and (max-width: 767px) {
+		background: @gray-darker;
+		top: 0;
+		position: fixed;
+		z-index: 1100;
+	}
 }
 
 .sticky-wrapper {
@@ -153,6 +193,10 @@
 
 .t3-slideshow {
 	margin-bottom: @grid-gutter-width;
+
+	@media screen and (max-width: @screen-xs-max) {
+		display: none;
+	}
 }
 
 // Head Search

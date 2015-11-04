@@ -1,0 +1,4 @@
+[03-Nov-2015 04:52:24 UTC] PHP Warning:  file_put_contents(/151103.ini): failed to open stream: Permission denied in /home/nhhotjnx/public_html/libraries/joomla/filesystem/file.php on line 435
+[03-Nov-2015 04:53:04 UTC] PHP Warning:  file_put_contents(/151103.ini): failed to open stream: Permission denied in /home/nhhotjnx/public_html/libraries/joomla/filesystem/file.php on line 435
+[03-Nov-2015 04:55:01 UTC] PHP Warning:  file_put_contents(/151103.ini): failed to open stream: Permission denied in /home/nhhotjnx/public_html/libraries/joomla/filesystem/file.php on line 435
+[03-Nov-2015 04:55:40 UTC] PHP Warning:  file_put_contents(/151103.ini): failed to open stream: Permission denied in /home/nhhotjnx/public_html/libraries/joomla/filesystem/file.php on line 435

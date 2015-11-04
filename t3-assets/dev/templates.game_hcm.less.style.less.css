@@ -24,6 +24,23 @@
   z-index: 1000;
   background: rgba(0, 0, 0, 0.8);
 }
+.toolbar #jshopping-search-form .inputbox {
+  border-radius: 20px;
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.2);
+  padding: 5px 15px;
+  height: 26px;
+  margin: 7px 0 0 0;
+}
+.toolbar #jshopping-search-form .button,
+.toolbar #jshopping-search-form a {
+  display: none;
+}
+@media screen and (max-width: 991px) {
+  .toolbar {
+    display: none;
+  }
+}
 .toolbar .search #mod-search-searchword,
 .toolbar .search #mod_virtuemart_search {
   border-radius: 20px;
@@ -43,10 +60,24 @@
   }
 }
 .toolbar .toolbar-2 .vmCartModule,
+.toolbar .toolbar-2 #jshop_module_cart,
 .toolbar .toolbar-2 .custom {
   display: inline-block;
   vertical-align: middle;
   margin: 0 5px;
+}
+.toolbar .toolbar-2 .vmCartModule a,
+.toolbar .toolbar-2 #jshop_module_cart a,
+.toolbar .toolbar-2 .custom a {
+  color: #ffffff;
+}
+.toolbar .toolbar-2 .vmCartModule a:hover,
+.toolbar .toolbar-2 #jshop_module_cart a:hover,
+.toolbar .toolbar-2 .custom a:hover,
+.toolbar .toolbar-2 .vmCartModule a:focus,
+.toolbar .toolbar-2 #jshop_module_cart a:focus,
+.toolbar .toolbar-2 .custom a:focus {
+  color: #01aaf4;
 }
 .t3-header {
   background: #000000;
@@ -59,6 +90,14 @@
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
+}
+@media screen and (max-width: 767px) {
+  .t3-header {
+    background: #222222;
+    top: 0;
+    position: fixed;
+    z-index: 1100;
+  }
 }
 .sticky-wrapper {
   height: auto !important;
@@ -105,6 +144,11 @@
 }
 .t3-slideshow {
   margin-bottom: 30px;
+}
+@media screen and (max-width: 767px) {
+  .t3-slideshow {
+    display: none;
+  }
 }
 .head-search {
   margin-top: 20px;
